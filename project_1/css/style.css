@@ -20,6 +20,7 @@
 html {
   font-size: 10px;
 }
+html, body {width: auto!important; overflow-x: hidden!important} 
 body {
   font-family: "ProximaNova_reg", sans-serif;
 }
