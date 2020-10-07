@@ -695,6 +695,11 @@ a:focus {
   .main {
     background-position: top left;
   }
+  .main-content {
+      h1 {
+        font-size: 3rem;
+      }
+    }
   .header {
     text-align: center;
   }
