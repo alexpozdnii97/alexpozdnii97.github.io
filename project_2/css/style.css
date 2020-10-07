@@ -512,7 +512,7 @@ body p {
   font-family: "Raleway_bold", sans-serif;
 }
 .design {
-  background: url("../img/design-bg.jpg") no-repeat center;
+  background: url("../img/design-bg-dark.jpg") no-repeat center;
   background-size: cover;
   padding: 10rem 0;
   text-align: center;
