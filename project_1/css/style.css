@@ -729,3 +729,8 @@ a:focus {
     text-align: center;
   }
 }
+@media (max-width: 575px){
+.main-content h1 {
+        font-size: 2rem;
+    }
+}
