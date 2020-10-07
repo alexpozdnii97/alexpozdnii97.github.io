@@ -461,6 +461,7 @@ iframe {
     background-size: cover;
   }
 }
+
 @media (max-width: 575px) {
   .works .box {
     float: left;
