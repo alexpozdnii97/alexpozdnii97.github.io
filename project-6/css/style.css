@@ -1,0 +1,584 @@
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+}
+.contact-btn {
+  margin-bottom: 5rem;
+  background-color: blue;
+  color: white;
+  padding: 1rem 4.5rem;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+.nav-logo {
+  position: fixed;
+  z-index: 2;
+  width: calc(8.33333333%);
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+.nav-logo img {
+  width: 100%;
+  height: auto;
+}
+.nav-section {
+  position: fixed;
+  z-index: 2;
+  height: 400px;
+  width: calc(16.66666667%);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.nav-section .desk-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.9rem;
+  list-style: none;
+}
+.nav-section .desk-nav li {
+  margin-bottom: 2rem;
+}
+.nav-section .desk-nav li a {
+  color: white;
+}
+.nav-section .desk-nav li a.active {
+  color: #FF0000;
+}
+.nav-section .desk-nav li a.active::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #FF0000;
+  line-height: 1.9rem;
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.nav-section .desk-nav li a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: inline-block;
+  line-height: 1.9rem;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.nav-connect {
+  position: fixed;
+  z-index: 2;
+  height: 300px;
+  width: calc(8.33333333%);
+  top: 0;
+  right: 0;
+}
+.nav-connect .envelope {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 6rem;
+  width: 6rem;
+  background-color: #FF0000;
+}
+.nav-social {
+  position: fixed;
+  z-index: 2;
+  width: calc(16.66666667%);
+  height: 300px;
+  bottom: 0;
+  right: 0;
+}
+.nav-social .social-item {
+  width: 100%;
+  height: 25%;
+}
+.nav-social .social-item p {
+  display: inline-block;
+  width: 80%;
+  text-align: right;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  vertical-align: middle;
+  opacity: 0;
+  transition: 1s;
+}
+.nav-social .social-item a {
+  line-height: 100%;
+  display: inline-block;
+  text-align: center;
+  float: right;
+  width: 20%;
+}
+.nav-social .social-item .fab {
+  font-size: 3rem;
+}
+.nav-social .social-item .fa-facebook-square {
+  color: #4267B2;
+}
+.nav-social .social-item .fa-telegram {
+  color: #0088cc;
+}
+.nav-social .social-item .fa-instagram {
+  color: white;
+}
+.nav-social .social-item .fa-youtube {
+  color: #FF0000;
+}
+.nav-social .social-item:hover p {
+  opacity: 1;
+}
+.section {
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+.main {
+  background: url('../img/main-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+.main-content {
+  padding-left: 10%;
+}
+.main-content p {
+  font-size: 2.4rem;
+}
+.main-content h1 {
+  font-size: 4.2rem;
+  margin-bottom: 3rem;
+}
+.main-content .main-btn {
+  background-color: #FF0000;
+  color: white;
+  padding: 1rem 4.5rem;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+.project {
+  background: url('../img/projects.jpg') no-repeat center center;
+  background-size: cover;
+}
+.project .mob {
+  display: none;
+}
+.project-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.project-header h2 {
+  font-size: 3.6rem;
+}
+.project-header a {
+  z-index: 1;
+  text-align: right;
+  font-size: 2rem;
+  color: white;
+  text-decoration: underline;
+}
+.project .project-container {
+  margin-top: 5rem;
+}
+.project .project-container .project-card {
+  padding: 0 0.5rem;
+  float: left;
+  width: calc(33.33333333%);
+  height: 35rem;
+}
+.project .project-container .project-card iframe {
+  height: 250px;
+}
+.services {
+  background: url('../img/services.jpg') no-repeat center center;
+  background-size: cover;
+}
+.services-header p {
+  font-size: 1.6rem;
+}
+.services-header h2 {
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+.services-container .service-card {
+  position: relative;
+  width: 25%;
+  height: 0;
+  padding-bottom: 25%;
+  float: left;
+}
+.services-container .service-card span {
+  z-index: 3;
+  position: absolute;
+  font-size: 1.9rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.8s;
+}
+.services-container .service-card img {
+  width: 100%;
+}
+.services-container .service-card .red-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #FF0000;
+  opacity: 0;
+  transition: 0.8s;
+}
+.services-container .service-card:hover .red-glow {
+  opacity: 0.3;
+}
+.services-container .service-card:hover span {
+  top: 5%;
+}
+.renthal {
+  background: url('../img/renthal.jpg') no-repeat center center;
+  background-size: cover;
+}
+.renthal-header {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.renthal-header h2 {
+  font-size: 3.6rem;
+}
+.renthal-header p {
+  font-size: 2.4rem;
+}
+.renthal-btn {
+  margin-bottom: 5rem;
+  background-color: #FF0000;
+  color: white;
+  padding: 1rem 4.5rem;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+.renthal .phone {
+  background-color: blue;
+}
+.renthal-form {
+  padding-top: 5rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.renthal-form-input {
+  display: inline-block;
+  width: 25rem;
+  margin: 0 1rem;
+  padding: 1rem 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  border-bottom: 1px solid white;
+}
+.renthal-container {
+  text-align: center;
+}
+.renthal-container p {
+  font-size: 2.4rem;
+  margin-bottom: 5rem;
+}
+.about {
+  background: url('../img/about.jpg') no-repeat center center;
+  background-size: cover;
+}
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.about-header h2 {
+  font-size: 3.6rem;
+}
+.about-header a {
+  color: red;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.about-container p {
+  font-size: 1.6rem;
+}
+.blog {
+  background: url('../img/blog.jpg') no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+}
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6rem;
+}
+.blog-header h2 {
+  font-size: 3.6rem;
+}
+.blog-header a {
+  text-align: right;
+  font-size: 2rem;
+  color: white;
+  text-decoration: underline;
+}
+.blog-container {
+  padding: 0 0rem;
+}
+.blog-container .blog-card {
+  margin: 0 1rem;
+  float: left;
+  width: calc(30.66666667%);
+  height: 42rem;
+  background-color: #02051F;
+}
+.blog-container .blog-card img {
+  width: 100%;
+  height: auto;
+}
+.blog-container .blog-card .blog-featured {
+  position: relative;
+}
+.blog-container .blog-card .blog-featured span {
+  z-index: 3;
+  position: absolute;
+  font-size: 1.8rem;
+  top: 90%;
+  left: 6rem;
+  transform: translate(-50%, -50%);
+  transition: 0.8s;
+}
+.blog-container .blog-card .blog-content {
+  padding: 0 2rem;
+}
+.blog-container .blog-card .blog-content p {
+  font-size: 1.6rem;
+}
+.blog-container .blog-card .blog-content .blog-link .btn-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  background-color: blue;
+  border-radius: 50px;
+  transition: 1s;
+}
+.blog-container .blog-card .blog-content .blog-link .btn-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translate(-50%, -50%);
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.blog-container .blog-card .blog-content .blog-link .btn-wrapper a {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  transform: translate(-50%, -50%);
+  line-height: 4rem;
+  width: 10rem;
+  font-size: 1.6rem;
+  color: white;
+  vertical-align: middle;
+}
+.blog-container .blog-card .blog-content .blog-link .btn-wrapper:hover {
+  width: 16rem;
+}
+.contact {
+  background: url('../img/contact.jpg') no-repeat center center;
+  background-size: cover;
+}
+.contact #map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+.contact-header {
+  padding-left: 15%;
+}
+.contact-header h2 {
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+.contact-container {
+  padding-left: 15%;
+}
+.contact-container h3 {
+  font-size: 3rem;
+}
+.contact-container p {
+  font-size: 2.4rem;
+}
+.contact-form {
+  padding-left: 15%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.contact-form-input {
+  display: block;
+  width: 30rem;
+  padding: 1rem 0;
+  padding-left: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  border-bottom: 1px solid white;
+}
+.contact-btn {
+  margin-top: 3rem;
+}
+.contact-social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-social .social-item {
+  text-align: center;
+  display: inline-block;
+}
+.contact-social .social-item .fab {
+  font-size: 3rem;
+  color: blue;
+}
+.contact-social .social-item a {
+  display: inline;
+}
+.menuka {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .nav-section .desk-nav {
+    font-size: 1.4rem;
+  }
+  .project-header h2 {
+    font-size: 2.4rem;
+  }
+  .project-header a {
+    font-size: 1.4rem;
+  }
+  .project .project-container {
+    margin-top: 1rem;
+  }
+  .project .project-container .project-card {
+    height: 25rem;
+  }
+  .project .project-container .project-card iframe {
+    height: 210px;
+  }
+  .renthal-form {
+    padding-top: 2rem;
+  }
+  .renthal-form-input {
+    width: 20rem;
+  }
+  .renthal-btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .menuka {
+    display: block;
+  }
+  .nav-logo,
+  .nav-section,
+  .nav-connect,
+  .nav-social {
+    display: none;
+  }
+  .services-container .service-card {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+  .project-header {
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+  }
+  .project-header a {
+    display: none;
+  }
+  .project .mob {
+    display: block;
+  }
+  .project .mob a {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .renthal-header {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .renthal-header h2 {
+    font-size: 2.4rem;
+  }
+  .renthal-header h2 p {
+    font-size: 1.8rem;
+  }
+  .renthal-form {
+    padding-top: 2rem;
+  }
+  .renthal-form-input {
+    width: 20rem;
+  }
+  .renthal-btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .renthal-container {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .renthal-header {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 575px) {
+  .renthal-header {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .renthal-header h2 {
+    font-size: 2.4rem;
+  }
+  .renthal-header h2 p {
+    font-size: 1.8rem;
+  }
+  .renthal-form {
+    padding-top: 2rem;
+  }
+  .renthal-form input {
+    width: 100%;
+    display: block;
+  }
+  .renthal-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
