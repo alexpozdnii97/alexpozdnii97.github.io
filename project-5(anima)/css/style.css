@@ -87,7 +87,7 @@ body {
 }
 @media (max-width: 991px) {
   .loader .logo {
-    width: 40rem;
+    width: 20rem;
   }
   .loader-bar {
     width: 30rem;
