@@ -95,9 +95,9 @@ body {
 }
 @media (max-width: 767px) {
   .loader .logo {
-    width: 20rem;
+    width: 80%;
   }
   .loader-bar {
-    width: 25rem;
+    width: 85%;
   }
 }
