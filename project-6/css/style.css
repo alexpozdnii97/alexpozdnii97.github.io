@@ -5,6 +5,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'CormorantGaramond_bold';
   src: url('../fonts/CormorantGaramond-Bold.woff2') format('woff2'), url('../fonts/CormorantGaramond-Bold.woff') format('woff');
