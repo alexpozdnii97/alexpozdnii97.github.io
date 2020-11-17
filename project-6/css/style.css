@@ -914,10 +914,6 @@ html {
   .nav-social {
     display: none;
   }
-  .main .services .project .renthal .about {
-    background: none;
-    background-color: black;
-  }
   .services-container .service-card {
     width: 50%;
     padding-bottom: 50%;
