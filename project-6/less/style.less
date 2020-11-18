@@ -379,7 +379,44 @@ html {
 }
 // slick dots/////////////////////////////
 //////////////////////////////////////////
+.slick-dots {
+  list-style: none;
+  padding-inline-start: 10px;
 
+  li {
+    display: inline;
+  }
+}
+
+.slick-dots li:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: red;
+  display: inline-block;
+  line-height: 1.9rem;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+.slick-dots li.slick-active:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #FF0000;
+  line-height: 1.9rem;
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-left: 4px;
+}
 
 
 
@@ -473,34 +510,7 @@ html {
         height: 100%;
       }
     }
-    .slick-dots li button:before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: red;
-      display: inline-block;
-      line-height: 1.9rem;
-      vertical-align: middle;
-      margin-right: 8px;
-      margin-left: 8px;
-    }
-
-    .slick-dots li.slick-active button:before {
-      content: "";
-      width: 16px;
-      height: 16px;
-      background: transparent;
-      border-radius: 50%;
-      border: 2px solid #FF0000;
-      line-height: 1.9rem;
-      vertical-align: middle;
-      margin-right: 4px;
-      margin-left: 4px;
-    }
-    
   }
-  
 }
 
 
@@ -801,7 +811,7 @@ html {
   }
 
   &-container {
-
+    
     padding: 0 0rem;
 
     .blog-card {
@@ -881,6 +891,9 @@ html {
           }
         }
       }
+    }
+    .slick-dots{
+      margin-top: 5rem;
     }
   }
 }
@@ -1249,6 +1262,10 @@ html {
   .nav-connect,
   .nav-social {
     display: none;
+  }
+  .slick-dots{
+    width: 20rem;
+    margin:0 auto;
   }
 
   .main, .project, .services, .renthal, .about, .contact, .blog{
