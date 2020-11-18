@@ -95,30 +95,30 @@
 
                 <div class="extended-header">
                   <h1>Портфоліо</h1>
-                </div>
-
+                </div> <!-- extended header -->
+                
                 <!-- navigation -->
                 <ul class="nav nav-tabs " id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
                     <a class="nav-link active" id="cycle-tab" data-toggle="tab" href="#cycle" role="tab"
                       aria-controls="home" aria-selected="true">Анімації</a>
-                  </li>
+                  </li><!-- nav-item -->
                   <li class="nav-item" role="presentation">
                     <a class="nav-link" id="concept-tab" data-toggle="tab" href="#concept" role="tab"
                       aria-controls="profile" aria-selected="false">Кліпи</a>
-                  </li>
+                  </li><!-- nav-item -->
                   <li class="nav-item" role="presentation">
                     <a class="nav-link" id="shoot-tab" data-toggle="tab" href="#shoot" role="tab" aria-controls="contact"
                       aria-selected="false">Реклама</a>
-                  </li>
+                  </li><!-- nav-item -->
                   <li class="nav-item" role="presentation">
                     <a class="nav-link" id="post-production-tab" data-toggle="tab" href="#post-production" role="tab"
                       aria-controls="contact" aria-selected="false">Події</a>
-                  </li>
+                  </li><!-- nav-item -->
                   <li class="nav-item" role="presentation">
                     <a class="nav-link " id="animation-tab" data-toggle="tab" href="#animation" role="tab"
                       aria-controls="home" aria-selected="true">Документальне</a>
-                  </li>
+                  </li> <!-- nav-item -->
                 </ul> <!-- nav-tabs -->
 
                 <div class="tab-content" id="myTabContent">
@@ -281,47 +281,49 @@
                   </div>
                 </div> <!-- tab-content -->
                 
-                <div class="project-header">
-                  <h2>Клієнти</h2>
-                </div>
+                <div class="extended-header">
+                  <h1>Клієнти</h1>
+                </div> <!-- extended-header -->
+
                 <div class="prices-wrapper">
-              <div class="price">
-                <div class="price-card"><img src="img/apple.png" alt="">
-                </div>
-              </div>
-              <div class="price">
-                <div class="price-card"><img src="img/bic.png" alt="">
-                </div>
-              </div>
-              <div class="price">
-                <div class="price-card"><img src="img/morrisons.png" alt="">
-                </div>
-              </div>
-              <div class="price">
-                <div class="price-card"><img src="img/logo.png" alt="">
-                </div>
-              </div>
-              <div class="price">
-                <div class="price-card"><img src="img/biedronka.png" alt="">
-                </div>
-              </div>
-              <div class="price">
-                <div class="price-card"><img src="img/logo.png" alt="">
-                </div>
-              </div>
-              
-            </div> <!-- price-wrapper -->
-            <div class="brief-wrapper">
+                  <div class="price">
+                    <div class="price-card"><img src="img/apple.png" alt="">
+                    </div>
+                  </div>
+                  <div class="price">
+                    <div class="price-card"><img src="img/bic.png" alt="">
+                    </div>
+                  </div>
+                  <div class="price">
+                    <div class="price-card"><img src="img/morrisons.png" alt="">
+                    </div>
+                  </div>
+                  <div class="price">
+                    <div class="price-card"><img src="img/logo.png" alt="">
+                    </div>
+                  </div>
+                  <div class="price">
+                    <div class="price-card"><img src="img/biedronka.png" alt="">
+                    </div>
+                  </div>
+                  <div class="price">
+                    <div class="price-card"><img src="img/logo.png" alt="">
+                    </div>
+                  </div>
+                </div> <!-- price-wrapper -->
+
+                <div class="brief-wrapper">
                   <p>Хочеш таке ж відео? <br>
                     Розкажb що ти зочеш у брифі
                   </p>
                   <div class="brief-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9ydA8-4xHqRvjHU4LkJwQAtDzELD59LthBprsTkoU0cNFWA/viewform?usp=sf_link">Заповнити бриф</a></div>
-                </div>
-              </div>
-            </div>
-          </div>  
-        </div>
-      </section>
+                </div> <!-- brief wrapper -->
+
+              </div> <!-- project-container -->
+            </div> <!-- cols -->
+          </div>  <!-- row -->
+        </div> <!-- container-fluid -->
+      </section> <!-- project-extended -->
       
 
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -333,39 +335,39 @@
     if (window.matchMedia("(max-width: 1199px)").matches) {
   /* the viewport is less than 768 pixels wide */
   $('.prices-wrapper').slick({
-  dots: false,
-  nextArrow:false,
-  prevArrow:false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-    }
-</script>
+    dots: false,
+    nextArrow:false,
+    prevArrow:false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  }
+  </script>
 </body>
 </html>

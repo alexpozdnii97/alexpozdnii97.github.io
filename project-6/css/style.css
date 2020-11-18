@@ -186,8 +186,7 @@ html {
   z-index: 2;
   width: calc(16.66666667%);
   height: 300px;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 0;
   right: 0;
 }
 .nav-social .social-item {
@@ -313,7 +312,6 @@ html {
 }
 .project-header {
   display: block;
-  justify-content: space-between;
   padding: 0 1rem;
 }
 .project-header h2 {
@@ -890,9 +888,6 @@ html {
   .project-header a {
     font-size: 1.4rem;
   }
-  .slick-slider {
-    width: calc(100%);
-  }
   .renthal-form {
     padding-top: 2rem;
   }
@@ -913,6 +908,27 @@ html {
   .nav-connect,
   .nav-social {
     display: none;
+  }
+  .main,
+  .project,
+  .services,
+  .renthal,
+  .about,
+  .contact,
+  .blog {
+    background: none;
+    background-color: black;
+  }
+  .project-header {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .project-header h2 {
+    font-size: 3.6rem;
+  }
+  .project-header a {
+    font-size: 2.4rem;
   }
   .services-container .service-card {
     width: 50%;
