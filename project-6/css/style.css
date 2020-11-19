@@ -974,6 +974,11 @@ html {
   .menuka {
     display: block;
   }
+  .section {
+    height: 70vh;
+    width: 100%;
+    color: white;
+  }
   .nav-logo,
   .nav-section,
   .nav-connect,
