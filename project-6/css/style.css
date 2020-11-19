@@ -1051,6 +1051,11 @@ html {
   font-size: 2rem;
 }
 @media (max-width: 767px) {
+  .section {
+    height: 100vh;
+    width: 100%;
+    color: white;
+  }
   .renthal-header {
     margin-top: 3rem;
   }
