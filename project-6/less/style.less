@@ -131,6 +131,111 @@ html {
   border-radius: 50px;
 }
 
+// loading page///////////////////////////////////////
+// .content {
+//   width: 100%;
+//   margin: 0 auto;
+//   z-index: -1;
+
+//   h1 {
+//     font-family: 'Poppins',
+//       sans-serif;
+//     font-size: 5.4rem;
+//     color: #101010;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     margin-bottom: 1rem;
+//   }
+
+//   p {
+//     margin-top: 0;
+//     text-align: left;
+//     color: #101010;
+//     font-weight: 400;
+//   }
+// }
+
+// .overlay {
+//   filter: brightness(0.6);
+//   z-index: 1;
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #000;
+//   /* background:url('logo.jpg') no-repeat center center; */
+//   /* background-size: 400px; */
+//   p {
+//     font-size: 300px;
+//     font-weight: 800;
+//   }
+// }
+
+
+.loader {
+  
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+
+  &-logo {
+    z-index: 10;
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    height: 10rem;
+  }
+
+  &-bar {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0.5rem;
+    width: 40rem;
+    background-color: #323232;
+
+    .loader-pad {
+      height: 100%;
+      width: 20%;
+      background-color: #ffffff;
+      animation: loader-pad 2s infinite ease-in;
+    }
+  }
+
+}
+
+.loader-sub {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  left: 0;
+  background-color: #000000;
+}
+
+@keyframes loader-pad {
+  0% {
+    margin-left: 0%;
+  }
+
+  50% {
+    margin-left: 80%;
+  }
+
+  100% {
+    margin-left: 0%;
+  }
+}
+
+
 //Зафіксований інтерфейс: Меню, Лого, Навігація, соцю мережі/
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
@@ -174,7 +279,7 @@ html {
       margin-bottom: 2rem;
 
       a {
-        font-size: 2rem;
+        font-size: 2.4rem;
         color: white;
         .reg();
 
@@ -376,6 +481,13 @@ html {
     .bold();
     color: white;
   }
+  h2{
+    font-size: 3.6rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    .bold();
+    color: white;
+  }
 }
 // slick dots/////////////////////////////
 //////////////////////////////////////////
@@ -445,20 +557,22 @@ html {
 //Головна секція //////////////////////////
 
 .main {
-  background: url('../img/main-bg.jpg') no-repeat center center;
-  background-size: cover;
+  //background: url('../img/main-bg.jpg') no-repeat center center;
+  //background-size: cover;
 
   &-content {
     padding-left: 10%;
 
     p {
       font-size: 2.4rem;
+      color:red;
     }
 
     h1 {
       font-size: 4.8rem;
       margin-bottom: 3rem;
       .bold();
+      color:red;
     }
 
     .main-btn {
@@ -1184,6 +1298,7 @@ html {
 //////////////////////////////////
 //////////////////////////////////
 .brief-wrapper {
+  display: flex;
   width: 100%;
   height: 8rem;
   margin: 0 auto;
@@ -1191,10 +1306,11 @@ html {
   margin-bottom: 8rem;
   border: 1px solid red;
   .brief-text{
-    float: left;
-    width: 60%;
+    padding-left: 2rem;
+    flex-grow: 1;
+    max-width: 70rem;
     height: 100%;
-    border: 1px solid red;
+    
     p{
       line-height: 8rem;
       vertical-align: middle;
@@ -1204,20 +1320,21 @@ html {
     }
   }
   .brief-btn{
-    float: left;
+    
     position: relative;
     height: 100%;
-    width: 38%;
-    border: 1px solid red;
+    width: 50rem;
+    
     a{
       position: absolute;
       display: inline-block;
+      width: 23rem;
       padding: 1rem 3rem;
       background-color:red;
       color: white;
       font-size: 2.4rem;
       top: 50%;
-      left:50%;
+      left:75%;
       transform: translate(-50%,-50%);
       .reg(); 
     }
@@ -1227,14 +1344,56 @@ html {
 //Про Нас ////////////////////////////////
 //////////////////////////////////////////
 //////////////////////////////////////////
-
-
 .about-extended {
   .about-header {
     margin-top: 3rem;
+    
   }
 
   color: white;
+}
+//ореда///////////////////////////////////
+//////////////////////////////////////////
+//////////////////////////////////////////
+.renthal-extended{
+  p{
+    color:white;
+  }
+}
+.renthal-table{
+  &-container{
+    height: 60rem;
+    width: 100%;
+    background-color: rgba(1,1,1,0.6);
+  }
+}
+.how{
+  margin: 0 auto;
+  
+}
+.accordion{
+  .card {
+    background-color: transparent;
+
+    &-header {
+      background-color: rgba(1, 1, 1, 0.6);
+
+      h2 button {
+        color: red;
+        font-size: 2rem;
+        .reg();
+      }
+    }
+
+    &-body {
+      background-color: rgba(1, 1, 1, 0.6);
+      color: white;
+      font-size: 1.8rem;
+      .reg();
+      padding: 0 2rem;
+    }
+  }
+  margin-bottom: 5rem;
 }
 
 
