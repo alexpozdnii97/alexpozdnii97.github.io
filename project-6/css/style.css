@@ -400,8 +400,8 @@ html {
   padding-left: 10%;
 }
 .main-content p {
-  font-size: 2.4rem;
-  color: red;
+  font-size: 3.6rem;
+  color: white;
 }
 .main-content h1 {
   font-size: 4.8rem;
@@ -785,7 +785,7 @@ html {
   float: none;
   margin: 0 auto;
   margin-bottom: 5rem;
-  width: 90%;
+  width: 80%;
 }
 .blog-extended .blog-card .blog-featured {
   position: default;
@@ -1053,6 +1053,21 @@ html {
   font-size: 1.8rem;
   font-family: 'CormorantGaramond_reg';
   padding: 0 2rem;
+}
+.contact-extended #map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+.contact-extended p,
+.contact-extended h3,
+.contact-extended h2 {
+  color: white;
+}
+.contact-extended h2,
+.contact-extended h3 {
+  font-family: 'CormorantGaramond_reg';
 }
 @media (max-width: 1199px) {
   .nav-section .desk-nav {
