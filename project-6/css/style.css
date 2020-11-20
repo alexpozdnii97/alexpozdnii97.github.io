@@ -211,6 +211,20 @@ html {
   margin-right: 8px;
   margin-left: 8px;
 }
+.copyright {
+  position: fixed;
+  z-index: 2;
+  height: 4rem;
+  width: calc(16.66666667%);
+  bottom: 0;
+  left: 0;
+  transform: translateY(-50%);
+}
+.copyright p {
+  padding-left: 2rem;
+  color: grey;
+  font-size: 1.4rem;
+}
 .nav-connect {
   position: fixed;
   z-index: 2;

@@ -71,7 +71,12 @@
           <li><a href="blog.html">Блог</a></li>
           <li><a href="contact.html">Контакти</a></li>
         </ul>
+        
       </div> <!-- nav-section -->
+      <div class="copyright">
+          <p>MayKan Production. </p>
+          <p>© 2020-2021</p>
+        </div>
 
       <div class="nav-connect">
         <div class="envelope">
@@ -508,16 +513,7 @@
   </script>
   
 
-  <script>
-    $('#main').vide('img/porshe.mp4', {
-      volume: 1,
-      playbackRate: 1,
-      muted: true,
-      loop: true,
-      autoplay: true,
-      resizing: true,
-    });
-  </script>
+  
 
   <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEJRkLz5XGwPx61nS6yR0GRVQgZ7qzbxE&callback=initMap&libraries=&v=weekly"
@@ -740,11 +736,9 @@
   </script>
   <script>
     $(window).on("load", function () {
-      var myDelay = 3000; // 3sec
+      var myDelay = 500; // 3sec
     setTimeout(() =>   {
       $(".loader-bar").fadeOut("slow");
-      
-  
     }, myDelay);
     setTimeout(() =>   {
       
@@ -775,6 +769,14 @@
         top:"110%",
         ease: Expo.easeInOut
       });
+      $('#main').vide('img/porshe.mp4', {
+      volume: 1,
+      playbackRate: 1,
+      muted: true,
+      loop: true,
+      autoplay: true,
+      resizing: true,
+    });
       TweenMax.from(".content",2,{
         delay:0.5, //3.2
         opacity:0,

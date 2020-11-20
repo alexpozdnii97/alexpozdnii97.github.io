@@ -89,12 +89,38 @@
 
 
       <section class="contact-extended">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-8 offset-xl-2"></div>
+        <div class="extended-header">
+              <h1>Послуги</h1>
+            </div>
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="col-xl-4 offset-xl-0 order-xl-2 col-lg-4 offset-lg-0 order-lg-2 col-md-6 offset-md-0 order-md-2 col-sm-10 offset-sm-1 col-10 offset-1">
+            <div class="contact-header">
+              <h2>Контактна інфорамація</h2>
+            </div>
+            <div class="contact-container">
+              <h3>Телефон:</h3>
+              <p> +38 (067) 222 22 22</p>
+              <h3>E-mail:</h3>
+              <p>example@gmail.com</p>
+            </div>
+            <div class="contact-form">
+              <form action="">
+                <input class="contact-form-input" type="text" placeholder="Номер Телефону">
+                <input class="contact-form-input" type="text" placeholder="Ваше Імя">
+                <button class="contact-btn phone">Зателефонуйте Мені</button>
+              </form>
+            </div>
+          </div> 
+
+          <div class="col-xl-4 offset-xl-2 order-xl-1 col-lg-4 offset-lg-2 order-lg-1 col-md-6 offset-md-0 order-md-1 col-sm-10 offset-sm-1 col-10 offset-1">
+            <div id="map"></div>
           </div>
-        </div>
-      </section>
+
+        </div> <!-- row -->
+      </div> <!-- container-fluid -->
+    </section> <!-- section contact -->
   
 
 
@@ -103,5 +129,225 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/fullpage.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEJRkLz5XGwPx61nS6yR0GRVQgZ7qzbxE&callback=initMap&libraries=&v=weekly"
+      defer
+  ></script>
+  <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 48.933666 , lng: 24.729925 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: uluru,
+          styles:[
+            {
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#212121"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.icon",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#757575"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#212121"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#757575"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.country",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#9e9e9e"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.land_parcel",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.locality",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#bdbdbd"
+                }
+              ]
+            },
+            {
+              "featureType": "landscape.man_made",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                {
+                  "color": "#8c8c8c"
+                },
+                {
+                  "visibility": "on"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#757575"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#181818"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#616161"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#1b1b1b"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "geometry.fill",
+              "stylers": [
+                {
+                  "color": "#2c2c2c"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#8a8a8a"
+                }
+              ]
+            },
+            {
+              "featureType": "road.arterial",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#373737"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#3c3c3c"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway.controlled_access",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#4e4e4e"
+                }
+              ]
+            },
+            {
+              "featureType": "road.local",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#616161"
+                }
+              ]
+            },
+            {
+              "featureType": "transit",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#757575"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#000000"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#3d3d3d"
+                }
+              ]
+            }
+          ]
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+  </script>
 </body>
 </html>
