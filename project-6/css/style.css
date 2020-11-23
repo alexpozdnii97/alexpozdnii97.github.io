@@ -1,35 +1,14 @@
 @font-face {
-  font-family: 'CormorantGaramond_light';
-  src: url('../fonts/CormorantGaramond-Light.woff2') format('woff2'), url('../fonts/CormorantGaramond-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'CormorantGaramond_bold';
-  src: url('../fonts/CormorantGaramond-Bold.woff2') format('woff2'), url('../fonts/CormorantGaramond-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'CormoranGaramond_med';
-  src: url('../fonts/CormorantGaramond-Medium.woff2') format('woff2'), url('../fonts/CormorantGaramond-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'CormorantGaramond_semibold';
-  src: url('../fonts/CormorantGaramond-SemiBold.woff2') format('woff2'), url('../fonts/CormorantGaramond-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'CormorantGaramond_reg';
-  src: url('../fonts/CormorantGaramond-Regular.woff2') format('woff2'), url('../fonts/CormorantGaramond-Regular.woff') format('woff');
+  font-family: 'EuropeCond';
+  src: url('../fonts1/EuropeCond.woff2') format('woff2'), url('../fonts1/EuropeCond.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'EuropeCond_bold';
+  src: url('../fonts1/EuropeCond-Bold.woff2') format('woff2'), url('../fonts1/EuropeCond-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -96,6 +75,7 @@ html {
   border-radius: 50px;
 }
 .loader {
+  overflow: hidden;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -115,19 +95,21 @@ html {
   height: auto;
 }
 .loader-bar {
+  overflow: hidden;
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 0.5rem;
+  height: 0.1rem;
   width: 40rem;
   background-color: #323232;
 }
 .loader-bar .loader-pad {
   height: 100%;
   width: 20%;
-  background-color: #ffffff;
-  animation: loader-pad 2s infinite ease-in;
+  width: 100%;
+  background: linear-gradient(to right, #323232, #ffffff 35%, #ffffff 65%, #323232 100%);
+  animation: loader-pad 1.5s infinite ease-in;
 }
 .loader-sub {
   z-index: 10;
@@ -139,14 +121,11 @@ html {
   background-color: #000000;
 }
 @keyframes loader-pad {
-  0% {
-    margin-left: 0%;
+  from {
+    margin-left: -100%;
   }
-  50% {
-    margin-left: 80%;
-  }
-  100% {
-    margin-left: 0%;
+  to {
+    margin-left: 100%;
   }
 }
 .nav-logo {
@@ -182,10 +161,10 @@ html {
 .nav-section .desk-nav li a {
   font-size: 2.4rem;
   color: white;
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
 }
 .nav-section .desk-nav li a.active {
-  color: #FF0000;
+  color: #bf2019;
 }
 .nav-section .desk-nav li a.active::before {
   content: "";
@@ -193,11 +172,12 @@ html {
   height: 16px;
   background: transparent;
   border-radius: 50%;
-  border: 2px solid #FF0000;
-  line-height: 1.9rem;
+  border: 2px solid #bf2019;
+  line-height: 2.4rem;
   vertical-align: middle;
   margin-right: 4px;
   margin-left: 4px;
+  margin-top: -0.9rem;
 }
 .nav-section .desk-nav li a::before {
   content: "";
@@ -206,10 +186,11 @@ html {
   border-radius: 50%;
   background: #ffffff;
   display: inline-block;
-  line-height: 1.9rem;
+  line-height: 2.4rem;
   vertical-align: middle;
   margin-right: 8px;
   margin-left: 8px;
+  margin-top: -0.9rem;
 }
 .copyright {
   position: fixed;
@@ -229,7 +210,7 @@ html {
   position: fixed;
   z-index: 2;
   height: 300px;
-  width: calc(8.33333333%);
+  width: calc(16.66666667%);
   top: 0;
   right: 0;
 }
@@ -239,7 +220,7 @@ html {
   right: 0;
   height: 6rem;
   width: 6rem;
-  background-color: #FF0000;
+  background-color: #bf2019;
   text-align: center;
 }
 .nav-connect .envelope i {
@@ -248,6 +229,17 @@ html {
   vertical-align: middle;
   font-size: 3.5rem;
   color: white;
+}
+.nav-connect .phone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 6rem;
+  color: white;
+  font-size: 2.4rem;
+  line-height: 6rem;
+  padding: 0 2rem;
+  font-family: 'EuropeCond';
 }
 .nav-social {
   position: fixed;
@@ -259,7 +251,7 @@ html {
 }
 .nav-social .social-item {
   width: 100%;
-  height: 25%;
+  height: 20%;
 }
 .nav-social .social-item p {
   display: inline-block;
@@ -280,22 +272,26 @@ html {
   width: 20%;
 }
 .nav-social .social-item .fab {
-  font-size: 3rem;
-}
-.nav-social .social-item .fa-facebook-square {
-  color: #4267B2;
-}
-.nav-social .social-item .fa-telegram {
-  color: #0088cc;
-}
-.nav-social .social-item .fa-instagram {
+  font-size: 2rem;
   color: white;
-}
-.nav-social .social-item .fa-youtube {
-  color: #FF0000;
 }
 .nav-social .social-item:hover p {
   opacity: 1;
+}
+.nav-social .social-item:hover .fa-facebook-f {
+  color: #4267B2;
+}
+.nav-social .social-item:hover .fa-telegram {
+  color: #0088cc;
+}
+.nav-social .social-item:hover .fa-instagram {
+  color: #8a49a1;
+}
+.nav-social .social-item:hover .fa-youtube {
+  color: #FF0000;
+}
+.nav-social .social-item:hover .fa-vk {
+  color: #45668e;
 }
 .navbar-brand img {
   height: 50px;
@@ -315,7 +311,7 @@ html {
   background: no-repeat center center;
   background-size: 100% 100%;
   font-size: 2rem;
-  color: red;
+  color: #bf2019;
 }
 .navbar .navbar-toggler:focus {
   border: none;
@@ -327,7 +323,7 @@ html {
   text-decoration: none;
 }
 .navbar .collapse .navbar-nav li.active a {
-  color: #FF0000 !important;
+  color: #bf2019 !important;
 }
 .menuka {
   display: none;
@@ -339,14 +335,14 @@ html {
   font-size: 4.8rem;
   margin-bottom: 8rem;
   margin-top: 8rem;
-  font-family: 'CormorantGaramond_bold';
+  font-family: 'EuropeCond';
   color: white;
 }
 .extended-header h2 {
   font-size: 3.6rem;
   margin-bottom: 5rem;
   margin-top: 5rem;
-  font-family: 'CormorantGaramond_bold';
+  font-family: 'EuropeCond';
   color: white;
 }
 .slick-dots {
@@ -361,7 +357,7 @@ html {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: red;
+  background: #bf2019;
   display: inline-block;
   line-height: 1.9rem;
   vertical-align: middle;
@@ -377,7 +373,7 @@ html {
   height: 16px;
   background: transparent;
   border-radius: 50%;
-  border: 2px solid #FF0000;
+  border: 2px solid #bf2019;
   line-height: 1.9rem;
   vertical-align: middle;
   margin-right: 4px;
@@ -402,15 +398,16 @@ html {
 .main-content p {
   font-size: 3.6rem;
   color: white;
+  font-family: 'EuropeCond';
 }
 .main-content h1 {
   font-size: 4.8rem;
   margin-bottom: 3rem;
-  font-family: 'CormorantGaramond_bold';
-  color: red;
+  font-family: 'EuropeCond', sans-serif;
+  color: #bf2019;
 }
 .main-content .main-btn {
-  background-color: #FF0000;
+  background-color: #bf2019;
   color: white;
   padding: 1rem 4.5rem;
   font-size: 1.4rem;
@@ -432,14 +429,14 @@ html {
 .project-header h2 {
   color: white;
   font-size: 3.6rem;
-  font-family: 'CormorantGaramond_bold';
+  font-family: 'EuropeCond';
 }
 .project-header a {
   z-index: 1;
   text-align: right;
   font-size: 2.4rem;
-  color: #FF0000;
-  font-family: 'CormoranGaramond_med';
+  color: #bf2019;
+  font-family: 'EuropeCond';
 }
 .project .project-container {
   width: 100%;
@@ -466,7 +463,7 @@ html {
 .services-header h2 {
   font-size: 3.6rem;
   margin-bottom: 2rem;
-  font-family: 'CormorantGaramond_bold';
+  font-family: 'EuropeCond';
 }
 .services-container {
   margin-top: 1rem;
@@ -489,7 +486,7 @@ html {
   transition: 0.8s;
   color: white;
   font-size: 2.4rem;
-  font-family: 'CormoranGaramond_med';
+  font-family: 'EuropeCond';
   opacity: 1;
 }
 .services-container .service-card p {
@@ -502,7 +499,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'CormoranGaramond_med';
+  font-family: 'EuropeCond';
   transition: 1s;
   opacity: 0;
 }
@@ -516,7 +513,7 @@ html {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: #FF0000;
+  background-color: #bf2019;
   opacity: 0;
   transition: 0.8s;
 }
@@ -598,7 +595,7 @@ html {
 }
 .team-wrapper .team-name p {
   font-size: 1.8rem;
-  color: red;
+  color: #bf2019;
 }
 .renthal {
   background: url('../img/renthal.jpg') no-repeat center center;
@@ -610,16 +607,16 @@ html {
 }
 .renthal-header h2 {
   font-size: 3.6rem;
-  font-family: 'CormorantGaramond_bold';
+  font-family: 'EuropeCond_bold';
 }
 .renthal-header p {
   font-size: 2.4rem;
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
 }
 .renthal-btn {
   display: inline-block;
   margin-bottom: 5rem;
-  background-color: #FF0000;
+  background-color: #bf2019;
   color: white;
   padding: 1rem 4.5rem;
   font-size: 1.4rem;
@@ -629,11 +626,11 @@ html {
 }
 .renthal-btn a {
   color: white;
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
 }
 .renthal .phone {
   background-color: blue;
-  font-family: 'CormoranGaramond_med';
+  font-family: 'EuropeCond';
 }
 .renthal-form {
   padding-top: 5rem;
@@ -658,7 +655,7 @@ html {
 .renthal-container p {
   font-size: 2.4rem;
   margin-bottom: 5rem;
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
 }
 .about {
   background: url('../img/about.jpg') no-repeat center center;
@@ -667,16 +664,16 @@ html {
 .about-header {
   padding-top: 3rem;
   text-align: center;
-  font-family: 'CormorantGaramond_bold';
+  font-family: 'EuropeCond_bold';
 }
 .about-header h2 {
   font-size: 3.6rem;
 }
 .about-header a {
   display: block;
-  color: red;
+  color: #bf2019;
   font-size: 2.4rem;
-  font-family: 'CormoranGaramond_med';
+  font-family: 'EuropeCond';
 }
 .about-container {
   margin-top: 3rem;
@@ -751,7 +748,7 @@ html {
   position: relative;
   width: 4rem;
   height: 4rem;
-  background-color: red;
+  background-color: #bf2019;
   border-radius: 50px;
   transition: 1s;
 }
@@ -806,8 +803,8 @@ html {
   position: default;
   font-size: 3.6rem;
   transition: 0.8s;
-  color: red;
-  font-family: 'CormorantGaramond_reg';
+  color: #bf2019;
+  font-family: 'EuropeCond';
 }
 .contact {
   background: url('../img/contact.jpg') no-repeat center center;
@@ -884,15 +881,15 @@ html {
   background-color: transparent;
   border: none;
   outline: none;
-  color: #FF0000;
-  border-bottom: 1px solid red;
+  color: #bf2019;
+  border-bottom: 1px solid #bf2019;
 }
 .project-extended .project-container .nav-item .nav-link:hover {
   border: none;
   outline: none;
 }
 .project-extended .project-container .nav-item a {
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
   color: white;
   text-align: center;
 }
@@ -904,14 +901,14 @@ html {
 .project-extended .project-container .project-header h2 {
   color: white;
   font-size: 3.6rem;
-  font-family: 'CormorantGaramond_bold';
+  font-family: 'EuropeCond_bold';
 }
 .project-extended .project-container .project-header a {
   z-index: 1;
   text-align: right;
   font-size: 2.4rem;
-  color: #FF0000;
-  font-family: 'CormorantGaramond_reg';
+  color: #bf2019;
+  font-family: 'EuropeCond';
 }
 .project-extended .project-container .tab-content .tab-pane {
   color: white;
@@ -938,11 +935,11 @@ html {
   background-color: transparent;
   border: none;
   outline: none;
-  color: #FF0000;
-  border-bottom: 1px solid red;
+  color: #bf2019;
+  border-bottom: 1px solid #bf2019;
 }
 .services-extended .nav-item a {
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
   color: white;
   text-align: center;
 }
@@ -970,7 +967,7 @@ html {
 .services-extended .stages-wrapper .stage h3 {
   color: white;
   font-size: 2.4rem;
-  font-family: 'CormorantGaramond_bold';
+  font-family: 'EuropeCond_bold';
 }
 .services-extended .stages-wrapper .stage p {
   font-size: 1.8rem;
@@ -983,7 +980,7 @@ html {
   margin: 0 auto;
   margin-top: 8rem;
   margin-bottom: 8rem;
-  border: 1px solid red;
+  border: 1px solid #bf2019;
 }
 .brief-wrapper .brief-text {
   padding-left: 2rem;
@@ -996,9 +993,10 @@ html {
   vertical-align: middle;
   color: white;
   font-size: 2.4rem;
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
 }
 .brief-wrapper .brief-btn {
+  text-align: center;
   position: relative;
   height: 100%;
   width: 50rem;
@@ -1008,13 +1006,13 @@ html {
   display: inline-block;
   width: 23rem;
   padding: 1rem 3rem;
-  background-color: red;
+  background-color: #bf2019;
   color: white;
   font-size: 2.4rem;
   top: 50%;
   left: 75%;
   transform: translate(-50%, -50%);
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
 }
 .about-extended {
   color: white;
@@ -1043,15 +1041,15 @@ html {
   background-color: rgba(1, 1, 1, 0.6);
 }
 .accordion .card-header h2 button {
-  color: red;
+  color: #bf2019;
   font-size: 2rem;
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
 }
 .accordion .card-body {
   background-color: rgba(1, 1, 1, 0.6);
   color: white;
   font-size: 1.8rem;
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
   padding: 0 2rem;
 }
 .contact-extended #map {
@@ -1067,7 +1065,7 @@ html {
 }
 .contact-extended h2,
 .contact-extended h3 {
-  font-family: 'CormorantGaramond_reg';
+  font-family: 'EuropeCond';
 }
 @media (max-width: 1199px) {
   .nav-section .desk-nav {
@@ -1212,10 +1210,12 @@ html {
     color: white;
   }
   .team-wrapper .team-name h3 {
+    font-family: 'EuropeCond';
     font-size: 2.4rem;
   }
   .team-wrapper .team-name p {
     font-size: 1.8rem;
+    font-family: 'EuropeCond';
   }
   .contact-header {
     padding-left: 0%;
