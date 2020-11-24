@@ -259,10 +259,11 @@ html {
   text-align: right;
   color: white;
   font-size: 1.5rem;
-  line-height: 3rem;
+  line-height: 2rem;
   vertical-align: middle;
   opacity: 0;
   transition: 1s;
+  font-family: 'EuropeCond';
 }
 .nav-social .social-item a {
   line-height: 100%;
@@ -579,7 +580,7 @@ html {
 .team-wrapper .team-card img {
   width: 100%;
   height: auto;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 .team-wrapper .team-name {
   position: absolute;
@@ -619,10 +620,11 @@ html {
   background-color: #bf2019;
   color: white;
   padding: 1rem 4.5rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   border: none;
   outline: none;
   border-radius: 50px;
+  font-family: 'EuropeCond';
 }
 .renthal-btn a {
   color: white;
@@ -664,10 +666,10 @@ html {
 .about-header {
   padding-top: 3rem;
   text-align: center;
-  font-family: 'EuropeCond_bold';
 }
 .about-header h2 {
   font-size: 3.6rem;
+  font-family: 'EuropeCond';
 }
 .about-header a {
   display: block;
@@ -700,6 +702,7 @@ html {
 }
 .blog-header h2 {
   font-size: 3.6rem;
+  font-family: 'EuropeCond';
 }
 .blog-header a {
   text-align: right;
@@ -724,7 +727,8 @@ html {
 .blog-container .blog-card .blog-featured {
   position: relative;
 }
-.blog-container .blog-card .blog-featured span {
+.blog-container .blog-card .blog-featured h3 {
+  display: inline-block;
   z-index: 3;
   position: absolute;
   font-size: 1.8rem;
@@ -732,6 +736,7 @@ html {
   left: 6rem;
   transform: translate(-50%, -50%);
   transition: 0.8s;
+  font-family: 'EuropeCond';
 }
 .blog-container .blog-card .blog-content {
   padding: 0 2rem;
@@ -770,6 +775,7 @@ html {
   font-size: 1.6rem;
   color: white;
   vertical-align: middle;
+  font-family: 'EuropeCond';
 }
 .blog-container .blog-card .blog-content .blog-link .btn-wrapper:hover {
   width: 16rem;
@@ -822,15 +828,18 @@ html {
 .contact-header h2 {
   font-size: 3.6rem;
   margin-bottom: 3rem;
+  font-family: 'EuropeCond';
 }
 .contact-container {
   padding-left: 15%;
 }
 .contact-container h3 {
   font-size: 2.4rem;
+  font-family: 'EuropeCond';
 }
 .contact-container p {
   font-size: 2.4rem;
+  font-family: 'EuropeCond';
 }
 .contact-form {
   padding-left: 15%;
