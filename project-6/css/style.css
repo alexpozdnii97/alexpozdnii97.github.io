@@ -326,7 +326,7 @@ html {
 .navbar .collapse .navbar-nav li.active a {
   color: #bf2019 !important;
 }
-.menuka {
+.mobile-bar {
   display: none;
 }
 .extended-header {
@@ -1164,8 +1164,11 @@ html {
   }
 }
 @media (max-width: 991px) {
-  .menuka {
+  .mobile-bar {
     display: block;
+  }
+  .copyright {
+    display: none;
   }
   .section {
     height: 50rem;
