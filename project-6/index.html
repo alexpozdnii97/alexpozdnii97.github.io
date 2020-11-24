@@ -750,7 +750,7 @@
   </script>
   <script>
     $(window).on("load", function () {
-      var myDelay = 500; // 3sec
+      var myDelay = 0; // 3sec
     setTimeout(() =>   {
       $(".loader-bar").fadeOut("slow");
     }, myDelay);
@@ -758,7 +758,7 @@
       
       myFade();
   
-    }, myDelay+1000);
+    }, myDelay+500);
   });
 $('#main').vide('img/porshe.mp4', {
       volume: 1,
