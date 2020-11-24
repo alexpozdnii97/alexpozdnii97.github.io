@@ -649,6 +649,7 @@ html {
 }
 .prices-wrapper .price-card .price-name h3 {
   font-size: 2.4rem;
+  font-family: 'EuropeCond';
 }
 .prices-wrapper .price-card .price-name p {
   font-size: 1.8rem;
@@ -702,6 +703,7 @@ html {
 }
 .team-wrapper .team-name h3 {
   font-size: 2.4rem;
+  font-family: 'EuropeCond';
 }
 .team-wrapper .team-name p {
   font-size: 1.8rem;
