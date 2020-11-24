@@ -203,7 +203,7 @@ html {
   content: "";
   display: block;
   height: 1px;
-  left: 50%;
+  left: 0%;
   position: absolute;
   background: #fff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -1025,18 +1025,46 @@ html {
 .services-extended .nav-item {
   width: 25%;
   font-size: 2.4rem;
+  outline: none;
+  border: none;
+}
+.services-extended .nav-item:hover {
+  outline: none;
+  border: none;
 }
 .services-extended .nav-item .nav-link.active {
   background-color: transparent;
   border: none;
   outline: none;
   color: #bf2019;
-  border-bottom: 1px solid #bf2019;
 }
 .services-extended .nav-item a {
   font-family: 'EuropeCond';
   color: white;
   text-align: center;
+  position: relative;
+  outline: none;
+  border: none;
+}
+.services-extended .nav-item a:hover {
+  outline: none;
+  border: none;
+}
+.services-extended .nav-item a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #bf2019;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.services-extended .nav-item a:hover:after {
+  width: 100%;
+  left: 0;
 }
 .services-extended .tab-content .tab-pane {
   color: white;

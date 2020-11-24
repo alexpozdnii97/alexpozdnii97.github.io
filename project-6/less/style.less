@@ -295,7 +295,7 @@ margin-left: 100%;
           content: "";
           display: block;
           height: 1px;
-          left: 50%;
+          left: 0%;
           position: absolute;
           background: #fff;
           transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -1374,19 +1374,50 @@ margin-left: 100%;
   .nav-item {
     width: 25%;
     font-size: 2.4rem;
+    outline: none;
+    border:none;
+    &:hover{
+      outline: none;
+      border:none;
+    }
 
     .nav-link.active {
       background-color: transparent;
       border: none;
       outline: none;
       color: @main_color;
-      border-bottom: 1px solid @main_color;
+      
     }
 
     a {
       .reg();
       color: white;
       text-align: center;
+      position: relative;
+      outline: none;
+      border:none;
+
+      &:hover {
+        outline: none;
+        border: none;
+      }
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        background: @main_color;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+
+      &:hover:after {
+        width: 100%;
+        left: 0;
+      }
     }
   }
 
