@@ -685,7 +685,7 @@ margin-left: 100%;
       padding-bottom: 25%;
       float: left;
 
-      span {
+      h3 {
         z-index: 3;
         position: absolute;
         font-size: 1.9rem;
@@ -705,7 +705,7 @@ margin-left: 100%;
         z-index: 3;
         position: absolute;
         font-size: 2.4rem;
-        top: 50%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
@@ -725,18 +725,34 @@ margin-left: 100%;
         width: 100%;
         height: 100%;
         z-index: 2;
-        background-color: @main_color;
+        background: linear-gradient(to bottom, transparent 50%,  @main_color 100%);
         opacity: 0;
+        transition: 0.8s;
+      }
+      .black-glow {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: linear-gradient(to bottom, transparent 50%, black 100%);
+        
+        opacity: 1;
         transition: 0.8s;
       }
 
       &:hover .red-glow {
-        opacity: 0.3;
+        opacity: 1;
+      }
+      &:hover .black-glow {
+        opacity: 0;
       }
 
-      &:hover span {
-        top: 5%;
-        opacity: 0;
+      &:hover h3 {
+        top: 25%;
+        opacity: 1;
       }
 
       &:hover p {
@@ -772,25 +788,76 @@ margin-left: 100%;
         width: 100%;
         height: 20rem;
       }
-    }
+       .red-glow {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 2;
+         background: linear-gradient(to bottom, transparent 50%, @main_color 100%);
+         opacity: 0;
+         transition: 0.8s;
+       }
 
-    &-name {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      width: 100%;
+       .black-glow {
+         position: absolute;
+         display: inline-block;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 2;
+         background: linear-gradient(to bottom, transparent 50%, black 100%);
+         opacity: 1;
+         transition: 0.8s;
+       }
 
-      text-align: center;
-      color: white;
+       &:hover .red-glow {
+         opacity: 1;
+       }
 
-      h3 {
-        font-size: 2.4rem;
-      }
-
-      p {
-        font-size: 1.8rem;
-      }
+       &:hover .black-glow {
+         opacity: 0;
+       }
+       .price-name {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         left: 0;
+         width: 100%;
+         text-align: center;
+         color: white;
+          transition: 0.8s;
+         h3 {
+           font-size: 2.4rem;
+         }
+         p {
+           font-size: 1.8rem;
+         }
+       }
+       .price-description{
+         z-index: 3;
+         position: absolute;
+         top: 75%;
+         transform: translateY(-50%);
+         left: 0;
+         width: 100%;
+         padding: 0 1rem;
+         text-align: center;
+         color: white;
+         opacity: 0;
+         font-size: 1.8rem;
+         transition: 0.8s;
+       }
+       &:hover{
+         .price-name{
+           top:20%;
+         }
+         .price-description{
+           opacity: 1;
+         }
+       }
     }
   }
 }

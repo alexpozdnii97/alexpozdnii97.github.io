@@ -477,7 +477,7 @@ html {
   padding-bottom: 25%;
   float: left;
 }
-.services-container .service-card span {
+.services-container .service-card h3 {
   z-index: 3;
   position: absolute;
   font-size: 1.9rem;
@@ -496,7 +496,7 @@ html {
   z-index: 3;
   position: absolute;
   font-size: 2.4rem;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -514,16 +514,31 @@ html {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: #bf2019;
+  background: linear-gradient(to bottom, transparent 50%, #bf2019 100%);
   opacity: 0;
   transition: 0.8s;
 }
-.services-container .service-card:hover .red-glow {
-  opacity: 0.3;
+.services-container .service-card .black-glow {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to bottom, transparent 50%, #000000 100%);
+  opacity: 1;
+  transition: 0.8s;
 }
-.services-container .service-card:hover span {
-  top: 5%;
+.services-container .service-card:hover .red-glow {
+  opacity: 1;
+}
+.services-container .service-card:hover .black-glow {
   opacity: 0;
+}
+.services-container .service-card:hover h3 {
+  top: 25%;
+  opacity: 1;
 }
 .services-container .service-card:hover p {
   opacity: 1;
@@ -549,7 +564,36 @@ html {
   width: 100%;
   height: 20rem;
 }
-.prices-wrapper .price-name {
+.prices-wrapper .price-card .red-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to bottom, transparent 50%, #bf2019 100%);
+  opacity: 0;
+  transition: 0.8s;
+}
+.prices-wrapper .price-card .black-glow {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to bottom, transparent 50%, #000000 100%);
+  opacity: 1;
+  transition: 0.8s;
+}
+.prices-wrapper .price-card:hover .red-glow {
+  opacity: 1;
+}
+.prices-wrapper .price-card:hover .black-glow {
+  opacity: 0;
+}
+.prices-wrapper .price-card .price-name {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -557,12 +601,33 @@ html {
   width: 100%;
   text-align: center;
   color: white;
+  transition: 0.8s;
 }
-.prices-wrapper .price-name h3 {
+.prices-wrapper .price-card .price-name h3 {
   font-size: 2.4rem;
 }
-.prices-wrapper .price-name p {
+.prices-wrapper .price-card .price-name p {
   font-size: 1.8rem;
+}
+.prices-wrapper .price-card .price-description {
+  z-index: 3;
+  position: absolute;
+  top: 75%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  padding: 0 1rem;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  font-size: 1.8rem;
+  transition: 0.8s;
+}
+.prices-wrapper .price-card:hover .price-name {
+  top: 20%;
+}
+.prices-wrapper .price-card:hover .price-description {
+  opacity: 1;
 }
 .team-wrapper {
   margin-bottom: 5rem;
