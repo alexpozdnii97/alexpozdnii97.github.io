@@ -162,6 +162,8 @@ html {
   font-size: 2.4rem;
   color: white;
   font-family: 'EuropeCond';
+  text-decoration: none;
+  position: relative;
 }
 .nav-section .desk-nav li a.active {
   color: #bf2019;
@@ -179,6 +181,9 @@ html {
   margin-left: 4px;
   margin-top: -0.9rem;
 }
+.nav-section .desk-nav li a.active:hover:after {
+  background-color: #bf2019;
+}
 .nav-section .desk-nav li a::before {
   content: "";
   width: 8px;
@@ -191,6 +196,22 @@ html {
   margin-right: 8px;
   margin-left: 8px;
   margin-top: -0.9rem;
+}
+.nav-section .desk-nav li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-section .desk-nav li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 .copyright {
   position: fixed;
