@@ -100,7 +100,7 @@ html {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 0.1rem;
+  height: 0.2rem;
   width: 40rem;
   background-color: #323232;
 }
@@ -202,7 +202,7 @@ html {
   bottom: 0;
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   left: 0%;
   position: absolute;
   background: #fff;
@@ -447,6 +447,7 @@ html {
 .project-header {
   display: block;
   padding: 0 1rem;
+  margin-bottom: 1rem;
 }
 .project-header h2 {
   color: white;
@@ -458,7 +459,29 @@ html {
   text-align: right;
   font-size: 2.4rem;
   color: #bf2019;
+  text-decoration: none;
+  position: relative;
   font-family: 'EuropeCond';
+}
+.project-header a:hover {
+  text-decoration: none;
+  color: #bf2019;
+}
+.project-header a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #bf2019;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.project-header a:hover:after {
+  width: 100%;
+  left: 0;
 }
 .project .project-container {
   width: 100%;
@@ -715,6 +738,11 @@ html {
 .renthal-btn a {
   color: white;
   font-family: 'EuropeCond';
+  text-decoration: none;
+}
+.renthal-btn a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 .renthal .phone {
   background-color: blue;
@@ -758,10 +786,32 @@ html {
   font-family: 'EuropeCond';
 }
 .about-header a {
-  display: block;
+  display: inline-block;
+  position: relative;
   color: #bf2019;
   font-size: 2.4rem;
   font-family: 'EuropeCond';
+  text-decoration: none;
+}
+.about-header a:hover {
+  text-decoration: none;
+  color: #bf2019;
+}
+.about-header a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #bf2019;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.about-header a:hover:after {
+  width: 100%;
+  left: 0;
 }
 .about-container {
   margin-top: 3rem;
@@ -777,7 +827,7 @@ html {
   margin-top: 10rem;
 }
 .blog {
-  background: url('../img/blog2.jpg') no-repeat center center;
+  background-color: black;
   background-size: cover;
   backdrop-filter: blur(2px);
 }
@@ -797,6 +847,7 @@ html {
   text-decoration: underline;
 }
 .blog-container {
+  margin-top: 1rem;
   padding: 0 0rem;
 }
 .blog-container .blog-card {
@@ -814,13 +865,12 @@ html {
   position: relative;
 }
 .blog-container .blog-card .blog-featured h3 {
-  display: inline-block;
   z-index: 3;
   position: absolute;
   font-size: 1.8rem;
   top: 90%;
-  left: 6rem;
-  transform: translate(-50%, -50%);
+  left: 2rem;
+  transform: translateY(-50%);
   transition: 0.8s;
   font-family: 'EuropeCond';
 }
@@ -922,6 +972,7 @@ html {
 .contact-container h3 {
   font-size: 2.4rem;
   font-family: 'EuropeCond';
+  color: #bf2019;
 }
 .contact-container p {
   font-size: 2.4rem;
@@ -977,7 +1028,6 @@ html {
   border: none;
   outline: none;
   color: #bf2019;
-  border-bottom: 1px solid #bf2019;
 }
 .project-extended .project-container .nav-item .nav-link:hover {
   border: none;
@@ -987,6 +1037,23 @@ html {
   font-family: 'EuropeCond';
   color: white;
   text-align: center;
+  position: relative;
+}
+.project-extended .project-container .nav-item a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #bf2019;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.project-extended .project-container .nav-item a:hover:after {
+  width: 100%;
+  left: 0;
 }
 .project-extended .project-container .project-header {
   display: flex;
@@ -1055,7 +1122,7 @@ html {
   bottom: 0;
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   left: 50%;
   position: absolute;
   background: #bf2019;
@@ -1137,6 +1204,7 @@ html {
   left: 75%;
   transform: translate(-50%, -50%);
   font-family: 'EuropeCond';
+  text-decoration: none;
 }
 .about-extended {
   color: white;

@@ -173,7 +173,7 @@ overflow: hidden;
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 0.1rem;
+    height: 0.2rem;
     width: 40rem;
     background-color: #323232;
 
@@ -294,7 +294,7 @@ margin-left: 100%;
           bottom: 0;
           content: "";
           display: block;
-          height: 1px;
+          height: 2px;
           left: 0%;
           position: absolute;
           background: #fff;
@@ -634,6 +634,7 @@ margin-left: 100%;
   &-header {
     display: block;
     padding: 0 1rem;
+    margin-bottom: 1rem;
 
     h2 {
       color: white;
@@ -646,8 +647,30 @@ margin-left: 100%;
       text-align: right;
       font-size: 2.4rem;
       color: @main_color;
-
+      text-decoration: none;
+      position: relative;
       .reg();
+      &:hover{
+        text-decoration: none;
+        color:@main_color;
+      }
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0%;
+        position: absolute;
+        background: @main_color;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+
+      &:hover:after {
+        width: 100%;
+        left: 0;
+      }
     }
   }
 
@@ -960,6 +983,11 @@ margin-left: 100%;
     a {
       color: white;
       .reg();
+      text-decoration: none;
+      &:hover{
+        text-decoration: none;
+        color:#fff;
+      }
     }
   }
 
@@ -1014,11 +1042,33 @@ margin-left: 100%;
     }
 
     a {
-      display: block;
+      display: inline-block;
+      position: relative;
       color: @main_color;
       font-size: 2.4rem;
       .reg();
+      text-decoration: none;
+      &:hover{
+      text-decoration: none;
+      color:@main_color;
+      }
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0%;
+        position: absolute;
+        background: @main_color;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
 
+      &:hover:after {
+        width: 100%;
+        left: 0;
+      }
     }
   }
 
@@ -1043,7 +1093,8 @@ margin-left: 100%;
 
 
 .blog {
-  background: url('../img/blog2.jpg') no-repeat center center;
+  //background: url('../img/blog2.jpg') no-repeat center center;
+  background-color: black;
   background-size: cover;
   backdrop-filter: blur(2px);
 
@@ -1066,7 +1117,7 @@ margin-left: 100%;
   }
 
   &-container {
-
+    margin-top: 1rem;
     padding: 0 0rem;
 
     .blog-card {
@@ -1088,13 +1139,13 @@ margin-left: 100%;
         position: relative;
 
         h3 {
-          display: inline-block;
+          
           z-index: 3;
           position: absolute;
           font-size: 1.8rem;
           top: 90%;
-          left: 6rem;
-          transform: translate(-50%, -50%);
+          left: 2rem;
+          transform: translateY(-50%);
           transition: 0.8s;
           .reg();
         }
@@ -1224,6 +1275,7 @@ margin-left: 100%;
     h3 {
       font-size: 2.4rem;
       .reg();
+      color:@main_color;
     }
 
     p {
@@ -1301,7 +1353,7 @@ margin-left: 100%;
         border: none;
         outline: none;
         color: @main_color;
-        border-bottom: 1px solid @main_color;
+        
       }
 
       .nav-link:hover {
@@ -1313,6 +1365,24 @@ margin-left: 100%;
         .reg();
         color: white;
         text-align: center;
+        position: relative;
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: @main_color;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+        }
+
+        &:hover:after {
+          width: 100%;
+          left: 0;
+        }
       }
     }
 
@@ -1406,7 +1476,7 @@ margin-left: 100%;
         bottom: 0;
         content: "";
         display: block;
-        height: 1px;
+        height: 2px;
         left: 50%;
         position: absolute;
         background: @main_color;
@@ -1511,6 +1581,7 @@ margin-left: 100%;
       left: 75%;
       transform: translate(-50%, -50%);
       .reg();
+      text-decoration: none;
     }
   }
 }
