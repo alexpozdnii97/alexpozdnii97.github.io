@@ -1047,13 +1047,16 @@ html {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #bf2019;
+  background: #fff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 .project-extended .project-container .nav-item a:hover:after {
   width: 100%;
   left: 0;
+}
+.project-extended .project-container .nav-item a.active:after {
+  background-color: #bf2019;
 }
 .project-extended .project-container .project-header {
   display: flex;
@@ -1125,13 +1128,16 @@ html {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #bf2019;
+  background: #fff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 .services-extended .nav-item a:hover:after {
   width: 100%;
   left: 0;
+}
+.services-extended .nav-item a.active:after {
+  background-color: #bf2019;
 }
 .services-extended .tab-content .tab-pane {
   color: white;
