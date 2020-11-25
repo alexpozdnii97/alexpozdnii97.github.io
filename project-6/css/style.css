@@ -1276,13 +1276,13 @@ html {
   justify-content: center;
 }
 .footer-mobile .footer-social-item {
-  width: 10%;
+  width: 15%;
   text-align: center;
 }
 .footer-mobile .footer-social-item .fab {
   line-height: 6rem;
   vertical-align: middle;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
 }
 .footer-mobile .footer-social-item:hover p {
