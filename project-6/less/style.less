@@ -1499,11 +1499,25 @@ margin-left: 100%;
       }
     }
   }
-  .services-dropdown{
+  .services-dropdown {
+    margin-bottom: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0 auto;
     display: none;
     width: 100%;
-    option{
+    background-color: @main_color;
+    .reg();
+    color: white;
+    font-size: 3.6rem;
+    border: none;
+    outline: none;
+    -webkit-appearance:none;
+    option {
       text-align: center;
+      background-color: @main_color;
+      color: white;
+      font-size: 3.6rem;
+      .reg();
     }
   }
 
@@ -2208,25 +2222,8 @@ margin-left: 100%;
       .nav-tabs{
         display: none;
       }
-      .services-dropdown {
-        margin-bottom: 2rem;
-        padding: 0.5rem 0.5rem;
-        margin: 0 auto;
+      .services-dropdown{
         display: block;
-        width: 100%;
-        background-color: @main_color;
-        .reg();
-        color:white;
-        font-size: 3.6rem;
-        border:none;
-        outline: none;
-        option {
-          text-align: center;
-          background-color: @main_color;
-          color:white;
-          font-size: 3.6rem;
-          .reg();
-        }
       }
       .tab-content{
         margin-top: 2rem;

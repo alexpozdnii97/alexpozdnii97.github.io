@@ -1143,11 +1143,25 @@ html {
   background-color: #bf2019;
 }
 .services-extended .services-dropdown {
+  margin-bottom: 2rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0 auto;
   display: none;
   width: 100%;
+  background-color: #bf2019;
+  font-family: 'EuropeCond';
+  color: white;
+  font-size: 3.6rem;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
 }
 .services-extended .services-dropdown option {
   text-align: center;
+  background-color: #bf2019;
+  color: white;
+  font-size: 3.6rem;
+  font-family: 'EuropeCond';
 }
 .services-extended .tab-content .tab-pane {
   color: white;
@@ -1663,24 +1677,7 @@ html {
     display: none;
   }
   .services-extended .services-dropdown {
-    margin-bottom: 2rem;
-    padding: 0.5rem 0.5rem;
-    margin: 0 auto;
     display: block;
-    width: 100%;
-    background-color: #bf2019;
-    font-family: 'EuropeCond';
-    color: white;
-    font-size: 3.6rem;
-    border: none;
-    outline: none;
-  }
-  .services-extended .services-dropdown option {
-    text-align: center;
-    background-color: #bf2019;
-    color: white;
-    font-size: 3.6rem;
-    font-family: 'EuropeCond';
   }
   .services-extended .tab-content {
     margin-top: 2rem;
