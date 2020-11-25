@@ -1675,14 +1675,16 @@ margin-left: 100%;
 }
 
 .footer-mobile{
+  padding: 1rem 0;
   background-color: #000;
   display: none;
   .footer-social{
+    margin-bottom: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     &-item{
-      width: 15%;
-      text-align: center;
+      width: 10%;
+      text-align: left;
       .fab {
         line-height: 6rem;
         vertical-align: middle;
@@ -1715,6 +1717,18 @@ margin-left: 100%;
           color: #45668e;
         }
       }
+    }
+  }
+  .footer-copywright{
+    display: flex;
+    justify-content: space-between;
+    p{
+      text-align: center;
+      color: grey;
+      font-size: 1.4rem;
+    }
+    a{
+      color:@main_color;
     }
   }
 }
