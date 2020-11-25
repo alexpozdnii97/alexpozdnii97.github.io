@@ -1388,6 +1388,12 @@ html {
     width: 100%;
     color: white;
   }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 35rem;
+  }
   .loader .logo {
     width: 40rem;
   }
@@ -1401,8 +1407,10 @@ html {
     display: none;
   }
   .slick-dots {
-    width: 16rem;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
+    width: 35rem;
   }
   .project-header {
     margin-top: 3rem;
