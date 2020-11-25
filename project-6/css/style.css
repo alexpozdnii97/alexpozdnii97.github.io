@@ -257,7 +257,7 @@ html {
   right: 0;
   margin-right: 6rem;
   color: white;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 6rem;
   padding: 0 2rem;
   font-family: 'EuropeCond';
@@ -1278,7 +1278,7 @@ html {
   justify-content: left;
 }
 .footer-mobile .footer-social-item {
-  width: 10%;
+  width: 15%;
   text-align: left;
 }
 .footer-mobile .footer-social-item .fab {
@@ -1505,6 +1505,13 @@ html {
   .contact-form-input {
     width: 80%;
     display: block;
+  }
+  .footer-mobile .footer-social {
+    justify-content: space-evenly;
+  }
+  .footer-mobile .footer-phone p {
+    text-align: center;
+    font-size: 2rem;
   }
 }
 @media (max-width: 767px) and (max-width: 575px) {
