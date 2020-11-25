@@ -1305,6 +1305,15 @@ html {
 .footer-mobile .footer-social-item:hover .fa-vk {
   color: #45668e;
 }
+.footer-mobile .footer-phone {
+  flex-grow: 1;
+  color: white;
+  font-size: 2.4rem;
+  font-family: 'EuropeCond';
+  line-height: 6rem;
+  vertical-align: middle;
+  text-align: right;
+}
 .footer-mobile .footer-copywright {
   display: flex;
   justify-content: space-between;
