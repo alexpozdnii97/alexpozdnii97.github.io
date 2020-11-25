@@ -1210,7 +1210,7 @@ html {
 .brief-wrapper .brief-btn a {
   position: absolute;
   display: inline-block;
-  width: 23rem;
+  width: 30rem;
   padding: 1rem 3rem;
   background-color: #bf2019;
   color: white;
@@ -1342,7 +1342,7 @@ html {
     font-size: 2.4rem;
   }
   .brief-wrapper .brief-btn {
-    width: 30rem;
+    width: 25rem;
   }
   .brief-wrapper .brief-btn a {
     width: 23rem;
@@ -1419,50 +1419,50 @@ html {
   .mobile {
     display: none;
   }
-}
-.renthal-header {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-.renthal-header h2 {
-  font-size: 2.4rem;
-}
-.renthal-header h2 p {
-  font-size: 1.8rem;
-}
-.renthal-form {
-  padding-top: 2rem;
-}
-.renthal-form-input {
-  width: 20rem;
-}
-.renthal-btn {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.renthal-container {
-  margin-bottom: 2rem;
-}
-.contact-header h2 {
-  font-size: 2.4rem;
-}
-.contact-container h3 {
-  font-size: 2.4rem;
-}
-.contact-container p {
-  font-size: 2rem;
-}
-.contact .brief-wrapper {
-  height: 12rem;
-}
-.contact .brief-wrapper .brief-text p {
-  font-size: 1.6rem;
-}
-.contact .brief-wrapper .brief-btn {
-  width: 25rem;
-}
-.contact .brief-wrapper .brief-btn a {
-  font-size: 1.8rem;
+  .renthal-header {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .renthal-header h2 {
+    font-size: 2.4rem;
+  }
+  .renthal-header h2 p {
+    font-size: 1.8rem;
+  }
+  .renthal-form {
+    padding-top: 2rem;
+  }
+  .renthal-form-input {
+    width: 20rem;
+  }
+  .renthal-btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .renthal-container {
+    margin-bottom: 2rem;
+  }
+  .contact-header h2 {
+    font-size: 2.4rem;
+  }
+  .contact-container h3 {
+    font-size: 2.4rem;
+  }
+  .contact-container p {
+    font-size: 2rem;
+  }
+  .contact .brief-wrapper {
+    height: 12rem;
+  }
+  .contact .brief-wrapper .brief-text p {
+    font-size: 2rem;
+  }
+  .contact .brief-wrapper .brief-btn {
+    width: 25rem;
+  }
+  .contact .brief-wrapper .brief-btn a {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 767px) {
   .loader .logo {
