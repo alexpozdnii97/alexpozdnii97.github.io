@@ -1267,6 +1267,42 @@ html {
 .contact-extended h3 {
   font-family: 'EuropeCond';
 }
+.footer-mobile {
+  background-color: #000;
+  display: none;
+}
+.footer-mobile .footer-social {
+  display: flex;
+  justify-content: center;
+}
+.footer-mobile .footer-social-item {
+  width: 10%;
+  text-align: center;
+}
+.footer-mobile .footer-social-item .fab {
+  line-height: 6rem;
+  vertical-align: middle;
+  font-size: 2rem;
+  color: white;
+}
+.footer-mobile .footer-social-item:hover p {
+  opacity: 1;
+}
+.footer-mobile .footer-social-item:hover .fa-facebook-f {
+  color: #4267B2;
+}
+.footer-mobile .footer-social-item:hover .fa-telegram {
+  color: #0088cc;
+}
+.footer-mobile .footer-social-item:hover .fa-instagram {
+  color: #8a49a1;
+}
+.footer-mobile .footer-social-item:hover .fa-youtube {
+  color: #FF0000;
+}
+.footer-mobile .footer-social-item:hover .fa-vk {
+  color: #45668e;
+}
 @media (max-width: 1199px) {
   .nav-section .desk-nav {
     font-size: 1.4rem;
@@ -1294,6 +1330,9 @@ html {
   }
   .copyright {
     display: none;
+  }
+  .footer-mobile {
+    display: block;
   }
   .section {
     height: 50rem;

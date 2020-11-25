@@ -1674,7 +1674,50 @@ margin-left: 100%;
   }
 }
 
+.footer-mobile{
+  background-color: #000;
+  display: none;
+  .footer-social{
+    display: flex;
+    justify-content: center;
+    &-item{
+      width: 10%;
+      text-align: center;
+      .fab {
+        line-height: 6rem;
+        vertical-align: middle;
+        font-size: 2rem;
+        color: white;
+      }
 
+      &:hover {
+        p {
+          opacity: 1;
+        }
+
+        .fa-facebook-f {
+          color: #4267B2;
+        }
+
+        .fa-telegram {
+          color: #0088cc;
+        }
+
+        .fa-instagram {
+          color: #8a49a1;
+        }
+
+        .fa-youtube {
+          color: #FF0000;
+        }
+
+        .fa-vk {
+          color: #45668e;
+        }
+      }
+    }
+  }
+}
 // Адаптивність //////////////////////////
 //////////////////////////////////////////
 //////////////////////////////////////////
@@ -1723,6 +1766,9 @@ margin-left: 100%;
   }
   .copyright{
     display: none;
+  }
+  .footer-mobile {
+    display: block;
   }
   .section {
     height: 50rem;
