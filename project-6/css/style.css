@@ -1552,7 +1552,7 @@ html {
     text-align: center;
   }
   .brief-wrapper .brief-text p {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   .brief-wrapper .brief-btn {
     display: block;
@@ -1568,7 +1568,7 @@ html {
   }
   .footer-mobile .footer-phone p {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .footer-mobile .footer-copywright {
     display: block;
@@ -1579,7 +1579,7 @@ html {
     text-align: center;
   }
 }
-@media (max-width: 767px) and (max-width: 575px) {
+@media (max-width: 575px) {
   .team-wrapper {
     width: calc(100%);
     height: 0;
