@@ -1470,7 +1470,13 @@ html {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 30rem;
+    width: 35rem;
+  }
+  .services-extended .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 35rem;
   }
 }
 @media (max-width: 767px) {
