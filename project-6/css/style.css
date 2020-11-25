@@ -1198,7 +1198,7 @@ html {
   width: 100%;
   vertical-align: middle;
   color: white;
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-family: 'EuropeCond';
 }
 .brief-wrapper .brief-btn {
@@ -1210,11 +1210,11 @@ html {
 .brief-wrapper .brief-btn a {
   position: absolute;
   display: inline-block;
-  width: 30rem;
+  width: 23rem;
   padding: 1rem 3rem;
   background-color: #bf2019;
   color: white;
-  font-size: 3rem;
+  font-size: 2.4rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1452,11 +1452,17 @@ html {
 .contact-container p {
   font-size: 2rem;
 }
+.contact .brief-wrapper {
+  height: 12rem;
+}
 .contact .brief-wrapper .brief-text p {
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+.contact .brief-wrapper .brief-btn {
+  width: 25rem;
 }
 .contact .brief-wrapper .brief-btn a {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 @media (max-width: 767px) {
   .loader .logo {
@@ -1542,7 +1548,7 @@ html {
   .brief-wrapper .brief-text {
     display: block;
     width: 100%;
-    height: 8rem;
+    height: 7rem;
     text-align: center;
   }
   .brief-wrapper .brief-text p {
@@ -1552,7 +1558,7 @@ html {
     display: block;
     width: 100%;
     text-align: center;
-    height: 8rem;
+    height: 7rem;
   }
   .brief-wrapper .brief-btn a {
     font-size: 2.4rem;
