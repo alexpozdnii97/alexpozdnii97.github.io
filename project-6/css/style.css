@@ -1616,4 +1616,14 @@ html {
     margin: 0 auto;
     margin-top: 2rem;
   }
+  .brief-wrapper {
+    height: 22rem;
+    display: block;
+  }
+  .brief-wrapper .brief-text {
+    height: 10rem;
+  }
+  .brief-wrapper .brief-btn {
+    height: 10rem;
+  }
 }
