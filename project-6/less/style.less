@@ -361,6 +361,7 @@ margin-left: 100%;
     top: 0;
     right: 0;
     margin-right: 6rem;
+    width: 20.5rem;
     color: white;
     font-size: 2rem;
     line-height: 6rem;
@@ -1550,7 +1551,7 @@ margin-left: 100%;
 .brief-wrapper {
   display: flex;
   width: 100%;
-  height: 8rem;
+  height: 10rem;
   margin: 0 auto;
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -1559,14 +1560,19 @@ margin-left: 100%;
   .brief-text {
     padding-left: 2rem;
     flex-grow: 1;
-    max-width: 70rem;
     height: 100%;
-
+    position: relative;
     p {
-      line-height: 8rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: inline-block;
+      padding-left: 1rem;
+      width: 100%;
       vertical-align: middle;
       color: white;
-      font-size: 2.4rem;
+      font-size: 3rem;
       .reg();
     }
   }
@@ -1575,18 +1581,18 @@ margin-left: 100%;
     text-align: center;
     position: relative;
     height: 100%;
-    width: 50rem;
+    width: 40rem;
 
     a {
       position: absolute;
       display: inline-block;
-      width: 23rem;
+      width: 30rem;
       padding: 1rem 3rem;
       background-color: @main_color;
       color: white;
-      font-size: 2.4rem;
+      font-size: 3rem;
       top: 50%;
-      left: 75%;
+      left: 50%;
       transform: translate(-50%, -50%);
       .reg();
       text-decoration: none;
@@ -1745,7 +1751,29 @@ margin-left: 100%;
 //////////////////////////////////////////
 //////////////////////////////////////////
 
+@media (max-width:1440px){
+  .nav-connect{
+    .phone{
+      text-align: right;
+      font-size:1.8rem;
+    }
+  }
+  .brief-wrapper {
+    .brief-text {
+      p {
+        font-size: 2.4rem;
+      }
+    }
 
+    .brief-btn  {
+      width: 30rem;
+      a {
+        width: 23rem;
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
 @media (max-width:1199px) {
   .nav-section {
     .desk-nav {
@@ -1903,6 +1931,18 @@ margin-left: 100%;
       font-size: 2rem;
     }
   }
+  .brief-wrapper{
+    .brief-text{
+      p{
+        font-size: 2rem;
+      }
+    }
+    .brief-btn{
+      a{
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 @media (max-width:767px) {
@@ -2007,6 +2047,29 @@ margin-left: 100%;
       &-input {
         width: 80%;
         display: block;
+      }
+    }
+  }
+  .brief-wrapper {
+    height: 18rem;
+    display: block;
+    .brief-text {
+     display: block;
+     width: 100%;
+     height: 8rem;
+     text-align: center;
+     p{
+       font-size: 2rem;
+     }
+    }
+
+    .brief-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      height: 8rem;
+      a{
+        font-size: 2.4rem;
       }
     }
   }

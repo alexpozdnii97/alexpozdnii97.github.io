@@ -256,6 +256,7 @@ html {
   top: 0;
   right: 0;
   margin-right: 6rem;
+  width: 20.5rem;
   color: white;
   font-size: 2rem;
   line-height: 6rem;
@@ -1175,7 +1176,7 @@ html {
 .brief-wrapper {
   display: flex;
   width: 100%;
-  height: 8rem;
+  height: 10rem;
   margin: 0 auto;
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -1184,32 +1185,38 @@ html {
 .brief-wrapper .brief-text {
   padding-left: 2rem;
   flex-grow: 1;
-  max-width: 70rem;
   height: 100%;
+  position: relative;
 }
 .brief-wrapper .brief-text p {
-  line-height: 8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  padding-left: 1rem;
+  width: 100%;
   vertical-align: middle;
   color: white;
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-family: 'EuropeCond';
 }
 .brief-wrapper .brief-btn {
   text-align: center;
   position: relative;
   height: 100%;
-  width: 50rem;
+  width: 40rem;
 }
 .brief-wrapper .brief-btn a {
   position: absolute;
   display: inline-block;
-  width: 23rem;
+  width: 30rem;
   padding: 1rem 3rem;
   background-color: #bf2019;
   color: white;
-  font-size: 2.4rem;
+  font-size: 3rem;
   top: 50%;
-  left: 75%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'EuropeCond';
   text-decoration: none;
@@ -1326,6 +1333,22 @@ html {
 .footer-mobile .footer-copywright a {
   color: #bf2019;
 }
+@media (max-width: 1440px) {
+  .nav-connect .phone {
+    text-align: right;
+    font-size: 1.8rem;
+  }
+  .brief-wrapper .brief-text p {
+    font-size: 2.4rem;
+  }
+  .brief-wrapper .brief-btn {
+    width: 30rem;
+  }
+  .brief-wrapper .brief-btn a {
+    width: 23rem;
+    font-size: 2.4rem;
+  }
+}
 @media (max-width: 1199px) {
   .nav-section .desk-nav {
     font-size: 1.4rem;
@@ -1429,6 +1452,12 @@ html {
 .contact-container p {
   font-size: 2rem;
 }
+.contact .brief-wrapper .brief-text p {
+  font-size: 2rem;
+}
+.contact .brief-wrapper .brief-btn a {
+  font-size: 2rem;
+}
 @media (max-width: 767px) {
   .loader .logo {
     width: 30rem;
@@ -1505,6 +1534,28 @@ html {
   .contact-form-input {
     width: 80%;
     display: block;
+  }
+  .brief-wrapper {
+    height: 18rem;
+    display: block;
+  }
+  .brief-wrapper .brief-text {
+    display: block;
+    width: 100%;
+    height: 8rem;
+    text-align: center;
+  }
+  .brief-wrapper .brief-text p {
+    font-size: 2rem;
+  }
+  .brief-wrapper .brief-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 8rem;
+  }
+  .brief-wrapper .brief-btn a {
+    font-size: 2.4rem;
   }
   .footer-mobile .footer-social {
     justify-content: space-evenly;
