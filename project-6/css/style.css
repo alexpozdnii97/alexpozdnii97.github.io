@@ -1731,7 +1731,7 @@ html {
     margin-top: 2rem;
   }
   .project-extended .nav-tabs {
-    display: none;
+    display: block;
   }
   .project-extended .dropdown-wrapper {
     display: block;
