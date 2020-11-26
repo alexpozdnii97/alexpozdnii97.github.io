@@ -477,7 +477,8 @@
     $('#services-dropdown').on('change', function(e) {
       $('.tab-pane').removeClass('show active')
       $('#' + $(e.currentTarget).val()).addClass("show active");
-        if (window.matchMedia("(max-width:575px)").matches) {
+    });
+    if (window.matchMedia("(max-width:575px)").matches) {
   /* the viewport is less than 768 pixels wide */
   $('.prices-wrapper').slick({
     dots: true,
@@ -487,9 +488,32 @@
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   });
   }
-    });
   </script>
   <script>
     $( "div.youtube-video-place" ).click(function() {
