@@ -593,10 +593,12 @@ html {
 }
 .prices-wrapper {
   margin-bottom: 5rem;
+  display: flex;
+  flex-flow: wrap;
 }
 .prices-wrapper .price {
-  display: inline-block;
-  width: calc(32.25806452%);
+  display: block;
+  width: calc(33.33333333%);
   padding: 2rem;
 }
 .prices-wrapper .price-card {
@@ -606,7 +608,7 @@ html {
 }
 .prices-wrapper .price-card img {
   width: 100%;
-  height: auto;
+  height: 20rem;
 }
 .prices-wrapper .price-card iframe {
   width: 100%;
