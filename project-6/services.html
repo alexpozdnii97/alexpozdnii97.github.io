@@ -441,11 +441,11 @@
   <script type="text/javascript" src="slick/slick.min.js"></script>
 
   <script type="text/javascript">
-  $('#services-dropdown').on('change', function(e) {
-    $('.tab-pane').removeClass('show active')
-    $('#' + $(e.currentTarget).val()).addClass("show active");
-  })
-</script>
+    $('#services-dropdown').on('change', function(e) {
+      $('.tab-pane').removeClass('show active')
+      $('#' + $(e.currentTarget).val()).addClass("show active");
+    })
+  </script>
   <script>
     if (window.matchMedia("(max-width: 1199px)").matches) {
   /* the viewport is less than 768 pixels wide */
