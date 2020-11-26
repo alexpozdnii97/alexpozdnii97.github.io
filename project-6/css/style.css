@@ -1152,6 +1152,7 @@ html {
   color: white;
   border: none;
   border-radius: 0;
+  appearance: none;
   font-family: 'EuropeCond';
   font-size: 3.6rem;
 }
