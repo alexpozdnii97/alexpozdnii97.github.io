@@ -608,7 +608,7 @@ html {
 }
 .prices-wrapper .price-card img {
   width: 100%;
-  height: 20rem;
+  height: auto;
 }
 .prices-wrapper .price-card iframe {
   width: 100%;
@@ -679,6 +679,24 @@ html {
 }
 .prices-wrapper .price-card:hover .price-description {
   opacity: 1;
+}
+.project-extended .prices-wrapper .price-card {
+  position: relative;
+}
+.project-extended .prices-wrapper .price-card .fab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6.5rem;
+  color: #bf2019;
+}
+.project-extended .prices-wrapper .price-card .fab:hover {
+  color: white;
+  cursor: pointer;
+}
+.project-extended .prices-wrapper .price-card img {
+  height: 20rem;
 }
 .team-wrapper {
   margin-bottom: 5rem;
