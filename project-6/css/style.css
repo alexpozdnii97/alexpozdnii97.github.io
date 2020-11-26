@@ -316,6 +316,9 @@ html {
 .nav-social .social-item:hover .fa-vk {
   color: #45668e;
 }
+.navbar-brand {
+  margin-right: 0!important;
+}
 .navbar-brand img {
   height: 25px;
 }
