@@ -441,10 +441,6 @@ html {
   outline: none;
   border-radius: 50px;
 }
-.project {
-  background: url('../img/projects.jpg') no-repeat center center;
-  background-size: cover;
-}
 .project .mob {
   display: none;
 }
@@ -749,10 +745,6 @@ html {
   font-size: 1.8rem;
   color: #bf2019;
 }
-.renthal {
-  background: url('../img/renthal.jpg') no-repeat center center;
-  background-size: cover;
-}
 .renthal-header {
   margin-bottom: 5rem;
   text-align: center;
@@ -815,10 +807,6 @@ html {
   margin-bottom: 5rem;
   font-family: 'EuropeCond';
 }
-.about {
-  background: url('../img/about.jpg') no-repeat center center;
-  background-size: cover;
-}
 .about-header {
   padding-top: 3rem;
   text-align: center;
@@ -869,8 +857,6 @@ html {
   margin-top: 10rem;
 }
 .blog {
-  background-color: black;
-  background-size: cover;
   backdrop-filter: blur(2px);
 }
 .blog-header {
@@ -989,10 +975,6 @@ html {
   transition: 0.8s;
   color: #bf2019;
   font-family: 'EuropeCond';
-}
-.contact {
-  background: url('../img/contact.jpg') no-repeat center center;
-  background-size: cover;
 }
 .contact #map {
   height: 400px;
