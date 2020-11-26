@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="fontawesome/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 </head>
-<body id="portfolio-body">
+<body id="portfolio-body" style="background: url(img/projects.jpg) no-repeat center; background-size:cover; background-attachment: fixed;">
   <div class="mobile-bar">
     <nav class="navbar navbar-expand-lg ">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,13 +120,25 @@
                   </li><!-- nav-item -->
                   <li class="nav-item" role="presentation">
                     <a class="nav-link" id="post-production-tab" data-toggle="tab" href="#events" role="tab"
-                      aria-controls="contact" aria-selected="false">Події</a>
+                      aria-controls="contact" aria-selected="false">Реклама</a>
                   </li><!-- nav-item -->
                   <li class="nav-item" role="presentation">
                     <a class="nav-link " id="animation-tab" data-toggle="tab" href="#documental" role="tab"
                       aria-controls="home" aria-selected="true">Документальне</a>
                   </li> <!-- nav-item -->
                 </ul> <!-- nav-tabs -->
+
+                <div class="dropdown-wrapper">
+                  <select id="services-dropdown" class="services-dropdown" name="floorplan">
+                    <option value="animation">Анімації</option>
+                    <option value="clip">Кліпи</option>
+                    <option value="ads">Реклама</option>
+                    <option value="events">Реклама</option>
+                    <option value="documental">Документальне</option>
+                    
+                  </select>
+                </div>
+
 
                 <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active" id="animation" role="tabpanel" aria-labelledby="cycle-tab">
@@ -429,7 +441,7 @@
     if (window.matchMedia("(max-width: 1199px)").matches) {
   /* the viewport is less than 768 pixels wide */
   $('.prices-wrapper').slick({
-    dots: false,
+    dots: true,
     nextArrow:false,
     prevArrow:false,
     infinite: true,
@@ -443,7 +455,7 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: false
+          dots: true
         }
       },
       {
@@ -452,7 +464,7 @@
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: false
+          dots: true
         }
       },
 
@@ -462,6 +474,12 @@
     ]
   });
   }
+  </script>
+  <script type="text/javascript">
+    $('#services-dropdown').on('change', function(e) {
+      $('.tab-pane').removeClass('show active')
+      $('#' + $(e.currentTarget).val()).addClass("show active");
+    })
   </script>
   <script>
     $( "div.youtube-video-place" ).click(function() {

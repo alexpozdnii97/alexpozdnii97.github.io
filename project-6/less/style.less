@@ -46,54 +46,46 @@ html {
   background-color: #000;
 }
 
-#about-body {
-  background-image: url("../img/about.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// #about-body {
+//   background-image: url("../img/about.jpg");
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-#services-body {
-  background-image: url("../img/services2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// #services-body {
+//   background-image: url("../img/services2.jpg");
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-#portfolio-body {
-  background-image: url("../img/projects.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// #portfolio-body {
+//   background-image: url("../img/projects.jpg");
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-#body-renthal {
-  background-image: url("../img/renthal.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// #body-renthal {
+//   background-image: url("../img/renthal.jpg");
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-#body-blog {
-  background-color: black;
-  //background-image: url("../img/services2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#body-contact {
-  background-image: url("../img/contact.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// #body-blog {
+//   background-color: black;
+//   //background-image: url("../img/services2.jpg");
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
 .contact-btn {
   margin-bottom: 5rem;
@@ -105,46 +97,6 @@ html {
   outline: none;
   border-radius: 50px;
 }
-
-// loading page///////////////////////////////////////
-// .content {
-//   width: 100%;
-//   margin: 0 auto;
-//   z-index: -1;
-
-//   h1 {
-//     font-family: 'Poppins',
-//       sans-serif;
-//     font-size: 5.4rem;
-//     color: #101010;
-//     font-weight: 700;
-//     text-transform: uppercase;
-//     margin-bottom: 1rem;
-//   }
-
-//   p {
-//     margin-top: 0;
-//     text-align: left;
-//     color: #101010;
-//     font-weight: 400;
-//   }
-// }
-
-// .overlay {
-//   filter: brightness(0.6);
-//   z-index: 1;
-//   position: fixed;
-//   width: 100%;
-//   height: 100%;
-//   background-color: #000;
-//   /* background:url('logo.jpg') no-repeat center center; */
-//   /* background-size: 400px; */
-//   p {
-//     font-size: 300px;
-//     font-weight: 800;
-//   }
-// }
-
 
 .loader {
 overflow: hidden;
@@ -947,6 +899,49 @@ margin-left: 100%;
       img {
         height: 20rem;
       }
+    }
+  }
+  .dropdown-wrapper {
+    width: 100%;
+    z-index: 10;
+    display: none;
+    position: relative;
+
+    .services-dropdown {
+      margin-bottom: 2rem;
+      padding: 0.5rem 0.5rem;
+      margin: 0 auto;
+      width: 100%;
+      background-color: @main_color;
+      color: white;
+      border: none;
+      border-radius: 0;
+      -webkit-appearance: none;
+      .reg();
+      font-size: 3.6rem;
+
+      option {
+        text-align: center;
+        background-color: @main_color;
+        color: white;
+        font-size: 3.6rem;
+        .reg();
+      }
+    }
+
+    &:after {
+      position: absolute;
+      visibility: visible;
+      top: 50%;
+      right: 1rem;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      content: "";
+      width: 3rem;
+      height: 3rem;
+      background-image: url(../img/arrow-down.png);
+      background-size: 3rem 3rem;
+
     }
   }
 }
@@ -1898,8 +1893,8 @@ margin-left: 100%;
 }
 
 @media (max-width:991px) {
-  #about-body{
-    background:#000;
+  #about-body, #portfolio-body, #about-body, #renthal-body{
+    background:#000!important;
   }
   .mobile-bar {
     display: block;
@@ -2070,7 +2065,14 @@ margin-left: 100%;
       margin: 0 auto;
       width: 35rem;
     }
-
+  }
+  .project-extended{
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 30rem;
+    }
   }
 }
 
@@ -2292,6 +2294,14 @@ margin-left: 100%;
       }
       .tab-content{
         margin-top: 2rem;
+      }
+    }
+    .project-extended{
+      .nav-tabs {
+        display: none;
+      }
+      .dropdown-wrapper {
+        display: block;
       }
     }
   }

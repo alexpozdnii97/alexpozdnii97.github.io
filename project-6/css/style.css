@@ -22,48 +22,6 @@ html {
   padding: 0;
   background-color: #000;
 }
-#about-body {
-  background-image: url("../img/about.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#services-body {
-  background-image: url("../img/services2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#portfolio-body {
-  background-image: url("../img/projects.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#body-renthal {
-  background-image: url("../img/renthal.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#body-blog {
-  background-color: black;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#body-contact {
-  background-image: url("../img/contact.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .contact-btn {
   margin-bottom: 5rem;
   background-color: blue;
@@ -709,6 +667,45 @@ html {
 }
 .project-extended .prices-wrapper .price-card img {
   height: 20rem;
+}
+.project-extended .dropdown-wrapper {
+  width: 100%;
+  z-index: 10;
+  display: none;
+  position: relative;
+}
+.project-extended .dropdown-wrapper .services-dropdown {
+  margin-bottom: 2rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #bf2019;
+  color: white;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  font-family: 'EuropeCond';
+  font-size: 3.6rem;
+}
+.project-extended .dropdown-wrapper .services-dropdown option {
+  text-align: center;
+  background-color: #bf2019;
+  color: white;
+  font-size: 3.6rem;
+  font-family: 'EuropeCond';
+}
+.project-extended .dropdown-wrapper:after {
+  position: absolute;
+  visibility: visible;
+  top: 50%;
+  right: 1rem;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../img/arrow-down.png);
+  background-size: 3rem 3rem;
 }
 .team-wrapper {
   margin-bottom: 5rem;
@@ -1432,8 +1429,11 @@ html {
   }
 }
 @media (max-width: 991px) {
-  #about-body {
-    background: #000;
+  #about-body,
+  #portfolio-body,
+  #about-body,
+  #renthal-body {
+    background: #000!important;
   }
   .mobile-bar {
     display: block;
@@ -1552,6 +1552,12 @@ html {
     justify-content: center;
     margin: 0 auto;
     width: 35rem;
+  }
+  .project-extended .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30rem;
   }
 }
 @media (max-width: 767px) {
@@ -1721,5 +1727,11 @@ html {
   }
   .services-extended .tab-content {
     margin-top: 2rem;
+  }
+  .project-extended .nav-tabs {
+    display: none;
+  }
+  .project-extended .dropdown-wrapper {
+    display: block;
   }
 }
