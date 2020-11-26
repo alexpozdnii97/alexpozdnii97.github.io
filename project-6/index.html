@@ -135,23 +135,35 @@
               <a href="portfolio.html">Всі Проекти</a>
             </div>
             <div class="project-container">
-              <div class="project-card">
-                <iframe class="embed-responsive-item"   src="https://www.youtube.com/embed/pZ-9hGQNHuA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="project-card youtube-video-place" data-yt-url="https://www.youtube.com/embed/pZ-9hGQNHuA">
+                
+                <img class="play-youtube-video"  src="img/goldcar.jpg" alt="">
+                <i class="fab fa-youtube"></i>
               </div> <!-- project-card -->
-              <div class="project-card tablet">
-                <iframe class="embed-responsive-item "   src="https://www.youtube.com/embed/P7d1H83IcjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="project-card youtube-video-place" data-yt-url="https://www.youtube.com/embed/P7d1H83IcjE">
+                
+                <img class="play-youtube-video"  src="img/nature.jpg" alt="">
+                <i class="fab fa-youtube"></i>
               </div><!-- project-card -->
-              <div class="project-card ">
-                <iframe class="embed-responsive-item "   src="https://www.youtube.com/embed/xCt6B2rbtTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="project-card youtube-video-place" data-yt-url="https://www.youtube.com/embed/xCt6B2rbtTg">
+                
+                <img class="play-youtube-video"  src="img/bilboard.jpg" alt="">
+                <i class="fab fa-youtube"></i>
               </div><!-- project-card -->
-              <div class="project-card">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XLHTh1oQ4YI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="project-card youtube-video-place" data-yt-url="https://www.youtube.com/embed/XLHTh1oQ4YI">
+                
+                <img class="play-youtube-video"  src="img/windsuit.jpg" alt="">
+                <i class="fab fa-youtube"></i>
               </div> <!-- project-card -->
-              <div class="project-card ">
-                <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/xuY9JNiW8yo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="project-card youtube-video-place" data-yt-url="https://www.youtube.com/embed/xuY9JNiW8yo">
+                
+                <img class="play-youtube-video"  src="img/bike.jpg" alt="">
+                <i class="fab fa-youtube"></i>
               </div><!-- project-card -->
-              <div class="project-card ">
-                <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/Hvt-VkYKNGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="project-card youtube-video-place" data-yt-url="https://www.youtube.com/embed/Hvt-VkYKNGM">
+                
+                <img class="play-youtube-video"  src="img/snowmobile.jpg" alt="">
+                <i class="fab fa-youtube"></i>
               </div><!-- project-card -->
             </div> <!-- project-container -->
             <div class="project-header mob">
@@ -750,7 +762,7 @@
   </script>
   <script>
     $(window).on("load", function () {
-      var myDelay = 0; // 3sec
+      var myDelay = 1; // 3sec
     setTimeout(() =>   {
       $(".loader-bar").fadeOut("slow");
     }, myDelay);
@@ -806,5 +818,10 @@ $('#main').vide('img/porshe.mp4', {
       $(".loader-sub").fadeOut("slow");
     }
   </script>
+  <script>
+    $( "div.youtube-video-place" ).click(function() {
+      $( this ).html('<iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item" src="' + $(this).data('yt-url') + '"></iframe>');
+    });
+</script>
 </body>
 </html>
