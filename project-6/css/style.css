@@ -1142,11 +1142,16 @@ html {
 .services-extended .nav-item a.active:after {
   background-color: #bf2019;
 }
-.services-extended .services-dropdown {
+.services-extended .dropdown-wrapper {
+  width: 100%;
+  z-index: 10;
+  display: none;
+  position: relative;
+}
+.services-extended .dropdown-wrapper .services-dropdown {
   margin-bottom: 2rem;
   padding: 0.5rem 0.5rem;
   margin: 0 auto;
-  display: none;
   width: 100%;
   background-color: #bf2019;
   color: white;
@@ -1156,12 +1161,25 @@ html {
   font-family: 'EuropeCond';
   font-size: 3.6rem;
 }
-.services-extended .services-dropdown option {
+.services-extended .dropdown-wrapper .services-dropdown option {
   text-align: center;
   background-color: #bf2019;
   color: white;
   font-size: 3.6rem;
   font-family: 'EuropeCond';
+}
+.services-extended .dropdown-wrapper:after {
+  position: absolute;
+  visibility: visible;
+  top: 50%;
+  right: 1rem;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../img/arrow-down.png);
+  background-size: 3rem 3rem;
 }
 .services-extended .tab-content .tab-pane {
   color: white;
@@ -1676,7 +1694,7 @@ html {
   .services-extended .nav-tabs {
     display: none;
   }
-  .services-extended .services-dropdown {
+  .services-extended .dropdown-wrapper {
     display: block;
   }
   .services-extended .tab-content {
