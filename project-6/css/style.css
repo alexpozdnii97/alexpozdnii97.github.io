@@ -1317,6 +1317,7 @@ html {
   font-family: 'EuropeCond';
 }
 .footer-mobile {
+  border-top: 2px solid #bf2019;
   padding: 1rem 0;
   background-color: #000;
   display: none;
