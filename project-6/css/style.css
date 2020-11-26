@@ -1432,7 +1432,8 @@ html {
   #about-body,
   #portfolio-body,
   #about-body,
-  #renthal-body {
+  #renthal-body,
+  #body-contact {
     background: #000!important;
   }
   .mobile-bar {
