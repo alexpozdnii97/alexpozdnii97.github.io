@@ -1433,7 +1433,8 @@ html {
   #portfolio-body,
   #about-body,
   #renthal-body,
-  #body-contact {
+  #body-contact,
+  #services-body {
     background: #000!important;
   }
   .mobile-bar {
