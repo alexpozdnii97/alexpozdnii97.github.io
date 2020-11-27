@@ -1461,6 +1461,15 @@ html {
   #services-body {
     background: #000!important;
   }
+  .main,
+  .project,
+  .services,
+  .about,
+  .renthal,
+  .blog,
+  .contact {
+    background-color: #000 !important;
+  }
   .mobile-bar {
     display: block;
   }
