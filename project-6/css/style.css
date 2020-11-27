@@ -285,6 +285,7 @@ html {
   color: #45668e;
 }
 .navbar-brand {
+  padding-top: 1rem;
   margin-right: 0!important;
 }
 .navbar-brand img {
@@ -311,12 +312,12 @@ html {
   border: none;
   outline: none;
 }
-.navbar .collapse .navbar-nav li a {
+.navbar .navbar-nav li a {
   color: white;
   font-size: 1.8rem;
   text-decoration: none;
 }
-.navbar .collapse .navbar-nav li.active a {
+.navbar .navbar-nav li.active a {
   color: #bf2019 !important;
 }
 .mobile-bar {
