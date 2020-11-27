@@ -463,7 +463,7 @@ html {
   padding: 0 1rem;
   display: block;
   width: 35rem;
-  height: 25rem;
+  height: auto;
 }
 .project .project-container .project-card iframe {
   width: 100%;
@@ -471,7 +471,7 @@ html {
 }
 .project .project-container .project-card img {
   width: 100%;
-  height: 100%rem;
+  height: 100%;
 }
 .project .project-container .project-card .fab {
   position: absolute;
