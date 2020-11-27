@@ -1757,6 +1757,10 @@ html {
   .brief-wrapper .brief-btn {
     height: 10rem;
   }
+  .services-container .service-card {
+    width: 100%;
+    padding-bottom: 100%;
+  }
   .services-extended .nav-tabs {
     display: none;
   }
