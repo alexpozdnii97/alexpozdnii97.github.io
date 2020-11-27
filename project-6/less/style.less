@@ -881,6 +881,15 @@ margin-left: 100%;
   }
 }
 .project-extended {
+  .tab-content .tab-pane{
+     display: block;
+     height: 0;
+     overflow: hidden;
+     &.active{
+       display: block !important;
+       height: auto;
+     }
+  }
   .prices-wrapper {
     .price-card {
       position: relative;
@@ -903,6 +912,7 @@ margin-left: 100%;
   }
   .dropdown-wrapper {
     width: 100%;
+    padding: 1rem 2rem;
     z-index: 10;
     display: none;
     position: relative;
