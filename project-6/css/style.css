@@ -1823,4 +1823,14 @@ html {
   .project-extended .slick-dots {
     z-index: 5;
   }
+  .contact-extended .contact-form-input {
+    width: 85%;
+  }
+  .contact-extended .contact-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .contact-extended #map {
+    width: 100%;
+  }
 }
