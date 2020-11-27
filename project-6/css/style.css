@@ -471,7 +471,7 @@ html {
 }
 .project .project-container .project-card img {
   width: 100%;
-  height: 25rem;
+  height: auto;
 }
 .project .project-container .project-card .fab {
   position: absolute;
