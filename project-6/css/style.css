@@ -667,7 +667,7 @@ html {
 }
 .project-extended .tab-content .tab-pane.active {
   display: block !important;
-  height: auto;
+  height: 25rem;
 }
 .project-extended .prices-wrapper .price-card {
   position: relative;
