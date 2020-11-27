@@ -1758,4 +1758,7 @@ html {
   .project-extended .dropdown-wrapper {
     display: block;
   }
+  .project-extended .slick-dots {
+    z-index: 5;
+  }
 }
