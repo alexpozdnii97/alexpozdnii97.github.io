@@ -1605,9 +1605,12 @@ html {
   .renthal-header {
     margin-top: 3rem;
   }
+  .renthal-btn {
+    width: 24rem;
+  }
   .services-container .service-card {
-    width: 100%;
-    padding-bottom: 100%;
+    width: 50%;
+    padding-bottom: 50%;
   }
   .team-wrapper {
     margin-bottom: 5rem;
@@ -1736,6 +1739,7 @@ html {
   }
   .renthal-btn {
     display: block;
+    width: 24rem;
     margin: 3rem auto;
   }
   .brief-wrapper {
