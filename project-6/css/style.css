@@ -1129,6 +1129,7 @@ html {
   font-size: 2.4rem;
 }
 .services-extended .services-header {
+  margin-top: 5rem;
   text-align: center;
   color: white;
 }
@@ -1229,7 +1230,8 @@ html {
 }
 .services-extended .tab-content .tab-pane h3 {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
+  font-family: 'EuropeCond';
 }
 .services-extended .slick-dots {
   margin: 0 auto;
@@ -1513,6 +1515,9 @@ html {
   }
   .project-header a {
     font-size: 2.4rem;
+  }
+  .services-header {
+    margin-top: 5rem;
   }
   .services-container .service-card {
     width: 50%;
