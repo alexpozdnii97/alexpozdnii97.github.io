@@ -1758,6 +1758,15 @@ html {
   .project-extended .dropdown-wrapper {
     display: block;
   }
+  .project-extended .tab-content .tab-pane .prices-wrapper {
+    position: relative;
+  }
+  .project-extended .tab-content .tab-pane .prices-wrapper .slick-dots {
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
   .project-extended .slick-dots {
     z-index: 5;
   }
