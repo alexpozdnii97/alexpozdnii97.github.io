@@ -1468,9 +1468,7 @@ html {
   section.blog,
   section.contact {
     background: #000 !important;
-  }
-  section.project {
-    height: 30rem;
+    padding: 5rem 0;
   }
   .mobile-bar {
     display: block;
