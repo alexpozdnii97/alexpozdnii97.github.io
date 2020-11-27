@@ -1469,6 +1469,9 @@ html {
   section.contact {
     background: #000 !important;
   }
+  section.project {
+    height: 30rem;
+  }
   .mobile-bar {
     display: block;
   }
@@ -1477,11 +1480,6 @@ html {
   }
   .footer-mobile {
     display: block;
-  }
-  .section {
-    height: 50rem;
-    width: 100%;
-    color: white;
   }
   .slick-dots {
     display: flex;
