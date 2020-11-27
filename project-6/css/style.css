@@ -1697,6 +1697,9 @@ html {
   .brief-wrapper .brief-btn a {
     font-size: 2.4rem;
   }
+  .blog-extended .blog-content h1 {
+    font-size: 2.4rem;
+  }
   .footer-mobile .footer-social {
     justify-content: space-evenly;
   }
