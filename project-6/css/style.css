@@ -780,7 +780,7 @@ html {
 }
 .renthal-btn {
   display: inline-block;
-  margin-bottom: 5rem;
+  margin: 4rem auto;
   background-color: #bf2019;
   color: white;
   padding: 1rem 4.5rem;
@@ -877,9 +877,6 @@ html {
 .about-extended .about-header {
   margin-top: 10rem;
 }
-.blog {
-  backdrop-filter: blur(2px);
-}
 .blog-header {
   display: flex;
   justify-content: space-between;
@@ -973,7 +970,7 @@ html {
   float: none;
   margin: 0 auto;
   margin-bottom: 5rem;
-  width: 80%;
+  width: 90%;
 }
 .blog-extended .blog-card .blog-featured {
   position: default;
@@ -991,6 +988,7 @@ html {
   font-size: 1.8rem;
 }
 .blog-extended .blog-card .blog-content h1 {
+  margin-top: 1rem;
   position: default;
   font-size: 3.6rem;
   transition: 0.8s;
@@ -1687,6 +1685,25 @@ html {
     width: 80%;
     display: block;
   }
+  .contact-extended .contact-form-input {
+    margin: 0 auto;
+  }
+  .contact-extended .contact-header h2 {
+    text-align: center;
+  }
+  .contact-extended .contact-container {
+    width: 42%;
+    margin: 0 auto;
+  }
+  .contact-extended .contact-btn {
+    display: block;
+    margin: 5rem auto;
+  }
+  .contact-extended #map {
+    margin: 5rem auto;
+    width: 80%;
+    margin-bottom: 5rem;
+  }
   .brief-wrapper {
     height: 18rem;
     display: block;
@@ -1710,7 +1727,7 @@ html {
     font-size: 2.4rem;
   }
   .blog-extended .blog-content h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .footer-mobile .footer-social {
     justify-content: space-evenly;
