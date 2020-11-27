@@ -1763,7 +1763,7 @@ html {
   }
   .project-extended .tab-content .tab-pane .prices-wrapper .slick-dots {
     position: absolute;
-    bottom: 0rem;
+    bottom: 0.7rem;
     left: 50%;
     transform: translate(-50%, 50%);
   }
