@@ -1823,14 +1823,35 @@ html {
   .project-extended .slick-dots {
     z-index: 5;
   }
-  .contact-extended .contact-form-input {
+  .contact-extended .contact-form-input,
+  .contact .contact-form-input {
     width: 85%;
   }
-  .contact-extended .contact-container {
+  .contact-extended .contact-container,
+  .contact .contact-container {
     width: 85%;
     margin: 0 auto;
   }
-  .contact-extended #map {
+  .contact-extended #map,
+  .contact #map {
+    width: 100%;
+  }
+  .contact .contact-header h2 {
+    text-align: center;
+  }
+  .contact .contact-form-input {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .contact .contact-btn {
+    display: block;
+    margin: 5rem auto;
+  }
+  .contact .contact-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .contact #map {
     width: 100%;
   }
 }
