@@ -670,7 +670,7 @@ html {
 }
 .project-extended .tab-content .tab-pane.active {
   display: block !important;
-  height: 25rem;
+  height: auto;
   opacity: 1;
 }
 .project-extended .prices-wrapper .price-card {
