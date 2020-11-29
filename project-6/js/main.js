@@ -139,6 +139,7 @@ $(window).on("load", function () {
   ]
   });
 
+   
 
   $( "div.youtube-video-place" ).click(function() {
     $( this ).html('<iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item" src="' + $(this).data('yt-url') + '"></iframe>');
@@ -146,24 +147,17 @@ $(window).on("load", function () {
 
 $(document).ready(function() {
 	  $('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-    //navigation: true,
-    paddingBottom: 0,
-    responsiveWidth: 991,
-    fitToSection: true,
+		  //options here
+		  autoScrolling:true,
+      //navigation: true,
+      paddingBottom: 0,
+      responsiveWidth: 991,
+      fitToSection: true,
 	  });
 	  //methods
 	  $.fn.fullpage.setAllowScrolling(true);
-    
-    });
-    $.fn.fullpage({
-    scrollOverflow: false,
-    afterRender: function(){
-        $('#myVideo')[0].play();      
-    }
-  });
-  function initMap() {
+});
+function initMap() {
         // The location of Uluru
         const uluru = { lat: 48.933666 , lng: 24.729925 };
         // The map, centered at Uluru
@@ -375,3 +369,5 @@ $(document).ready(function() {
           map: map,
         });
       }
+
+  

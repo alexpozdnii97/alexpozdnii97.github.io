@@ -239,7 +239,7 @@
               <h2>Наші ціни</h2>
             </div> <!-- services-header -->
 
-            <div class="prices-wrapper">
+            <div class="prices-wrapper my-slider-prices">
               <div class="price">
                 <div class="price-card">
                   <div class="black-glow"></div>
@@ -441,16 +441,16 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
 
-  <script type="text/javascript">
-  $('#services-dropdown').on('change', function(e) {
+  <script>
+    $('#services-dropdown').on('change', function(e) {
       $('.tab-pane').removeClass('show active')
       $('#' + $(e.currentTarget).val()).addClass("show active");
     });
   </script>
   <script>
-    if (window.matchMedia("(max-width: 1199px)").matches) {
+      if (window.matchMedia("(max-width: 1199px)").matches) {
   /* the viewport is less than 768 pixels wide */
-  $('.prices-wrapper').slick({
+  $('.my-slider-prices').slick({
   dots: true,
   nextArrow:false,
   prevArrow:false,
@@ -518,6 +518,6 @@ $('.stages-wrapper').slick({
 });
 } 
   </script>
+  
 </body>
-
 </html>

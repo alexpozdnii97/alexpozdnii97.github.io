@@ -436,6 +436,19 @@
     crossorigin="anonymous"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $('#services-dropdown').on('change', function(e) {
+      $('.tab-pane').removeClass('show active')
+      $('#' + $(e.currentTarget).val()).addClass("show active");
+    });
+  </script>
+  <script>
+    $( "div.youtube-video-place" ).click(function() {
+      $( this ).html('<iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item" src="' + $(this).data('yt-url') + '"></iframe>');
+    });
+  </script>
+
   <script>
     if (window.matchMedia("(max-width: 1199px)").matches) {
   /* the viewport is less than 768 pixels wide */
@@ -481,19 +494,75 @@
       // instead of a settings object
     ]
   });
+  $('.my-slider-prices').slick({
+  dots: true,
+  nextArrow:false,
+  prevArrow:false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+$('.stages-wrapper').slick({
+  dots: true,
+  nextArrow:false,
+  prevArrow:false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
   }
   </script>
-  <script type="text/javascript">
-    $('#services-dropdown').on('change', function(e) {
-      $('.tab-pane').removeClass('show active')
-      $('#' + $(e.currentTarget).val()).addClass("show active");
-    });
-  </script>
-  <script>
-    $( "div.youtube-video-place" ).click(function() {
-      $( this ).html('<iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item" src="' + $(this).data('yt-url') + '"></iframe>');
-    });
-  </script>
+  
   
 </body>
 </html>
