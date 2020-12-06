@@ -86,7 +86,7 @@ html {
   margin: 5rem auto;
 }
 .main .logo img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .main-loader {
@@ -154,10 +154,6 @@ html {
   color: white;
 }
 .container {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%);
   margin-top: 10rem;
   display: flex;
   justify-content: center;
@@ -209,5 +205,37 @@ html {
   }
   to {
     margin-left: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .logo {
+    width: 40%!important;
+  }
+  .main-loader {
+    width: 90rem;
+  }
+}
+@media (max-width: 991px) {
+  .logo {
+    width: 50% !important;
+  }
+  .main-loader {
+    width: 75rem;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    width: 65% !important;
+  }
+  .main-loader {
+    width: 55rem;
+  }
+}
+@media (max-width: 575px) {
+  .logo {
+    width: 80% !important ;
+  }
+  .main-loader {
+    width: 30rem;
   }
 }
