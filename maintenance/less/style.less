@@ -134,7 +134,7 @@ html {
   
   .logo{
     text-align: center;
-    width: 30%;
+    width: 25%;
     margin: 5rem auto;
     img{
       width: 100%;
@@ -174,10 +174,10 @@ html {
       font-weight: 400;
     }
     h1{
-      font-size: 4rem;
+      font-size: 3.6rem;
     }
     h2{
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
   }
   &-form{
@@ -205,6 +205,7 @@ html {
       outline: none;
       background-color: #54C7B8 ;
       color:white;
+      
     }
   }
 }
@@ -240,23 +241,15 @@ html {
 
 
 .facebook:hover {
-  border-color: #2439b1;
   box-shadow: 0px 0px 20px #2fff;
-  color: #2439b1;
 }
-.facebook:hover .icon-link {
-  color: #2439b1;
-}
+
 .google:hover {
-  border-color: #af2121;
   box-shadow: 0px 0px 20px #fff;
-  color: #af2121;
 }
 
 .instagram:hover {
-  border-color: #fb3958;
   box-shadow: 0px 0px 20px #fff;
-  color: #fb3958;
 }
 @keyframes loading{
   from{
@@ -275,8 +268,23 @@ html {
   }
 }
 @media (max-width:991px){
+  .main-form{
+    margin-top: 5rem;
+    .main-form-input{
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+    .main-form-btn{
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+    }
+    
+  }
   .logo{
-    width: 50% !important;
+    width: 40% !important;
   }
   .main-loader{
     width: 70%;
