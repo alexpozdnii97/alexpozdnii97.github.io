@@ -218,7 +218,7 @@ html {
     width: 50% !important;
   }
   .main-loader {
-    width: 75rem;
+    width: 70%;
   }
 }
 @media (max-width: 767px) {
@@ -226,7 +226,7 @@ html {
     width: 65% !important;
   }
   .main-loader {
-    width: 55rem;
+    width: 50%;
   }
 }
 @media (max-width: 575px) {
@@ -234,6 +234,6 @@ html {
     width: 80% !important ;
   }
   .main-loader {
-    width: 30rem;
+    width: 80%;
   }
 }
