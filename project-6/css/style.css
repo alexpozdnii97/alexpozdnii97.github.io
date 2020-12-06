@@ -131,7 +131,7 @@ html {
   position: relative;
 }
 .nav-section .desk-nav li a.active {
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .nav-section .desk-nav li a.active::before {
   content: "";
@@ -139,7 +139,7 @@ html {
   height: 16px;
   background: transparent;
   border-radius: 50%;
-  border: 2px solid #bf2019;
+  border: 2px solid #cc1d1d;
   line-height: 2.4rem;
   vertical-align: middle;
   margin-right: 4px;
@@ -147,7 +147,7 @@ html {
   margin-top: -0.9rem;
 }
 .nav-section .desk-nav li a.active:hover:after {
-  background-color: #bf2019;
+  background-color: #cc1d1d;
 }
 .nav-section .desk-nav li a::before {
   content: "";
@@ -193,7 +193,7 @@ html {
   font-size: 1.4rem;
 }
 .copyright a {
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .nav-connect {
   position: fixed;
@@ -209,7 +209,7 @@ html {
   right: 0;
   height: 6rem;
   width: 6rem;
-  background-color: #bf2019;
+  background-color: #cc1d1d;
   text-align: center;
 }
 .nav-connect .envelope i {
@@ -306,7 +306,7 @@ html {
   background: no-repeat center center;
   background-size: 100% 100%;
   font-size: 2rem;
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .navbar .navbar-toggler:focus {
   border: none;
@@ -319,7 +319,7 @@ html {
   text-decoration: none;
 }
 .navbar .navbar-nav li.active a {
-  color: #bf2019 !important;
+  color: #cc1d1d !important;
 }
 .mobile-bar {
   display: none;
@@ -353,7 +353,7 @@ html {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #bf2019;
+  background: #cc1d1d;
   display: inline-block;
   line-height: 1.9rem;
   vertical-align: middle;
@@ -369,7 +369,7 @@ html {
   height: 16px;
   background: transparent;
   border-radius: 50%;
-  border: 2px solid #bf2019;
+  border: 2px solid #cc1d1d;
   line-height: 1.9rem;
   vertical-align: middle;
   margin-right: 4px;
@@ -400,10 +400,10 @@ html {
   font-size: 4.8rem;
   margin-bottom: 3rem;
   font-family: 'EuropeCond', sans-serif;
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .main-content .main-btn {
-  background-color: #bf2019;
+  background-color: #cc1d1d;
   color: white;
   padding: 1rem 4.5rem;
   font-size: 1.4rem;
@@ -428,14 +428,14 @@ html {
   z-index: 1;
   text-align: right;
   font-size: 2.4rem;
-  color: #bf2019;
+  color: #cc1d1d;
   text-decoration: none;
   position: relative;
   font-family: 'EuropeCond';
 }
 .project-header a:hover {
   text-decoration: none;
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .project-header a:after {
   background: none repeat scroll 0 0 transparent;
@@ -445,7 +445,7 @@ html {
   height: 2px;
   left: 0%;
   position: absolute;
-  background: #bf2019;
+  background: #cc1d1d;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -479,7 +479,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 6.5rem;
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .project .project-container .project-card .fab:hover {
   color: white;
@@ -544,7 +544,7 @@ html {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(to bottom, transparent 50%, #bf2019 100%);
+  background: linear-gradient(to bottom, transparent 50%, #cc1d1d 100%);
   opacity: 0;
   transition: 0.8s;
 }
@@ -603,7 +603,7 @@ html {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: linear-gradient(to bottom, transparent 50%, #bf2019 100%);
+  background: linear-gradient(to bottom, transparent 50%, #cc1d1d 100%);
   opacity: 0;
   transition: 0.8s;
 }
@@ -682,7 +682,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 6.5rem;
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .project-extended .prices-wrapper .price-card .fab:hover {
   color: white;
@@ -703,7 +703,7 @@ html {
   padding: 0.5rem 0.5rem;
   margin: 0 auto;
   width: 100%;
-  background-color: #bf2019;
+  background-color: #cc1d1d;
   color: white;
   border: none;
   border-radius: 0;
@@ -713,7 +713,7 @@ html {
 }
 .project-extended .dropdown-wrapper .services-dropdown option {
   text-align: center;
-  background-color: #bf2019;
+  background-color: #cc1d1d;
   color: white;
   font-size: 3.6rem;
   font-family: 'EuropeCond';
@@ -768,7 +768,7 @@ html {
 }
 .team-wrapper .team-name p {
   font-size: 1.8rem;
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .renthal-header {
   margin-bottom: 5rem;
@@ -785,7 +785,7 @@ html {
 .renthal-btn {
   display: inline-block;
   margin: 4rem auto;
-  background-color: #bf2019;
+  background-color: #cc1d1d;
   color: white;
   padding: 1rem 4.5rem;
   font-size: 1.8rem;
@@ -843,14 +843,14 @@ html {
 .about-header a {
   display: inline-block;
   position: relative;
-  color: #bf2019;
+  color: #cc1d1d;
   font-size: 2.4rem;
   font-family: 'EuropeCond';
   text-decoration: none;
 }
 .about-header a:hover {
   text-decoration: none;
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .about-header a:after {
   background: none repeat scroll 0 0 transparent;
@@ -860,7 +860,7 @@ html {
   height: 2px;
   left: 0%;
   position: absolute;
-  background: #bf2019;
+  background: #cc1d1d;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -939,7 +939,7 @@ html {
   position: relative;
   width: 4rem;
   height: 4rem;
-  background-color: #bf2019;
+  background-color: #cc1d1d;
   border-radius: 50px;
   transition: 1s;
 }
@@ -996,7 +996,7 @@ html {
   position: default;
   font-size: 3.6rem;
   transition: 0.8s;
-  color: #bf2019;
+  color: #cc1d1d;
   font-family: 'EuropeCond';
 }
 .contact #map {
@@ -1074,7 +1074,7 @@ html {
   background-color: transparent;
   border: none;
   outline: none;
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .project-extended .project-container .nav-item .nav-link:hover {
   border: none;
@@ -1103,7 +1103,7 @@ html {
   left: 0;
 }
 .project-extended .project-container .nav-item a.active:after {
-  background-color: #bf2019;
+  background-color: #cc1d1d;
 }
 .project-extended .project-container .project-header {
   display: flex;
@@ -1119,7 +1119,7 @@ html {
   z-index: 1;
   text-align: right;
   font-size: 2.4rem;
-  color: #bf2019;
+  color: #cc1d1d;
   font-family: 'EuropeCond';
 }
 .project-extended .project-container .tab-content .tab-pane {
@@ -1154,7 +1154,7 @@ html {
   background-color: transparent;
   border: none;
   outline: none;
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .services-extended .nav-item a {
   font-family: 'EuropeCond';
@@ -1185,7 +1185,7 @@ html {
   left: 0;
 }
 .services-extended .nav-item a.active:after {
-  background-color: #bf2019;
+  background-color: #cc1d1d;
 }
 .services-extended .dropdown-wrapper {
   width: 100%;
@@ -1198,7 +1198,7 @@ html {
   padding: 0.5rem 0.5rem;
   margin: 0 auto;
   width: 100%;
-  background-color: #bf2019;
+  background-color: #cc1d1d;
   color: white;
   border: none;
   border-radius: 0;
@@ -1208,7 +1208,7 @@ html {
 }
 .services-extended .dropdown-wrapper .services-dropdown option {
   text-align: center;
-  background-color: #bf2019;
+  background-color: #cc1d1d;
   color: white;
   font-size: 3.6rem;
   font-family: 'EuropeCond';
@@ -1252,7 +1252,7 @@ html {
   color: white;
   font-size: 2.4rem;
   font-family: 'EuropeCond';
-  color: #bf2019;
+  color: #cc1d1d;
 }
 .services-extended .stages-wrapper .stage p {
   font-size: 1.8rem;
@@ -1265,7 +1265,7 @@ html {
   margin: 0 auto;
   margin-top: 8rem;
   margin-bottom: 8rem;
-  border: 1px solid #bf2019;
+  border: 1px solid #cc1d1d;
 }
 .brief-wrapper .brief-text {
   padding-left: 2rem;
@@ -1297,7 +1297,7 @@ html {
   display: inline-block;
   width: 30rem;
   padding: 1rem 3rem;
-  background-color: #bf2019;
+  background-color: #cc1d1d;
   color: white;
   font-size: 2.4rem;
   top: 50%;
@@ -1333,7 +1333,7 @@ html {
   background-color: rgba(1, 1, 1, 0.6);
 }
 .accordion .card-header h2 button {
-  color: #bf2019;
+  color: #cc1d1d;
   font-size: 2rem;
   font-family: 'EuropeCond';
 }
@@ -1360,7 +1360,7 @@ html {
   font-family: 'EuropeCond';
 }
 .footer-mobile {
-  border-top: 2px solid #bf2019;
+  border-top: 2px solid #cc1d1d;
   padding: 1rem 0;
   background-color: #000;
   display: none;
@@ -1417,7 +1417,7 @@ html {
   font-size: 1.4rem;
 }
 .footer-mobile .footer-copywright a {
-  color: #bf2019;
+  color: #cc1d1d;
 }
 @media (max-width: 1440px) {
   .nav-connect .phone {
