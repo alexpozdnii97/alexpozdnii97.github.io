@@ -9,7 +9,7 @@ $(window).on("load", function () {
   
     }, myDelay+500);
   });
-    $('#main').vide('img/porshe.mp4', {
+    $('#main').vide('img/beach.mp4', {
       volume: 1,
       playbackRate: 1,
       muted: true,
@@ -153,9 +153,11 @@ $(document).ready(function() {
       paddingBottom: 0,
       responsiveWidth: 991,
       fitToSection: true,
+      anchors: ['main', 'project', 'about']
 	  });
 	  //methods
-	  $.fn.fullpage.setAllowScrolling(true);
+    $.fn.fullpage.setAllowScrolling(true);
+    
 });
 function initMap() {
         // The location of Uluru

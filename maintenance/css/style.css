@@ -256,4 +256,10 @@ html {
   .main-loader {
     width: 80%;
   }
+  .main-form .main-form-input {
+    width: 25rem;
+  }
+  .main-form .main-form-btn {
+    width: 25rem;
+  }
 }
