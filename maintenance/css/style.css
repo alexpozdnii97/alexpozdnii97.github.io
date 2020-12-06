@@ -136,6 +136,7 @@ html {
   font-size: 1.8rem;
   background: none;
   border: none;
+  outline: none;
   border-bottom: 1px solid #B6B6B6;
   color: #B6B6B6;
 }
