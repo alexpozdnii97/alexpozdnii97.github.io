@@ -136,6 +136,7 @@ html {
   font-size: 1.8rem;
   background: none;
   border: none;
+  border-radius: 0;
   outline: none;
   border-bottom: 1px solid #B6B6B6;
   color: #B6B6B6;
@@ -147,6 +148,7 @@ html {
   height: 4.4rem;
   width: 20%;
   font-size: 1.8rem;
+  border-radius: 0;
   border: none;
   outline: none;
   background-color: #54C7B8 ;
