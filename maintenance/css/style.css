@@ -225,13 +225,13 @@ html {
   }
   .main-form .main-form-input {
     display: block;
-    width: 50%;
+    width: 35rem;
     margin: 0 auto;
     margin-bottom: 1rem;
   }
   .main-form .main-form-btn {
     display: block;
-    width: 50%;
+    width: 35rem;
     margin: 0 auto;
   }
   .logo {
