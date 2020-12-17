@@ -475,13 +475,20 @@
   <script src="js/main.js"></script>
     
   <script>
-    $('#main').vide('img/beach.mp4', {
+    
+    ///////////
+    $('#main').vide({
+      mp4: "img/main-final.mp4",
+      webm: "img/main-final.webm",
+      ogv: path/to/video3,
+      poster: path/to/poster
+    }, {
       volume: 1,
       playbackRate: 1,
       muted: true,
       loop: true,
       autoplay: true,
-      resizing: true,
+      resizing: true,.
     });
   </script>
  
