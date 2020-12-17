@@ -9,14 +9,7 @@ $(window).on("load", function () {
   
     }, myDelay+500);
   });
-    $('#main').vide('img/beach.mp4', {
-      volume: 1,
-      playbackRate: 1,
-      muted: true,
-      loop: true,
-      autoplay: true,
-      resizing: true,
-    });
+    
   //gsap функція для розкривашки
   function myFade() {
       TweenMax.to(".myBtn",1,{
