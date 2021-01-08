@@ -1,143 +1,3 @@
-$(window).on("load", function () {
-      var myDelay = 1; // 3sec
-    setTimeout(() =>   {
-      $(".loader-bar").fadeOut("slow");
-    }, myDelay);
-    setTimeout(() =>   {
-      
-      myFade();
-  
-    }, myDelay+500);
-  });
-    
-  //gsap функція для розкривашки
-  function myFade() {
-      TweenMax.to(".myBtn",1,{
-        y:-100,
-        opacity:0
-      });
-      TweenMax.from(".loader",2,{
-        ease: Power2.easeInOuT
-      });
-      TweenMax.to(".loader",2,{
-        delay:0.8, //2.6
-        top:"-110%",
-        ease: Expo.easeInOut
-      });
-      TweenMax.from(".loader-sub",2,{
-        ease: Power2.easeInOuT
-      });
-      TweenMax.to(".loader-sub",2,{
-        delay:0.8, //2.6
-        top:"110%",
-        ease: Expo.easeInOut
-      });
-      
-      TweenMax.from(".content",2,{
-        delay:0.5, //3.2
-        opacity:0,
-        ease: Power2>easeInOuT
-      });
-      TweenMax.to(".content", 2,{
-        opacity:0.5,
-        y:-300,
-        delay:1, //3.2
-        ease: Power2.easeInOuT
-      });
-      $(".loader").fadeOut("slow");
-      $(".loader-sub").fadeOut("slow");
-    }
-
-    $(".project-container").slick({
-    autoplay: false,
-    autoplaySpeed: 8000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: true,
-    prevArrow: false,
-    nextArrow: false,
-    speed: 200,
-    responsive: [
-    {
-      breakpoint: 1199,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-      }
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-      }
-    }
-    
-  ]
-  });
-
- 
-
-  $(".blog-container").slick({
-    autoplay: false,
-    autoplaySpeed: 8000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: true,
-    prevArrow: false,
-    nextArrow: false,
-    infinite: true,
-    speed: 200,
-    responsive: [
-    {
-      breakpoint: 1199,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    }
-  ]
-  });
-
-   
-
-  $( "div.youtube-video-place" ).click(function() {
-    $( this ).html('<iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item" src="' + $(this).data('yt-url') + '"></iframe>');
-  });
-
 $(document).ready(function() {
 	  $('#fullpage').fullpage({
 		  //options here
@@ -150,8 +10,142 @@ $(document).ready(function() {
 	  });
 	  //methods
     $.fn.fullpage.setAllowScrolling(true);
-    
 });
+
+$(window).on("load", function () {
+   var myDelay = 1; // 3sec
+ setTimeout(() =>   {
+   $(".loader-bar").fadeOut("slow");
+ }, myDelay);
+ setTimeout(() =>   {
+   myFade();
+ }, myDelay+500);
+});
+    
+  //gsap функція для розкривашки
+function myFade() {
+  TweenMax.to(".myBtn",1,{
+    y:-100,
+    opacity:0
+  });
+  TweenMax.from(".loader",2,{
+    ease: Power2.easeInOuT
+  });
+  TweenMax.to(".loader",2,{
+    delay:0.8, //2.6
+    top:"-110%",
+    ease: Expo.easeInOut
+  });
+  TweenMax.from(".loader_sub",2,{
+    ease: Power2.easeInOuT
+  });
+  TweenMax.to(".loader_sub",2,{
+    delay:0.8, //2.6
+    top:"110%",
+    ease: Expo.easeInOut
+  });
+  
+  TweenMax.from(".content",2,{
+    delay:0.5, //3.2
+    opacity:0,
+    ease: Power2>easeInOuT
+  });
+  TweenMax.to(".content", 2,{
+    opacity:0.5,
+    y:-300,
+    delay:1, //3.2
+    ease: Power2.easeInOuT
+  });
+  $(".loader").fadeOut("slow");
+  $(".loader-sub").fadeOut("slow");
+}
+$(".project-container").slick({
+  autoplay: false,
+  autoplaySpeed: 8000,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: true,
+  prevArrow: false,
+  nextArrow: false,
+  speed: 200,
+  responsive: [
+  {
+    breakpoint: 1199,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true
+    }
+  },
+  {
+    breakpoint: 991,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true,
+    }
+  },
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true,
+    }
+  }
+    
+  ]
+  });
+
+ 
+
+$(".blog-container").slick({
+  autoplay: false,
+  autoplaySpeed: 8000,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: true,
+  prevArrow: false,
+  nextArrow: false,
+  infinite: true,
+  speed: 200,
+  responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+  ]
+});
+$( "div.youtube-video-place" ).click(function() {
+  $( this ).html('<iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item" src="' + $(this).data('yt-url') + '"></iframe>');
+});
+
 function initMap() {
         // The location of Uluru
         const uluru = { lat: 48.933666 , lng: 24.729925 };

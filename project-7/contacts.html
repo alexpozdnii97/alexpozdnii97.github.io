@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories | О компании</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body id="contacts">
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 offset-xl-0 col-lg-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""><i class="fas fa-bars" style="color:black; font-size:18px;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="about.html">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="portfolio.html">Проекты</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="services.html">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="delivery.html">Доставка </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link " href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="contacts">
+    <div class="container">
+      <div class="contacts-wrapper">
+        <h1>Контакты</h1>
+        <div class="row">
+          <div class="col-xl-3 offset-xl-0 col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-6 offset-sm-0 col-6 offset-0">
+            
+            <p><strong>Телефоны:</strong></p>
+            <p>+380765462352</p>
+            <p>+380671253424</p>
+            <br>
+            
+            <p><strong>E-mail:</strong></p>
+            <p>name@gmail.com</p>
+          </div>
+          <div class="col-xl-3 offset-xl-0 col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-6 offset-sm-0 col-6 ">
+            <p><strong>График работы:</strong></p>
+            <p>Пн-Пт  с 9:00-18:00</p>
+            <p>Субота по договоренности</p>
+            <br>
+            
+            <p><strong>Адрес:</strong></p>
+            <p>г. Львов<br> улица С. Петлюры 27 </p>
+          </div>
+          
+        </div>
+      </div>
+    </div> <!-- container -->
+    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5148.116843818533!2d23.98150190857672!3d49.822567154584554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae77129d1e91f%3A0xcc50321f84905f56!2sSymona%20Petliury%20St%2C%2027%2C%20L&#39;viv%2C%20L&#39;vivs&#39;ka%20oblast%2C%2079000!5e0!3m2!1sen!2sua!4v1609671860339!5m2!1sen!2sua"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    
+  </main>
+  
+  <div class="contacts-bg"></div>
+  <div class="contacts-yellow-bg"></div>
+
+<footer class="footer contacts-footer">
+  <div class="container">
+    <div class=" contacts-navigate">
+      <ul class="nav">
+        <li><div class="divider"></div></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><div class="divider"></div></li>
+      </ul>
+    </div> <!--  main-navigate contacts-navigate -->
+  </div> <!-- container -->
+</footer> <!-- footer -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="slick/slick.css" />
+<link rel="stylesheet" href="slick/slick-theme.css" />
+<script src="slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  $(".benefits-slider").slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+      $(".designs-slider").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });   
+</script>
+<script>
+   $('.collapse').on('show.bs.collapse', function () {
+    $(this).siblings('.card-header').addClass('active');
+  });
+
+  $('.collapse').on('hide.bs.collapse', function () {
+    $(this).siblings('.card-header').removeClass('active');
+  });
+</script>
+</body>
+</html>

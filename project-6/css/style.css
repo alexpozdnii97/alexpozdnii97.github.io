@@ -76,7 +76,7 @@ html {
   background: linear-gradient(to right, #323232, #ffffff 35%, #ffffff 65%, #323232 100%);
   animation: loader-pad 1.5s infinite ease-in;
 }
-.loader-sub {
+.loader_sub {
   z-index: 10;
   position: fixed;
   width: 100%;
@@ -91,6 +91,28 @@ html {
   }
   to {
     margin-left: 100%;
+  }
+}
+.loaded {
+  animation: loaded 2s forwards ease-in-out;
+}
+.loaded-sub {
+  animation: loaded-sub 2s forwards ease-in-out;
+}
+@keyframes loaded {
+  from {
+    top: 0;
+  }
+  to {
+    top: -50%;
+  }
+}
+@keyframes loaded-sub {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 101%;
   }
 }
 .nav-logo {
@@ -563,6 +585,17 @@ html {
 .project .project-container .project-card img {
   width: 100%;
   height: 100%;
+}
+.project .project-container .project-card-title {
+  height: 2rem;
+  width: 100%;
+}
+.project .project-container .project-card-title h3 {
+  line-height: 4rem;
+  vertical-align: bottom;
+  font-size: 2rem;
+  color: white;
+  font-family: 'EuropeCond_bold';
 }
 .project .project-container .project-card .fab {
   position: absolute;
