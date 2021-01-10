@@ -207,13 +207,13 @@ html {
   border-top: 1px solid white;
 }
 .main-bg {
-  height: 77rem;
+  height: 75.5rem;
   width: 50%;
   background-color: black;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(20rem);
+  transform: translateX(16rem);
   z-index: -1;
 }
 .benefits {
