@@ -894,7 +894,7 @@ html {
         text-align: center;
         width: 20%;
         margin: 0;
-        .medium();
+        .light();
       }
       ul.nav li a{
         color: black!important;
@@ -1071,6 +1071,37 @@ html {
         left: 0;
       }
     }
+    &-navigate {
+      background-color: white;
+      width: 100%;
+      margin-top: 5rem;
+      max-height: 6rem;
+      -webkit-transform-origin: left top;
+      -webkit-transform: none;
+      display: flex;
+      justify-content: center;
+
+      ul.nav {
+        width: 100%;
+        display: flex;
+      }
+
+      ul.nav li {
+        text-align: center;
+        width: 25%;
+        margin: 0;
+        .light();
+      }
+      ul.nav li.divided{
+        width: 12%;
+      }
+      ul.nav li .divider {
+        border-top: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
   }
   .know {
     &-input {
@@ -1168,9 +1199,7 @@ html {
       transform: translateX(6rem);
       height: 65rem;
     }
-    &-navigate{
-      font-size: 1.4rem;
-    }
+    
   }
   .main-btn {
     font-size: 2.6rem;

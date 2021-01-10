@@ -815,7 +815,7 @@ html {
     text-align: center;
     width: 20%;
     margin: 0;
-    font-family: "Roboto_medium", sans-serif;
+    font-family: "Roboto_light", sans-serif;
   }
   .main-navigate ul.nav li a {
     color: black!important;
@@ -969,6 +969,35 @@ html {
     top: 39rem;
     left: 0;
   }
+  .main-navigate {
+    background-color: white;
+    width: 100%;
+    margin-top: 5rem;
+    max-height: 6rem;
+    -webkit-transform-origin: left top;
+    -webkit-transform: none;
+    display: flex;
+    justify-content: center;
+  }
+  .main-navigate ul.nav {
+    width: 100%;
+    display: flex;
+  }
+  .main-navigate ul.nav li {
+    text-align: center;
+    width: 25%;
+    margin: 0;
+    font-family: "Roboto_light", sans-serif;
+  }
+  .main-navigate ul.nav li.divided {
+    width: 12%;
+  }
+  .main-navigate ul.nav li .divider {
+    border-top: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
   .know-input {
     display: block;
     width: 30rem;
@@ -1061,9 +1090,6 @@ html {
     left: 50%;
     transform: translateX(6rem);
     height: 65rem;
-  }
-  .main-navigate {
-    font-size: 1.4rem;
   }
   .main-btn {
     font-size: 2.6rem;
