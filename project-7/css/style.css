@@ -1135,6 +1135,9 @@ html {
   .principles .pic {
     display: none;
   }
+  .how .card-header .btn-link {
+    font-size: 1.6rem;
+  }
   .footer .mobile-none {
     display: none;
   }
