@@ -1048,7 +1048,7 @@ html {
 }
 @media (max-width: 575px) {
   .main h1 {
-    font-size: 1rem;
+    font-size: 2rem;
     width: 15rem;
   }
   .main-content {
