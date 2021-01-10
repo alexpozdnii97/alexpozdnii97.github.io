@@ -1062,6 +1062,9 @@ html {
     transform: translateX(6rem);
     height: 65rem;
   }
+  .main-navigate {
+    font-size: 1.4rem;
+  }
   .main-btn {
     font-size: 2.6rem;
     padding: 1.3rem 6rem;
