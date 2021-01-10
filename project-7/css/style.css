@@ -792,7 +792,14 @@ html {
   }
 }
 @media (max-width: 991px) {
-  .main {
+  .man,
+  .benefits,
+  .designs,
+  .works,
+  .how,
+  .feedback,
+  .know,
+  .services {
     margin-bottom: 8rem;
   }
   .main h2 {
@@ -950,6 +957,16 @@ html {
   }
 }
 @media (max-width: 767px) {
+  .man,
+  .benefits,
+  .designs,
+  .works,
+  .how,
+  .feedback,
+  .know,
+  .services {
+    margin-bottom: 5rem;
+  }
   .designs-slider-block {
     width: 40rem;
   }
