@@ -267,7 +267,7 @@ body {
   }
   .collapsed .toggle-content .navigation-links {
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 15rem;
     width: 25rem;
   }
   .collapsed .toggle-content .navigation-links li a {
@@ -281,6 +281,9 @@ body {
   }
 }
 @media (max-width: 545px) {
+  .collapsed .toggle-content .navigation-links {
+    margin-top: 10rem;
+  }
   .collapsed .toggle-content .navigation-links li a {
     font-size: 2rem;
   }
