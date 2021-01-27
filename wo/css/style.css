@@ -261,7 +261,7 @@ body {
     display: flex;
     height: 6rem;
     left: 50%;
-    bottom: 10rem;
+    bottom: 4rem;
     transform: translateX(-50%);
   }
   .collapsed .toggle-content .navigation-links {
@@ -272,7 +272,7 @@ body {
   }
   .collapsed .toggle-content .contact-btn {
     position: absolute;
-    bottom: 20rem;
+    bottom: 9rem;
     left: 50%;
     transform: translateX(-50%);
   }
