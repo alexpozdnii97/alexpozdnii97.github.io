@@ -263,7 +263,6 @@ body {
     transform: translateX(-50%);
   }
   .collapsed .toggle-content .navigation-links {
-    margin: 0 auto;
     margin-top: 10rem;
   }
   .collapsed .toggle-content .navigation-links li a {
