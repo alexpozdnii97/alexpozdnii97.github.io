@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Onyx - Головна</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <header class="main-nav">
+    <div class="nav-logo">
+      <img src="img/logo-notitle.png" alt="">
+    </div>
+    <div id="nav-button" class="nav-button">
+      <p>Меню</p>
+      <div class="nav-button-dots">
+        <div class="button-dot"></div>
+        <div class="button-dot"></div>
+        <div class="button-dot"></div>
+      </div>
+    </div>
+    <div class="social-links">
+      <div class="social-links-item"><i class="fa fa-instagram"></i></div>
+      <div class="social-links-item"><i class="fa fa-facebook"></i></div>
+      <div class="social-links-item"><i class="fas fa-envelope"></i></div>
+      <div class="social-links-item"><i class="fa fa-behance"></i></div>
+    </div>
+    <div class="localization-links">
+      <a href="">Ua</a>
+      <a href="">En</a>
+      <a href="">Ru</a>
+    </div>
+    <div id="button" class="to-top">
+      <i class="fa fa-caret-up"></i>
+    </div>
+    <div class="toggle-content">
+      
+      <ul class="navigation-links">
+        <li><span>01 </span><a href=""> Главная</a></li>
+        <li><span>02 </span><a href=""> Услуги</a></li>
+        <li><span>03 </span><a href=""> Портфолио</a></li>
+        <li><span>04 </span><a href=""> Блог</a></li>
+        <li><span>05 </span><a href=""> Пройти квіз</a></li>
+        <li><span>06 </span><a href=""> Про Нас</a></li>
+        <li><span>07 </span><a href=""> Контакти</a></li>
+      </ul>
+      <button class="contact-btn">Звязатись з нами</button>
+      <div class="social-links">
+        <div class="social-links-item"><i class="fa fa-instagram"></i></div>
+        <div class="social-links-item"><i class="fa fa-facebook"></i></div>
+        <div class="social-links-item"><i class="fas fa-envelope"></i></div>
+        <div class="social-links-item"><i class="fa fa-behance"></i></div>
+      </div><!-- social-links -->
+      <div class="phone"><p>+38 (066) 02 66 845</p></div>
+      <div class="mail"><p>whiteonyx.studio@gmail.com</p></div>
+    </div><!-- toggle content -->
+  </header>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://kit.fontawesome.com/8d258d854c.js" crossorigin="anonymous"></script>
+<script>
+  var btn = $('#button');
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+</script>
+
+<script>
+  $('.nav-button').click(function() {
+    var $this = $(this);
+    if ($this.parent().hasClass('collapsed')) {
+        $this.parent().removeClass('collapsed');
+    } else 
+    $this.parent().addClass('collapsed');
+});
+</script>
+</body>
+</html>
