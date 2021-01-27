@@ -265,7 +265,6 @@ body {
   .collapsed .toggle-content .navigation-links {
     margin: 0 auto;
     margin-top: 10rem;
-    width: 25rem;
   }
   .collapsed .toggle-content .navigation-links li a {
     font-size: 3rem;
