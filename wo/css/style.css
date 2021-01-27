@@ -259,7 +259,9 @@ body {
   }
   .collapsed .toggle-content .social-links {
     display: flex;
+    height: 6rem;
     left: 50%;
+    bottom: 10rem;
     transform: translateX(-50%);
   }
   .collapsed .toggle-content .navigation-links {
@@ -270,7 +272,7 @@ body {
   }
   .collapsed .toggle-content .contact-btn {
     position: absolute;
-    bottom: 10rem;
+    bottom: 20rem;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -279,7 +281,11 @@ body {
   .collapsed .toggle-content .navigation-links li a {
     font-size: 2rem;
   }
+  .collapsed .toggle-content .social-links {
+    bottom: 3rem;
+  }
   .collapsed .toggle-content .contact-btn {
     font-size: 1.6rem;
+    bottom: 9rem;
   }
 }
