@@ -268,8 +268,7 @@ body {
   .collapsed .toggle-content .contact-btn {
     position: absolute;
     bottom: 10rem;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 9rem;
   }
 }
 @media (max-width: 545px) {
