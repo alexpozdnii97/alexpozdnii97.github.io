@@ -213,7 +213,7 @@ body{
   padding: 1.5rem 3rem;
   margin-top: 2.5rem;
 }
-
+@media(max-width:1199px){}
 @media(max-width:991px){
   .main-nav{
     top: 0;
@@ -280,9 +280,18 @@ body{
         left: 50%;
         transform:translateX(-50%);
       }
-      
     }
   }
-
+}
+@media(max-width:767px) {}
+@media(max-width:545px) {
+  .collapsed .toggle-content{
+    .navigation-links li a{
+      font-size: 2rem;
+    }
+    .contact-btn{
+      font-size: 2rem;
+    }
+  }
 }
 

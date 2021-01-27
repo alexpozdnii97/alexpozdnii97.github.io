@@ -272,3 +272,11 @@ body {
     transform: translateX(-50%);
   }
 }
+@media (max-width: 545px) {
+  .collapsed .toggle-content .navigation-links li a {
+    font-size: 2rem;
+  }
+  .collapsed .toggle-content .contact-btn {
+    font-size: 2rem;
+  }
+}
