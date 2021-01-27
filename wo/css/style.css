@@ -272,7 +272,7 @@ body {
   }
   .collapsed .toggle-content .contact-btn {
     position: absolute;
-    bottom: 9rem;
+    bottom: 11rem;
     left: 50%;
     transform: translateX(-50%);
   }
