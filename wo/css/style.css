@@ -251,6 +251,9 @@ body {
   .collapsed .social-links {
     display: none;
   }
+  .collapsed .toggle-content {
+    padding: 0;
+  }
   .collapsed .toggle-content .phone {
     display: none;
   }
