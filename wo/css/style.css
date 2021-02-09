@@ -1,10 +1,82 @@
+@font-face {
+  font-family: 'montserrat_extrabold';
+  src: url('../fonts/MontserratAlternates-ExtraBold.woff2') format('woff2'), url('../fonts/MontserratAlternates-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'montserrat_bold';
+  src: url('../fonts/MontserratAlternates-Bold.woff2') format('woff2'), url('../fonts/MontserratAlternates-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'montserrat_black';
+  src: url('../fonts/MontserratAlternates-Black.woff2') format('woff2'), url('../fonts/MontserratAlternates-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'montserrat_extralight';
+  src: url('../fonts/MontserratAlternates-ExtraLight.woff2') format('woff2'), url('../fonts/MontserratAlternates-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'montserrat_semibold';
+  src: url('MontserratAlternates-SemiBold.woff2') format('woff2'), url('MontserratAlternates-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'montserrat_medium';
+  src: url('../fonts/MontserratAlternates-Medium.woff2') format('woff2'), url('../fonts/MontserratAlternates-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'montserrat_thin';
+  src: url('../fonts/MontserratAlternates-Thin.woff2') format('woff2'), url('../fonts/MontserratAlternates-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'montserrat_light';
+  src: url('../fonts/MontserratAlternates-Light.woff2') format('woff2'), url('../fonts/MontserratAlternates-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'montserrat_regular';
+  src: url('../fonts/MontserratAlternates-Regular.woff2') format('woff2'), url('../fonts/MontserratAlternates-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   font-size: 10px;
 }
 body {
-  height: 1000rem;
+  overflow-x: hidden;
+}
+section,
+main {
+  padding-left: 8.5rem;
+  padding-right: 8.5rem;
+}
+footer {
+  padding: 0 8.5rem;
 }
 .main-nav {
+  z-index: 5;
   position: fixed;
   top: 0;
   right: 0;
@@ -209,6 +281,410 @@ body {
   padding: 1.5rem 3rem;
   margin-top: 2.5rem;
   width: 25rem;
+}
+section .header-line {
+  position: absolute;
+  left: 0;
+  top: 10rem;
+  width: 25rem;
+  height: 2px;
+  background-color: #5EC8B5;
+}
+section .header-light {
+  font-size: 4rem;
+  color: white;
+  font-family: 'montserrat_bold';
+}
+section .header-dark {
+  font-size: 4rem;
+  color: black;
+  font-family: 'montserrat_bold';
+}
+.main {
+  background-color: #242424;
+  height: 100vh;
+  padding-top: 2.5rem;
+}
+.main .logo {
+  width: 17rem;
+}
+.main .logo img {
+  width: 100%;
+}
+.main h1 {
+  margin-top: 15rem;
+  margin-bottom: 12rem;
+  width: 77rem;
+  color: white;
+  font-size: 6rem;
+  font-family: 'montserrat_regular';
+}
+.main .device1 {
+  background-color: #5EC8B5;
+  border-radius: 50%;
+  position: absolute;
+  width: 64rem;
+  height: 64rem;
+  top: 24rem;
+  right: 27.5rem;
+  transform: translateY(-50%);
+}
+.main .device2 {
+  background-color: #5EC8B5;
+  border-radius: 50%;
+  position: absolute;
+  width: 21.5rem;
+  height: 21.5rem;
+  right: 9.5rem;
+  top: 50rem;
+}
+.main .device3 {
+  background-color: #5EC8B5;
+  border-radius: 50%;
+  position: absolute;
+  width: 21.5rem;
+  height: 21.5rem;
+  top: 70rem;
+  left: 50%;
+  transform: translateX(8rem);
+}
+.main .laptop1,
+.main .laptop2,
+.main .iphone1 {
+  position: absolute;
+}
+.main .laptop1 {
+  top: 25rem;
+  right: 27.5rem;
+  transform: translateY(-50%);
+}
+.main .laptop2 {
+  right: 15.5rem;
+  top: 50rem;
+}
+.main .iphone1 {
+  top: 65rem;
+  left: 50%;
+  transform: translateX(1rem);
+}
+.phone-btn {
+  position: fixed;
+  bottom: 5.5rem;
+  left: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.why-us {
+  position: relative;
+  background-color: #242424;
+  padding-top: 4rem;
+}
+.why-us .argument-wrapper {
+  margin-top: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.why-us .argument-wrapper .argument {
+  margin: 5rem 0;
+  padding: 0 1.5rem;
+  width: 30%;
+  height: 10rem;
+  border-left: 2px solid #5EC8B5;
+}
+.why-us .argument-wrapper .argument h3 {
+  color: white;
+  font-size: 3rem;
+  font-family: 'montserrat_light';
+}
+.services-main {
+  padding-left: 0;
+  position: relative;
+  padding-top: 4rem;
+}
+.services-main .header-dark {
+  padding-left: 8.5rem;
+}
+.services-main .service-wrapper {
+  margin-top: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-main .service-wrapper .service {
+  padding: 5rem 8.5rem;
+  padding-bottom: 2rem;
+  width: 50%;
+  height: 42rem;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+.services-main .service-wrapper .service-content {
+  width: 65%;
+}
+.services-main .service-wrapper .service-content h3 {
+  font-size: 4rem;
+  font-family: 'montserrat_regular';
+}
+.services-main .service-wrapper .service-content p {
+  display: inline-block;
+  width: 100%;
+  font-size: 2rem;
+}
+.services-main .service-wrapper .service-content a {
+  margin-top: 10rem;
+  display: block;
+  font-size: 2rem;
+  color: #242424;
+}
+.services-main .service-wrapper .service-image {
+  width: 35%;
+  text-align: center;
+}
+.services-main .service-wrapper .service-image img {
+  width: 90%;
+  vertical-align: bottom;
+}
+.services-main .service-wrapper .service:hover {
+  background-color: #242424;
+  transition: 1s;
+}
+.services-main .service-wrapper .service:hover .service-content h3,
+.services-main .service-wrapper .service:hover .service-content p,
+.services-main .service-wrapper .service:hover .service-content a {
+  color: white;
+}
+.works {
+  position: relative;
+  background-color: #242424;
+  padding-top: 4rem;
+  padding-right: 8.5rem;
+  height: 80rem;
+}
+.works .works-slider {
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  height: 70rem;
+}
+.works .works-slider .project {
+  position: relative;
+  height: 70rem;
+}
+.works .works-slider .project-description {
+  width: 35rem;
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  transform: translateY(-50%);
+}
+.works .works-slider .project-description h3 {
+  color: white;
+  font-size: 3rem;
+  font-family: 'montserrat_medium';
+}
+.works .works-slider .project-description p {
+  font-size: 2rem;
+  color: white;
+}
+.works .works-slider .project-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.works .works-slider .project-link {
+  position: absolute;
+  left: 50%;
+  bottom: 10rem;
+  transform: translateX(-50%);
+}
+.works .works-slider .project-link a {
+  color: white;
+  font-size: 2rem;
+}
+.works .works-slider .slick-arrow {
+  position: absolute;
+  right: 10rem;
+  top: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 2px solid #6f6f6f;
+  border-radius: 50%;
+  outline: none;
+}
+.works .works-slider .slick-arrow i {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+.works .works-slider .slick-arrow:hover {
+  border-color: white;
+}
+.works .works-slider .slick-arrow:hover i {
+  color: white;
+}
+.works .works-slider .slick-arrow:focus {
+  outline: none;
+}
+.works .works-slider .slick-prev {
+  z-index: 10;
+  transform: translateY(-75%);
+}
+.works .works-slider .slick-next {
+  transform: translateY(75%);
+}
+.how-work {
+  position: relative;
+  padding-top: 4rem;
+  background-color: #white;
+  height: 55rem;
+}
+.how-work .how-work-content {
+  margin: 5rem 0;
+  padding-right: 8.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.how-work .how-work-content .stage {
+  position: relative;
+  width: 25%;
+  padding-top: 4rem;
+}
+.how-work .how-work-content .stage span {
+  font-size: 3rem;
+  font-family: 'montserrat_medium';
+}
+.how-work .how-work-content .stage .dot {
+  z-index: 10;
+  margin: 3rem 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #5EC8B5;
+}
+.how-work .how-work-content .stage h3 {
+  font-size: 2.5rem;
+  font-family: 'montserrat_regular';
+  min-height: 8rem;
+}
+.how-work .how-work-content .stage .line {
+  position: absolute;
+  z-index: -1;
+  transform: translateY(8.5rem);
+  width: 100%;
+  height: 2px;
+  background: #242424;
+}
+.how-work .how-work-content .stage p {
+  font-size: 2rem;
+  padding-right: 2rem;
+}
+.discussion {
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+  background-color: #242424;
+  position: relative;
+  height: 50rem;
+}
+.discussion h3 {
+  color: white;
+}
+.discussion p {
+  color: white;
+}
+.discussion-content {
+  text-align: center;
+  margin-top: 5rem;
+}
+.discussion-content h3 {
+  color: white;
+  font-size: 3rem;
+  font-family: 'montserrat_regular';
+}
+.discussion-content p {
+  color: white;
+  font-size: 2rem;
+  font-family: 'montserrat_regular';
+}
+.discussion .default-form {
+  margin: 0 auto;
+  width: 40rem;
+}
+.discussion .default-form input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  line-height: 4rem;
+  font-size: 2rem;
+}
+.discussion .default-form .default-form-btn {
+  margin-top: 2rem;
+  border: 2px solid grey;
+  width: 100%;
+  font-size: 2rem;
+  background-color: transparent;
+  font-family: 'montserrat_regular';
+  color: white;
+  line-height: 5rem;
+}
+.footer-light {
+  padding: 0 8.5rem;
+  display: block;
+  background-color: #242424;
+}
+.footer-light p {
+  line-height: 4rem;
+  vertical-align: bottom;
+  color: white;
+  font-family: 'montserrat_light';
+  font-size: 1.5rem;
+  margin-block-end: 0;
+}
+.footer-light p a {
+  font-family: 'montserrat_light';
+  color: white;
+  text-decoration: none;
+}
+.about {
+  position: relative;
+  padding-top: 4rem;
+  background-image: url(../img/aboutus.png);
+  height: 120rem;
+}
+.about .logo {
+  position: absolute;
+}
+.about .section-header {
+  margin-top: 4rem;
+  text-align: center;
+}
+.about .section-header h1 {
+  color: white;
+  font-size: 5rem;
+  font-family: 'montserrat_bold';
+}
+.about .section-header p {
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'montserrat_regular';
+}
+.about h2 {
+  color: white;
+  font-size: 4rem;
+  font-family: 'montserrat_regular';
+}
+.about p {
+  color: white;
+  font-size: 2rem;
+  font-family: 'montserrat_extralight';
+  min-height: 20rem;
+}
+.team {
+  position: relative;
+  padding-top: 4rem;
 }
 @media (max-width: 991px) {
   .main-nav {
