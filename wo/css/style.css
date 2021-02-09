@@ -685,6 +685,84 @@ section .header-dark {
 .team {
   position: relative;
   padding-top: 4rem;
+  height: auto;
+}
+.team .team-slider {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 5rem;
+  height: 45rem;
+}
+.team .team-slider .team-member {
+  padding: 1rem 3rem;
+  outline: none;
+}
+.team .team-slider .team-member img {
+  width: 100%;
+  border-radius: 50%;
+}
+.team .team-slider .team-member h3 {
+  font-size: 2.5rem;
+  font-family: 'montserrat_medium';
+}
+.team .team-slider .team-member p {
+  font-size: 2rem;
+  font-family: 'montserrat_regular';
+}
+.team .team-slider .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 2px solid #6f6f6f;
+  border-radius: 50%;
+  outline: none;
+}
+.team .team-slider .slick-arrow i {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+.team .team-slider .slick-arrow:hover {
+  border-color: #5EC8B5;
+}
+.team .team-slider .slick-arrow:hover i {
+  color: #5EC8B5;
+}
+.team .team-slider .slick-arrow:focus {
+  outline: none;
+}
+.team .team-slider .slick-next {
+  transform: translateX(75%);
+}
+.team .team-slider .slick-prev {
+  z-index: 100;
+  transform: translateX(-125%);
+}
+.feedback {
+  position: relative;
+  height: 40rem;
+}
+.feedback .feedback-slider {
+  margin-top: 15rem;
+}
+.feedback .feedback-slider .media {
+  width: 100rem;
+}
+.feedback .feedback-slider .mr-3,
+.feedback .feedback-slider .media-body {
+  height: 15rem;
+}
+.feedback .feedback-slider .media-body h5 {
+  font-family: 'montserrat_medium';
+  font-size: 3rem;
+}
+.feedback .feedback-slider .media-body p {
+  font-size: 2rem;
 }
 @media (max-width: 991px) {
   .main-nav {

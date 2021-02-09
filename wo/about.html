@@ -95,7 +95,42 @@
   </main>
 
 
-
+<section class="team">
+    <h2 class="header-dark">Наша Команда</h2>
+    <div class="header-line"></div>
+    <div class="team-slider">
+      <div class="team-member">
+        <img src="img/mbr1.jpg" alt="">
+        <h3>Поздній Олександр</h3>
+        <p>Директор</p>
+      </div><!-- team member -->
+      <div class="team-member">
+        <img src="img/mbr2.jpg" alt="">
+        <h3>Поздній Олександр</h3>
+        <p>Директор</p>
+      </div><!-- team member -->
+      <div class="team-member">
+        <img src="img/mbr3.jpg" alt="">
+        <h3>Поздній Олександр</h3>
+        <p>Директор</p>
+      </div><!-- team member -->
+      <div class="team-member">
+        <img src="img/mbr4.jpg" alt="">
+        <h3>Поздній Олександр</h3>
+        <p>Директор</p>
+      </div><!-- team member -->
+      <div class="team-member">
+        <img src="img/mbr5.jpg" alt="">
+        <h3>Поздній Олександр</h3>
+        <p>Директор</p>
+      </div><!-- team member -->
+      <div class="team-member">
+        <img src="img/mbr6.jpg" alt="">
+        <h3>Поздній Олександр</h3>
+        <p>Директор</p>
+      </div><!-- team member -->
+    </div><!-- team-slider -->
+  </section>
 
   <section class="why-us">
     <h2 class="header-light">Чому потрібно обрати саме нас?</h2>
@@ -149,11 +184,21 @@
 
 
 
-  <section class="team">
-    <h2 class="header-dark">Як ми працюємо</h2>
-    <div class="header-line"></div>
-  </section>
+  
 
+  <section class="feedback">
+    <h2 class="header-dark">Відгуки Клієнтів</h2>
+    <div class="header-line"></div>
+    <div class="feedback-slider">
+      <div class="media">
+        <img class="mr-3" src="img/logo.png" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0">Media heading</h5>
+          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -171,18 +216,9 @@
         </form>
       </div>
   </section>
-
-
   <footer class="footer-light">
     <p>WhyteOnyx © 2021 | <a href="">PRIVACY POLICY</a></p>
   </footer>
-  
-
-
-
-
-
-
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://kit.fontawesome.com/8d258d854c.js" crossorigin="anonymous"></script>
@@ -212,7 +248,9 @@
   </script>
   <script>
     $(document).ready(function(){
-      $('.works-slider').slick({
+      $('.team-slider').slick({
+       speed: 300,
+       slidesToShow: 5,
        nextArrow:"<button class='slick-next'><i class='fas fa-arrow-right'></i></button>",
        prevArrow:"<button class='slick-prev'><i class='fas fa-arrow-left'></i></button>",
       });
