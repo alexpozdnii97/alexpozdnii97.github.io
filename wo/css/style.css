@@ -621,7 +621,7 @@ section .header-dark {
   font-size: 2rem;
 }
 .discussion .default-form .default-form-btn {
-  margin-top: 2rem;
+  margin-top: 4rem;
   border: 2px solid grey;
   width: 100%;
   font-size: 2rem;
@@ -894,17 +894,111 @@ section .header-dark {
 .portfolio-single h1 {
   color: white;
 }
-.portfolio-single-content {
+.portfolio-single-wrapper {
   position: relative;
   width: 100%;
+  padding-bottom: 10rem;
   background-color: #242424;
+  text-align: center;
 }
-.portfolio-single-content .portfolio-single-image {
-  max-width: 35%;
-  margin: 0 auto;
+.portfolio-single-wrapper img {
+  width: 35%;
+  margin-bottom: 3rem;
 }
-.portfolio-single-content .portfolio-single-image img {
+.portfolio-single-wrapper a {
+  display: block;
+  margin-bottom: 10rem;
+  color: white;
+  font-size: 2rem;
+  font-family: 'montserrat_regular';
+  text-decoration: none;
+}
+.portfolio-single-wrapper a:hover {
+  text-decoration: none;
+  color: #5EC8B5;
+}
+.portfolio-single-wrapper h2,
+.portfolio-single-wrapper p {
+  color: white;
+  font-family: 'montserrat_regular';
+  font-size: 4rem;
+}
+.portfolio-single-wrapper p {
+  font-size: 2rem;
+  font-family: 'montserrat_light';
+}
+.portfolio-single-wrapper h3 {
+  color: #7b7b7b;
+  font-size: 2rem;
+  font-family: 'montserrat_regular';
+}
+.portfolio-single-wrapper .row {
+  text-align: left;
+  margin-bottom: 10rem;
+}
+.portfolio-single-wrapper .row .color-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-single-wrapper .row .color-boxes .box {
+  margin-right: 2rem;
+  width: 12rem;
+  height: 12rem;
+  border: 1px solid white;
+  font-size: 2rem;
+  color: white;
+  font-family: 'montserrat_regular';
+}
+.adaptive-design {
+  padding-top: 4rem;
+  text-align: center;
+  height: auto;
+}
+.adaptive-design h2 {
+  font-family: 'montserrat_regular';
+  font-size: 4rem;
+  margin-bottom: 10rem;
+}
+.adaptive-design .devices {
   width: 100%;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.adaptive-design .devices img {
+  vertical-align: bottom;
+  margin: 0 2rem;
+}
+.adaptive-design .devices .imac {
+  display: none;
+  width: 50%;
+}
+.adaptive-design .devices .ipad {
+  width: 50% ;
+}
+.adaptive-design .devices .iphone {
+  width: 15%;
+}
+.adaptive-design .pages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.adaptive-design .pages img {
+  width: 48%;
+  padding: 2rem;
+}
+.adaptive-design a {
+  display: block;
+  margin-bottom: 10rem;
+  color: black;
+  font-size: 2rem;
+  font-family: 'montserrat_regular';
+  text-decoration: none;
+}
+.adaptive-design a:hover {
+  text-decoration: none;
+  color: #5EC8B5;
 }
 @media (max-width: 991px) {
   .main-nav {
