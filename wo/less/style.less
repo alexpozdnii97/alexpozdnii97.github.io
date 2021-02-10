@@ -842,9 +842,23 @@ section{
   .logo{
    position: absolute; 
   }
-  .section-header{
+  .section-header {
+    margin-top: 4rem;
     text-align: center;
+
+    h1 {
+      color: white;
+      font-size: 5rem;
+      .bold();
+    }
+
+    p {
+      color: white;
+      font-size: 2.5rem;
+      .reg();
+    }
   }
+  
   .category-nav{
     margin: 0 auto;
     margin-top: 14rem;
@@ -905,7 +919,16 @@ section{
         &:hover{
           color: #5EC8B5;
         }
-
+        &:after {
+          font-family: FontAwesome;
+          content: "\f061";
+          display: inline-block;
+          font-size: 1.6rem;
+          padding-left: 1rem;
+          vertical-align: middle;
+          font-weight: 500;
+          color: white;
+        }
       }
     }
     .portfolio-image{
@@ -915,6 +938,45 @@ section{
         display: block;
         width: 100%;
       }
+    }
+  }
+}
+.portfolio-single{
+  padding-top: 4rem;
+  background-color: #242424;
+  position: relative;
+  height: 25rem;
+  .logo{
+    position: absolute;
+  }
+  .section-header {
+    margin-top: 4rem ;
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: 5rem;
+      .bold();
+    }
+    p {
+      color: white;
+      font-size: 2.5rem;
+      .reg();
+    }
+  }
+  h1{
+    color: white;
+  }
+}
+.portfolio-single-content {
+  position: relative;
+  width: 100%;
+  background-color: #242424;
+  .portfolio-single-image {
+    max-width: 35%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
     }
   }
 }
