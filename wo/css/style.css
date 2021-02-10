@@ -764,6 +764,89 @@ section .header-dark {
 .feedback .feedback-slider .media-body p {
   font-size: 2rem;
 }
+.portfolio {
+  padding-top: 4rem;
+  background-color: #242424;
+  position: relative;
+  height: 30rem;
+}
+.portfolio .logo {
+  position: absolute;
+}
+.portfolio .section-header {
+  text-align: center;
+}
+.portfolio .category-nav {
+  margin: 0 auto;
+  margin-top: 14rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio .category-nav a {
+  margin: 0 1.5rem;
+  min-width: 20rem;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  font-family: 'montserrat_regular';
+  display: inline-block;
+  background: #242424;
+  border: 1px solid grey;
+  text-decoration: none;
+}
+.portfolio .category-nav a:hover {
+  background-color: #5EC8B5;
+  border-color: #5ec8b5;
+}
+.portfolio .category-nav a.active {
+  background-color: #5EC8B5;
+  border-color: #5EC8B5;
+}
+.portfolio-content {
+  background-color: #242424;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-content .portfolio-item {
+  padding: 6rem 0rem;
+  padding-right: 4rem;
+  width: 50%;
+}
+.portfolio-content .portfolio-item .portfolio-content {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+.portfolio-content .portfolio-item .portfolio-content h3 {
+  width: 100%;
+  color: white;
+  font-size: 3rem;
+  font-family: 'montserrat_regular';
+}
+.portfolio-content .portfolio-item .portfolio-content p {
+  font-size: 1.6rem;
+  color: white;
+  font-family: 'montserrat_light';
+  margin-bottom: 4rem;
+}
+.portfolio-content .portfolio-item .portfolio-content a {
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-family: 'montserrat_regular';
+}
+.portfolio-content .portfolio-item .portfolio-content a:hover {
+  color: #5EC8B5;
+}
+.portfolio-content .portfolio-item .portfolio-image {
+  display: inline-block;
+  width: 50%;
+}
+.portfolio-content .portfolio-item .portfolio-image img {
+  display: block;
+  width: 100%;
+}
 @media (max-width: 991px) {
   .main-nav {
     top: 0;
