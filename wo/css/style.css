@@ -1186,6 +1186,62 @@ section .header-dark {
 .services .services-container .service-links a:hover {
   color: #5EC8B5;
 }
+.post-head {
+  position: relative;
+  max-width: 120rem;
+  padding-top: 4rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.post-head h1 {
+  font-size: 4rem;
+  font-family: 'montserrat_bold';
+  margin-bottom: 4rem;
+}
+.post-head .post-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.post-head .post-navigation a {
+  font-size: 1.5rem;
+  font-family: 'montserrat_regular';
+  color: black;
+}
+.post-head .post-navigation .post-stats {
+  width: 25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+.post-head .post-navigation .post-stats p,
+.post-head .post-navigation .post-stats i {
+  margin-left: 1rem;
+  align-self: center;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+.post-head .post-navigation .post-stats .p {
+  font-family: 'montserrat_regular';
+}
+.post-content {
+  max-width: 120rem;
+  padding-top: 1rem;
+  margin: 0 auto;
+}
+.post-content .post-main-img {
+  width: 100%;
+}
+.post-content p {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.post-content a {
+  font-size: 2rem;
+  color: #5EC8B5;
+  text-decoration: none;
+}
 @media (max-width: 991px) {
   .main-nav {
     top: 0;
