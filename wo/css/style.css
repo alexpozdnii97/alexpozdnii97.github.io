@@ -1300,6 +1300,12 @@ section .header-dark {
 .post-footer .post-links .prev-post a:hover {
   color: #5EC8B5;
 }
+.error {
+  text-align: center;
+}
+.error img {
+  width: 45%;
+}
 @media (max-width: 991px) {
   .main-nav {
     top: 0;
