@@ -734,6 +734,11 @@ section{
     }
   }
 }
+.footer-post{
+  max-width: 100rem;
+  margin: 0 auto;
+  padding:0;
+}
 .about{
   position: relative;
   padding-top: 4rem;
@@ -1274,7 +1279,7 @@ section{
 }
 .post-head{
   position: relative;
-  max-width: 120rem;
+  max-width: 100rem;
   padding-top: 4rem;
   text-align: center;
   margin: 0 auto;  
@@ -1291,6 +1296,10 @@ section{
       font-size: 1.5rem;
       .reg();
       color: black;
+      &:hover{
+        text-decoration: none;
+        color: #5EC8B5;
+      }
     }
     .post-stats{
       width: 25rem;
@@ -1310,8 +1319,12 @@ section{
     }
   }
 }
+.post-head, .post-content, .post-footer{
+  padding-left: 0;
+  padding-right: 0;  
+}
 .post-content{
-  max-width: 120rem;
+  max-width: 100rem;
   padding-top: 1rem;
   margin: 0 auto;
   .post-main-img{
@@ -1325,9 +1338,48 @@ section{
     font-size: 2rem;
     color: #5EC8B5;
     text-decoration: none;
-
   }
-
+}
+.post-footer{
+  max-width: 100rem;
+  padding-top: 1rem;
+  margin: 0 auto;
+  .stars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    p{
+      font-size: 2rem;
+      line-height: 2.3rem;
+      margin-bottom: 0;
+      margin-left: 0.5rem;
+    }
+  }
+  .line{
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0;
+    background-color: #9c9c9c;
+  }
+  .post-links{
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .next-post, .prev-post{
+      width: 30rem;
+      a{
+        font-size: 1.5rem;
+        .med();
+        color: black;
+        text-decoration: none;
+        &:hover {
+          color: #5EC8B5;
+        }
+      }
+      
+    }
+  }
 }
 
 
