@@ -1134,7 +1134,7 @@ section .header-dark {
   width: 100%;
   height: auto;
   z-index: -1;
-  filter: brightness(0.6);
+  filter: brightness(0.5);
 }
 .services {
   padding: 0;
@@ -1316,6 +1316,29 @@ section .header-dark {
 .error p {
   font-size: 2rem;
   font-family: 'montserrat_regular';
+}
+.landing-description {
+  margin-top: 10rem;
+}
+.landing-description h2 {
+  font-size: 4rem;
+  font-family: 'montserrat_regular';
+  margin-bottom: 4rem;
+}
+.landing-description p {
+  font-size: 2rem;
+  font-family: 'montserrat_regular';
+  margin-bottom: 4rem;
+}
+.landing-description .comparison {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.landing-description .advantages b {
+  color: #378D00;
+}
+.landing-description .disadvantages b {
+  color: #FF0000;
 }
 @media (max-width: 991px) {
   .main-nav {
