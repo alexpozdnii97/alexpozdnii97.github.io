@@ -1141,12 +1141,12 @@ section .header-dark {
   background-color: white;
 }
 .services .services-container {
-  padding: 4rem 8.5rem;
+  padding: 3rem 8.5rem;
   width: 100%;
   border-bottom: 2px solid #a0a0a0;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 }
 .services .services-container .service-head {
   width: 25%;
@@ -1157,7 +1157,7 @@ section .header-dark {
   font-family: 'montserrat_medium';
 }
 .services .services-container .service-head img {
-  margin: 2rem auto;
+  margin: 1rem auto;
   width: 18rem;
 }
 .services .services-container .service-head p {
@@ -1177,11 +1177,13 @@ section .header-dark {
   display: flex;
   flex-wrap: wrap;
   flex-flow: column-wrap;
-  align-items: stretch;
+  align-items: flex-start;
+  align-self: flex-start;
   justify-content: space-between;
 }
 .services .services-container .service-links a {
-  padding: 1rem 0;
+  padding: 0rem 0;
+  padding-bottom: 2rem;
   width: 50%;
   font-size: 2rem;
   font-family: 'montserrat_regular';
