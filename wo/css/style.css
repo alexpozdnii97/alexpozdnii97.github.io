@@ -1306,6 +1306,15 @@ section .header-dark {
 .error img {
   width: 45%;
 }
+.error h1 {
+  margin: 2rem 0;
+  font-size: 5rem;
+  font-family: 'montserrat_bold';
+}
+.error p {
+  font-size: 2rem;
+  font-family: 'montserrat_regular';
+}
 @media (max-width: 991px) {
   .main-nav {
     top: 0;
