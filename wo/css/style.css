@@ -589,18 +589,16 @@ section .header-dark {
   position: relative;
   padding-top: 4rem;
   background-color: #white;
-  height: 55rem;
+  height: auto;
 }
 .how-work .how-work-content {
   margin: 5rem 0;
-  padding-right: 8.5rem;
   display: flex;
   justify-content: space-around;
 }
 .how-work .how-work-content .stage {
   position: relative;
   width: 25%;
-  padding-top: 4rem;
 }
 .how-work .how-work-content .stage span {
   font-size: 3rem;
@@ -630,6 +628,56 @@ section .header-dark {
 .how-work .how-work-content .stage p {
   font-size: 2rem;
   padding-right: 2rem;
+}
+.how-work .design-slider {
+  margin: 5rem 0;
+  margin-bottom: 0;
+  padding-right: 8.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 30rem;
+}
+.how-work .design-slider .slide {
+  width: 20%;
+  padding: 0 1rem;
+  border: none;
+  outline: none;
+}
+.how-work .design-slider .slide img {
+  width: 100%;
+}
+.how-work .design-slider .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 2px solid #6f6f6f;
+  border-radius: 50%;
+  outline: none;
+  display: none;
+}
+.how-work .design-slider .slick-arrow i {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+.how-work .design-slider .slick-arrow:hover {
+  border-color: #5EC8B5;
+}
+.how-work .design-slider .slick-arrow:hover i {
+  color: #5EC8B5;
+}
+.how-work .design-slider .slick-arrow:focus {
+  outline: none;
+}
+.how-work .design-slider .slick-next {
+  transform: translateX(75%);
+}
+.how-work .design-slider .slick-prev {
+  z-index: 100;
+  transform: translateX(-125%);
 }
 .discussion {
   padding-top: 4rem;

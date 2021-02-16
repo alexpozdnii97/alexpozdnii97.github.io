@@ -650,16 +650,15 @@ section{
   position: relative;
   padding-top:4rem;
   background-color:#white;
-  height: 55rem;
+  height: auto;
   .how-work-content{
     margin: 5rem 0;
-    padding-right: 8.5rem;
+    
     display: flex;
     justify-content: space-around;
     .stage{
       position: relative;
       width: 25%;
-      padding-top:4rem;
       span{
         font-size: 3rem;
         .med();
@@ -689,6 +688,61 @@ section{
         font-size: 2rem;
         padding-right: 2rem;
       }
+    }
+  }
+  .design-slider{
+    margin: 5rem 0;
+    margin-bottom: 0;
+    padding-right: 8.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 30rem;
+    .slide{
+      width: 20%;
+      padding: 0 1rem;
+      img {
+        width: 100%;
+      }
+      border:none;
+      outline: none;
+    }
+    .slick-arrow {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 4rem;
+      height: 4rem;
+      background: transparent;
+      border: 2px solid #6f6f6f;
+      border-radius: 50%;
+      outline: none;
+      display: none;
+      i {
+        font-size: 1.6rem;
+        color: #6f6f6f;
+      }
+
+      &:hover {
+        border-color: #5EC8B5;
+
+        i {
+          color: #5EC8B5;
+        }
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .slick-next {
+      transform: translateX(75%);
+    }
+
+    .slick-prev {
+      z-index: 100;
+      transform: translateX(-125%);
     }
   }
 }
