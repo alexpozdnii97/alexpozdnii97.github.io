@@ -102,7 +102,7 @@ footer {
   display: inline-block;
   color: white;
   font-size: 1.8rem;
-  font-family: sans-serif;
+  font-family: 'montserrat_regular';
 }
 .main-nav .nav-button .nav-button-dots {
   display: inline-block;
@@ -210,6 +210,7 @@ footer {
   margin-top: 14rem;
   padding-inline-start: 0;
   list-style-type: none;
+  font-family: 'montserrat_medium';
 }
 .collapsed .toggle-content li {
   margin-bottom: 2rem;
@@ -378,9 +379,10 @@ section .header-dark {
   position: relative;
   background-color: #242424;
   padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .why-us .argument-wrapper {
-  margin-top: 15rem;
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -389,7 +391,7 @@ section .header-dark {
   margin: 5rem 0;
   padding: 0 1.5rem;
   width: 30%;
-  height: 10rem;
+  height: 7rem;
   border-left: 2px solid #5EC8B5;
 }
 .why-us .argument-wrapper .argument h3 {
@@ -406,7 +408,7 @@ section .header-dark {
   padding-left: 8.5rem;
 }
 .services-main .service-wrapper {
-  margin-top: 15rem;
+  margin-top: 10rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -437,6 +439,16 @@ section .header-dark {
   font-size: 2rem;
   color: #242424;
 }
+.services-main .service-wrapper .service-content a:after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  display: inline-block;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  vertical-align: middle;
+  font-weight: 500;
+  color: black;
+}
 .services-main .service-wrapper .service-image {
   width: 35%;
   text-align: center;
@@ -452,6 +464,42 @@ section .header-dark {
 .services-main .service-wrapper .service:hover .service-content h3,
 .services-main .service-wrapper .service:hover .service-content p,
 .services-main .service-wrapper .service:hover .service-content a {
+  color: white;
+}
+.services-main .service-wrapper .service:hover .service-content h3::after,
+.services-main .service-wrapper .service:hover .service-content p::after,
+.services-main .service-wrapper .service:hover .service-content a::after {
+  color: white;
+}
+.services-main .service-wrapper .service:hover .service-content a:hover {
+  color: #5EC8B5;
+  text-decoration: none;
+}
+.services-main .service-wrapper .service:hover .service-content a:hover:after {
+  color: #5EC8B5;
+}
+.services-main .all-services a {
+  margin: 5rem auto;
+  display: block;
+  text-align: center;
+  width: 20rem;
+  font-family: 'montserrat_medium';
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+.services-main .all-services a:hover {
+  color: #5EC8B5;
+  text-decoration: none;
+}
+.services-main .all-services a:after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  display: inline-block;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  vertical-align: middle;
+  font-weight: 500;
   color: white;
 }
 .works {
@@ -774,6 +822,7 @@ section .header-dark {
   margin-top: 15rem;
 }
 .feedback .feedback-slider .media {
+  margin: 0 auto;
   width: 100rem;
 }
 .feedback .feedback-slider .mr-3,
@@ -883,8 +932,11 @@ section .header-dark {
 .portfolio-content .portfolio-item .portfolio-content a:hover {
   color: #5EC8B5;
 }
+.portfolio-content .portfolio-item .portfolio-content a:hover:after {
+  color: #5EC8B5;
+}
 .portfolio-content .portfolio-item .portfolio-content a:after {
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   content: "\f061";
   display: inline-block;
   font-size: 1.6rem;
@@ -1171,6 +1223,27 @@ section .header-dark {
   font-size: 2rem;
   font-family: 'montserrat_regular';
 }
+.services .services-container .service-description a {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.services .services-container .service-description a:after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  display: inline-block;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  vertical-align: middle;
+  font-weight: 500;
+  color: black;
+}
+.services .services-container .service-description a:hover {
+  color: #5EC8B5;
+}
+.services .services-container .service-description a:hover:after {
+  color: #5EC8B5;
+}
 .services .services-container .service-links {
   padding: 0 4rem;
   width: 50%;
@@ -1353,8 +1426,10 @@ section .header-dark {
   justify-content: space-between;
 }
 .prices-wrapper .price {
+  background-color: #f1f1f1;
   text-align: center;
   width: 30%;
+  padding-bottom: 4rem;
 }
 .prices-wrapper .price-name {
   background-color: #242424;
@@ -1385,10 +1460,23 @@ section .header-dark {
   font-size: 2rem;
   font-family: 'montserrat_regular';
 }
+.prices-wrapper .price-features {
+  min-height: 50rem;
+}
 .prices-wrapper .price-features p {
   font-size: 2.5rem;
   color: black;
   margin: 2rem 0;
+}
+.prices-wrapper .price-features .price-divider {
+  background-color: #5EC8B5;
+  min-height: 0.6rem;
+}
+.prices-wrapper .price-features .price-divider p {
+  color: white;
+  font-size: 2rem;
+  font-family: 'montserrat_regular';
+  margin: 0;
 }
 .prices-wrapper .price-btn {
   width: 28rem;
@@ -1397,6 +1485,7 @@ section .header-dark {
   font-family: 'montserrat_regular';
   color: white;
   background-color: #242424;
+  border: none;
 }
 @media (max-width: 991px) {
   .main-nav {
