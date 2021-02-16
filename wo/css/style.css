@@ -438,6 +438,7 @@ section .header-dark {
   display: block;
   font-size: 2rem;
   color: #242424;
+  font-family: 'montserrat_regular';
 }
 .services-main .service-wrapper .service-content a:after {
   font-family: "FontAwesome";
@@ -550,6 +551,8 @@ section .header-dark {
 .works .works-slider .project-link a {
   color: white;
   font-size: 2rem;
+  text-decoration: none;
+  font-family: 'montserrat_regular';
 }
 .works .works-slider .slick-arrow {
   position: absolute;
@@ -1222,11 +1225,13 @@ section .header-dark {
 .services .services-container .service-description p {
   font-size: 2rem;
   font-family: 'montserrat_regular';
+  margin-bottom: 2rem;
 }
 .services .services-container .service-description a {
   color: black;
   font-size: 2rem;
   text-decoration: none;
+  font-family: 'montserrat_medium';
 }
 .services .services-container .service-description a:after {
   font-family: "FontAwesome";
