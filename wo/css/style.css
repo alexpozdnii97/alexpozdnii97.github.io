@@ -679,6 +679,58 @@ section .header-dark {
   z-index: 100;
   transform: translateX(-125%);
 }
+.price-list {
+  padding-top: 4rem;
+  position: relative;
+  margin-right: 8.5rem;
+}
+.price-list .price-table {
+  margin: 10rem auto;
+  width: 100%;
+}
+.price-list .price-table .line {
+  width: 100%;
+  padding: 0 4rem;
+  border-bottom: 1px solid #a0a0a0;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 10rem;
+  justify-content: space-between;
+}
+.price-list .price-table .line p {
+  line-height: 7rem;
+  font-size: 2.5rem;
+  font-family: 'montserrat_regular';
+  padding: 0;
+  margin: 0;
+}
+.price-list .price-table .line .type {
+  width: 40rem;
+}
+.price-list .price-table .line .price {
+  width: 10rem;
+}
+.price-list .price-table .line .time {
+  width: 30rem;
+}
+.price-list .price-table .line h3,
+.price-list .price-table .line p {
+  font-family: 'montserrat_medium';
+  line-height: 10rem;
+}
+.price-list .price-table .header {
+  background-color: #f1f1f1;
+}
+.price-list .price-table .header h3 {
+  line-height: 10rem;
+  font-size: 2.5rem;
+  font-family: 'montserrat_medium';
+  padding: 0;
+  margin: 0;
+}
+.price-list p {
+  font-size: 1.5rem;
+}
 .discussion {
   padding-top: 4rem;
   padding-bottom: 10rem;
