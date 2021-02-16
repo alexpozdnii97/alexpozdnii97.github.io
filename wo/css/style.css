@@ -554,6 +554,9 @@ section .header-dark {
   text-decoration: none;
   font-family: 'montserrat_regular';
 }
+.works .works-slider .project-link a:hover {
+  color: #5EC8B5;
+}
 .works .works-slider .slick-arrow {
   position: absolute;
   right: 10rem;
