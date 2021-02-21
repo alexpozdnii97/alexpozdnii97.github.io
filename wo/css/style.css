@@ -800,7 +800,7 @@ section .header-dark {
 }
 .default-form {
   margin: 0 auto;
-  width: 40rem;
+  max-width: 40rem;
 }
 .default-form input {
   background-color: transparent;
@@ -1918,5 +1918,12 @@ section .header-dark {
   }
   .why-us .argument-wrapper .argument h3 {
     font-size: 2rem;
+  }
+  .discussion {
+    padding: 0 4rem;
+  }
+  .footer-dark {
+    text-align: center;
+    padding: 0 4rem;
   }
 }
