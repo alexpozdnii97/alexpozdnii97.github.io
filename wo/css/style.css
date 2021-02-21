@@ -1801,11 +1801,16 @@ section .header-dark {
     width: 4rem;
     height: 4rem;
   }
+  .why-us {
+    padding-right: 0;
+  }
   .why-us .argument-wrapper {
-    padding: 0  6rem;
+    padding: 0;
+    padding-left: 2rem;
   }
   .why-us .argument-wrapper .argument {
     width: 50%;
+    height: 10rem;
   }
   .how-work .how-work-content .stage h3 {
     font-size: 2rem;
