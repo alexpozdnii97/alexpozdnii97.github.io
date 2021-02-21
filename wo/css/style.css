@@ -1719,6 +1719,10 @@ section .header-dark {
   main .logo {
     display: none;
   }
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .main h1 {
     margin-bottom: 0;
   }
