@@ -1045,46 +1045,46 @@ section .header-dark {
   text-decoration: none;
   color: black;
 }
-.portfolio-content {
+.portfolio-posts {
   background-color: #242424;
   display: flex;
   flex-wrap: wrap;
 }
-.portfolio-content .portfolio-item {
+.portfolio-posts .portfolio-item {
   padding: 6rem 0rem;
   padding-right: 4rem;
   width: 50%;
 }
-.portfolio-content .portfolio-item .portfolio-content {
+.portfolio-posts .portfolio-item .portfolio-content {
   display: inline-block;
   width: 45%;
   vertical-align: top;
 }
-.portfolio-content .portfolio-item .portfolio-content h3 {
+.portfolio-posts .portfolio-item .portfolio-content h3 {
   width: 100%;
   color: white;
   font-size: 3rem;
   font-family: 'montserrat_regular';
 }
-.portfolio-content .portfolio-item .portfolio-content p {
+.portfolio-posts .portfolio-item .portfolio-content p {
   font-size: 1.6rem;
   color: white;
   font-family: 'montserrat_light';
   margin-bottom: 4rem;
 }
-.portfolio-content .portfolio-item .portfolio-content a {
+.portfolio-posts .portfolio-item .portfolio-content a {
   color: white;
   font-size: 1.6rem;
   text-decoration: none;
   font-family: 'montserrat_regular';
 }
-.portfolio-content .portfolio-item .portfolio-content a:hover {
+.portfolio-posts .portfolio-item .portfolio-content a:hover {
   color: #5EC8B5;
 }
-.portfolio-content .portfolio-item .portfolio-content a:hover:after {
+.portfolio-posts .portfolio-item .portfolio-content a:hover:after {
   color: #5EC8B5;
 }
-.portfolio-content .portfolio-item .portfolio-content a:after {
+.portfolio-posts .portfolio-item .portfolio-content a:after {
   font-family: "FontAwesome";
   content: "\f061";
   display: inline-block;
@@ -1094,11 +1094,11 @@ section .header-dark {
   font-weight: 500;
   color: white;
 }
-.portfolio-content .portfolio-item .portfolio-image {
+.portfolio-posts .portfolio-item .portfolio-image {
   display: inline-block;
   width: 50%;
 }
-.portfolio-content .portfolio-item .portfolio-image img {
+.portfolio-posts .portfolio-item .portfolio-image img {
   display: block;
   width: 100%;
 }
@@ -1825,6 +1825,15 @@ section .header-dark {
   .services-main .service-wrapper .service {
     padding-right: 2rem;
     width: 100%;
+  }
+  .portfolio-posts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .portfolio-posts .portfolio-item {
+    width: 100%;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }
 @media (max-width: 767px) {
