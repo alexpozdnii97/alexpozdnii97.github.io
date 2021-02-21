@@ -1814,6 +1814,7 @@ section .header-dark {
     font-size: 1.8rem;
   }
   .services-main .service-wrapper .service {
+    padding-right: 2rem;
     width: 100%;
   }
 }
