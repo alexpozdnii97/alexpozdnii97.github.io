@@ -1688,6 +1688,8 @@ section .header-dark {
     left: 0;
     width: 100vw;
     height: 7rem;
+    border: none;
+    border-bottom: 1px solid black;
   }
   .main-nav .nav-logo {
     display: block;
@@ -1720,7 +1722,7 @@ section .header-dark {
     display: none;
   }
   .main {
-    padding-left: 0;
+    padding-left: 2rem;
     padding-right: 0;
   }
   .main h1 {
@@ -1838,6 +1840,14 @@ section .header-dark {
     height: 21rem;
     width: 2px;
     transform: none;
+  }
+  .device1,
+  .device2,
+  .device3,
+  .laptop1,
+  .laptop2,
+  .iphone1 {
+    display: none;
   }
 }
 @media (max-width: 545px) {
