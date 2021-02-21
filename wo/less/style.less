@@ -1828,11 +1828,19 @@ section{
     display: none;
   }
   .main{
+    position: relative;
     padding-left: 2rem;
     padding-right: 0;
     h1{
+      position: absolute;
+      top: 35%;
+      transform: translateY(-50%);
       font-size: 4rem;
-      margin-bottom: 0;
+    }
+    .contact-btn{
+      position: absolute;
+      top: 55%;
+      transform: translateY(-50%);
     }
   }
   .collapsed {
@@ -1964,7 +1972,9 @@ section{
       }
     }
   }
-  
+  .device2,.laptop2{
+    display: none;
+  }
 }
 @media(max-width:545px) {
   .collapsed .toggle-content{
@@ -1990,7 +2000,5 @@ section{
    padding-left:2rem;
     width: 100% !important;
   }
-  .device1,.device2,.device3,.laptop1,.laptop2,.iphone1{
-    
-  }
+
 }

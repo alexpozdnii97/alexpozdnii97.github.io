@@ -1722,12 +1722,20 @@ section .header-dark {
     display: none;
   }
   .main {
+    position: relative;
     padding-left: 2rem;
     padding-right: 0;
   }
   .main h1 {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
     font-size: 4rem;
-    margin-bottom: 0;
+  }
+  .main .contact-btn {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
   }
   .collapsed {
     height: 100vh;
@@ -1844,6 +1852,10 @@ section .header-dark {
     height: 21rem;
     width: 2px;
     transform: none;
+  }
+  .device2,
+  .laptop2 {
+    display: none;
   }
 }
 @media (max-width: 545px) {
