@@ -328,9 +328,10 @@ section .header-dark {
   background-color: #5EC8B5;
   border-radius: 50%;
   position: absolute;
-  width: 64rem;
-  height: 64rem;
-  top: 24rem;
+  width: 35%;
+  height: 0;
+  padding-bottom: 35%;
+  top: 25%;
   right: 27.5rem;
   transform: translateY(-50%);
 }
@@ -338,18 +339,20 @@ section .header-dark {
   background-color: #5EC8B5;
   border-radius: 50%;
   position: absolute;
-  width: 21.5rem;
-  height: 21.5rem;
+  width: 15%;
+  height: 0;
+  padding-bottom: 15%;
   right: 9.5rem;
-  top: 50rem;
+  bottom: 20%;
 }
 .main .device3 {
   background-color: #5EC8B5;
   border-radius: 50%;
   position: absolute;
-  width: 21.5rem;
-  height: 21.5rem;
-  top: 70rem;
+  width: 10%;
+  height: 0;
+  padding-bottom: 10%;
+  bottom: 7%;
   left: 50%;
   transform: translateX(8rem);
 }
@@ -359,26 +362,33 @@ section .header-dark {
   position: absolute;
 }
 .main .laptop1 {
-  top: 25rem;
+  top: 25%;
   right: 27.5rem;
   transform: translateY(-50%);
+  width: 32%;
 }
 .main .laptop2 {
   right: 15.5rem;
-  top: 50rem;
+  bottom: 24%;
+  width: 22%;
 }
 .main .iphone1 {
-  top: 65rem;
+  bottom: 7%;
   left: 50%;
   transform: translateX(1rem);
+  width: 12%;
 }
 .phone-btn {
   position: fixed;
-  bottom: 5.5rem;
+  bottom: 1.5rem;
   left: 1.5rem;
+  width: 5.4rem;
   cursor: pointer;
   z-index: 2;
   font-family: 'montserrat_regular';
+}
+.phone-btn img {
+  width: 100%;
 }
 .portfolio .logo,
 .about .logo,
@@ -437,6 +447,7 @@ section .header-dark {
   transition: 1s;
 }
 .services-main .service-wrapper .service-content {
+  position: relative;
   width: 65%;
 }
 .services-main .service-wrapper .service-content h3 {
@@ -449,6 +460,9 @@ section .header-dark {
   font-size: 2rem;
 }
 .services-main .service-wrapper .service-content a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   margin-top: 10rem;
   display: block;
   font-size: 2rem;
@@ -540,7 +554,7 @@ section .header-dark {
   width: 35rem;
   position: absolute;
   top: 50%;
-  left: 10rem;
+  left: 1rem;
   transform: translateY(-50%);
 }
 .works .works-slider .project-description h3 {
@@ -555,9 +569,13 @@ section .header-dark {
 }
 .works .works-slider .project-image {
   position: absolute;
+  width: 40%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.works .works-slider .project-image img {
+  width: 100%;
 }
 .works .works-slider .project-link {
   position: absolute;
@@ -614,6 +632,7 @@ section .header-dark {
 .how-work .how-work-content {
   margin: 5rem 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .how-work .how-work-content .stage {
@@ -1639,6 +1658,16 @@ section .header-dark {
   background-color: #242424;
   border: none;
 }
+@media (max-width: 1440px) {
+  .services-main .service-wrapper .service-content p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1281px) {
+  .main h1 {
+    font-size: 5rem;
+  }
+}
 @media (max-width: 1199px) {
   .post-head,
   .post-content,
@@ -1647,6 +1676,9 @@ section .header-dark {
   }
   .post-head {
     padding-top: 8rem;
+  }
+  .why-us .argument-wrapper .argument h3 {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 991px) {
@@ -1724,7 +1756,7 @@ section .header-dark {
   }
   section,
   main {
-    padding: 0;
+    padding: 0 6rem;
   }
   .post-head,
   .post-content,
@@ -1746,6 +1778,55 @@ section .header-dark {
   .header-dark,
   .header-light {
     margin-left: 8.5rem;
+  }
+  .phone-btn {
+    width: 4rem;
+    height: 4rem;
+  }
+  .why-us .argument-wrapper {
+    padding: 0  6rem;
+  }
+  .why-us .argument-wrapper .argument {
+    width: 50%;
+  }
+  .how-work .how-work-content .stage h3 {
+    font-size: 2rem;
+  }
+  .how-work .how-work-content .stage p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .how-work .how-work-content .stage {
+    position: relative;
+    width: 100%;
+    min-height: 21rem;
+  }
+  .how-work .how-work-content .stage p,
+  .how-work .how-work-content .stage h3 {
+    margin-left: 3rem;
+  }
+  .how-work .how-work-content .stage span {
+    position: absolute;
+    margin-left: 3rem;
+    margin-top: 0;
+    line-height: 3rem;
+  }
+  .how-work .how-work-content .stage .dot {
+    margin-top: 1rem;
+  }
+  .how-work .how-work-content .stage h3 {
+    font-size: 3rem;
+  }
+  .how-work .how-work-content .stage p {
+    font-size: 2rem;
+  }
+  .how-work .how-work-content .stage .line {
+    top: 1.5rem;
+    left: 9px;
+    height: 21rem;
+    width: 2px;
+    transform: none;
   }
 }
 @media (max-width: 545px) {
