@@ -1719,6 +1719,9 @@ section .header-dark {
   main .logo {
     display: none;
   }
+  .main h1 {
+    margin-bottom: 0;
+  }
   .collapsed {
     height: 100vh;
     transition: 0.5s;
