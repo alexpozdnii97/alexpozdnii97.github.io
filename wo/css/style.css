@@ -1898,4 +1898,12 @@ section .header-dark {
     padding-left: 2rem;
     width: 100% !important;
   }
+  .why-us .argument-wrapper .argument {
+    width: 100%;
+    margin: 2rem 0;
+    height: 8rem;
+  }
+  .why-us .argument-wrapper .argument h3 {
+    font-size: 2rem;
+  }
 }
