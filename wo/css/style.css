@@ -333,7 +333,7 @@ section .header-dark {
   height: 0;
   padding-bottom: 35%;
   top: 25%;
-  right: 27.5rem;
+  right: 15%;
   transform: translateY(-50%);
 }
 .main .device2 {
@@ -343,7 +343,7 @@ section .header-dark {
   width: 15%;
   height: 0;
   padding-bottom: 15%;
-  right: 9.5rem;
+  right: 8%;
   bottom: 20%;
 }
 .main .device3 {
@@ -364,12 +364,12 @@ section .header-dark {
 }
 .main .laptop1 {
   top: 25%;
-  right: 27.5rem;
+  right: 15%;
   transform: translateY(-50%);
   width: 32%;
 }
 .main .laptop2 {
-  right: 15.5rem;
+  right: 11%;
   bottom: 24%;
   width: 22%;
 }
