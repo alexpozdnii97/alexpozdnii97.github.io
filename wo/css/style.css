@@ -83,6 +83,7 @@ footer {
   height: 100vh;
   width: 8.5rem;
   background-color: #242424;
+  border-left: 1px solid black;
   transition: 0.5s;
 }
 .main-nav .nav-logo {
@@ -223,6 +224,7 @@ footer {
   color: white;
   font-size: 3.5rem;
   text-decoration: none;
+  font-family: 'montserrat_light';
 }
 .collapsed .to-top {
   display: none;
@@ -281,7 +283,8 @@ footer {
   font-size: 2rem;
   padding: 1.5rem 3rem;
   margin-top: 2.5rem;
-  width: 25rem;
+  width: auto;
+  font-family: 'montserrat_regular';
 }
 section .header-line {
   position: absolute;
@@ -304,13 +307,14 @@ section .header-dark {
 .main {
   background-color: #242424;
   height: 100vh;
-  padding-top: 2.5rem;
+  padding-top: 4rem;
+  position: relative;
 }
 .main .logo {
-  width: 17rem;
+  width: 12rem;
 }
 .main .logo img {
-  width: 100%;
+  max-width: 100%;
 }
 .main h1 {
   margin-top: 15rem;
@@ -374,6 +378,17 @@ section .header-dark {
   left: 1.5rem;
   cursor: pointer;
   z-index: 2;
+  font-family: 'montserrat_regular';
+}
+.portfolio .logo,
+.about .logo,
+.blog .logo {
+  width: 12rem;
+}
+.portfolio .logo img,
+.about .logo img,
+.blog .logo img {
+  width: 100%;
 }
 .why-us {
   position: relative;
@@ -519,6 +534,7 @@ section .header-dark {
 .works .works-slider .project {
   position: relative;
   height: 60rem;
+  outline: none;
 }
 .works .works-slider .project-description {
   width: 35rem;
@@ -535,6 +551,7 @@ section .header-dark {
 .works .works-slider .project-description p {
   font-size: 2rem;
   color: white;
+  font-family: 'montserrat_light';
 }
 .works .works-slider .project-image {
   position: absolute;
@@ -951,6 +968,9 @@ section .header-dark {
 .portfolio .logo {
   position: absolute;
 }
+.portfolio .logo img {
+  width: 100%;
+}
 .portfolio .section-header {
   margin-top: 4rem;
   text-align: center;
@@ -986,7 +1006,9 @@ section .header-dark {
 }
 .category-nav a:hover {
   background-color: #5EC8B5;
-  border-color: #5ec8b5;
+  border-color: #5EC8B5;
+  text-decoration: none;
+  color: #242424;
 }
 .category-nav a.active {
   background-color: #5EC8B5;
@@ -1236,6 +1258,7 @@ section .header-dark {
   bottom: 0;
 }
 .blog {
+  position: relative;
   padding-top: 4rem;
   text-align: center;
 }
@@ -1243,6 +1266,10 @@ section .header-dark {
   color: black;
   font-family: 'montserrat_bold';
   font-size: 5rem;
+  padding-top: 4rem;
+}
+.blog .logo {
+  position: absolute;
 }
 .blog-content {
   margin-top: 10rem;
@@ -1279,6 +1306,19 @@ section .header-dark {
 }
 .blog-content .blog-post .link-wrapper a:hover {
   color: #5EC8B5;
+}
+.blog-content .blog-post .link-wrapper a:hover:after {
+  color: #5EC8B5;
+}
+.blog-content .blog-post .link-wrapper a:after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  display: inline-block;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  vertical-align: middle;
+  font-weight: 500;
+  color: black;
 }
 .services-bg {
   position: relative;
@@ -1440,6 +1480,9 @@ section .header-dark {
   color: #5EC8B5;
   text-decoration: none;
 }
+.post-content ul li {
+  font-size: 2rem;
+}
 .post-footer {
   max-width: 100rem;
   padding-top: 1rem;
@@ -1595,6 +1638,16 @@ section .header-dark {
   background-color: #242424;
   border: none;
 }
+@media (max-width: 1199px) {
+  .post-head,
+  .post-content,
+  .post-footer {
+    max-width: 85rem;
+  }
+  .post-head {
+    padding-top: 8rem;
+  }
+}
 @media (max-width: 991px) {
   .main-nav {
     top: 0;
@@ -1627,6 +1680,9 @@ section .header-dark {
     width: 10rem;
   }
   .main-nav .to-top {
+    display: none;
+  }
+  main .logo {
     display: none;
   }
   .collapsed {
@@ -1663,6 +1719,22 @@ section .header-dark {
     bottom: 11rem;
     left: 50%;
     transform: translateX(-50%);
+    font-family: 'montserrat_regular';
+  }
+  section,
+  main {
+    padding: 0;
+  }
+  .post-head,
+  .post-content,
+  .post-footer,
+  .footer-post {
+    padding: 0 4rem;
+    width: 100%!important;
+  }
+  .post-footer .post-links .prev-post a,
+  .post-footer .post-links .next-post a {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 545px) {
@@ -1678,5 +1750,12 @@ section .header-dark {
   .collapsed .toggle-content .contact-btn {
     font-size: 1.6rem;
     bottom: 9rem;
+  }
+  .post-head,
+  .post-content,
+  .post-footer,
+  .footer-post {
+    padding: 0 2rem;
+    width: 100% !important;
   }
 }

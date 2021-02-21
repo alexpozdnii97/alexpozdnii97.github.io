@@ -131,7 +131,7 @@ footer{ padding:0 8.5rem;
   height: 100vh;
   width: 8.5rem;
   background-color: #242424;
-  
+  border-left: 1px solid black;
   .nav-button{
     display: flex;
     justify-content: center;
@@ -268,6 +268,7 @@ footer{ padding:0 8.5rem;
         color:white;
         font-size: 3.5rem;
         text-decoration: none;
+        .light();
       }
     }
   }
@@ -331,7 +332,8 @@ footer{ padding:0 8.5rem;
   font-size: 2rem;
   padding: 1.5rem 3rem;
   margin-top: 2.5rem;
-  width: 25rem;
+  width: auto;
+  .reg();
 } //collapsed
 
 section{
@@ -358,11 +360,12 @@ section{
 .main{
   background-color:#242424;
   height: 100vh;
-  padding-top: 2.5rem;
+  padding-top:4rem;
+  position: relative;
   .logo{
-    width: 17rem;
+    width: 12rem;
     img{
-      width: 100%;
+      max-width: 100%;
     }
   }
   h1{
@@ -428,7 +431,16 @@ section{
   left: 1.5rem;
   cursor: pointer;
   z-index: 2;
+  .reg();
 }
+
+.portfolio, .about, .blog{
+  .logo{
+    width: 12rem;
+    img{width: 100%;}
+  }
+}
+
 .why-us{
   position: relative;
   background-color:#242424;
@@ -577,6 +589,7 @@ section{
     .project{
       position: relative;
       height: 60rem;
+      outline: none;
       &-description {
         width: 35rem;
         position: absolute;
@@ -591,6 +604,7 @@ section{
         p {
           font-size: 2rem;
           color: white;
+          .light();
         }
       }
       &-image {
@@ -1032,6 +1046,7 @@ section{
   padding-bottom: 10rem;
   .logo{
    position: absolute; 
+  img{width: 100%;}
   }
   .section-header {
     margin-top: 4rem;
@@ -1071,7 +1086,9 @@ section{
 
     &:hover {
       background-color: #5EC8B5;
-      border-color: #5EC8B5
+      border-color: #5EC8B5;
+      text-decoration:none;
+      color: #242424;
     }
   }
 
@@ -1329,12 +1346,17 @@ section{
   bottom:0;
 }
 .blog{
+  position: relative;
   padding-top:4rem;
   text-align: center;
   .section-header h1{
     color: black;
     .bold();
     font-size: 5rem;
+    padding-top:4rem;
+  }
+  .logo{
+    position: absolute;
   }
 }
 .blog-content{
@@ -1359,6 +1381,8 @@ section{
       font-size: 2rem;
       font-family: sans-serif;
     }
+    
+   
     .link-wrapper{
       text-align: center;
       a{
@@ -1368,6 +1392,19 @@ section{
         text-decoration: none;
         &:hover{
           color: #5EC8B5;
+          &:after{
+            color: #5EC8B5;
+          }
+        }
+        &:after {
+          font-family: "FontAwesome";
+          content: "\f061";
+          display: inline-block;
+          font-size: 1.6rem;
+          padding-left: 1rem;
+          vertical-align: middle;
+          font-weight: 500;
+          color: black;
         }
       }
     }
@@ -1532,6 +1569,11 @@ section{
     font-size: 2rem;
     color: #5EC8B5;
     text-decoration: none;
+  }
+  ul{
+    li{
+       font-size: 2rem;
+    }
   }
 }
 .post-footer{
@@ -1700,7 +1742,15 @@ section{
 
 
 
-@media(max-width:1199px){}
+@media(max-width:1199px){
+
+  .post-head, .post-content, .post-footer{
+    max-width: 85rem;
+  }
+  .post-head{
+    padding-top: 8rem;
+  }
+}
 
 @media(max-width:991px){
   .main-nav{
@@ -1738,6 +1788,9 @@ section{
       display: none;
     }
   }
+  main .logo{
+    display: none;
+  }
   .collapsed {
     height: 100vh;
     transition: 0.5s;
@@ -1771,6 +1824,25 @@ section{
         bottom: 11rem;
         left: 50%;
         transform: translateX(-50%);
+        .reg();
+      }
+    }
+  }
+  section, main{
+    padding:0;
+  }
+  .post-head,
+  .post-content,
+  .post-footer, .footer-post {
+    padding: 0 4rem;
+    width: 100%!important;
+  }
+  .post-footer{ 
+    .post-links{
+      .prev-post, .next-post {
+       a {
+         font-size: 1.2rem;
+        }
       }
     }
   }
@@ -1791,5 +1863,12 @@ section{
       font-size: 1.6rem;
       bottom:9rem;
     }
+  }
+  .post-head,
+  .post-content,
+  .post-footer,
+  .footer-post {
+    padding: 0 2rem;
+    width: 100% !important;
   }
 }
