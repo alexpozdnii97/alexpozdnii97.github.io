@@ -1818,6 +1818,9 @@ section .header-dark {
   .how-work .how-work-content .stage p {
     font-size: 1.8rem;
   }
+  .services-main {
+    padding-right: 0;
+  }
   .services-main .service-wrapper .service {
     padding-right: 2rem;
     width: 100%;
