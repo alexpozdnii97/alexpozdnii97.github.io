@@ -63,11 +63,10 @@
 }
 html {
   font-size: 10px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body {
   overflow-x: hidden;
-  overflow: hidden;
 }
 section,
 main {
