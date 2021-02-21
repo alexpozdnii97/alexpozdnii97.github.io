@@ -1869,6 +1869,9 @@ section .header-dark {
   .iphone1 {
     display: none;
   }
+  .why-us {
+    padding-left: 4rem;
+  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
