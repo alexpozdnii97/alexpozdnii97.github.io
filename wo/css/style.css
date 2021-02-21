@@ -1845,14 +1845,6 @@ section .header-dark {
     width: 2px;
     transform: none;
   }
-  .device1,
-  .device2,
-  .device3,
-  .laptop1,
-  .laptop2,
-  .iphone1 {
-    display: none;
-  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
