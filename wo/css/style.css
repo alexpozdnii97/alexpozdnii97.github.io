@@ -1856,7 +1856,11 @@ section .header-dark {
     transform: none;
   }
   .device2,
-  .laptop2 {
+  .laptop2,
+  .device1,
+  .laptop1,
+  .device3,
+  .iphone1 {
     display: none;
   }
 }
