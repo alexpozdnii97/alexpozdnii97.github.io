@@ -1942,6 +1942,9 @@ section .header-dark {
   .portfolio-posts .portfolio-item .portfolio-image img {
     width: 100%;
   }
+  .phone-btn {
+    left: 0;
+  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
