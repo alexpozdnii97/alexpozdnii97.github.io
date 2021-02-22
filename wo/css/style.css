@@ -2001,4 +2001,7 @@ section .header-dark {
     text-align: center;
     padding: 0 4rem;
   }
+  .about {
+    padding: 4rem 1rem;
+  }
 }
