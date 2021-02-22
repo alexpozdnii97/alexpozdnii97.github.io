@@ -1819,6 +1819,9 @@ section .header-dark {
     width: 50%;
     height: 10rem;
   }
+  .how-work {
+    padding-right: 2rem;
+  }
   .how-work .how-work-content .stage h3 {
     font-size: 2rem;
   }
