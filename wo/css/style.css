@@ -1851,6 +1851,12 @@ section .header-dark {
   }
   .category-nav {
     justify-content: right;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  .category-nav a {
+    margin: 0;
+    margin-right: 1.5rem;
   }
 }
 @media (max-width: 767px) {
