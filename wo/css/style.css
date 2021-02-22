@@ -875,6 +875,17 @@ section .header-dark {
 .about .logo {
   position: absolute;
 }
+.about h2 {
+  color: white;
+  font-size: 4rem;
+  font-family: 'montserrat_regular';
+}
+.about p {
+  color: white;
+  font-size: 2rem;
+  font-family: 'montserrat_extralight';
+  min-height: 20rem;
+}
 .about .section-header {
   margin-top: 4rem;
   text-align: center;
@@ -888,17 +899,7 @@ section .header-dark {
   color: white;
   font-size: 2.5rem;
   font-family: 'montserrat_regular';
-}
-.about h2 {
-  color: white;
-  font-size: 4rem;
-  font-family: 'montserrat_regular';
-}
-.about p {
-  color: white;
-  font-size: 2rem;
-  font-family: 'montserrat_extralight';
-  min-height: 20rem;
+  min-height: 12rem;
 }
 .team {
   position: relative;
