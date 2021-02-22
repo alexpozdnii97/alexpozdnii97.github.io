@@ -1873,6 +1873,9 @@ section .header-dark {
   .team .team-slider {
     height: 40rem;
   }
+  .blog-content {
+    padding: 4rem 0;
+  }
 }
 @media (max-width: 767px) {
   .main h1 {
