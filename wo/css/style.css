@@ -811,6 +811,7 @@ section .header-dark {
   line-height: 4rem;
   font-size: 2rem;
   border-radius: 0;
+  -webkit-appearance: none;
 }
 .default-form .default-form-btn {
   margin-top: 4rem;
