@@ -1057,9 +1057,9 @@ section .header-dark {
   padding: 6rem 0rem;
   padding-right: 4rem;
   width: 50%;
+  display: flex;
 }
 .portfolio-posts .portfolio-item .portfolio-content {
-  display: inline-block;
   width: 45%;
   vertical-align: top;
 }
@@ -1098,7 +1098,6 @@ section .header-dark {
   color: white;
 }
 .portfolio-posts .portfolio-item .portfolio-image {
-  display: inline-block;
   width: 50%;
 }
 .portfolio-posts .portfolio-item .portfolio-image img {
@@ -1905,6 +1904,30 @@ section .header-dark {
   .services-main .header-dark {
     padding-left: 0;
     font-size: 3rem;
+  }
+  .portfolio-posts {
+    padding: 0 4rem;
+  }
+  .portfolio-posts .portfolio-item {
+    padding: 4rem 0;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    border-bottom: 1px solid black;
+  }
+  .portfolio-posts .portfolio-item .portfolio-content,
+  .portfolio-posts .portfolio-item .portfolio-image {
+    width: 100%;
+  }
+  .portfolio-posts .portfolio-item .portfolio-content {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .portfolio-posts .portfolio-item .portfolio-image {
+    width: 90%;
+    margin: 4rem auto;
+  }
+  .portfolio-posts .portfolio-item .portfolio-image img {
+    width: 100%;
   }
 }
 @media (max-width: 545px) {

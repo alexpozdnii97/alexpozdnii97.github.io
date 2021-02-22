@@ -1136,8 +1136,8 @@ section{
     padding: 6rem 0rem;
     padding-right: 4rem;
     width: 50%;
+    display: flex;
     .portfolio-content{
-      display: inline-block;
       width: 45%;
       vertical-align: top;
       h3{
@@ -1176,7 +1176,7 @@ section{
       }
     }
     .portfolio-image{
-      display: inline-block;
+      
       width: 50%;
       img{
         display: block;
@@ -2014,6 +2014,29 @@ section{
   .services-main .header-dark{
     padding-left:0;
     font-size: 3rem;
+  }
+  .portfolio-posts{
+    padding: 0 4rem;
+    .portfolio-item{
+      padding:4rem 0;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      border-bottom:1px solid black;
+      .portfolio-content,.portfolio-image {
+        width: 100%;
+      }
+      .portfolio-content{
+        margin: 0 auto;
+        width: 90%;
+      }
+      .portfolio-image{
+        width: 90%;
+        margin: 4rem auto;
+        img{
+          width: 100%;
+        }
+      }
+    }
   }
 }
 @media(max-width:545px) {
