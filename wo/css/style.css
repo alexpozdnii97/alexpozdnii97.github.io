@@ -1861,6 +1861,10 @@ section .header-dark {
     margin: 0;
     margin-right: 1.5rem;
   }
+  .about {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 @media (max-width: 767px) {
   .main h1 {
@@ -1948,6 +1952,9 @@ section .header-dark {
   .phone-btn {
     left: 0;
   }
+  .team .team-slider {
+    height: 40rem;
+  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
@@ -1970,6 +1977,12 @@ section .header-dark {
     padding-right: 2rem;
     padding-left: 2rem;
     width: 100% !important;
+  }
+  .team {
+    padding: 4rem 2rem;
+  }
+  .why-us {
+    padding: 4rem 2rem;
   }
   .why-us .argument-wrapper .argument {
     width: 100%;
