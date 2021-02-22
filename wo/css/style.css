@@ -1010,7 +1010,7 @@ section .header-dark {
   margin: 0 auto;
   margin-top: 10rem;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   overflow-x: scroll;
 }
 .category-nav::-webkit-scrollbar {
@@ -1844,6 +1844,9 @@ section .header-dark {
     width: 100%;
     padding-right: 4rem;
     padding-left: 4rem;
+  }
+  .category-nav {
+    justify-content: right;
   }
 }
 @media (max-width: 767px) {
