@@ -1975,6 +1975,7 @@ section .header-dark {
   }
   .discussion {
     padding: 0 4rem;
+    padding-top: 4rem;
   }
   .footer-dark {
     text-align: center;
