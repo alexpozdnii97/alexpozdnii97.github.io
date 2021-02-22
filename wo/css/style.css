@@ -800,7 +800,7 @@ section .header-dark {
 }
 .default-form {
   margin: 0 auto;
-  max-width: 40rem;
+  max-width: 35rem;
 }
 .default-form input {
   background-color: transparent;
