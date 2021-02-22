@@ -1010,8 +1010,11 @@ section .header-dark {
   margin: 0 auto;
   margin-top: 10rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: right;
+  overflow-x: scroll;
+}
+.category-nav::-webkit-scrollbar {
+  display: none;
 }
 .category-nav a {
   margin: 0 1.5rem;
@@ -1795,7 +1798,12 @@ section .header-dark {
   }
   .header-dark,
   .header-light {
-    margin-left: 8.5rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  .header-line {
+    left: 50%;
+    transform: translateX(-50%);
   }
   .phone-btn {
     width: 4rem;
