@@ -1866,6 +1866,9 @@ section .header-dark {
     padding-left: 0;
     padding-right: 0;
   }
+  .team .team-slider {
+    height: 40rem;
+  }
 }
 @media (max-width: 767px) {
   .main h1 {
@@ -1954,7 +1957,9 @@ section .header-dark {
     left: 0;
   }
   .team .team-slider {
-    height: 40rem;
+    height: 35rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
   }
 }
 @media (max-width: 545px) {
