@@ -1371,8 +1371,8 @@ section{
   flex-wrap: wrap;
   justify-content: center;
   .blog-post{
-    width: 60rem;
-    margin: 0 6rem;
+    width: 42.5%;
+    padding: 0 4rem;
     margin-bottom: 5rem;
     img{
       width: 100%;
@@ -1745,7 +1745,11 @@ section{
   }
   
 }
-
+@media(max-width:1540px){
+  .category-nav{
+    justify-content: left;
+  }
+}
 @media(max-width:1440px){
   .services-main .service-wrapper .service-content {
     p {
@@ -1770,6 +1774,7 @@ section{
       font-size: 2.5rem;
     }
   }
+  //
   
 }
 @media(max-width:991px){
@@ -1947,7 +1952,6 @@ section{
     justify-content: right;
     padding-right: 4rem;
     padding-left: 4rem;
-    
     a{
       margin: 0;
       margin-right: 1.5rem;
@@ -1962,6 +1966,27 @@ section{
   }
   .blog-content{
     padding:4rem 0;
+  }
+  .contacts{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    h1{
+      margin-bottom: 6rem;
+    }
+    .child{
+      margin-bottom: 2rem;
+    }
+  }
+  .contacts-footer{
+    position: static;
+  }
+  .contacts-discussion{
+    margin-top: 4rem;
+  }
+  .blog{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media(max-width:767px) {
@@ -2058,6 +2083,9 @@ section{
       font-size: 3rem;
     }
   }
+  .blog-content .blog-post{
+    width: 70rem;
+  }
 }
 @media(max-width:545px) {
   .collapsed .toggle-content{
@@ -2085,7 +2113,6 @@ section{
   }
   .team{
     padding:4rem 2rem;
-    
   }
   .why-us{
     padding: 4rem 2rem;
@@ -2117,4 +2144,11 @@ section{
   // .team .team-slider .team-member{
   //   text-align: center;
   // }
+    .portfolio-posts .portfolio-item{
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+    .category-nav a {
+      font-size: 1.8rem;
+    }
 }

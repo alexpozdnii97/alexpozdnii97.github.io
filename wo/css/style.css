@@ -1305,8 +1305,8 @@ section .header-dark {
   justify-content: center;
 }
 .blog-content .blog-post {
-  width: 60rem;
-  margin: 0 6rem;
+  width: 42.5%;
+  padding: 0 4rem;
   margin-bottom: 5rem;
 }
 .blog-content .blog-post img {
@@ -1665,6 +1665,11 @@ section .header-dark {
   background-color: #242424;
   border: none;
 }
+@media (max-width: 1540px) {
+  .category-nav {
+    justify-content: left;
+  }
+}
 @media (max-width: 1440px) {
   .services-main .service-wrapper .service-content p {
     font-size: 1.8rem;
@@ -1872,6 +1877,27 @@ section .header-dark {
   .blog-content {
     padding: 4rem 0;
   }
+  .contacts {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .contacts h1 {
+    margin-bottom: 6rem;
+  }
+  .contacts .child {
+    margin-bottom: 2rem;
+  }
+  .contacts-footer {
+    position: static;
+  }
+  .contacts-discussion {
+    margin-top: 4rem;
+  }
+  .blog {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 @media (max-width: 767px) {
   .main h1 {
@@ -1967,6 +1993,9 @@ section .header-dark {
   .about h2 {
     font-size: 3rem;
   }
+  .blog-content .blog-post {
+    width: 70rem;
+  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
@@ -2014,5 +2043,12 @@ section .header-dark {
   }
   .about {
     padding: 4rem 1rem;
+  }
+  .portfolio-posts .portfolio-item {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .category-nav a {
+    font-size: 1.8rem;
   }
 }
