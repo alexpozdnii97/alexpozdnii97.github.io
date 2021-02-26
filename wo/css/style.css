@@ -2077,13 +2077,15 @@ section .header-dark {
   }
   .main .device1 {
     width: 45%;
+    padding-bottom: 45%;
   }
   .main .laptop1 {
     width: 40%;
   }
   .main .device2 {
-    bottom: 11%;
+    bottom: 9%;
     width: 20%;
+    padding-bottom: 20%;
   }
   .main .laptop2 {
     bottom: 10%;
