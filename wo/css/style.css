@@ -1910,13 +1910,13 @@ section .header-dark {
     flex-wrap: wrap;
   }
   .services .services-container .service-head {
-    width: 50%;
+    width: 40%;
   }
   .services .services-container .service-head h2 {
     font-size: 3rem;
   }
   .services .services-container .service-description {
-    width: 50%;
+    width: 60%;
   }
   .services .services-container .service-links {
     padding: 0;
