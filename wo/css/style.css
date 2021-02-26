@@ -2072,11 +2072,22 @@ section .header-dark {
     font-size: 1.6rem;
     bottom: 9rem;
   }
+  .main h1 {
+    font-size: 2.5rem;
+  }
+  .main .device1 {
+    width: 45%;
+  }
+  .main .laptop1 {
+    width: 40%;
+  }
   .main .device2 {
-    bottom: 12%;
+    bottom: 11%;
+    width: 20%;
   }
   .main .laptop2 {
     bottom: 10%;
+    width: 28%;
   }
   .post-head,
   .post-content,
