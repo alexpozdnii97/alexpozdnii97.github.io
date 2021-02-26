@@ -1756,6 +1756,12 @@ section{
       font-size: 1.8rem;
     }
   }
+  .services .services-container .service-description p {
+    font-size: 1.8rem;
+  }
+  .services .services-container .service-links a{
+    font-size: 1.8rem;
+  }
 }
 @media(max-width:1281px){
   .main h1{
@@ -1988,6 +1994,29 @@ section{
     padding-left: 0;
     padding-right: 0;
   }
+  .services {
+    .services-container{
+      padding: 4rem 2rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .service-head{
+        width: 50%;
+        h2{
+          font-size: 3rem;
+        }
+      }
+      .service-description {
+        width: 50%;
+      }
+      .service-links{
+        padding: 0;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 4rem;
+        justify-content: left;
+      }
+    }
+  }
 }
 @media(max-width:767px) {
   .main h1{
@@ -2086,6 +2115,39 @@ section{
   .blog-content .blog-post{
     width: 70rem;
   }
+  .services {
+    .services-container {
+      padding: 4rem 2rem;
+      .service-head {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 6rem;
+        h2 {
+          font-size: 4rem;
+          width: 50%;
+        }
+        img{
+          order: 3;
+          position: absolute;
+          width: 15rem;
+          right: 4rem;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .service-description {
+        width: 100%;
+      }
+      .service-links {
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 4rem;
+        justify-content: left;
+      }
+    }
+  }
 }
 @media(max-width:545px) {
   .collapsed .toggle-content{
@@ -2150,5 +2212,11 @@ section{
     }
     .category-nav a {
       font-size: 1.8rem;
+    }
+    .services .services-container{
+      padding: 4rem 1rem;
+    }
+    .services .services-container .service-head img{
+      width: 12.5rem;
     }
 }
