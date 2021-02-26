@@ -414,6 +414,8 @@ section .header-dark {
   justify-content: space-evenly;
 }
 .why-us .argument-wrapper .argument {
+  display: flex;
+  align-items: center;
   margin: 5rem 0;
   padding: 0 1.5rem;
   width: 30%;
@@ -2108,7 +2110,7 @@ section .header-dark {
   .why-us .argument-wrapper .argument {
     width: 100%;
     margin: 2rem 0;
-    height: 8rem;
+    height: 7rem;
   }
   .why-us .argument-wrapper .argument h3 {
     font-size: 2rem;
