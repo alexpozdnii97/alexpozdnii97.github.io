@@ -2124,4 +2124,10 @@ section .header-dark {
   .services .services-container .service-head p {
     font-size: 2 rem;
   }
+  .services .services-container .service-links {
+    padding-left: 3rem;
+  }
+  .services .services-container .service-links a {
+    width: 100%;
+  }
 }
