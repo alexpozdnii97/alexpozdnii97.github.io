@@ -1740,7 +1740,7 @@ section .header-dark {
   }
   .main {
     position: relative;
-    padding-left: 2rem;
+    padding-left: 4rem;
     padding-right: 0;
   }
   .main h1 {
@@ -1751,7 +1751,7 @@ section .header-dark {
   }
   .main .contact-btn {
     position: absolute;
-    top: 55%;
+    top: 60%;
   }
   .collapsed {
     height: 100vh;
@@ -1971,15 +1971,11 @@ section .header-dark {
     width: 2px;
     transform: none;
   }
-  .device2,
-  .laptop2,
-  .device1,
-  .laptop1,
   .device3,
   .iphone1 {
     display: none;
   }
-  .why-us {
+  .device .why-us {
     padding-left: 0;
   }
   .header-line {
