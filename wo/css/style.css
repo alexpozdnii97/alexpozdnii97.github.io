@@ -2131,4 +2131,42 @@ section .header-dark {
   .services .services-container .service-links a {
     width: 100%;
   }
+  .services-main .service-wrapper .service {
+    padding: 0rem 2rem;
+    margin: 4rem 0;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid grey;
+  }
+  .services-main .service-wrapper .service .service-image {
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    transform: translateY(-25%);
+  }
+  .services-main .service-wrapper .service .service-content {
+    width: 100%;
+  }
+  .services-main .service-wrapper .service .service-content h3 {
+    margin-bottom: 8rem;
+    font-size: 3rem;
+  }
+  .services-main .service-wrapper .service .service-content a {
+    position: static;
+    margin-top: 0;
+  }
+  .services-main .service-wrapper .service .service-content p {
+    margin-bottom: 2rem;
+  }
+  .footer-dark,
+  .footer-light {
+    padding-top: 4rem ;
+  }
+  .footer-dark p,
+  .footer-light p {
+    font-size: 1.4rem;
+  }
+  .default-form .default-form-btn {
+    margin-bottom: 2rem;
+  }
 }
