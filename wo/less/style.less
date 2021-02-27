@@ -985,11 +985,12 @@ section{
     margin-top: 10rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     margin-bottom: 5rem;
-    height: 45rem;
+    
     .team-member{
+      width: 100%;
       padding: 1rem 3rem;
       outline: none;
       img {
@@ -1006,9 +1007,6 @@ section{
       }
     }
     .slick-arrow{
-      position: absolute;
-      bottom: 0;
-      left:50%;
       width: 4rem;
       height: 4rem;
       background: transparent;
@@ -1030,11 +1028,13 @@ section{
       }
     }
     .slick-next{
-      transform: translateX(75%);
+      order: 3;
+      margin: 1rem;
     }
     .slick-prev{
+      order: 2;
       z-index: 100;
-      transform: translateX(-125%);
+      margin: 1rem;
     }
   }
 }
@@ -2372,6 +2372,9 @@ section{
         margin-bottom: 2rem;
       }
     }
+  }
+  .services-main .all-services a{
+    margin: 2rem auto;
   }
   .footer-dark, .footer-light{
     padding-top:4rem ;

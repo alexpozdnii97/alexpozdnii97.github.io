@@ -903,12 +903,12 @@ section .header-dark {
   margin-top: 10rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
   margin-bottom: 5rem;
-  height: 45rem;
 }
 .team .team-slider .team-member {
+  width: 100%;
   padding: 1rem 3rem;
   outline: none;
 }
@@ -925,9 +925,6 @@ section .header-dark {
   font-family: 'montserrat_regular';
 }
 .team .team-slider .slick-arrow {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
   width: 4rem;
   height: 4rem;
   background: transparent;
@@ -949,11 +946,13 @@ section .header-dark {
   outline: none;
 }
 .team .team-slider .slick-next {
-  transform: translateX(75%);
+  order: 3;
+  margin: 1rem;
 }
 .team .team-slider .slick-prev {
+  order: 2;
   z-index: 100;
-  transform: translateX(-125%);
+  margin: 1rem;
 }
 .feedback {
   position: relative;
@@ -2222,6 +2221,9 @@ section .header-dark {
   }
   .services-main .service-wrapper .service .service-content p {
     margin-bottom: 2rem;
+  }
+  .services-main .all-services a {
+    margin: 2rem auto;
   }
   .footer-dark,
   .footer-light {
