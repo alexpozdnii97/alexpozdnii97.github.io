@@ -1771,7 +1771,7 @@ section .header-dark {
   .collapsed .toggle-content .navigation-links {
     margin: 0 auto;
     margin-top: 15rem;
-    width: 25rem;
+    width: 30rem;
   }
   .collapsed .toggle-content .navigation-links li a {
     font-size: 3rem;
