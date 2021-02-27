@@ -2085,6 +2085,22 @@ section .header-dark {
   .works .works-slider .project .project-image {
     width: 70%;
   }
+  .works .works-slider .slick-prev {
+    left: 2rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .works .works-slider .slick-prev i {
+    font-size: 1.4rem;
+  }
+  .works .works-slider .slick-next {
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .works .works-slider .slick-next i {
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
