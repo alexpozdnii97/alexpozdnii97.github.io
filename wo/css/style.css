@@ -766,10 +766,9 @@ section .header-dark {
 }
 .discussion {
   padding-top: 4rem;
-  padding-bottom: 10rem;
+  padding-bottom: 0;
   background-color: #242424;
   position: relative;
-  height: 50rem;
 }
 .discussion h3 {
   color: white;
