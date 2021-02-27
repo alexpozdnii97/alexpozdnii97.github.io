@@ -1902,6 +1902,9 @@ section .header-dark {
     padding-left: 0;
     padding-right: 0;
   }
+  .blog-content {
+    margin-top: 0;
+  }
   .services .services-container {
     padding: 4rem 2rem;
     justify-content: space-between;
@@ -2226,7 +2229,9 @@ section .header-dark {
   }
   .footer-dark,
   .footer-light {
-    padding-top: 4rem ;
+    text-align: center;
+    padding: 4rem 2rem;
+    padding-bottom: 1rem;
   }
   .footer-dark p,
   .footer-light p {
