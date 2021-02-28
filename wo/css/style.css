@@ -1502,7 +1502,7 @@ section .header-dark {
   font-size: 2rem;
 }
 .post-footer {
-  max-width: 100rem;
+  max-width: 100%;
   padding-top: 1rem;
   margin: 0 auto;
 }
