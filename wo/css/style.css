@@ -1909,7 +1909,7 @@ section .header-dark {
     width: 100%;
   }
   .services .services-container {
-    padding: 4rem 2rem;
+    padding: 4rem 3rem;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -2055,7 +2055,7 @@ section .header-dark {
     width: 70rem;
   }
   .services .services-container {
-    padding: 4rem 2rem;
+    padding: 4rem 3rem;
   }
   .services .services-container .service-head {
     position: relative;
@@ -2180,7 +2180,7 @@ section .header-dark {
     font-size: 1.8rem;
   }
   .services .services-container {
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
   }
   .services .services-container .service-head img {
     width: 10rem;
@@ -2195,7 +2195,7 @@ section .header-dark {
     font-size: 2 rem;
   }
   .services .services-container .service-links {
-    padding-left: 3rem;
+    padding-left: 0;
   }
   .services .services-container .service-links a {
     width: 100%;
