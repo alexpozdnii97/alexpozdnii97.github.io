@@ -1905,6 +1905,9 @@ section .header-dark {
   .blog-content {
     margin-top: 0;
   }
+  .blog-content .blog-post {
+    width: 100%;
+  }
   .services .services-container {
     padding: 4rem 2rem;
     justify-content: space-between;
