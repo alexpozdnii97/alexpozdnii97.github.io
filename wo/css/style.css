@@ -723,12 +723,13 @@ section .header-dark {
 }
 .price-list .price-table .line {
   width: 100%;
-  padding: 0 4rem;
+  padding: 0 1rem;
   border-bottom: 1px solid #a0a0a0;
   display: flex;
   flex-wrap: nowrap;
   height: 10rem;
   justify-content: space-between;
+  align-items: center;
 }
 .price-list .price-table .line p {
   font-size: 2.5rem;
@@ -751,9 +752,10 @@ section .header-dark {
 }
 .price-list .price-table .header {
   background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
 }
 .price-list .price-table .header h3 {
-  line-height: 10rem;
   font-size: 2.5rem;
   font-family: 'montserrat_medium';
   padding: 0;
@@ -2269,6 +2271,13 @@ section .header-dark {
     right: 1rem;
   }
   .price-list {
+    margin-right: 0;
     padding: 4rem 2rem;
+  }
+  .price-list .price-table .header h3 {
+    font-size: 1.6rem;
+  }
+  .price-list .price-table .line p {
+    font-size: 1.6rem;
   }
 }
