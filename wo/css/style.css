@@ -1630,7 +1630,7 @@ section .header-dark {
   font-family: 'montserrat_regular';
 }
 .prices-wrapper .price-features {
-  min-height: 50rem;
+  min-height: 42rem;
 }
 .prices-wrapper .price-features p {
   font-size: 2rem;
