@@ -1352,7 +1352,7 @@ section .header-dark {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 .services {
   padding: 0;
