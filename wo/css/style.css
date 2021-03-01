@@ -1965,10 +1965,10 @@ section .header-dark {
     margin-right: 0;
   }
   .price-list .price-table .header h3 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .price-list .price-table .line p {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 767px) {
