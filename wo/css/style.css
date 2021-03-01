@@ -738,13 +738,13 @@ section .header-dark {
   margin: 0;
 }
 .price-list .price-table .line .type {
-  width: 40rem;
+  width: 35%;
 }
 .price-list .price-table .line .price {
-  width: 15rem;
+  width: 25%;
 }
 .price-list .price-table .line .time {
-  width: 30rem;
+  width: 25%;
 }
 .price-list .price-table .line h3,
 .price-list .price-table .line p {
@@ -763,6 +763,7 @@ section .header-dark {
 }
 .price-list p {
   font-size: 1.5rem;
+  padding: 0 1rem;
 }
 .discussion {
   padding-top: 4rem;
@@ -1964,11 +1965,17 @@ section .header-dark {
   .price-list {
     margin-right: 0;
   }
+  .price-list .price-table {
+    margin: 6rem 0;
+  }
   .price-list .price-table .header h3 {
     font-size: 2rem;
   }
   .price-list .price-table .line p {
     font-size: 2rem;
+  }
+  .landing-description {
+    padding: 6rem 0;
   }
 }
 @media (max-width: 767px) {
@@ -2117,6 +2124,12 @@ section .header-dark {
   .price-list {
     margin-right: 0;
     padding: 2rem 4rem;
+  }
+  .price-list .price-table {
+    margin: 4rem 0;
+  }
+  .landing-description {
+    padding: 4rem 0;
   }
 }
 @media (max-width: 545px) {
