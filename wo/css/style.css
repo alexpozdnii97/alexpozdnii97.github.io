@@ -1961,6 +1961,9 @@ section .header-dark {
     left: 4.5rem;
     transform: translateY(-50%);
   }
+  .price-list {
+    margin-right: 0;
+  }
 }
 @media (max-width: 767px) {
   .main h1 {
@@ -2104,6 +2107,10 @@ section .header-dark {
   }
   .works .works-slider .slick-next i {
     font-size: 1.4rem;
+  }
+  .price-list {
+    margin-right: 0;
+    padding: 2rem 4rem;
   }
 }
 @media (max-width: 545px) {
@@ -2256,5 +2263,8 @@ section .header-dark {
   }
   .works .works-slider .slick-next {
     right: 1rem;
+  }
+  .price-list {
+    padding: 4rem 2rem;
   }
 }
