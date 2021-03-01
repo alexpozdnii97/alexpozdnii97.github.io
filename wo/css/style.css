@@ -2010,8 +2010,8 @@ section .header-dark {
   .header-line {
     display: none;
   }
-  section > .header-light,
-  .header-dark {
+  section .header-light,
+  section .header-dark {
     font-size: 3rem;
     margin: 0;
     text-align: center;
