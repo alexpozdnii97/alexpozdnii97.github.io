@@ -2272,7 +2272,7 @@ section .header-dark {
   }
   .price-list {
     margin-right: 0;
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
   }
   .price-list .price-table .header h3 {
     font-size: 1.6rem;
