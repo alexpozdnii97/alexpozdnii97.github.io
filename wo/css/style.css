@@ -1964,6 +1964,12 @@ section .header-dark {
   .price-list {
     margin-right: 0;
   }
+  .price-list .price-table .header h3 {
+    font-size: 1rem;
+  }
+  .price-list .price-table .line p {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 767px) {
   .main h1 {
