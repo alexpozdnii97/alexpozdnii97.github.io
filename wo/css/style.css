@@ -1578,10 +1578,12 @@ section .header-dark {
   display: flex;
   flex-wrap: nowrap;
 }
-.landing-description .advantages b {
+.landing-description .advantages b,
+.landing-description .advantages h2 {
   color: #378D00;
 }
-.landing-description .disadvantages b {
+.landing-description .disadvantages b,
+.landing-description .disadvantages h2 {
   color: #FF0000;
 }
 .prices {
