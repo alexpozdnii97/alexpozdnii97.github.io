@@ -1247,7 +1247,7 @@ section .header-dark {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .contacts .contacts-wrapper .child {
   width: 36rem;
