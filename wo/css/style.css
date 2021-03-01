@@ -1825,6 +1825,7 @@ section .header-dark {
     padding-left: 2rem;
   }
   .why-us .argument-wrapper .argument {
+    margin: 3rem 0;
     width: 50%;
     height: 10rem;
   }
