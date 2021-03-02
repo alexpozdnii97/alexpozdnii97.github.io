@@ -2182,6 +2182,9 @@ section .header-dark {
   .discussion .discussion-content h3 {
     font-size: 2rem;
   }
+  .post-content p {
+    font-size: 1.8rem;
+  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
