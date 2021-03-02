@@ -2117,6 +2117,10 @@ section .header-dark {
     margin-top: 4rem;
     justify-content: left;
   }
+  .works .header-dark,
+  .works .header-light {
+    padding-left: 0;
+  }
   .works .works-slider .project .project-image {
     width: 70%;
   }
