@@ -2068,8 +2068,8 @@ section .header-dark {
     left: 0;
   }
   .team .team-slider {
-    margin-bottom: 5rem;
-    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 5rem;
   }
   .about h2 {
     font-size: 3rem;
