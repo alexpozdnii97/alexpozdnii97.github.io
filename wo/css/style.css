@@ -1811,12 +1811,11 @@ section .header-dark {
   .header-dark,
   .header-light {
     margin-left: 0;
-    text-align: center;
+    text-align: left;
   }
   .header-line {
     left: 50%;
     transform: translateX(-50%);
-    display: none;
   }
   .phone-btn {
     width: 4rem;
@@ -1843,6 +1842,10 @@ section .header-dark {
   .how-work .how-work-content .stage p {
     font-size: 1.8rem;
     min-height: 10rem;
+  }
+  .how-work .header-dark,
+  .how-work .header-line {
+    padding-right: 8.5rem;
   }
   .services-main {
     padding-right: 0;
