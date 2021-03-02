@@ -2068,6 +2068,12 @@ section .header-dark {
   .portfolio .section-header p {
     font-size: 2rem;
   }
+  .portfolio .section-header,
+  .services-bg .section-header,
+  .blog .section-header {
+    padding-top: 0;
+    margin-top: 6rem;
+  }
   .portfolio-posts .portfolio-item {
     padding: 4rem 4rem;
     flex-wrap: wrap;
