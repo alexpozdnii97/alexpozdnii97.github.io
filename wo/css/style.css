@@ -2045,7 +2045,7 @@ section .header-dark {
     padding-left: 0;
     font-size: 3rem;
   }
-  .portfolio .section-header h2 {
+  .portfolio .section-header h1 {
     font-size: 4rem;
   }
   .portfolio .section-header p {
@@ -2214,7 +2214,7 @@ section .header-dark {
   .about {
     padding: 4rem 1rem;
   }
-  .portfolio .section-header h2 {
+  .portfolio .section-header h1 {
     font-size: 3rem;
   }
   .portfolio .section-header p {
