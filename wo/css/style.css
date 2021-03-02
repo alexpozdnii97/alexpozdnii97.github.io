@@ -2183,7 +2183,7 @@ section .header-dark {
     font-size: 2rem;
   }
   .post-content p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 545px) {
