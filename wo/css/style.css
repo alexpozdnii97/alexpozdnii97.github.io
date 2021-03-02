@@ -1857,6 +1857,9 @@ section .header-dark {
     padding-left: 0;
     padding-right: 0;
   }
+  .team {
+    padding-bottom: 4rem;
+  }
   .team .team-slider {
     margin-bottom: 0;
   }
@@ -2207,9 +2210,6 @@ section .header-dark {
   }
   .post-content p {
     font-size: 1.6rem;
-  }
-  .team {
-    padding: 4rem 2rem;
   }
   .why-us {
     padding: 4rem 2rem;
