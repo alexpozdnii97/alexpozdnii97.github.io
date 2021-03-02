@@ -2153,6 +2153,9 @@ section .header-dark {
   .landing-description {
     padding: 4rem 0;
   }
+  .discussion .discussion-content h3 {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
