@@ -1812,7 +1812,7 @@ section .header-dark {
   .header-dark,
   .header-light {
     margin-left: 0;
-    text-align: center;
+    text-align: left;
   }
   .header-line {
     left: 50%;
@@ -1939,6 +1939,10 @@ section .header-dark {
     padding-right: 0;
     padding-left: 0;
   }
+  .works .header-dark,
+  .works .header-light {
+    padding-left: 8.5rem;
+  }
   .works .works-slider .project {
     justify-content: center;
   }
@@ -2028,14 +2032,14 @@ section .header-dark {
   .device .why-us {
     padding-left: 0;
   }
-  .header-line {
-    display: none;
-  }
   section .header-light,
   section .header-dark {
     font-size: 3rem;
     margin: 0;
     text-align: center;
+  }
+  section .header-line {
+    display: none;
   }
   .services-main .header-dark {
     padding-left: 0;
