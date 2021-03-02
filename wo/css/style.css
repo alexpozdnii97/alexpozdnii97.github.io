@@ -905,6 +905,7 @@ section .header-dark {
   justify-content: center;
   text-align: center;
   margin-bottom: 5rem;
+  overflow-x: hidden;
 }
 .team .team-slider .team-member {
   width: 100%;
