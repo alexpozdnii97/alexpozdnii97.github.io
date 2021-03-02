@@ -1838,6 +1838,7 @@ section .header-dark {
   }
   .how-work {
     padding-right: 2rem;
+    padding-left: 4rem;
   }
   .how-work .how-work-content .stage h3 {
     font-size: 2rem;
