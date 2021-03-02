@@ -1859,9 +1859,6 @@ section .header-dark {
   .team .team-slider {
     margin-bottom: 0;
   }
-  .team .team-slider .slick-arrow {
-    margin-bottom: 4rem;
-  }
   .blog-content {
     padding: 4rem 0;
   }
