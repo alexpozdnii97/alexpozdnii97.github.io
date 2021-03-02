@@ -1285,7 +1285,7 @@ section .header-dark {
   color: black;
   font-family: 'montserrat_bold';
   font-size: 5rem;
-  padding-top: 4rem;
+  margin-top: 8rem;
 }
 .blog .logo {
   position: absolute;
@@ -1660,6 +1660,12 @@ section .header-dark {
   background-color: #242424;
   border: none;
 }
+.prices .portfolio .section-header,
+.prices .services-bg .section-header,
+.prices .blog .section-header {
+  padding-top: 0;
+  margin-top: 10rem;
+}
 @media (max-width: 1540px) {
   .category-nav {
     justify-content: left;
@@ -1989,6 +1995,12 @@ section .header-dark {
   .landing-description {
     margin-top: 0;
     padding: 6rem 0;
+  }
+  .portfolio .section-header,
+  .services-bg .section-header,
+  .blog .section-header {
+    padding-top: 0;
+    margin-top: 8rem;
   }
 }
 @media (max-width: 767px) {
