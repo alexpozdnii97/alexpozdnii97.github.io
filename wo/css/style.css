@@ -1843,10 +1843,6 @@ section .header-dark {
     font-size: 1.8rem;
     min-height: 10rem;
   }
-  .how-work .header-dark,
-  .how-work .header-line {
-    padding-right: 8.5rem;
-  }
   .services-main {
     padding-right: 0;
   }
@@ -1941,6 +1937,10 @@ section .header-dark {
   .works {
     padding-right: 0;
     padding-left: 0;
+  }
+  .works .header-dark,
+  .works .header-line {
+    padding-left: 8.5rem;
   }
   .works .works-slider .project {
     justify-content: center;
