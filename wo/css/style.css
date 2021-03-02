@@ -797,6 +797,7 @@ section .header-dark {
 }
 .default-form input {
   background-color: transparent;
+  margin-top: 0.5rem;
   width: 100%;
   border: none;
   border-bottom: 1px solid white;
@@ -2150,6 +2151,15 @@ section .header-dark {
     font-size: 1.6rem;
     bottom: 9rem;
     width: 30rem;
+  }
+  .main-nav {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+  .main-nav .nav-logo {
+    height: 4rem;
+    width: auto;
   }
   .main h1 {
     font-size: 2.5rem;
