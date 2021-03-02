@@ -1410,7 +1410,8 @@ section .header-dark {
   text-align: center;
   margin: 0 auto;
 }
-.post-head h1 {
+.post-head .section-header h1 {
+  color: black;
   font-size: 4rem;
   font-family: 'montserrat_bold';
   margin-bottom: 4rem;
@@ -1473,7 +1474,7 @@ section .header-dark {
   font-size: 2rem;
 }
 .post-footer {
-  max-width: 100%;
+  max-width: 100rem;
   padding-top: 1rem;
   margin: 0 auto;
 }
@@ -1776,12 +1777,13 @@ section .header-dark {
   .post-footer,
   .footer-post {
     padding: 0 4rem;
-    width: 100%!important;
+    padding-top: 1rem;
+    max-width: 100% !important;
   }
   .post-head {
     padding-top: 8rem;
   }
-  .post-head h1 {
+  .post-head .section-header h1 {
     font-size: 2.5rem;
   }
   .post-footer .post-links .prev-post a,
@@ -2057,9 +2059,6 @@ section .header-dark {
   .about h2 {
     font-size: 3rem;
   }
-  .blog-content .blog-post {
-    width: 70rem;
-  }
   .services .services-container {
     padding: 4rem 3rem;
   }
@@ -2133,7 +2132,18 @@ section .header-dark {
   .post-content p {
     font-size: 1.8rem;
   }
-  .blog-post p {
+  .blog .category-nav {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .post-head .section-header h1 {
+    font-size: 1.8rem;
+  }
+  .blog-content .blog-post {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .blog-content .blog-post p {
     font-size: 1.8rem;
   }
 }
@@ -2179,10 +2189,10 @@ section .header-dark {
     padding-left: 2rem;
     width: 100% !important;
   }
-  .post-content p {
+  .blog-content .blog-post p {
     font-size: 1.6rem;
   }
-  .blog-post p {
+  .post-content p {
     font-size: 1.6rem;
   }
   .team {
