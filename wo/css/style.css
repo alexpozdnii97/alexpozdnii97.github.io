@@ -2124,6 +2124,9 @@ section .header-dark {
   .works .works-slider .project .project-image {
     width: 70%;
   }
+  .works .works-slider .project .project-link a {
+    font-size: 1.8rem;
+  }
   .works .works-slider .slick-prev {
     left: 2rem;
     width: 3rem;
