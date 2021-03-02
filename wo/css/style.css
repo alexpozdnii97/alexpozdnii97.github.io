@@ -1662,7 +1662,8 @@ section .header-dark {
 }
 .prices .portfolio .section-header,
 .prices .services-bg .section-header,
-.prices .blog .section-header {
+.prices .blog .section-header,
+.prices .about .section-header {
   padding-top: 0;
   margin-top: 10rem;
 }
@@ -1866,7 +1867,10 @@ section .header-dark {
     padding-top: 4rem;
   }
   .portfolio .section-header,
-  .services-bg .section-header {
+  .services-bg .section-header,
+  .blog .section-header,
+  .about .section-header {
+    padding-top: 0;
     margin-top: 8rem;
   }
   .portfolio-posts {
@@ -1997,12 +2001,6 @@ section .header-dark {
     margin-top: 0;
     padding: 6rem 0;
   }
-  .portfolio .section-header,
-  .services-bg .section-header,
-  .blog .section-header {
-    padding-top: 0;
-    margin-top: 8rem;
-  }
 }
 @media (max-width: 767px) {
   .main h1 {
@@ -2073,7 +2071,8 @@ section .header-dark {
   }
   .portfolio .section-header,
   .services-bg .section-header,
-  .blog .section-header {
+  .blog .section-header,
+  .about .section-header {
     padding-top: 0;
     margin-top: 6rem;
   }
