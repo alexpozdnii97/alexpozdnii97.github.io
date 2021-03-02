@@ -2069,7 +2069,7 @@ section .header-dark {
   }
   .team .team-slider {
     margin-bottom: 5rem;
-    margin-top: 5rem;
+    margin-top: 0;
   }
   .about h2 {
     font-size: 3rem;
