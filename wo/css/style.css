@@ -2220,6 +2220,16 @@ section .header-dark {
   .about {
     padding: 4rem 1rem;
   }
+  .about .section-header {
+    margin-bottom: 5rem;
+  }
+  .about .section-header p {
+    min-height: 0;
+    font-size: 2rem;
+  }
+  .about h2 {
+    margin-top: 2rem;
+  }
   .portfolio-posts .portfolio-item {
     padding-left: 0rem;
     padding-right: 0rem;
