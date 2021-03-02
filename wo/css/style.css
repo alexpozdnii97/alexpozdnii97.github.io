@@ -2045,6 +2045,12 @@ section .header-dark {
     padding-left: 0;
     font-size: 3rem;
   }
+  .portfolio .section-header h2 {
+    font-size: 4rem;
+  }
+  .portfolio .section-header p {
+    font-size: 2rem;
+  }
   .portfolio-posts .portfolio-item {
     padding: 4rem 4rem;
     flex-wrap: wrap;
@@ -2214,6 +2220,12 @@ section .header-dark {
   }
   .about {
     padding: 4rem 1rem;
+  }
+  .portfolio .section-header h2 {
+    font-size: 3rem;
+  }
+  .portfolio .section-header p {
+    font-size: 1.5rem;
   }
   .portfolio-posts .portfolio-item {
     padding-left: 0rem;
