@@ -661,55 +661,54 @@ section .header-dark {
   font-size: 2rem;
   padding-right: 2rem;
 }
-.how-work .design-slider {
+.design-samples {
+  position: relative;
+}
+.design-samples .design-slider {
   margin: 5rem 0;
   margin-bottom: 0;
-  padding-right: 8.5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 30rem;
+  justify-content: center;
 }
-.how-work .design-slider .slide {
-  width: 20%;
-  padding: 0 1rem;
+.design-samples .design-slider .slide {
+  width: 100%;
+  padding: 0 2rem;
   border: none;
   outline: none;
 }
-.how-work .design-slider .slide img {
+.design-samples .design-slider .slide img {
   width: 100%;
 }
-.how-work .design-slider .slick-arrow {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
+.design-samples .design-slider .slick-arrow {
   width: 4rem;
   height: 4rem;
   background: transparent;
   border: 2px solid #6f6f6f;
   border-radius: 50%;
   outline: none;
-  display: none;
 }
-.how-work .design-slider .slick-arrow i {
+.design-samples .design-slider .slick-arrow i {
   font-size: 1.6rem;
   color: #6f6f6f;
 }
-.how-work .design-slider .slick-arrow:hover {
+.design-samples .design-slider .slick-arrow:hover {
   border-color: #5EC8B5;
 }
-.how-work .design-slider .slick-arrow:hover i {
+.design-samples .design-slider .slick-arrow:hover i {
   color: #5EC8B5;
 }
-.how-work .design-slider .slick-arrow:focus {
+.design-samples .design-slider .slick-arrow:focus {
   outline: none;
 }
-.how-work .design-slider .slick-next {
-  transform: translateX(75%);
+.design-samples .design-slider .slick-next {
+  order: 3;
+  margin: 1rem;
 }
-.how-work .design-slider .slick-prev {
+.design-samples .design-slider .slick-prev {
+  order: 2;
   z-index: 100;
-  transform: translateX(-125%);
+  margin: 1rem;
 }
 .price-list {
   padding-top: 4rem;
@@ -2336,5 +2335,8 @@ section .header-dark {
   }
   .price-list .price-table .line p {
     font-size: 1.8rem;
+  }
+  .design-samples {
+    padding: 4rem 2rem;
   }
 }
