@@ -2157,7 +2157,6 @@ section .header-dark {
   }
   .main-nav {
     height: 6rem;
-    display: flex;
   }
   .main-nav .nav-logo {
     height: 4rem;
