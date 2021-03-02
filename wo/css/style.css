@@ -2183,7 +2183,10 @@ section .header-dark {
     font-size: 2rem;
   }
   .post-content p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+  .blog-post p {
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 545px) {
@@ -2227,6 +2230,12 @@ section .header-dark {
     padding-right: 2rem;
     padding-left: 2rem;
     width: 100% !important;
+  }
+  .post-content p {
+    font-size: 1.6rem;
+  }
+  .blog-post p {
+    font-size: 1.6rem;
   }
   .team {
     padding: 4rem 2rem;
