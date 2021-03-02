@@ -299,11 +299,13 @@ section .header-light {
   font-size: 4rem;
   color: white;
   font-family: 'montserrat_bold';
+  margin-bottom: 10rem;
 }
 section .header-dark {
   font-size: 4rem;
   color: black;
   font-family: 'montserrat_bold';
+  margin-bottom: 10rem;
 }
 .main {
   background-color: #242424;
@@ -408,7 +410,6 @@ section .header-dark {
   padding-bottom: 4rem;
 }
 .why-us .argument-wrapper {
-  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -436,7 +437,6 @@ section .header-dark {
   padding-left: 8.5rem;
 }
 .services-main .service-wrapper {
-  margin-top: 10rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1792,6 +1792,14 @@ section .header-dark {
   main {
     padding: 0 6rem;
   }
+  section .header-dark,
+  main .header-dark,
+  section .header-light,
+  main .header-light {
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 6rem;
+  }
   .post-head,
   .post-content,
   .post-footer,
@@ -1808,11 +1816,6 @@ section .header-dark {
   .post-footer .post-links .prev-post a,
   .post-footer .post-links .next-post a {
     font-size: 1.2rem;
-  }
-  .header-dark,
-  .header-light {
-    margin-left: 0;
-    text-align: left;
   }
   .header-line {
     left: 50%;
@@ -1846,9 +1849,6 @@ section .header-dark {
   }
   .services-main {
     padding-right: 0;
-  }
-  .services-main .service-wrapper {
-    margin-top: 0;
   }
   .services-main .service-wrapper .service {
     padding-right: 2rem;
@@ -2036,6 +2036,7 @@ section .header-dark {
   section .header-dark {
     font-size: 3rem;
     margin: 0;
+    margin-bottom: 5rem;
     text-align: center;
   }
   section .header-line {
