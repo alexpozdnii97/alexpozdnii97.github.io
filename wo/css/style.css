@@ -1988,6 +1988,13 @@ section .header-dark {
   }
 }
 @media (max-width: 767px) {
+  .main-nav {
+    height: 6rem;
+  }
+  .main-nav .nav-logo {
+    height: 4rem;
+    width: auto;
+  }
   .main h1 {
     font-size: 3rem;
   }
