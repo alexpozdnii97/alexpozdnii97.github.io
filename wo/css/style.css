@@ -1857,7 +1857,6 @@ section .header-dark {
     padding-right: 0;
   }
   .team .team-slider {
-    height: 40rem;
     margin-bottom: 0;
   }
   .team .team-slider .slick-arrow {
@@ -2069,7 +2068,6 @@ section .header-dark {
     left: 0;
   }
   .team .team-slider {
-    height: 35rem;
     margin-bottom: 5rem;
     margin-top: 5rem;
   }
