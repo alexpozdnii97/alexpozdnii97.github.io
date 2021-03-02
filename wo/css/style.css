@@ -879,20 +879,19 @@ section .header-dark {
   font-family: 'montserrat_extralight';
   min-height: 20rem;
 }
-.about .section-header {
+.section-header {
   margin-top: 4rem;
   text-align: center;
 }
-.about .section-header h1 {
+.section-header h1 {
   color: white;
   font-size: 5rem;
   font-family: 'montserrat_bold';
 }
-.about .section-header p {
+.section-header p {
   color: white;
   font-size: 2.5rem;
   font-family: 'montserrat_regular';
-  min-height: 12rem;
 }
 .team {
   position: relative;
@@ -987,20 +986,6 @@ section .header-dark {
 }
 .portfolio .logo img {
   width: 100%;
-}
-.portfolio .section-header {
-  margin-top: 4rem;
-  text-align: center;
-}
-.portfolio .section-header h1 {
-  color: white;
-  font-size: 5rem;
-  font-family: 'montserrat_bold';
-}
-.portfolio .section-header p {
-  color: white;
-  font-size: 2.5rem;
-  font-family: 'montserrat_regular';
 }
 .category-nav {
   margin: 0 auto;
@@ -1108,20 +1093,6 @@ section .header-dark {
 }
 .portfolio-single .logo {
   position: absolute;
-}
-.portfolio-single .section-header {
-  margin-top: 0rem;
-  text-align: center;
-}
-.portfolio-single .section-header h1 {
-  color: white;
-  font-size: 5rem;
-  font-family: 'montserrat_bold';
-}
-.portfolio-single .section-header p {
-  color: white;
-  font-size: 2.5rem;
-  font-family: 'montserrat_regular';
 }
 .portfolio-single h1 {
   color: white;
@@ -1284,8 +1255,6 @@ section .header-dark {
 .blog .section-header h1 {
   color: black;
   font-family: 'montserrat_bold';
-  font-size: 5rem;
-  margin-top: 8rem;
 }
 .blog .logo {
   position: absolute;
@@ -1660,13 +1629,6 @@ section .header-dark {
   background-color: #242424;
   border: none;
 }
-.prices .portfolio .section-header,
-.prices .services-bg .section-header,
-.prices .blog .section-header,
-.prices .about .section-header {
-  padding-top: 0;
-  margin-top: 10rem;
-}
 @media (max-width: 1540px) {
   .category-nav {
     justify-content: left;
@@ -1757,6 +1719,9 @@ section .header-dark {
   .main .contact-btn {
     position: absolute;
     top: 60%;
+  }
+  .section-header {
+    margin-top: 8rem;
   }
   .collapsed {
     height: 100vh;
@@ -1865,13 +1830,6 @@ section .header-dark {
   .portfolio {
     padding: 0 ;
     padding-top: 4rem;
-  }
-  .portfolio .section-header,
-  .services-bg .section-header,
-  .blog .section-header,
-  .about .section-header {
-    padding-top: 0;
-    margin-top: 8rem;
   }
   .portfolio-posts {
     padding-left: 0;
@@ -2001,9 +1959,6 @@ section .header-dark {
     margin-top: 0;
     padding: 6rem 0;
   }
-  .services-bg .section-header p {
-    font-size: 2rem;
-  }
 }
 @media (max-width: 767px) {
   .main h1 {
@@ -2011,6 +1966,12 @@ section .header-dark {
   }
   .main {
     height: 60rem;
+  }
+  .section-header {
+    margin-top: 6rem;
+  }
+  .services-bg .section-header p {
+    font-size: 2rem;
   }
   .how-work .how-work-content .stage {
     position: relative;
@@ -2063,13 +2024,6 @@ section .header-dark {
   .services-main .header-dark {
     padding-left: 0;
     font-size: 3rem;
-  }
-  .portfolio .section-header,
-  .services-bg .section-header,
-  .blog .section-header,
-  .about .section-header {
-    padding-top: 0;
-    margin-top: 6rem;
   }
   .portfolio-posts .portfolio-item {
     padding: 4rem 4rem;

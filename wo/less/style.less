@@ -959,22 +959,19 @@ section{
     .extralight();
     min-height: 20rem;
   }
-  .section-header {
-    margin-top: 4rem;
-    text-align: center;
-
-    h1 {
-      color: white;
-      font-size: 5rem;
-      .bold();
-    }
-
-    p {
-      color: white;
-      font-size: 2.5rem;
-      .reg();
-      min-height: 12rem;
-    }
+}
+.section-header {
+  margin-top: 4rem;
+  text-align: center;
+  h1 {
+    color: white;
+    font-size: 5rem;
+    .bold();
+  }
+  p {
+    color: white;
+    font-size: 2.5rem;
+    .reg();
   }
 }
 .team{
@@ -1069,20 +1066,6 @@ section{
   .logo{
    position: absolute; 
   img{width: 100%;}
-  }
-  .section-header {
-    margin-top: 4rem;
-    text-align: center;
-    h1 {
-      color: white;
-      font-size: 5rem;
-      .bold();
-    }
-    p {
-      color: white;
-      font-size: 2.5rem;
-      .reg();
-    }
   }
 }
 .category-nav {
@@ -1192,20 +1175,6 @@ section{
   height: 25rem;
   .logo{
     position: absolute;
-  }
-  .section-header {
-    margin-top: 0rem;
-    text-align: center;
-    h1 {
-      color: white;
-      font-size: 5rem;
-      .bold();
-    }
-    p {
-      color: white;
-      font-size: 2.5rem;
-      .reg();
-    }
   }
   h1{
     color: white;
@@ -1369,8 +1338,6 @@ section{
   .section-header h1{
     color: black;
     .bold();
-    font-size: 5rem;
-    margin-top: 8rem;
   }
   .logo{
     position: absolute;
@@ -1537,12 +1504,6 @@ section{
     .bold();
     margin-bottom: 4rem;
   }
-  // .logo{
-  //   width: 12rem;
-  //   img{
-  //     width: 100%;
-  //   }
-  // }
   .post-navigation{
     display: flex;
     flex-wrap: wrap;
@@ -1656,7 +1617,6 @@ section{
     .reg();
   }
 }
-
 .landing-description {
   margin-top: 10rem;
   h2 {
@@ -1685,7 +1645,6 @@ section{
     }
   }
 }
-
 .prices{
   padding-top:4rem;
   padding-bottom: 10rem;
@@ -1758,12 +1717,6 @@ section{
         background-color:#242424;
         border:none;
       }
-    }
-  }
-  .portfolio,.services-bg,.blog,.about{
-    .section-header{
-      padding-top: 0;
-      margin-top: 10rem;
     }
   }
 }
@@ -1862,6 +1815,9 @@ section{
       position: absolute;
       top: 60%;
     }
+  }
+  .section-header{
+    margin-top: 8rem;
   }
   .collapsed {
     height: 100vh;
@@ -1976,12 +1932,7 @@ section{
     padding: 0 ;
     padding-top: 4rem;
   }
-  .portfolio,.services-bg,.blog,.about{
-    .section-header{
-      padding-top: 0;
-      margin-top: 8rem;
-    }
-  }
+  
   .portfolio-posts{
     padding-left: 0;
     padding-right: 0;
@@ -2117,13 +2068,6 @@ section{
     margin-top: 0;
     padding: 6rem 0;
   }
-  .services-bg{
-    .section-header{
-      p{
-        font-size: 2rem;
-      }
-    }
-  }
 }
 @media(max-width:767px) {
   .main h1{
@@ -2131,6 +2075,16 @@ section{
   }
   .main{
     height: 60rem;
+  }
+  .section-header {
+    margin-top: 6rem;
+  }
+  .services-bg{
+    .section-header{
+      p{
+        font-size: 2rem;
+      }
+    }
   }
   .how-work {
     .how-work-content {
@@ -2190,14 +2144,7 @@ section{
     padding-left:0;
     font-size: 3rem;
   }
-  .portfolio,
-  .services-bg,
-  .blog,.about {
-    .section-header {
-      padding-top: 0;
-      margin-top: 6rem;
-    }
-  }
+  
   .portfolio-posts{
     .portfolio-item{
       padding:4rem 4rem;
@@ -2358,6 +2305,7 @@ section{
       width: 28%;
     }
   }
+  
   .post-head,
   .post-content,
   .post-footer,
