@@ -2082,11 +2082,30 @@ section{
   .prices{
     padding: 4rem 0;
     .prices-wrapper{
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: center;
       .price{
         margin-bottom: 4rem;
-        width:40%;
+        width:29%;
+        
+        .price-name{
+          h3{
+            font-size: 2rem;
+          }
+        }
+        .price-qnty{
+
+        }
+        .price-features{
+          min-height:28rem;
+          .price-divider p{
+            margin-top:0;
+          }
+          p{
+            font-size: 1.6rem;
+            margin: 1rem 0;
+          }
+        }
       }
     }
   }

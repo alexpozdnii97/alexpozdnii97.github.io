@@ -1974,12 +1974,25 @@ section .header-dark {
     padding: 4rem 0;
   }
   .prices .prices-wrapper {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
   }
   .prices .prices-wrapper .price {
     margin-bottom: 4rem;
-    width: 40%;
+    width: 29%;
+  }
+  .prices .prices-wrapper .price .price-name h3 {
+    font-size: 2rem;
+  }
+  .prices .prices-wrapper .price .price-features {
+    min-height: 28rem;
+  }
+  .prices .prices-wrapper .price .price-features .price-divider p {
+    margin-top: 0;
+  }
+  .prices .prices-wrapper .price .price-features p {
+    font-size: 1.6rem;
+    margin: 1rem 0;
   }
   .landing-description {
     margin-top: 0;
