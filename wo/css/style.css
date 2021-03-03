@@ -1971,7 +1971,7 @@ section .header-dark {
     justify-content: center;
   }
   .prices .prices-wrapper .price {
-    margin: 4rem 0;
+    margin-bottom: 4rem;
     width: 40%;
   }
   .landing-description {
@@ -2151,6 +2151,9 @@ section .header-dark {
   }
   .price-list .price-table {
     margin: 4rem 0;
+  }
+  .prices .prices-wrapper .price {
+    width: 75%;
   }
   .landing-description {
     padding: 4rem 0;
@@ -2352,5 +2355,8 @@ section .header-dark {
   }
   .design-samples {
     padding: 4rem 2rem;
+  }
+  .prices .prices-wrapper .price {
+    width: 85%;
   }
 }
