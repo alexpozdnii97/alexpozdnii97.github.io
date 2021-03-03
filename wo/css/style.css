@@ -1558,20 +1558,21 @@ section .header-dark {
 }
 .prices {
   padding-top: 4rem;
+  padding-bottom: 4rem;
   position: relative;
 }
 .prices-wrapper {
-  margin: 10rem auto;
-  width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .prices-wrapper .price {
   background-color: #f1f1f1;
+  margin: 0 2rem;
   text-align: center;
   width: 32.5rem;
   padding-bottom: 2rem;
+  justify-content: space-evenly;
 }
 .prices-wrapper .price-name {
   background-color: #242424;
@@ -1603,12 +1604,12 @@ section .header-dark {
   font-family: 'montserrat_regular';
 }
 .prices-wrapper .price-features {
-  min-height: 40rem;
+  min-height: 35rem;
 }
 .prices-wrapper .price-features p {
   font-size: 2rem;
   color: black;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 .prices-wrapper .price-features .price-divider {
   background-color: #5EC8B5;
@@ -1648,6 +1649,9 @@ section .header-dark {
 @media (max-width: 1281px) {
   .main h1 {
     font-size: 5rem;
+  }
+  .prices .prices-wrapper .price .price-name h3 {
+    font-size: 2.3rem;
   }
 }
 @media (max-width: 1199px) {
@@ -1958,6 +1962,17 @@ section .header-dark {
   }
   .price-list .price-table .line p {
     font-size: 2rem;
+  }
+  .prices {
+    padding: 4rem 0;
+  }
+  .prices .prices-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .prices .prices-wrapper .price {
+    margin: 4rem 0;
+    width: 40%;
   }
   .landing-description {
     margin-top: 0;
