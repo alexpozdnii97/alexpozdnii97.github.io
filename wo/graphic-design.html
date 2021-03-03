@@ -120,9 +120,23 @@
       </div>
     </div><!-- container-fluid -->
   </section><!-- landing-description -->
+  <section class="design-samples">
+    <h2 class="header-dark">Приклади дизайнів</h2>
+    <div class="header-line"></div>
+    <div class="design-slider">
+      <div class="slide"><img src="img/designslider1.png" alt=""></div>
+      <div class="slide"><img src="img/designslider2.jpg" alt=""></div>
+      <div class="slide"><img src="img/designslider3.png" alt=""></div>
+      <div class="slide"><img src="img/designslider4.png" alt=""></div>
+      <div class="slide"><img src="img/designslider5.jpg" alt=""></div>
+      <div class="slide"><img src="img/designslider6.jpg" alt=""></div>
+      <div class="slide"><img src="img/designslider3.png" alt=""></div>
+      <div class="slide"><img src="img/designslider4.png" alt=""></div>
+    </div><!-- design-slider -->
+  </section><!--design-samples  -->
 
   <section class="price-list">
-    <h2 class="header-dark">Ціни на айдентику</h2>
+    <h2 class="header-dark">Приклади робіт</h2>
     <div class="header-line"></div>
     <div class="price-table">
       <div class="line header">
@@ -215,6 +229,59 @@
         nextArrow: "<button class='slick-next'><i class='fas fa-arrow-right'></i></button>",
         prevArrow: "<button class='slick-prev'><i class='fas fa-arrow-left'></i></button>",
       });
+    });
+  </script>
+  <script>
+      $('.design-slider').slick({
+       speed: 300,
+       slidesToShow:5,
+       nextArrow:"<button class='slick-next'><i class='fas fa-arrow-right'></i></button>",
+       prevArrow:"<button class='slick-prev'><i class='fas fa-arrow-left'></i></button>",
+       responsive: [
+        {
+          breakpoint: 1600,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+          }
+        },     
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 545,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+      
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
   </script>
 </body>

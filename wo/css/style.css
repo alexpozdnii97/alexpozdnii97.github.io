@@ -1558,12 +1558,11 @@ section .header-dark {
 }
 .prices {
   padding-top: 4rem;
-  padding-bottom: 10rem;
   position: relative;
 }
 .prices-wrapper {
   margin: 10rem auto;
-  width: 142rem;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
@@ -1572,7 +1571,7 @@ section .header-dark {
   background-color: #f1f1f1;
   text-align: center;
   width: 32.5rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 .prices-wrapper .price-name {
   background-color: #242424;
@@ -1604,7 +1603,7 @@ section .header-dark {
   font-family: 'montserrat_regular';
 }
 .prices-wrapper .price-features {
-  min-height: 42rem;
+  min-height: 40rem;
 }
 .prices-wrapper .price-features p {
   font-size: 2rem;
