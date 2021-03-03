@@ -1561,6 +1561,9 @@ section .header-dark {
   padding-bottom: 4rem;
   position: relative;
 }
+.prices .header-dark {
+  padding-left: 8.5rem;
+}
 .prices-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -1610,6 +1613,10 @@ section .header-dark {
   font-size: 2rem;
   color: black;
   margin: 1.5rem 0;
+}
+.prices-wrapper .price-features .blocked {
+  color: grey;
+  text-decoration: line-through;
 }
 .prices-wrapper .price-features .price-divider {
   background-color: #5EC8B5;
