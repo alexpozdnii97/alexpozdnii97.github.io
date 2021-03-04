@@ -2274,6 +2274,9 @@ section .header-dark {
   .adaptive-design {
     padding: 4rem 2rem;
   }
+  .adaptive-design .devices .ipad {
+    width: 55%;
+  }
   .adaptive-design .pages img {
     padding: 0;
     margin-bottom: 2rem;
@@ -2462,5 +2465,22 @@ section .header-dark {
   }
   .prices .prices-wrapper .price {
     width: 85%;
+  }
+  .portfolio-single-wrapper h2 {
+    font-size: 3rem;
+  }
+  .portfolio-single-wrapper p {
+    font-size: 1.8rem;
+  }
+  .adaptive-design {
+    padding: 4rem 0;
+  }
+  .adaptive-design h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .adaptive-design .pages {
+    padding: 0 2rem;
   }
 }
