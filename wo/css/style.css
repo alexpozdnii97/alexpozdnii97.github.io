@@ -1244,7 +1244,7 @@ section .header-dark {
   margin-bottom: 4rem;
 }
 .contacts-footer {
-  position: absolute;
+  position: absolute !important;
   bottom: 0;
 }
 .blog {
@@ -2010,6 +2010,9 @@ section .header-dark {
   }
   .about h2 {
     margin-top: 2rem;
+  }
+  .error img {
+    width: 70%;
   }
 }
 @media (max-width: 767px) {
