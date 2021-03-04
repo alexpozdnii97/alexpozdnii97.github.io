@@ -1887,7 +1887,11 @@ section .header-dark {
     margin-bottom: 2rem;
   }
   .contacts-footer {
+    width: 100%;
     position: static;
+  }
+  .contacts-footer p {
+    text-align: center;
   }
   .contacts-discussion {
     margin-top: 4rem;
