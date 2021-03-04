@@ -2015,9 +2015,17 @@ section .header-dark {
   .about h2 {
     margin-top: 2rem;
   }
+  .error {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .error img {
     margin-top: 7rem;
     width: 80%;
+  }
+  .error h1,
+  .error p {
+    padding: 0 6rem;
   }
 }
 @media (max-width: 767px) {
@@ -2218,7 +2226,7 @@ section .header-dark {
   }
   .error img {
     margin-top: 7rem;
-    width: 95%;
+    width: 90%;
   }
   .error h1 {
     font-size: 3rem;
