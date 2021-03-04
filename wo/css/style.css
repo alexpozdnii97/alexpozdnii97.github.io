@@ -2212,6 +2212,13 @@ section .header-dark {
   .blog-content .blog-post p {
     font-size: 1.8rem;
   }
+  .error img {
+    margin-top: 7rem;
+    width: 90%;
+  }
+  .error h1 {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
