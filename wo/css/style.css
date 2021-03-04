@@ -2468,6 +2468,10 @@ section .header-dark {
   .prices .prices-wrapper .price {
     width: 85%;
   }
+  .portfolio-single {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .portfolio-single-wrapper h2 {
     font-size: 3rem;
   }
