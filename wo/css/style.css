@@ -2056,6 +2056,9 @@ section .header-dark {
   .adaptive-design .pages img {
     width: 100%;
   }
+  .adaptive-design a {
+    margin-bottom: 4rem;
+  }
 }
 @media (max-width: 767px) {
   .main h1 {
