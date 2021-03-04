@@ -2012,7 +2012,7 @@ section .header-dark {
     margin-top: 2rem;
   }
   .error img {
-    width: 70%;
+    width: 80%;
   }
 }
 @media (max-width: 767px) {
