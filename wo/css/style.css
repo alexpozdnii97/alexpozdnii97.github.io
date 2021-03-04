@@ -1109,8 +1109,8 @@ section .header-dark {
   text-align: center;
 }
 .portfolio-single-wrapper img {
-  width: 60rem;
-  margin-bottom: 8rem;
+  width: 70rem;
+  margin-bottom: 4rem;
 }
 .portfolio-single-wrapper a {
   display: block;
@@ -1196,6 +1196,7 @@ section .header-dark {
 }
 .adaptive-design a {
   display: block;
+  margin-top: 2rem;
   margin-bottom: 10rem;
   color: black;
   font-size: 2rem;
@@ -2039,6 +2040,12 @@ section .header-dark {
   }
   .portfolio-single-wrapper a {
     margin-bottom: 4rem;
+  }
+  .adaptive-design .devices .ipad {
+    width: 60%;
+  }
+  .adaptive-design .devices .iphone {
+    width: 20%;
   }
   .adaptive-design .pages {
     flex-wrap: wrap;
