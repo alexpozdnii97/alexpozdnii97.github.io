@@ -2265,12 +2265,14 @@ section .header-dark {
   }
   .portfolio-single-wrapper {
     padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .portfolio-single-wrapper img {
     width: 90%;
   }
   .adaptive-design {
-    padding: 4rem 4rem;
+    padding: 4rem 2rem;
   }
   .adaptive-design .pages img {
     padding: 0;
