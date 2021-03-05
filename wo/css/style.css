@@ -2288,7 +2288,8 @@ section .header-dark {
     margin-top: 2rem;
     margin-bottom: 0;
   }
-  .contacts .contacts-wrapper h1 {
+  .contacts h1 {
+    font-size: 3rem;
     margin-bottom: 3rem;
   }
   .contacts .contacts-wrapper .child {
@@ -2296,6 +2297,9 @@ section .header-dark {
   }
   .contacts .contacts-wrapper .child p {
     font-size: 1.6rem;
+  }
+  .contacts-discussion h2 {
+    font-size: 3rem;
   }
 }
 @media (max-width: 545px) {
