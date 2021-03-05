@@ -2489,4 +2489,7 @@ section .header-dark {
   .adaptive-design .pages {
     padding: 0 2rem;
   }
+  .services-bg .section-header h1 {
+    font-size: 3rem;
+  }
 }
