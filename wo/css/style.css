@@ -2385,10 +2385,10 @@ section .header-dark {
     margin: 0;
   }
   .services .services-container .service-head h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .services .services-container .service-head p {
-    font-size: 2 rem;
+    font-size: 2rem;
   }
   .services .services-container .service-links {
     padding-left: 0;
