@@ -1301,13 +1301,17 @@ section{
   }
   .contacts-wrapper{
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
     .child{
-      width: 36rem;
+      margin:0 auto;
+      width: 37.5rem;
+      text-align: left;
+      margin-bottom: 3rem;
       p{
         margin-bottom: 0;
+        margin-left: 1rem;
         display: inline-block;
         color: white;
         .reg();
@@ -2437,6 +2441,19 @@ section{
     a{
       margin-top: 2rem;
       margin-bottom: 0;
+    }
+  }
+  .contacts{
+    .contacts-wrapper{
+      h1{
+        margin-bottom: 3rem;
+      }
+      .child{
+        width:30rem;
+        p{
+          font-size: 1.6rem;
+        }
+      }
     }
   }
 }

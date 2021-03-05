@@ -1223,15 +1223,16 @@ section .header-dark {
 }
 .contacts .contacts-wrapper {
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 .contacts .contacts-wrapper .child {
-  width: 36rem;
+  margin: 0 auto;
+  width: 37.5rem;
+  text-align: left;
+  margin-bottom: 3rem;
 }
 .contacts .contacts-wrapper .child p {
   margin-bottom: 0;
+  margin-left: 1rem;
   display: inline-block;
   color: white;
   font-family: 'montserrat_regular';
@@ -2286,6 +2287,15 @@ section .header-dark {
   .adaptive-design a {
     margin-top: 2rem;
     margin-bottom: 0;
+  }
+  .contacts .contacts-wrapper h1 {
+    margin-bottom: 3rem;
+  }
+  .contacts .contacts-wrapper .child {
+    width: 30rem;
+  }
+  .contacts .contacts-wrapper .child p {
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 545px) {
