@@ -1251,7 +1251,7 @@ section .header-dark {
   margin-bottom: 4rem;
 }
 .contacts-footer {
-  position: absolute !important;
+  position: absolute ;
   bottom: 0;
 }
 .blog {
@@ -2299,7 +2299,11 @@ section .header-dark {
     font-size: 1.6rem;
   }
   .contacts-discussion h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+  }
+  .contacts-footer {
+    position: static;
+    display: block;
   }
 }
 @media (max-width: 545px) {
