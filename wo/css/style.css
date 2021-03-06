@@ -2204,17 +2204,21 @@ section .header-dark {
     left: 2rem;
     width: 3rem;
     height: 3rem;
+    text-align: center;
   }
   .works .works-slider .slick-prev i {
-    font-size: 1.4rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
   }
   .works .works-slider .slick-next {
     right: 2rem;
     width: 3rem;
     height: 3rem;
+    text-align: center;
   }
   .works .works-slider .slick-next i {
-    font-size: 1.4rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
   }
   .price-list {
     margin-right: 0;
