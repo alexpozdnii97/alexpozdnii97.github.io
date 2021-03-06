@@ -1742,6 +1742,9 @@ section .header-dark {
     position: absolute;
     top: 60%;
   }
+  .main .device3 {
+    transform: translateX(3rem);
+  }
   .section-header {
     margin-top: 8rem;
   }
