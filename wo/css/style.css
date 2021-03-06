@@ -1709,7 +1709,7 @@ section .header-dark {
     height: 100%;
   }
   .main-nav .nav-button {
-    top: 3.5rem;
+    top: 3rem;
     transform: translateY(-50%);
   }
   .main-nav .localization-links {
