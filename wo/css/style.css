@@ -1709,13 +1709,14 @@ section .header-dark {
     height: 100%;
   }
   .main-nav .nav-button {
-    top: 3rem;
+    top: 3.2rem;
     transform: translateY(-50%);
   }
   .main-nav .localization-links {
     position: absolute;
     right: 10rem;
-    top: 1.9rem;
+    top: 3.2rem;
+    transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
     height: 100%;
