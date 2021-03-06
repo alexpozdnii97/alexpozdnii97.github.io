@@ -2465,10 +2465,15 @@ section .header-dark {
     margin-bottom: 2rem;
   }
   .works .works-slider .project .project-image {
-    width: 70%;
+    width: 80%;
   }
   .works .works-slider .project .project-description {
-    width: 60%;
+    width: 70%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .works .works-slider .project .project-description h3 {
+    color: #5EC8B5;
   }
   .works .works-slider .slick-prev {
     left: 1rem;
