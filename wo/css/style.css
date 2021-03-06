@@ -930,6 +930,7 @@ section .header-dark {
   border: 2px solid #6f6f6f;
   border-radius: 50%;
   outline: none;
+  display: ;
 }
 .team .team-slider .slick-arrow i {
   font-size: 1.6rem;
@@ -2200,6 +2201,11 @@ section .header-dark {
   .works .works-slider .project .project-link a {
     font-size: 1.8rem;
   }
+  .works .works-slider .slick-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .works .works-slider .slick-prev {
     left: 2rem;
     width: 3rem;
@@ -2207,7 +2213,6 @@ section .header-dark {
     text-align: center;
   }
   .works .works-slider .slick-prev i {
-    line-height: 3rem;
     font-size: 1.5rem;
   }
   .works .works-slider .slick-next {
@@ -2217,7 +2222,6 @@ section .header-dark {
     text-align: center;
   }
   .works .works-slider .slick-next i {
-    line-height: 3rem;
     font-size: 1.5rem;
   }
   .price-list {
