@@ -442,10 +442,13 @@ section .header-dark {
 }
 .services-main .service-wrapper .service {
   padding: 5rem 8.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
+  padding-right: 5rem;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   transition: 1s;
 }
 .services-main .service-wrapper .service-content {
