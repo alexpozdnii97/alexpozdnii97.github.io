@@ -595,6 +595,9 @@ section .header-dark {
   border: 2px solid #6f6f6f;
   border-radius: 50%;
   outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .works .works-slider .slick-arrow i {
   font-size: 1.6rem;
@@ -2200,11 +2203,6 @@ section .header-dark {
   }
   .works .works-slider .project .project-link a {
     font-size: 1.8rem;
-  }
-  .works .works-slider .slick-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .works .works-slider .slick-prev {
     left: 2rem;
