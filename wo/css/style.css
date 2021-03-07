@@ -1430,6 +1430,14 @@ section .header-dark {
   font-family: 'montserrat_bold';
   margin-bottom: 4rem;
 }
+.post-head .logo {
+  display: none;
+  position: absolute;
+  width: 12rem;
+}
+.post-head .logo img {
+  width: 100%;
+}
 .post-head .post-navigation {
   display: flex;
   flex-wrap: wrap;
