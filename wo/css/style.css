@@ -882,7 +882,7 @@ section .header-dark {
   color: white;
   font-size: 2rem;
   font-family: 'montserrat_extralight';
-  min-height: 20rem;
+  margin-bottom: 5rem;
 }
 .section-header {
   margin-top: 4rem;
