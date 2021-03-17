@@ -131,6 +131,9 @@ footer {
   width: 8.5rem;
   cursor: pointer;
 }
+.main-nav .social-links a {
+  color: black;
+}
 .main-nav .social-links-item {
   margin: 3rem auto;
   height: 3rem;
@@ -1598,6 +1601,14 @@ section .header-dark {
   font-size: 2rem;
   font-family: 'montserrat_regular';
   margin-bottom: 4rem;
+}
+.landing-description ul {
+  margin-bottom: 4rem;
+}
+.landing-description ul li {
+  font-size: 2rem;
+  font-family: 'montserrat_regular';
+  margin-bottom: 1rem;
 }
 .landing-description .comparison {
   display: flex;
