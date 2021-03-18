@@ -68,6 +68,16 @@ html {
 body {
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  direction: ltr;
+}
+::-webkit-scrollbar-track {
+  background: #242424;
+}
+::-webkit-scrollbar-thumb {
+  background: #5EC8B5;
+}
 section,
 main {
   padding-left: 8.5rem;
