@@ -858,6 +858,24 @@ section .header-dark {
   line-height: 5rem;
   margin-bottom: 4rem;
 }
+.default-form select {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #242424;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  font-size: 2rem;
+  line-height: 4rem;
+  height: 4rem;
+  color: grey;
+  display: flex;
+  align-items: center;
+}
+.default-form select:focus {
+  border-radius: 0;
+  outline: none;
+}
 .footer-light {
   padding: 0 8.5rem;
   display: block;

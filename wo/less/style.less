@@ -898,6 +898,7 @@ section{
       .reg();
     }
   }
+  
 }
 .default-form {
   margin: 0 auto;
@@ -929,6 +930,24 @@ section{
     color: white;
     line-height: 5rem;
     margin-bottom: 4rem;
+  }
+  select {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #242424;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius:0;
+    font-size: 2rem;
+    line-height: 4rem;
+    height: 4rem;
+    color: grey;
+    display: flex;
+    align-items: center;
+    &:focus{
+      border-radius:0;
+      outline: none;
+    }
   }
 }
 .footer-light{  
