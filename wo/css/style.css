@@ -1732,27 +1732,30 @@ section .header-dark {
   border: none;
 }
 .dev-phases {
+  padding-left: 0;
   padding-top: 4rem;
   padding-bottom: 4rem;
   position: relative;
+}
+.dev-phases .header-dark {
+  padding-left: 8.5rem;
 }
 .dev-phases .phases {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: space-evenly;
 }
 .dev-phases .phases .phase {
   width: 25%;
-  border-right: 1px solid #CECCCC;
 }
 .dev-phases .phases .phase .circle {
   background-color: #5EC8B5;
   border-radius: 100%;
   margin: 0 auto;
-  width: 24.5rem;
+  width: 24rem;
   height: 0;
-  padding-bottom: 24.5rem;
+  padding-bottom: 24rem;
   position: relative;
 }
 .dev-phases .phases .phase .circle-wrapper {
@@ -1771,11 +1774,12 @@ section .header-dark {
   font-family: 'montserrat_regular';
   font-size: 1.6rem;
 }
-.dev-phases .phases .phase .ul {
-  margin: 2rem 0;
-}
-.dev-phases .phases .phase .ul li {
+.dev-phases .phases .phase ul {
+  margin: 4rem auto;
   width: 24.5rem;
+}
+.dev-phases .phases .phase ul li {
+  width: 100%;
   margin: 0 auto;
   font-family: 'montserrat_regular';
   font-size: 1.6rem;
@@ -1827,6 +1831,9 @@ section .header-dark {
   .works .works-slider .project .project-image {
     left: 65%;
   }
+  .dev-phases .phases {
+    justify-content: left;
+  }
   .dev-phases .phases .phase {
     width: 33%;
   }
@@ -1836,6 +1843,9 @@ section .header-dark {
   }
   .dev-phases .phases .phase ul {
     width: 23rem;
+  }
+  .dev-phases .phases .phase ul li {
+    width: 100%;
   }
 }
 @media (max-width: 991px) {
@@ -2220,6 +2230,29 @@ section .header-dark {
   .adaptive-design a {
     margin-bottom: 4rem;
   }
+  .dev-phases {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .dev-phases .phases {
+    justify-content: left;
+  }
+  .dev-phases .phases .phase {
+    width: 33%;
+  }
+  .dev-phases .phases .phase .circle {
+    width: 20rem;
+    padding-bottom: 20rem;
+  }
+  .dev-phases .phases .phase .circle h3 {
+    font-size: 1.6rem;
+  }
+  .dev-phases .phases .phase ul {
+    width: 20rem;
+  }
+  .dev-phases .phases .phase ul li {
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .main h1 {
@@ -2465,6 +2498,28 @@ section .header-dark {
     position: static;
     display: block;
   }
+  .dev-phases .header-dark {
+    padding-left: 0;
+  }
+  .dev-phases .phases {
+    justify-content: space-evenly;
+  }
+  .dev-phases .phases .phase {
+    width: 50%;
+  }
+  .dev-phases .phases .phase .circle {
+    width: 23rem;
+    padding-bottom: 23rem;
+  }
+  .dev-phases .phases .phase .circle h3 {
+    font-size: 1.8rem;
+  }
+  .dev-phases .phases .phase ul {
+    width: 23rem;
+  }
+  .dev-phases .phases .phase ul li {
+    width: 100%;
+  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
@@ -2674,5 +2729,29 @@ section .header-dark {
   }
   .services-bg .section-header h1 {
     font-size: 3rem;
+  }
+  .dev-phases {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .dev-phases .phases {
+    justify-content: center;
+  }
+  .dev-phases .phases .phase {
+    width: 100%;
+  }
+  .dev-phases .phases .phase .circle {
+    width: 30rem;
+    padding-bottom: 30rem;
+  }
+  .dev-phases .phases .phase .circle h3 {
+    font-size: 2rem;
+  }
+  .dev-phases .phases .phase ul {
+    width: 30rem;
+  }
+  .dev-phases .phases .phase ul li {
+    width: 100%;
+    font-size: 1.8rem;
   }
 }
