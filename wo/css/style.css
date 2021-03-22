@@ -1731,6 +1731,63 @@ section .header-dark {
   background-color: #242424;
   border: none;
 }
+.dev-phases {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+}
+.dev-phases .phases {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.dev-phases .phases .phase {
+  width: 25%;
+  border-right: 1px solid #CECCCC;
+}
+.dev-phases .phases .phase .circle {
+  background-color: #5EC8B5;
+  border-radius: 100%;
+  margin: 0 auto;
+  width: 24.5rem;
+  height: 0;
+  padding-bottom: 24.5rem;
+  position: relative;
+}
+.dev-phases .phases .phase .circle-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.dev-phases .phases .phase .circle-wrapper h3 {
+  font-family: 'montserrat_medium';
+  font-size: 2rem;
+}
+.dev-phases .phases .phase .circle-wrapper p {
+  font-family: 'montserrat_regular';
+  font-size: 1.6rem;
+}
+.dev-phases .phases .phase .ul {
+  margin: 2rem 0;
+}
+.dev-phases .phases .phase .ul li {
+  width: 24.5rem;
+  margin: 0 auto;
+  font-family: 'montserrat_regular';
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.dev-phases .phases .final .circle {
+  background-color: #242424;
+}
+.dev-phases .phases .final .circle .circle-wrapper h3,
+.dev-phases .phases .final .circle .circle-wrapper p {
+  color: white;
+}
 @media (max-width: 1540px) {
   .category-nav {
     justify-content: left;
@@ -1769,6 +1826,16 @@ section .header-dark {
   }
   .works .works-slider .project .project-image {
     left: 65%;
+  }
+  .dev-phases .phases .phase {
+    width: 33%;
+  }
+  .dev-phases .phases .phase .circle {
+    width: 23rem;
+    padding-bottom: 23rem;
+  }
+  .dev-phases .phases .phase ul {
+    width: 23rem;
   }
 }
 @media (max-width: 991px) {

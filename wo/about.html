@@ -105,7 +105,7 @@
   </main>
 
 
-<section class="team">
+  <section class="team">
     <h2 class="header-dark">Наша Команда</h2>
     <div class="header-line"></div>
     <div class="team-slider">
@@ -140,7 +140,7 @@
         <p>Директор</p>
       </div><!-- team member -->
     </div><!-- team-slider -->
-  </section>
+  </section><!-- team -->
   <section class="why-us">
     <h2 class="header-light">Чому обирають нас?</h2>
     <div class="header-line"></div>
@@ -152,7 +152,7 @@
       <div class="argument"><h3>5. Постійний зворотній зв’язок</h3></div>
       <div class="argument"><h3>6. Над проектом працює ціла команда</h3></div>
     </div>
-  </section>
+  </section><!-- why-us -->
   <section class="how-work">
     <h2 class="header-dark">Як ми працюємо</h2>
     <div class="header-line"></div>
@@ -185,8 +185,7 @@
         <p> Тестування та виправлення помилок на сайті, запуск та здача проекту. </p>
       </div><!-- stage -->
     </div><!-- how-work-network -->
-  </div>
-  </section>
+  </section><!-- how-work -->
 
   <!-- <section class="feedback">
     <h2 class="header-dark">Відгуки Клієнтів</h2>
@@ -202,22 +201,20 @@
     </div>
   </section> -->
 
-
-
   <section class="discussion">
     <h2 class="header-light">Обговорити проект</h2>
     <div class="header-line"></div>
-      <div class="discussion-content">
-        <h3>Потрібен веб-сайт?</h3>
-        <p>Давай обговоримо</p>
-        <form class="default-form" action="submit">
-              <input class="main-form-input" type="text" placeholder="Імя" id="name" />
-              <input class="main-form-input" type="text" placeholder="Телефон" id="tel" />
-              <input class="main-form-input" type="text" placeholder="Email" id="email" />
-              <button class="default-form-btn">Відправити</button>
-        </form>
-      </div>
-  </section>
+    <div class="discussion-content">
+      <h3>Потрібен веб-сайт?</h3>
+      <p>Давай обговоримо</p>
+      <form class="default-form" action="submit">
+        <input class="main-form-input" type="text" placeholder="Імя" id="name" />
+        <input class="main-form-input" type="text" placeholder="Телефон" id="tel" />
+        <input class="main-form-input" type="text" placeholder="Email" id="email" />
+        <button class="default-form-btn">Відправити</button>
+      </form>
+    </div>
+  </section><!-- discussion -->
   <footer class="footer-dark">
     <p>WhyteOnyx © 2021 | <a href="">PRIVACY POLICY</a></p>
   </footer>
@@ -225,83 +222,6 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://kit.fontawesome.com/8d258d854c.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
-  <!-- <script>
-    var btn = $('#button');
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 630) {
-        btn.addClass('show');
-      } else {
-        btn.removeClass('show');
-      }
-    });
-    btn.on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({scrollTop:0}, '300');
-    });
-  </script>
-
-  <script>
-    $('.nav-button').click(function() {
-      var $this = $(this);
-      if ($this.parent().hasClass('collapsed')) {
-          $this.parent().removeClass('collapsed');
-      } else 
-      $this.parent().addClass('collapsed');
-  });
-  </script>
-  <script>
-      $('.team-slider').slick({
-       speed: 300,
-       slidesToShow: 5,
-       nextArrow:"<button class='slick-next'><i class='fas fa-arrow-right'></i></button>",
-       prevArrow:"<button class='slick-prev'><i class='fas fa-arrow-left'></i></button>",
-       responsive: [
-        {
-          breakpoint: 1600,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          }
-        },     
-        {
-          breakpoint: 1199,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 545,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-      
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-  </script> -->
 </body>
 </html>
 
