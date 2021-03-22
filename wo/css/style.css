@@ -1748,6 +1748,7 @@ section .header-dark {
 }
 .dev-phases .phases .phase {
   width: 25%;
+  border-right: 1px solid #CECCCC;
 }
 .dev-phases .phases .phase .circle {
   background-color: #5EC8B5;
@@ -1784,6 +1785,12 @@ section .header-dark {
   font-family: 'montserrat_regular';
   font-size: 1.6rem;
   margin-bottom: 1rem;
+}
+.dev-phases .phases .four {
+  border-right: none;
+}
+.dev-phases .phases .final {
+  border-right: none;
 }
 .dev-phases .phases .final .circle {
   background-color: #242424;
@@ -1846,6 +1853,14 @@ section .header-dark {
   }
   .dev-phases .phases .phase ul li {
     width: 100%;
+  }
+  .dev-phases .phases .tree,
+  .dev-phases .phases .six {
+    border-right: none;
+  }
+  .dev-phases .phases .four,
+  .dev-phases .phases .final {
+    border-right: 1px solid #cecccc;
   }
 }
 @media (max-width: 991px) {
@@ -2520,6 +2535,18 @@ section .header-dark {
   .dev-phases .phases .phase ul li {
     width: 100%;
   }
+  .dev-phases .phases .two,
+  .dev-phases .phases .four,
+  .dev-phases .phases .six,
+  .dev-phases .phases .final {
+    border-right: none;
+  }
+  .dev-phases .phases .one,
+  .dev-phases .phases .tree,
+  .dev-phases .phases .five,
+  .dev-phases .phases .seven {
+    border-right: 1px solid #CECCCC;
+  }
 }
 @media (max-width: 545px) {
   .collapsed .toggle-content .navigation-links {
@@ -2739,6 +2766,7 @@ section .header-dark {
   }
   .dev-phases .phases .phase {
     width: 100%;
+    border-right: none;
   }
   .dev-phases .phases .phase .circle {
     width: 30rem;

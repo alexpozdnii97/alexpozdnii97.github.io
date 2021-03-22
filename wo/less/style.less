@@ -1835,7 +1835,7 @@ section{
     justify-content: space-evenly;
     .phase{
       width:25%;
-      //border-right: 1px solid #CECCCC;
+      border-right: 1px solid #CECCCC;
       .circle{
         background-color: #5EC8B5;
         border-radius:100%;
@@ -1873,7 +1873,11 @@ section{
         }
       }
     }
+    .four{
+      border-right:none;
+    }
     .final{
+      border-right:none;
       .circle {
         background-color: #242424;
 
@@ -1948,6 +1952,12 @@ section{
             width:100%;
           }
         }
+      }
+      .tree, .six{
+        border-right:none;
+      }
+      .four, .final{
+        border-right:1px solid #CECCCC
       }
     }
   }  
@@ -2690,6 +2700,12 @@ section{
           }
         }
       }
+      .two,.four,.six,.final{
+       border-right:none;
+      }
+      .one,.tree,.five,.seven{
+         border-right:1px solid #CECCCC;
+      }
     }
   }
 }
@@ -2946,6 +2962,7 @@ section{
       justify-content: center;
       .phase {
         width: 100%;
+        border-right:none;
         .circle {
           width: 30rem;
           padding-bottom: 30rem;
