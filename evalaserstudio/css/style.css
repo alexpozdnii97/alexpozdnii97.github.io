@@ -971,6 +971,10 @@ body {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
+  .hello .admin-video .video-container {
+    width: 20rem;
+    height: 20rem;
+  }
   .lazer .laser-description h2 {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -996,6 +1000,10 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .hello .admin-video .video-container {
+    width: 15rem;
+    height: 15rem;
+  }
   .price .price-list {
     display: block;
   }
