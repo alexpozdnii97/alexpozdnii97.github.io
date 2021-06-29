@@ -577,6 +577,10 @@ body {
   font-size: 2rem;
   background: transparent;
 }
+.contact-form input:focus {
+  outline: none;
+  border: none;
+}
 .contact-form form select {
   width: 100%;
   border: none;
@@ -584,11 +588,13 @@ body {
   color: black;
   font-size: 2rem;
   background: transparent;
+  cursor: pointer;
 }
 .contact-form form select option {
   color: black;
   font-size: 2rem;
   background: transparents;
+  cursor: pointer;
 }
 .contact-form form select:focus {
   outline: none;
@@ -837,6 +843,7 @@ body {
   position: relative;
   border-radius: 15px;
   z-index: 1;
+  border: none;
 }
 .form-modal .modal-dialog .modal-content-bg {
   position: absolute;
@@ -854,7 +861,10 @@ body {
 }
 .form-modal .modal-dialog .modal-content .modal-header h5 {
   margin-top: 4.5rem;
-  font-size: 5rem;
+  font-size: 4rem;
+}
+.form-modal .modal-dialog .modal-content .modal-header p {
+  font-size: 2rem;
 }
 .form-modal .modal-dialog .modal-content .modal-header .btn-close {
   position: absolute;
