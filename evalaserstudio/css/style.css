@@ -971,6 +971,11 @@ body {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
+  .hello .admin-video .video {
+    bottom: 0;
+    right: 0;
+    transform: translateX(5%);
+  }
   .hello .admin-video .video-container {
     width: 20rem;
     height: 20rem;
@@ -1000,6 +1005,11 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .hello .admin-video .video {
+    bottom: 0;
+    right: 0;
+    transform: translate(25%, 25%);
+  }
   .hello .admin-video .video-container {
     width: 15rem;
     height: 15rem;
