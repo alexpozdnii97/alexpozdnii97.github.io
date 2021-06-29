@@ -555,7 +555,10 @@ body {
   display: flex;
   align-items: center;
 }
-.contact .contact-form {
+.contact img {
+  width: 100%;
+}
+.contact-form {
   position: relative;
   max-width: 35rem;
   height: 100%;
@@ -564,7 +567,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.contact .contact-form input {
+.contact-form input {
   width: 100%;
   border: none;
   border-bottom: 1px solid rgba(255, 0, 0, 0.27);
@@ -573,7 +576,7 @@ body {
   font-size: 2rem;
   background: transparent;
 }
-.contact .contact-form form select {
+.contact-form form select {
   width: 100%;
   border: none;
   border-bottom: 1px solid rgba(255, 0, 0, 0.27);
@@ -581,21 +584,21 @@ body {
   font-size: 2rem;
   background: transparent;
 }
-.contact .contact-form form select option {
+.contact-form form select option {
   color: black;
   font-size: 2rem;
   background: transparents;
 }
-.contact .contact-form form select:focus {
+.contact-form form select:focus {
   outline: none;
   border: none;
 }
-.contact .contact-form form button {
+.contact-form form button {
   display: block;
   margin: 0 auto;
   background: transparent;
 }
-.contact .contact-form form .contact-btn {
+.contact-form form .contact-btn {
   padding: 1rem 4rem;
   margin-top: 10rem;
   font-size: 2rem;
@@ -604,7 +607,7 @@ body {
   border: 2px solid #FC165C;
   background: transparent;
 }
-.contact .contact-form .contact-bg {
+.contact-form .contact-bg {
   z-index: -1;
   width: 200%;
   height: auto;
@@ -612,9 +615,6 @@ body {
   bottom: -50%;
   left: 50%;
   transform: translateX(-50%);
-}
-.contact img {
-  width: 100%;
 }
 .feedback {
   margin-top: 10rem;
@@ -806,31 +806,63 @@ body {
 .footer .footer-bottom a:hover {
   text-decoration: underline;
 }
-.modal {
+.video-modal {
   background-color: transparent;
 }
-.modal .modal-dialog {
+.video-modal .modal-dialog {
   background-color: transparent;
   max-width: 120rem;
   max-height: 80rem;
   border: none;
 }
-.modal .modal-dialog .modal-content {
+.video-modal .modal-dialog .modal-content {
   background-color: transparent;
   width: 100%;
   border: none;
 }
-.modal .modal-dialog .modal-content .modal-header {
+.video-modal .modal-dialog .modal-content .modal-header {
   border: none;
 }
-.modal .modal-dialog .modal-content .modal-body {
+.video-modal .modal-dialog .modal-content .modal-body {
   width: 100%;
   height: 100%;
 }
-.modal .modal-dialog .modal-content .modal-body .youtube-frame {
+.video-modal .modal-dialog .modal-content .modal-body .youtube-frame {
   display: block;
   width: 100%;
   height: 50vh;
+}
+.form-modal .modal-dialog .modal-content {
+  position: relative;
+  border-radius: 15px;
+  z-index: 1;
+}
+.form-modal .modal-dialog .modal-content-bg {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.form-modal .modal-dialog .modal-content .modal-header {
+  position: relative;
+  display: block;
+  text-align: center;
+  z-index: 5;
+  border: none;
+}
+.form-modal .modal-dialog .modal-content .modal-header h5 {
+  margin-top: 4.5rem;
+  font-size: 5rem;
+}
+.form-modal .modal-dialog .modal-content .modal-header .btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+}
+.form-modal .modal-dialog .modal-content .modal-body {
+  z-index: 3;
 }
 @media (max-width: 1400px) {
   .what .frame-right {

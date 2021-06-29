@@ -37,9 +37,10 @@
           <p>Пн - Сб : 10:00 - 20: 00</p>
         </div>
       </div>
-      <button class="btn-main" >Записатись</button>
+      <button class="btn-main" type="button"  data-bs-toggle="modal" data-bs-target="#main-popup-form">Записатись</button>
     </div><!-- container-fluid -->
   </header>
+
   <main class="main">
     <div class="woman"><img src="img/home/header-bg2.png" alt=""></div>
     <div class="wheat"><img src="img/wheat.png" alt=""></div>
@@ -55,7 +56,7 @@
         <li><span><img src="img/list-dot.png" alt=""></span>Заберемо дискомфорт лишнього волосся</li>
         <li><span><img src="img/list-dot.png" alt=""></span>Без болю та подразнень</li>
       </ul>
-      <button class="btn-main" > Записатись на сеанс</button>
+      <button class="btn-main" type="button"  data-bs-toggle="modal" data-bs-target="#main-popup-form"> Записатись на сеанс</button>
     </div>
     <div class="arrow"><img src="" alt=""></div>
   </main>
@@ -70,7 +71,7 @@
               <div class="video-container">
                 <img class="video-bg" src="img/rotate-btn-eclipse.png" alt="">
                 <img class="video-text" src="img/text.png" alt="">
-                <img type="button"  data-bs-toggle="modal" data-bs-target="#video-painless" class="video-btn" src="img/play.png" alt="">
+                <img   data-bs-toggle="modal" data-bs-target="#video-painless" class="video-btn" src="img/play.png" alt="">
               </div>
             </div>
         </div>
@@ -560,8 +561,8 @@
         </b></h2>
       </div><!-- section-header -->
       <div class="row">
-        <div class="discount col-xxl-4"><img src="img/discount.png" alt=""></div>
-        <div class="col-xxl-4">
+        <div class="discount col-xxl-4 col-xl-4 col-lg-4"><img src="img/discount.png" alt=""></div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4">
           <div class="contact-form">
             <form action="submit">
               <select name="" placeholder="Оберіть послугу" id="">
@@ -576,7 +577,7 @@
             <img class="contact-bg" src="img/contact-bg.png" alt="">
           </div>
         </div>
-        <div class=" to-middle col-xxl-4"> <img src="img/admin-phone.png" alt=""></div>
+        <div class=" to-middle col-xxl-4 col-xl-4 col-lg-4"> <img src="img/admin-phone.png" alt=""></div>
       </div><!-- row -->
     </div><!-- container -->
   </section>
@@ -708,6 +709,41 @@
         <iframe class="youtube-frame"  src="https://www.youtube.com/embed/bVzhAwRLYdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
+  </div>
+</div>
+
+
+
+<!-- Button trigger modal -->
+<button class="btn btn-primary" type="button"  data-bs-toggle="modal" data-bs-target="#main-popup-form">
+  Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class=" form-modal modal fade" id="main-popup-form" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5>Запис онлайн</h5>
+        <p>Залиште заявку і ми Вам передзвонимо</p>
+      </div>
+      <div class="modal-body">
+        <div class="contact-form">
+          <form action="submit">
+            <select name="" placeholder="Оберіть послугу" id="">
+              <option value="">Лазерна епіляція</option>
+              <option value="">Масаж</option>
+              <option value="">Косметологія</option>
+            </select>
+            <input type="text" placeholder="Імя">
+            <input type="text" placeholder="Номер телефону">
+            <button class="contact-btn" type="submit">Записатися на сеанс</button>
+          </form>
+        </div>
+      </div><!-- modal-body -->
+      <img class="modal-content-bg" src="img/popup-bg.png" alt="">
+    </div><!-- modal-content -->
   </div>
 </div>
 
