@@ -237,6 +237,8 @@ body {
 .hello .location {
   display: flex;
   flex-wrap: nowrap;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .hello .location-image {
   width: 10rem;
