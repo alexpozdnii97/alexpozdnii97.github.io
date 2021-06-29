@@ -87,7 +87,7 @@ body {
   z-index: 10;
 }
 .bg-light {
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 .main {
   width: 100vw;
@@ -712,7 +712,7 @@ body {
   display: none;
 }
 .footer {
-  padding-top: 6rem ;
+  padding-top: 6rem;
   background: #D8C5BF;
   border-radius: 50px 50px 0px 0px;
 }
@@ -1027,5 +1027,10 @@ body {
   }
   .lazer {
     padding: 0 2rem;
+  }
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
