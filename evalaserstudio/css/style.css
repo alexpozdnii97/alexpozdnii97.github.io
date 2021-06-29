@@ -806,15 +806,14 @@ body {
 .footer .footer-bottom a:hover {
   text-decoration: underline;
 }
-.modal-header {
-  position: relative;
+.modal {
+  background-color: transparent;
 }
-.modal-header .btn-close {
-  position: absolute;
-  right: 0;
-  top: -100%;
-  height: 3rem;
-  width: auto;
+.modal .modal-dialog {
+  background-color: transparent;
+}
+.modal .modal-dialog .modal-content {
+  background-color: transparent;
 }
 @media (max-width: 1400px) {
   .what .frame-right {
@@ -1027,11 +1026,6 @@ body {
   }
   .lazer {
     padding: 0 2rem;
-  }
-  .modal {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   .price .price-list {
     padding: 0;
