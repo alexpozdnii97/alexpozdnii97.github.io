@@ -1115,6 +1115,10 @@ body {
   .compare .stick-right {
     display: none;
   }
+  .hello .admin-video .video-container {
+    width: 12rem;
+    height: 12rem;
+  }
   .what .frame-left,
   .what .frame-right {
     top: 15%;
