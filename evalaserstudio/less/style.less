@@ -443,7 +443,6 @@ body {
 
 .section-header {
   text-align: center;
-
   h2 {
     font-size: 4rem;
     font-weight: 400;
@@ -479,8 +478,16 @@ body {
   p {
     font-size: 2.2rem;
     margin-bottom: 2.5rem;
-
     font-weight: 300;
+  }
+
+  span {
+    cursor: pointer;
+    color: #F8044C;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   b {
@@ -681,8 +688,6 @@ body {
     align-items: center;
   }
 
-
-
   img {
     width: 100%;
   }
@@ -783,10 +788,10 @@ body {
         display: flex;
         align-items: center;
         margin-bottom: 3rem;
-
+        flex-wrap: nowrap;
         &-image {
-          width: 13rem;
-          height: 13rem;
+          width: 35%;
+          height: auto;
           margin-right: 3rem;
 
           img {
@@ -797,6 +802,7 @@ body {
         }
 
         &-meta {
+          width: 65%;
           h3 {
             font-size: 2.5rem;
           }
@@ -1155,9 +1161,17 @@ body {
       display: none;
     }
   }
+  .section-header {
+    text-align: center;
 
+    h2 {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 8rem;
+    }
+  }
   .main {
-    padding-top: 15rem;
+    padding-top: 0;
 
     h1 {
       font-size: 4rem;
@@ -1206,7 +1220,11 @@ body {
       }
     }
   }
-
+  .contact{
+    .to-middle{
+      display: none;
+    }
+  }
   .feedback {
     .feedback-container {
       display: block;
@@ -1336,7 +1354,13 @@ body {
       }
     }
   }
-
+  .contact{
+    .contact-form{
+      .contact-bg{
+        display: none;
+      }
+    }
+  }
   .certification {
     .certificates {
       &-head {
@@ -1358,9 +1382,28 @@ body {
   .feedback-container {
     padding: 4rem;
   }
+  .contact{
+    .discount{
+      img{
+        margin-bottom: 8rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
+  .main{
+    h1{
+      font-size: 3rem;
+    }
+  }
+  section {
+    .section-header{
+      h2{
+        font-size:3rem ;
+      }
+    }
+  }
   .compare {
     .negative {
       border: none;
@@ -1422,6 +1465,34 @@ body {
 
             p {
               font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .feedback{
+    padding: 0 2rem;
+    .feedback-container{
+      padding: 0;
+      &-item{
+        padding: 0 2rem;
+
+        p{
+          font-size: 1.7rem;
+        }
+        .feedback-head {
+          .feedback-head-image {
+            margin-right: 2rem;
+          }
+
+          .feedback-head-meta {
+            h3 {
+              font-size: 2rem;
+            }
+
+            p {
+              font-size: 1.5rem;
             }
           }
         }

@@ -1,13 +1,9 @@
-
-
-
-
 $('.certificates-slider').slick({
   dots: false,
   infinite: false,
   speed: 300,
   arrows: true,
-  slidesToShow: 1,
+  slidesToShow: 3,
   slidesToScroll: 1,
   nextArrow:"<button class='slick-next'><img src='img/slider-arrow-right.png'></button>",
   prevArrow:"<button class='slick-prev'><img src='img/slider-arrow-left.png'></button>",
@@ -16,7 +12,7 @@ $('.certificates-slider').slick({
       breakpoint: 1400,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }

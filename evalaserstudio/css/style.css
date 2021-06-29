@@ -399,6 +399,13 @@ body {
   margin-bottom: 2.5rem;
   font-weight: 300;
 }
+.compare span {
+  cursor: pointer;
+  color: #F8044C;
+}
+.compare span:hover {
+  text-decoration: underline;
+}
 .compare b {
   font-weight: 400;
 }
@@ -644,16 +651,20 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 3rem;
+  flex-wrap: nowrap;
 }
 .feedback-container-item .feedback-head-image {
-  width: 13rem;
-  height: 13rem;
+  width: 35%;
+  height: auto;
   margin-right: 3rem;
 }
 .feedback-container-item .feedback-head-image img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+.feedback-container-item .feedback-head-meta {
+  width: 65%;
 }
 .feedback-container-item .feedback-head-meta h3 {
   font-size: 2.5rem;
@@ -924,8 +935,16 @@ body {
   .header .btn-main {
     display: none;
   }
+  .section-header {
+    text-align: center;
+  }
+  .section-header h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 8rem;
+  }
   .main {
-    padding-top: 15rem;
+    padding-top: 0;
   }
   .main h1 {
     font-size: 4rem;
@@ -958,6 +977,9 @@ body {
   }
   .lazer .laser-description h2 ul {
     margin-top: 1rem;
+  }
+  .contact .to-middle {
+    display: none;
   }
   .feedback .feedback-container {
     display: block;
@@ -1052,6 +1074,9 @@ body {
     width: 50%;
     margin-bottom: 4rem;
   }
+  .contact .contact-form .contact-bg {
+    display: none;
+  }
   .certification .certificates-head {
     width: 80%;
   }
@@ -1064,8 +1089,17 @@ body {
   .feedback-container {
     padding: 4rem;
   }
+  .contact .discount img {
+    margin-bottom: 8rem;
+  }
 }
 @media (max-width: 576px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+  section .section-header h2 {
+    font-size: 3rem ;
+  }
   .compare .negative {
     border: none;
   }
@@ -1102,5 +1136,26 @@ body {
   }
   .price .price-list .tab-content .price-table .line p {
     font-size: 2rem;
+  }
+  .feedback {
+    padding: 0 2rem;
+  }
+  .feedback .feedback-container {
+    padding: 0;
+  }
+  .feedback .feedback-container-item {
+    padding: 0 2rem;
+  }
+  .feedback .feedback-container-item p {
+    font-size: 1.7rem;
+  }
+  .feedback .feedback-container-item .feedback-head .feedback-head-image {
+    margin-right: 2rem;
+  }
+  .feedback .feedback-container-item .feedback-head .feedback-head-meta h3 {
+    font-size: 2rem;
+  }
+  .feedback .feedback-container-item .feedback-head .feedback-head-meta p {
+    font-size: 1.5rem;
   }
 }
