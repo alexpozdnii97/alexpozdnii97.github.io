@@ -1459,7 +1459,7 @@ section .header-dark {
 .services .services-container .service-description a:hover:after {
   color: #5EC8B5;
 }
-.services .services-container .service-links {
+.services .services-container ul.service-links {
   padding: 0 4rem;
   width: 50%;
   display: flex;
@@ -1469,16 +1469,18 @@ section .header-dark {
   align-self: flex-start;
   justify-content: space-between;
 }
-.services .services-container .service-links a {
+.services .services-container ul.service-links li {
+  width: 50%;
   padding: 0rem 0;
   padding-bottom: 2rem;
-  width: 50%;
+}
+.services .services-container ul.service-links li a {
   font-size: 2rem;
   font-family: 'montserrat_regular';
   color: black;
   text-decoration: none;
 }
-.services .services-container .service-links a:hover {
+.services .services-container ul.service-links li a:hover {
   color: #5EC8B5;
 }
 .post-head {
