@@ -17,6 +17,13 @@ body {
   margin-left: 1rem;
   font-size: 1.8rem;
 }
+.header-logo {
+  width: 15rem;
+}
+.header-logo img {
+  width: 100%;
+  height: auto;
+}
 .header .header-flex {
   width: 100%;
   display: flex;
@@ -935,6 +942,9 @@ body {
   .header .header-flex {
     justify-content: space-between;
   }
+  .header-logo {
+    width: 10rem;
+  }
   .header-location {
     display: none;
   }
@@ -1020,6 +1030,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .header-logo {
+    width: 8rem;
+  }
   .header-location {
     display: none;
   }

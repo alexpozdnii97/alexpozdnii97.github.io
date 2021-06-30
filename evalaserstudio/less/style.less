@@ -19,7 +19,13 @@ body {
     margin-left: 1rem;
     font-size: 1.8rem;
   }
-
+  &-logo{
+    width:15rem;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
   .header-flex {
     width: 100%;
     display: flex;
@@ -1157,7 +1163,9 @@ body {
     .header-flex {
       justify-content: space-between;
     }
-
+    &-logo{
+      width: 10rem;
+    }
     &-location {
       display: none;
     }
@@ -1277,12 +1285,14 @@ body {
 
 @media (max-width: 768px) {
   .header{
+    &-logo {
+      width: 8rem;
+    }
    &-location{
      display: none;
    }
    &-info {
      display: none;
-    
    }
   }
   .hello{
