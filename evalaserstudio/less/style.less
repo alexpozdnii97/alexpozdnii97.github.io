@@ -482,7 +482,6 @@ body {
     transform: translateY(-50%);
   }
 
-
   h3 {
     font-size: 2.5rem;
     margin-top: 5.5rem;
@@ -494,7 +493,11 @@ body {
     margin-bottom: 2.5rem;
     font-weight: 300;
   }
-
+  h4{
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+  }
   span {
     cursor: pointer;
     color: #F8044C;
@@ -509,7 +512,7 @@ body {
   }
 
   .negative {
-    p:before {
+    h4:before {
       content: url('../img/negative2.png');
       height: 3rem;
       width: auto;
@@ -520,7 +523,7 @@ body {
   }
 
   .positive {
-    p:before {
+    h4:before {
       content: url('../img/positive.png');
       height: 3rem;
       width: auto;
@@ -972,6 +975,7 @@ body {
       justify-content: space-between;
 
       a {
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -980,6 +984,9 @@ body {
         background-color: white;
         border-radius: 50%;
       }
+    }
+    .left{
+      width: 12rem;
     }
   }
 
@@ -1531,6 +1538,15 @@ body {
   }
   .hello {
     margin-bottom: 5rem;
+    h2{
+      font-size: 2.5rem ;
+    }
+    h3{
+      font-size: 2.2rem;
+    }
+    p{
+      font-size: 1.8rem;
+    }
     .admin-video {
       .video {
         bottom:0;
@@ -1542,6 +1558,9 @@ body {
         }
       }
     }
+  }
+  .certification{
+    margin-top: 8rem;
   }
   .what {
     
@@ -1594,6 +1613,7 @@ body {
     padding-top: 4rem;
   }
   .compare{
+    margin-bottom: 5rem;
     .section-header{
       h2{
         margin-bottom: 0;
@@ -1630,7 +1650,23 @@ body {
       }
     }
   }
+  .contact{
+    .section-header{
+      margin-top: 8rem;
+      h2{
+        font-size: 2.5rem
+      };
+    }
+    .contact-form{
+      form{
+        .contact-btn {
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
   .feedback{
+    margin-top: 8rem;
     padding: 0 2rem;
     .feedback-container{
       padding: 0;
@@ -1662,6 +1698,11 @@ body {
     &-bottom{
       p{
         font-size: 1.5rem;
+      }
+    }
+    .iphone{
+      a{
+        right: -20%;
       }
     }
   }
