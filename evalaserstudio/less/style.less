@@ -57,7 +57,7 @@ body {
   }
 
   &-info {
-    margin: 0 4rem;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,7 +155,9 @@ body {
       width: auto;
     }
   }
-
+  .mobile-bg{
+    display: none;
+  }
   .wheat {
     position: absolute;
     left: 0;
@@ -1158,10 +1160,9 @@ body {
 @media (max-width: 992px) {
 
   .header {
-    padding: 0 4rem;
 
     .header-flex {
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
     &-logo{
       width: 10rem;
@@ -1286,15 +1287,20 @@ body {
 @media (max-width: 768px) {
   .header{
     &-logo {
-      width: 8rem;
+      width: 10rem;
     }
    &-location{
      display: none;
    }
    &-info {
-     display: none;
+     &-item{
+       p {
+         font-size: 1.5rem;
+       }
+     }
    }
   }
+  
   .hello{
     margin-bottom: 6rem;
     .admin-video {
@@ -1454,9 +1460,39 @@ body {
 }
 
 @media (max-width: 576px) {
+  .header-descriptor{
+    display: none;
+  }
   .main{
+      padding: 0 1rem;
+      .woman {
+        display: none;
+      }
+      .mobile-bg{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
     h1{
       font-size: 3rem;
+    }
+     ul {
+       padding-left: 0;
+       li {
+         font-size: 1.8rem;
+       }
+     }
+    .btn-main{
+      display: block;
+      margin: 0 auto;
     }
   }
   section {
