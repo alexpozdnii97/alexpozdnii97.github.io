@@ -360,6 +360,16 @@ body {
   font-size: 2.5rem;
   text-align: center;
 }
+.price .price-list .tab-content .tab-pane .price-sales {
+  text-align: center;
+}
+.price .price-list .tab-content .tab-pane .price-sales h3 {
+  margin-top: 3rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 300rem;
+  font-style: italic;
+}
 .price .price-list .tab-content .tab-pane .price-image {
   border-radius: 15px;
 }
