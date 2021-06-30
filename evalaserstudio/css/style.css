@@ -1224,10 +1224,22 @@ body {
   }
   .what .frame-left,
   .what .frame-right {
-    top: 15%;
+    display: none;
   }
-  .also .service {
+  .also .services .service {
     margin-bottom: 5rem;
+  }
+  .also .services .service-elips-1 {
+    width: 20rem;
+    height: auto;
+  }
+  .also .services .service-elips-2 {
+    width: 20rem;
+    height: auto;
+  }
+  .also .services .service-elips-3 {
+    width: 20rem;
+    height: auto;
   }
   .footer .contact-info {
     margin-top: 3rem;
@@ -1250,14 +1262,14 @@ body {
     width: 100%;
   }
   .price .price-list .nav-item .nav-link {
-    text-align: center;
-    font-size: 2rem;
+    text-align: left;
+    font-size: 1.8rem;
   }
   .price .price-list .tab-content .price-table .line h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .price .price-list .tab-content .price-table .line p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .feedback {
     padding: 0 2rem;

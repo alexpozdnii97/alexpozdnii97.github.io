@@ -1544,17 +1544,35 @@ body {
     }
   }
   .what {
+    
     .section-header{
       padding: 0 2rem;
     }
     .frame-left,
     .frame-right {
-      top: 15%;
+      display: none;
     }
   }
   .also{
-    .service{
-      margin-bottom: 5rem;
+    .services{
+      .service {
+        margin-bottom: 5rem;
+
+        &-elips-1 {
+          width: 20rem;
+          height: auto;
+        }
+
+        &-elips-2 {
+          width: 20rem;
+          height: auto;
+        }
+
+        &-elips-3 {
+          width: 20rem;
+          height: auto;
+        }
+      }
     }
   }
   .footer {
@@ -1591,8 +1609,8 @@ body {
       .nav {
         &-item {
           .nav-link {
-            text-align: center;
-            font-size: 2rem;
+            text-align: left;
+            font-size: 1.8rem;
           }
         }
       }
@@ -1601,11 +1619,11 @@ body {
         .price-table {
           .line {
             h3 {
-              font-size: 2rem;
+              font-size: 1.8rem;
             }
 
             p {
-              font-size: 2rem;
+              font-size: 1.8rem;
             }
           }
         }
