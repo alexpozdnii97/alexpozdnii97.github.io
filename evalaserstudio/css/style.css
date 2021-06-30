@@ -82,9 +82,11 @@ body {
   color: white;
   font-weight: 300;
   cursor: pointer;
+  transition: 0.5s;
 }
 .btn-main:hover {
-  background-color: black;
+  background-color: #c41348;
+  transition: 0.5s;
 }
 .navbar .btn-main {
   padding: 1rem 4rem;
