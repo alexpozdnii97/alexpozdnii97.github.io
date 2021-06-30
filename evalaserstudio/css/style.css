@@ -934,6 +934,9 @@ body {
     width: 100%;
     height: auto;
   }
+  .price-wheat {
+    display: none;
+  }
   .what .frame-left,
   .what .frame-right {
     top: 10%;
