@@ -18,7 +18,7 @@ body {
   font-size: 1.8rem;
 }
 .header-logo {
-  width: 15rem;
+  height: 100%;
 }
 .header-logo img {
   width: 100%;
@@ -27,7 +27,7 @@ body {
 .header .header-flex {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .header .navbar .collapse .navbar-nav {
@@ -319,7 +319,9 @@ body {
   color: black;
 }
 .price .price-list .nav .nav-item .nav-link.active {
+  color: #FC165C;
   border: none;
+  background-color: transparent;
 }
 .price .price-list .tab-content {
   width: 80%;
@@ -1135,6 +1137,14 @@ body {
   .certification .certificates-head {
     width: 80%;
   }
+  .certification .certificates-slider-item {
+    width: 45%;
+    height: auto;
+  }
+  .certification .certificates-slider-item img {
+    width: 100%;
+    height: 100%;
+  }
   .certification .certificates-slider .slick-next {
     right: 2rem;
   }
@@ -1265,6 +1275,9 @@ body {
     font-size: 2rem;
   }
   .feedback .feedback-container-item .feedback-head .feedback-head-meta p {
+    font-size: 1.5rem;
+  }
+  .footer-bottom p {
     font-size: 1.5rem;
   }
 }
