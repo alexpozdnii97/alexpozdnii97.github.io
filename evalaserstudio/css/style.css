@@ -1246,6 +1246,13 @@ body {
   .what .frame-right {
     display: none;
   }
+  .also .section-header h2 {
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+  .also .services {
+    margin-top: 4rem;
+  }
   .also .services .service {
     margin-bottom: 5rem;
   }
