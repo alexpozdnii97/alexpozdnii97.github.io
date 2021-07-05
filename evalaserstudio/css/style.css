@@ -85,7 +85,7 @@ body {
   transition: 0.5s;
 }
 .btn-main:hover {
-  background-color: #c41348;
+  background-color: black;
   transition: 0.5s;
 }
 .navbar .btn-main {
