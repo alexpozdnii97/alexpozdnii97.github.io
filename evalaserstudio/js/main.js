@@ -61,6 +61,5 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   slidesToScroll: 1,
   nextArrow:"<button class='slick-next'><img src='img/slider-arrow-right.png'></button>",
   prevArrow:"<button class='slick-prev'><img src='img/slider-arrow-left.png'></button>",
-  
 });
 } 
