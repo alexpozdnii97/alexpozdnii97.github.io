@@ -25,7 +25,7 @@ header {
 
     .header-content {
       display: flex;
-      width: 50re, ;
+      width: 50rem;
       justify-content: space-evenly;
 
       p {
@@ -185,6 +185,39 @@ footer {
     .main-content {
       h1 {
         font-size: 6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .header-container {
+      img {
+        width: 20%;
+        height: auto;
+      }
+
+      .header-content {
+        width: 80%;
+      }
+    }
+  }
+
+  .main {
+    .main-content {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    .main-content {
+      h1 {
+        font-size: 2rem;
       }
     }
   }

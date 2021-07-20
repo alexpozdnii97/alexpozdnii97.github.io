@@ -22,7 +22,7 @@ header .header-container {
 }
 header .header-container .header-content {
   display: flex;
-  width: 50re, ;
+  width: 50rem;
   justify-content: space-evenly;
 }
 header .header-container .header-content p {
@@ -144,5 +144,22 @@ footer .footer-container .footer-info a {
 @media (max-width: 991px) {
   .main .main-content h1 {
     font-size: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  header .header-container img {
+    width: 20%;
+    height: auto;
+  }
+  header .header-container .header-content {
+    width: 80%;
+  }
+  .main .main-content h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .main .main-content h1 {
+    font-size: 2rem;
   }
 }
