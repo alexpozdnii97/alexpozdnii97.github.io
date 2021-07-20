@@ -147,6 +147,14 @@ footer .footer-container .footer-info a {
   }
 }
 @media (max-width: 768px) {
+  header {
+    position: static;
+    width: 100%;
+    padding: 1rem;
+  }
+  header .header-container {
+    width: 100%;
+  }
   header .header-container img {
     width: 20%;
     height: auto;
