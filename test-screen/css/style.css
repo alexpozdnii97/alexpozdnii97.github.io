@@ -22,7 +22,7 @@ header .header-container {
 }
 header .header-container .header-content {
   display: flex;
-  width: 50re,;
+  width: 50re, ;
   justify-content: space-evenly;
 }
 header .header-container .header-content p {
@@ -42,7 +42,7 @@ header .header-container .header-content a {
   font-weight: 400;
 }
 header .header-container .header-content a:hover {
-  color: FFC700;
+  color: #FFC700;
 }
 .main {
   max-width: 160rem;
