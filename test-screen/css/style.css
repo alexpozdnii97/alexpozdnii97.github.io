@@ -225,6 +225,9 @@ footer .footer-container .footer-info a {
   .main .main-content h1 {
     font-size: 2rem;
   }
+  .main .main-image {
+    display: none;
+  }
   .main .main-image a {
     display: none;
   }
