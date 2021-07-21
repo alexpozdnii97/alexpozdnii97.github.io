@@ -192,13 +192,11 @@ footer {
 
 @media (max-width: 768px) {
   header {
-
-
     .header-container {
       width: 100%;
 
       img {
-        width: 20%;
+        width: 15%;
         height: auto;
       }
 
@@ -211,7 +209,35 @@ footer {
   .main {
     .main-content {
       h1 {
-        font-size: 4rem;
+        font-size: 3rem;
+      }
+    }
+  }
+  footer{
+    padding: 0;
+    .footer-container{
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      flex-direction: column;
+      p{
+        width: 100%;
+      }
+      .footer-info{
+        order: -1;
+        width: 100%;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+  .main {
+    padding: 0;
+    .main-container{
+      flex-direction: column;
+      align-items: center;
+      .main-content{
+        order: -1;
       }
     }
   }
