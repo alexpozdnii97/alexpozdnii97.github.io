@@ -6,8 +6,6 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
-  width: 100vw;
-  height: 100vh;
 }
 header {
   position: fixed;
@@ -157,7 +155,6 @@ footer .footer-container .footer-info a {
     width: 100vw;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
   }
   .main .main-content h1 {
     font-size: 6rem;
@@ -194,10 +191,7 @@ footer .footer-container .footer-info a {
     display: block;
   }
   .main {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 0;
   }
   .main .main-container {
     width: 100%;
