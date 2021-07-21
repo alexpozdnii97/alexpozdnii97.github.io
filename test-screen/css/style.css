@@ -219,6 +219,9 @@ footer .footer-container .footer-info a {
   header .header-container .header-content p {
     display: none;
   }
+  .main {
+    width: 100%;
+  }
   .main .main-content h1 {
     font-size: 2rem;
   }
