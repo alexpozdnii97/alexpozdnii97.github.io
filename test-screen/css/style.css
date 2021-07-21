@@ -26,7 +26,7 @@ header .header-container .header-content {
   width: 50rem;
   justify-content: space-evenly;
 }
-header .header-container .header-content p {
+header .header-container .header-content align-items:center p {
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -169,6 +169,7 @@ footer .footer-container .footer-info a {
   }
   footer .footer-container p {
     width: 100%;
+    padding: 0.5rem 0;
   }
   footer .footer-container .footer-info {
     order: -1;
@@ -180,12 +181,13 @@ footer .footer-container .footer-info a {
     padding: 0;
   }
   .main .main-container {
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
   }
   .main .main-container .main-content {
-    width: 80%;
+    width: 100%;
     order: -1;
   }
   .main .main-container .main-content h1 {
@@ -201,6 +203,9 @@ footer .footer-container .footer-info a {
   }
 }
 @media (max-width: 576px) {
+  header .header-container .header-content p {
+    display: none;
+  }
   .main .main-content h1 {
     font-size: 2rem;
   }
