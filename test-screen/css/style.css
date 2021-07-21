@@ -2,7 +2,8 @@ html {
   font-size: 10px;
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
   width: 100vw;
   height: 100vh;
