@@ -7,6 +7,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
+
 }
 
 header {
@@ -187,8 +188,8 @@ footer {
 
 @media (max-width: 991px) {
   .main {
-    width: 100%;
-    
+    height: 100vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     .main-content {
@@ -215,7 +216,11 @@ footer {
     }
   }
 
- 
+  .main {
+    .main-content {
+      
+    }
+  }
   footer{
     padding: 0;
     .footer-container{
@@ -236,8 +241,6 @@ footer {
     }
   }
   .main {
-    width: 100%;
-    height: 100%;
     padding: 0;
     .main-container{
       width: 100%;
@@ -274,7 +277,6 @@ footer {
     }
   }
   .main {
-    width: 100%;
     .main-content {
       h1 {
         font-size: 2rem;
