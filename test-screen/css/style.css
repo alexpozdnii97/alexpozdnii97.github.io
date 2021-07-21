@@ -157,9 +157,6 @@ footer .footer-container .footer-info a {
   header .header-container .header-content {
     width: 80%;
   }
-  .main .main-content h1 {
-    font-size: 3rem;
-  }
   footer {
     padding: 0;
   }
@@ -184,9 +181,21 @@ footer .footer-container .footer-info a {
   .main .main-container {
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
   }
   .main .main-container .main-content {
+    width: 80%;
     order: -1;
+  }
+  .main .main-container .main-content h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .main .main-image {
+    width: 60%;
+  }
+  .main .main-image a {
+    width: 80%;
   }
 }
 @media (max-width: 576px) {
