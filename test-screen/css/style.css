@@ -157,6 +157,7 @@ footer .footer-container .footer-info a {
     width: 100vw;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
   .main .main-content h1 {
     font-size: 6rem;
