@@ -52,6 +52,7 @@ header .header-container .header-content a:hover {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow-x: hidden;
   overflow-y: hidden;
 }
