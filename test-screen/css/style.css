@@ -192,6 +192,7 @@ footer .footer-container .footer-info a {
   }
   .main {
     padding: 0;
+    width: 100%;
   }
   .main .main-container {
     width: 100%;
