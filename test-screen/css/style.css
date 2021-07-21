@@ -195,11 +195,10 @@ footer .footer-container .footer-info a {
     font-size: 4rem;
   }
   .main .main-image {
-    width: 60%;
+    width: 65%;
   }
   .main .main-image a {
-    display: none;
-    width: 80%;
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
@@ -208,5 +207,8 @@ footer .footer-container .footer-info a {
   }
   .main .main-content h1 {
     font-size: 2rem;
+  }
+  .main .main-image a {
+    display: none;
   }
 }
