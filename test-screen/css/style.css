@@ -51,6 +51,8 @@ header .header-container .header-content a:hover {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .main-container {
   height: 60%;
