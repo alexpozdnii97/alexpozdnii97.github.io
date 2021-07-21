@@ -196,6 +196,7 @@ footer .footer-container .footer-info a {
     width: 60%;
   }
   .main .main-image a {
+    display: none;
     width: 80%;
   }
 }
