@@ -16,6 +16,7 @@ body {
   background: #5EC8B5;
 }
 .btn-main {
+  display: inline-block;
   width: 15.625vw;
   height: 2.865vw;
   border: none;
@@ -30,6 +31,7 @@ body {
   color: black;
 }
 .btn-ghost-white {
+  display: inline-block;
   width: 15.625vw;
   height: 2.865vw;
   background: transparent;
@@ -45,6 +47,7 @@ body {
   color: black;
 }
 .btn-ghost-black {
+  display: inline-block;
   width: 15.625vw;
   height: 2.865vw;
   background: transparent;
