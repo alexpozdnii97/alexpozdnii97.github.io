@@ -132,6 +132,7 @@ section .section-header .line {
   background-image: url(../img/services-secondary.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   height: 31.771vw;
   padding-left: 8.5rem;
   padding-right: 8.5rem;
@@ -188,6 +189,37 @@ section .section-header .line {
   margin-bottom: 2.083vw;
 }
 @media (max-width: 991px) {
+  .secondary-main {
+    padding: 0 2.083vw;
+    height: 80vh;
+    font-weight: 100vw;
+  }
+  .secondary-main .main-header {
+    display: none;
+  }
+  .secondary-main .main-content {
+    left: 2.083vw;
+  }
+  .secondary-main .main-content h1 {
+    font-size: 4.036vw;
+  }
+  .secondary-main .main-content h2 {
+    font-size: 2.523vw;
+  }
+}
+@media (max-width: 768px) {
+  .secondary-main {
+    height: 70vh;
+    font-weight: 100vw;
+  }
+  .secondary-main .main-content h1 {
+    font-size: 4.036vw;
+  }
+  .secondary-main .main-content h2 {
+    font-size: 2.523vw;
+  }
+}
+@media (max-width: 545px) {
   .secondary-main {
     height: 70vh;
     font-weight: 100vw;
