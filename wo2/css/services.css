@@ -67,6 +67,24 @@ body {
     font-size: 2.018vw;
   }
 }
+@media (max-width: 768px) {
+  .btn-main,
+  .btn-ghost-black,
+  .btn-ghost-white {
+    width: 39.063vw;
+    height: 7.161vw ;
+    font-size: 2.604vw;
+  }
+}
+@media (max-width: 768px) {
+  .btn-main,
+  .btn-ghost-black,
+  .btn-ghost-white {
+    width: 55.046vw;
+    height: 10.092vw;
+    font-size: 3.670vw;
+  }
+}
 section {
   background-color: #242424;
   padding-top: 7.5rem;
@@ -221,14 +239,22 @@ section .section-header .line {
 }
 @media (max-width: 545px) {
   .secondary-main {
-    height: 70vh;
+    height: 100vh;
     font-weight: 100vw;
   }
+  .secondary-main .main-content {
+    text-align: center;
+  }
   .secondary-main .main-content h1 {
-    font-size: 4.036vw;
+    font-size: 7.339vw;
   }
   .secondary-main .main-content h2 {
-    font-size: 2.523vw;
+    font-size: 4.587vw;
+    margin-bottom: 4.587vw;
+  }
+  .secondary-main .main-content .btn-main,
+  .secondary-main .main-content .btn-ghost-white {
+    margin-bottom: 4.587vw;
   }
 }
 .all-services {
