@@ -205,7 +205,7 @@ section .section-header .line {
   transform: translateY(-50%);
 }
 .secondary-main .main-content h1 {
-  font-size: 1.563vw;
+  font-size: 2.083vw;
   font-family: 'montserrat_regular';
   color: white;
   margin-bottom: 3.125vw;
