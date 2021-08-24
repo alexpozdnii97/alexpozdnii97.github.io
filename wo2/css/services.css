@@ -514,7 +514,7 @@ section .section-header .line {
   .works-container .work-hover-info .categories {
     margin-bottom: 1rem;
   }
-  .works-container .work-nav {
+  .works-container .work-hover-nav a {
     font-size: 3.027vw;
   }
 }
