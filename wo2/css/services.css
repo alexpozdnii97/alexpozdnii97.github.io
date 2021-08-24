@@ -493,6 +493,7 @@ section .section-header .line {
 @media (max-width: 991px) {
   .works-container {
     padding: 0  2.083vw;
+    padding-bottom: 5rem;
   }
   .works-container .work-hover {
     padding-left: 4.036vw;
@@ -512,6 +513,9 @@ section .section-header .line {
   }
   .works-container .work-hover-info .categories {
     margin-bottom: 1rem;
+  }
+  .works-container .work-nav {
+    font-size: 3.027vw;
   }
 }
 @media (max-width: 545px) {
