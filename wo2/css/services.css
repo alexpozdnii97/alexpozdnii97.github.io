@@ -308,7 +308,7 @@ section .section-header .line {
   display: inline-block;
   font-size: 0.833vw;
   font-family: 'montserrat_light';
-  width: 18.750vw;
+  width: 80%;
 }
 .all-services-container .service-nav {
   display: flex;
@@ -346,11 +346,14 @@ section .section-header .line {
     width: 50%;
     padding-left: 2.083vw;
   }
+  .all-services-container .service-info {
+    margin-bottom: 4rem;
+  }
   .all-services-container .service-info h3 {
     font-size: 3.027vw;
   }
   .all-services-container .service-info p {
-    width: 37.5vw;
+    width: 80%;
     font-size: 1.816vw;
   }
   .all-services-container .service-nav span {
@@ -389,6 +392,9 @@ section .section-header .line {
   .all-services-container .service {
     width: 100%;
     padding: 2vw 4vw;
+  }
+  .all-services-container .service-info {
+    margin-bottom: 2rem;
   }
   .all-services-container .service-info h3 {
     font-size: 5vw;
@@ -445,7 +451,7 @@ section .section-header .line {
   font-family: 'montserrat_regular';
 }
 .works-container .work-hover-info p {
-  width: 80%;
+  width: 18.750vw;
 }
 .works-container .work-hover-info a,
 .works-container .work-hover-info h3,
