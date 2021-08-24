@@ -4,6 +4,7 @@ html {
 }
 body {
   overflow-x: hidden;
+  background-color: #242424;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -85,7 +86,7 @@ body {
 }
 section {
   background-color: #242424;
-  padding-top: 7.5rem;
+  padding-top: 5rem;
 }
 section .section-header {
   padding: 0 8.5rem;
@@ -108,6 +109,7 @@ section .section-header .line {
 @media (max-width: 991px) {
   section .section-header {
     padding: 0 2.083vw;
+    margin-bottom: 3rem;
   }
   section .section-header h2 {
     padding-left: 0 2.083vw;
@@ -121,6 +123,7 @@ section .section-header .line {
 @media (max-width: 768px) {
   section .section-header {
     padding: 0 2.083vw;
+    margin-bottom: 3rem;
   }
   section .section-header h2 {
     padding-left: 0 2.083vw;
@@ -134,6 +137,7 @@ section .section-header .line {
 @media (max-width: 545px) {
   section .section-header {
     padding: 0 2.083vw;
+    margin-bottom: 2rem;
   }
   section .section-header h2 {
     padding-left: 0 2.083vw;
@@ -408,6 +412,7 @@ section .section-header .line {
   }
 }
 .works-container {
+  margin-top: 5rem;
   padding-right: 8.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -573,11 +578,17 @@ section .section-header .line {
     font-size: 7.339vw;
   }
   .cta-secondary p {
-    font-size: 2.018vw;
+    font-size: 3.670vw;
+    margin-bottom: 2rem;
   }
   .cta-secondary .default-form {
-    width: 70rem;
+    width: 30rem;
     margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+  .cta-secondary .default-form .row {
+    width: 100%;
+    padding: 0;
   }
   .cta-secondary .default-form .row .default-form-input {
     height: 3rem;
