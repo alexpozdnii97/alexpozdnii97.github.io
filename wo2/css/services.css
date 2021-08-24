@@ -524,6 +524,29 @@ section .section-header .line {
 @media (max-width: 545px) {
   .works-container {
     padding-right: 0;
+    padding-left: 0;
+  }
+  .works-container .work img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .works-container .work-hover {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .works-container .work-hover-info h3 {
+    font-size: 5.505vw;
+  }
+  .works-container .work-hover-info p {
+    font-size: 3.670vw;
+  }
+  .works-container .work-hover-info .categories a {
+    font-size: 3.670vw;
+  }
+  .works-container .work-hover-nav a {
+    font-size: 5.505vw;
   }
 }
 .cta-secondary {

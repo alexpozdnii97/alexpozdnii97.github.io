@@ -546,10 +546,8 @@ section {
           .categories{
             margin-bottom: 2rem;
             a {
-              
               border-radius: 1rem;
               padding: 0.1rem 0.5rem;
-              
               font-size: 0.833vw;
               color: black;
               background-color: @main-color;
@@ -632,8 +630,37 @@ section {
   .works {
     &-container {
       padding-right: 0;
-
-      .work {}
+      padding-left: 0;
+      .work {
+        img{
+          width: 100%;
+          height: auto;
+          margin-bottom: 2rem;
+        }
+        &-hover{
+          position: static;
+          width: 100%;
+          height: auto;
+          &-info{
+            h3{
+              font-size: 5.505vw;
+            }
+            p{
+              font-size: 3.670vw;
+            }
+            .categories{
+              a{
+                font-size: 3.670vw;
+              }
+            }
+          }
+          &-nav{
+            a{
+              font-size: 5.505vw; 
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -726,7 +753,6 @@ section {
       // width: 70.636vw;
       width: 70rem;
       margin-bottom: 4rem;
-
       .row {
         .default-form-input {
           height: 3rem;
