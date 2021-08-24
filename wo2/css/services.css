@@ -452,7 +452,7 @@ section .section-header .line {
   font-family: 'montserrat_regular';
 }
 .works-container .work-hover-info p {
-  width: 80%;
+  width: 90%;
   margin-bottom: 2rem;
   font-size: 0.833vw;
   color: white;
@@ -462,10 +462,8 @@ section .section-header .line {
   margin-bottom: 2rem;
 }
 .works-container .work-hover-info .categories a {
-  width: 300px;
-  height: 30px;
   border-radius: 1rem;
-  padding: 0.3rem 1rem;
+  padding: 0.1rem 0.5rem;
   font-size: 0.833vw;
   color: black;
   background-color: #5ec8b5;
@@ -473,7 +471,7 @@ section .section-header .line {
   text-decoration: none;
 }
 .works-container .work-hover-nav {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -512,6 +510,11 @@ section .section-header .line {
     margin-bottom: 1rem;
   }
   .works-container .work-hover-info .categories {
+    margin-bottom: 1rem;
+  }
+  .works-container .work-hover-info .categories a {
+    display: inline-block;
+    font-size: 1.816vw;
     margin-bottom: 1rem;
   }
   .works-container .work-hover-nav a {
