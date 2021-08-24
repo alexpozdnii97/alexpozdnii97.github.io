@@ -111,7 +111,7 @@ section .section-header .line {
   }
   section .section-header h2 {
     padding-left: 0 2.083vw;
-    font-size: 3.027vw;
+    font-size: 4.036vw;
   }
   section .section-header .line {
     top: 6vw;
@@ -387,23 +387,24 @@ section .section-header .line {
   }
   .all-services-container .service {
     width: 100%;
-    padding: 2vw 4vw;
+    padding: 2rem 1rem;
   }
   .all-services-container .service-info {
     margin-bottom: 2rem;
   }
   .all-services-container .service-info h3 {
-    font-size: 5vw;
+    font-size: 5.505vw;
+    margin-bottom: 2rem;
   }
   .all-services-container .service-info p {
     width: 80%;
-    font-size: 4.587vw;
+    font-size: 3.670vw;
   }
   .all-services-container .service-nav span {
-    font-size: 3.906vw;
+    font-size: 4.587vw;
   }
   .all-services-container .service-nav a {
-    font-size: 3.906vw;
+    font-size: 4.587vw;
   }
 }
 .works-container {
