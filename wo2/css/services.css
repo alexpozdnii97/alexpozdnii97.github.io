@@ -445,7 +445,7 @@ section .section-header .line {
   font-family: 'montserrat_regular';
 }
 .works-container .work-hover-info p {
-  width: 18.750vw;
+  width: 80%;
 }
 .works-container .work-hover-info a,
 .works-container .work-hover-info h3,
@@ -527,6 +527,46 @@ section .section-header .line {
 @media (max-width: 991px) {
   .cta-secondary h2 {
     font-size: 4.036vw;
+  }
+  .cta-secondary p {
+    font-size: 2.018vw;
+  }
+  .cta-secondary .default-form {
+    width: 70rem;
+    margin-bottom: 4rem;
+  }
+  .cta-secondary .default-form .row .default-form-input {
+    height: 3rem;
+    font-size: 2rem;
+  }
+  .cta-secondary .default-form .row .default-form-textarea {
+    font-size: 2rem;
+    height: 13.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .cta-secondary h2 {
+    font-size: 4.036vw;
+  }
+  .cta-secondary p {
+    font-size: 2.018vw;
+  }
+  .cta-secondary .default-form {
+    width: 70rem;
+    margin-bottom: 4rem;
+  }
+  .cta-secondary .default-form .row .default-form-input {
+    height: 3rem;
+    font-size: 2rem;
+  }
+  .cta-secondary .default-form .row .default-form-textarea {
+    font-size: 2rem;
+    height: 13.6rem;
+  }
+}
+@media (max-width: 545px) {
+  .cta-secondary h2 {
+    font-size: 7.339vw;
   }
   .cta-secondary p {
     font-size: 2.018vw;
