@@ -596,7 +596,7 @@ section {
 .cta-secondary{
   background-color: white;
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5.208vw;
   h2{
     font-size: 2.083vw;
     color:black;
@@ -606,6 +606,9 @@ section {
     font-size: 1.042vw;
     .reg();
     margin-bottom: 2.083vw;
+  }
+  button{
+    margin: 0 auto;
   }
   .default-form{
     width: 36.458vw;
@@ -636,6 +639,31 @@ section {
         border: none;
         border-bottom: 1px solid #BBBBBB;
         outline: none;
+      }
+    }
+  }
+}
+@media(max-width:991px) {
+  .cta-secondary  {
+    h2{
+      font-size: 4.036vw;
+    }
+    p{
+      font-size: 2.018vw;
+    }
+    .default-form{
+      // width: 70.636vw;
+      width: 70rem;
+      margin-bottom: 4rem;
+      .row{
+        .default-form-input{
+          height: 3rem;
+          font-size: 2rem;
+        }
+        .default-form-textarea{
+          font-size: 2rem; 
+          height: 13.6rem;
+        }
       }
     }
   }
