@@ -511,33 +511,32 @@ section {
 .works {
   &-container {
     padding-right: 8.5rem;
-    padding-left: 8.5rem;
     
     display: flex;
     flex-wrap: wrap;
 
     .work {
-      width: 100%;
+      width: 50%;
       position: relative;
-      margin-bottom: 5rem;
       &-bg {
         padding: 0;
-        width: 50%;
+        width: 100%;
         height: auto;
       }
       &-hover {
         position: absolute;
         top: 0;
-        left: 50%;
-        width: 50%;
+        left: 0%;
+        width: 100%;
         height: 100%;
         padding-left: 8.5rem;
         z-index: 2;
-        background: rgba(0, 0, 0, 0.0);
+        background: #242424;
         display: flex;
         flex-direction: column;
         justify-content:center;
         align-items:start;
+        opacity: 0;
         &-info {
           h3 {
             margin-bottom: 2rem;
@@ -578,7 +577,13 @@ section {
           }
         }
       }
+      &:hover {
+        .work-hover {
+          opacity: 1;
+        }
+      }
     }
+    
     .btn-main{
       display: inline-block;
       margin: 0 auto;
