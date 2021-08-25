@@ -681,7 +681,10 @@ section {
       .stage {
         width: 50%;
         padding: 5.208vw 2.604vw;
-
+        padding-left:5.208vw  ;
+        .number{
+          font-size:8vw;
+        }
         &-info {
           margin-bottom: 3rem;
 
@@ -704,17 +707,24 @@ section {
     &-container {
       padding-right: 0;
 
-      .stage {
+      .stage {  
         width: 100%;
         // padding: 2vw 4vw;
-        padding: 2rem 1rem;
-
+        padding: 2rem 3rem;
+        .number{
+          font-size:20vw;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%,-20%);
+        }
         &-info {
-          margin-bottom: 2rem;
-
+          text-align: center;
+          margin-bottom: 6rem;
+          transform: translateY(50%);
           h3 {
             font-size: 5.505vw;
             margin-bottom: 2rem;
+            color:@main-color;
           }
 
           p {
