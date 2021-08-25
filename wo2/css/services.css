@@ -438,6 +438,7 @@ section .section-header .line {
   justify-content: center;
   align-items: start;
   opacity: 0;
+  transition: 1s;
 }
 .works-container .work-hover-info h3 {
   margin-bottom: 2rem;
@@ -475,12 +476,20 @@ section .section-header .line {
   font-size: 2rem;
   font-family: 'montserrat_light';
 }
+.works-container .work-hover-nav:hover a {
+  color: #5ec8b5;
+}
+.works-container .work-hover-nav:hover svg {
+  fill: #5ec8b5;
+}
 .works-container .work:hover .work-hover {
   opacity: 1;
+  transition: 1s;
 }
 .works-container .btn-main {
   display: inline-block;
   margin: 0 auto;
+  margin-top: 5rem;
   text-decoration: none ;
   line-height: 55px;
   text-align: center;

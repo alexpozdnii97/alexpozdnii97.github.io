@@ -511,10 +511,8 @@ section {
 .works {
   &-container {
     padding-right: 8.5rem;
-    
     display: flex;
     flex-wrap: wrap;
-
     .work {
       width: 50%;
       position: relative;
@@ -537,6 +535,7 @@ section {
         justify-content:center;
         align-items:start;
         opacity: 0;
+        transition: 1s;
         &-info {
           h3 {
             margin-bottom: 2rem;
@@ -564,7 +563,6 @@ section {
             }
           }
         }
-
         &-nav {
           width: 90%;
           display: flex;
@@ -575,11 +573,20 @@ section {
             font-size: 2rem;
             .light();
           }
+          &:hover {
+            a{
+              color: @main-color;
+            }
+            svg{
+              fill: @main-color;
+            }
+          }
         }
       }
       &:hover {
         .work-hover {
           opacity: 1;
+          transition: 1s;
         }
       }
     }
@@ -587,6 +594,7 @@ section {
     .btn-main{
       display: inline-block;
       margin: 0 auto;
+      margin-top: 5rem;
       text-decoration: none ;
       line-height: 55px;
       text-align: center;
