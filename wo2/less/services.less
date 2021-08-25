@@ -130,70 +130,81 @@ body {
 section {
   background-color: #242424;
   padding-top: 5rem;
+  padding-bottom: 5rem;
   .section-header {
     padding: 0 8.5rem;
     margin-bottom: 5rem;
     position: relative;
+
     h2 {
       color: white;
       .reg();
       font-size: 2.083vw;
     }
+
     .line {
-      position: absolute;
       height: 2px;
-      width: 8.854vw;
-      top: 3.125vw; //6rem
-      left: 0;
+      width: 17rem;
+      margin-top: 2rem;
+      transform: translateX(-8.5rem);
       background-color: #5EC8B5;
     }
   }
 }
-@media(max-width:991px){
+
+@media(max-width:991px) {
   section {
     .section-header {
-      padding: 0 2.083vw;
-      margin-bottom: 3rem;
-      h2{
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      
+
+      h2 {
         padding-left: 0 2.083vw;
-        font-size: 4.036vw; 
+        font-size: 4.036vw;
       }
-      .line{
-        top: 6vw;
-        width: 17.154vw;
+
+      .line {
+        width: 10.5rem;
+        transform: translateX(-2.5rem);
       }
     }
   }
 }
+
 @media(max-width:768px) {
   section {
     .section-header {
-      padding: 0 2.083vw;
-      margin-bottom: 3rem;
+      padding: 0 3rem;
+      
+
       h2 {
         padding-left: 0 2.083vw;
         font-size: 5.208vw;
       }
-      .line {
-        width: 22.135vw;
-        top: 8vw;
+
+      line {
+        width: 10.5rem;
+        transform: translateX(-2.5rem);
       }
     }
   }
 }
-@media(max-width:545px){
+
+@media(max-width:545px) {
   section {
     .section-header {
-      padding: 0 2.083vw;
-      margin-bottom: 2rem;
+      padding: 0 2rem;
+
+
       h2 {
         padding-left: 0 2.083vw;
         font-size: 7.339vw;
       }
 
       .line {
-        width: 31.193vw;
-        top: 12vw;
+        width: 10.5rem;
+        transform: translateX(-2rem);
       }
     }
   }
@@ -499,10 +510,9 @@ section {
 
 .works {
   &-container {
-    margin-top: 5rem;
     padding-right: 8.5rem;
     padding-left: 8.5rem;
-    padding-bottom: 5rem;
+    
     display: flex;
     flex-wrap: wrap;
 
@@ -522,7 +532,6 @@ section {
         width: 50%;
         height: 100%;
         padding-left: 8.5rem;
-        padding-bottom: 2.604vw;
         z-index: 2;
         background: rgba(0, 0, 0, 0.0);
         display: flex;
@@ -532,14 +541,14 @@ section {
         &-info {
           h3 {
             margin-bottom: 2rem;
-            font-size: 2.083vw;
+            font-size: 4rem;
              color: #5EC8B5;
             .reg();
           }
           p {
             width: 90%;
             margin-bottom: 2rem;
-            font-size: 0.833vw;
+            font-size: 1.6rem;
             color: white;
             .light();
           } 
@@ -547,8 +556,8 @@ section {
             margin-bottom: 2rem;
             a {
               border-radius: 1rem;
-              padding: 0.1rem 0.5rem;
-              font-size: 0.833vw;
+              padding: 0.4rem 1rem;
+              font-size: 1.6rem;
               color: black;
               background-color: @main-color;
               .reg();
@@ -564,7 +573,7 @@ section {
           a {
             color: white;
             text-decoration: none;
-            font-size: 1.042vw;
+            font-size: 2rem;
             .light();
           }
         }
@@ -597,7 +606,6 @@ section {
   .works {
     &-container {
       padding-right: 0;
-
       .work {
         &-hover-info{
           h3{
@@ -612,8 +620,9 @@ section {
             margin-bottom: 1rem;
             a{  
               display: inline-block;
-               font-size: 1.816vw;
-               margin-bottom: 1rem;
+              margin-bottom: 1rem;
+              padding: 0.2rem 0.5rem;
+              font-size: 1.816vw;
             }
           }
         }
@@ -646,17 +655,18 @@ section {
               font-size: 5.505vw;
             }
             p{
-              font-size: 3.670vw;
+              font-size: 4.587vw;
             }
             .categories{
               a{
-                font-size: 3.670vw;
+                font-size: 4.587vw;
               }
             }
           }
           &-nav{
             a{
               font-size: 5.505vw; 
+              
             }
           }
         }
@@ -667,7 +677,6 @@ section {
 .cta-secondary{
   background-color: white;
   text-align: center;
-  margin-bottom: 5.208vw;
   h2{
     font-size: 2.083vw;
     color:black;
