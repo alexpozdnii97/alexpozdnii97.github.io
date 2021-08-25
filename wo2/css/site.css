@@ -495,6 +495,9 @@ section .section-header .line {
   font-family: 'montserrat_light';
   width: 80%;
 }
+.stages-container .stage-info p b {
+  color: #5ec8b5;
+}
 @media (max-width: 991px) {
   .stages-container {
     padding: 0 2.083vw;
