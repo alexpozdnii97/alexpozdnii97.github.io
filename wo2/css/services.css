@@ -320,7 +320,7 @@ section .section-header .line {
   font-size: 1.042vw;
   color: white;
   text-decoration: none;
-  font-family: 'montserrat_light';
+  font-family: 'montserrat_regular';
 }
 .all-services-container .service:hover {
   background-color: #5EC8B5;
@@ -328,11 +328,11 @@ section .section-header .line {
 }
 .all-services-container .service:hover .service-info h3,
 .all-services-container .service:hover .service-info p {
-  color: #242424;
+  color: black;
 }
 .all-services-container .service:hover .service-nav span,
 .all-services-container .service:hover .service-nav a {
-  color: #242424;
+  color: black;
 }
 @media (max-width: 991px) {
   .all-services-container {
