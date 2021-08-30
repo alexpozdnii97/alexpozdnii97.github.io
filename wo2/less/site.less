@@ -812,12 +812,13 @@ section {
   }
 }
 
-@media(max-width:991px){
+@media(max-width:768px){
   .steps-cta{
     &-container{
       width: 80%;
       flex-direction: column;
       justify-content: center ;
+      align-items:center;
       h3{
         text-align: center;
         font-size: 3.670vw;
@@ -835,6 +836,39 @@ section {
     }
   }
 }
+@media(max-width:545px) {
+  .steps-cta {
+    &-container {
+      width: 80%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        text-align: center;
+        font-size: 3.670vw;
+        padding-bottom: 5vw;
+      }
+
+      .btn-main {
+        font-size: 3.670vw;
+      }
+    }
+
+    .arrow {
+      width: 12vw;
+      right: 5vw;
+      top: -30%;
+      height: auto;
+    }
+  }
+}
+
+
+
+
+
+
 
 .stages {
   background-color: #242424;
