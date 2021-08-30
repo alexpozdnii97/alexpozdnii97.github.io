@@ -632,15 +632,15 @@ section .section-header .line {
   .steps-cta {
     padding-top: 1vw;
   }
-  .steps-cta-container {
+  padding-bottom:10vw .steps-cta-container {
     width: 80%;
   }
-  .steps-cta-container h3 {
+  padding-bottom:10vw .steps-cta-container h3 {
     font-size: 1.816vw;
     padding-bottom: 5vw;
     padding-right: 0.5rem;
   }
-  .steps-cta-container .btn-main {
+  padding-bottom:10vw .steps-cta-container .btn-main {
     font-size: 2vw;
   }
   .steps-cta .arrow {
