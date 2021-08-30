@@ -629,24 +629,24 @@ section .section-header .line {
   }
 }
 @media (max-width: 768px) {
+  .steps-cta {
+    padding-top: 1vw;
+  }
   .steps-cta-container {
     width: 80%;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: center;
   }
   .steps-cta-container h3 {
-    text-align: center;
-    font-size: 3.670vw;
+    font-size: 1.816vw;
     padding-bottom: 5vw;
+    padding-right: 0.5rem;
   }
   .steps-cta-container .btn-main {
-    font-size: 3.670vw;
+    font-size: 2vw;
   }
   .steps-cta .arrow {
-    width: 12vw;
+    width: 6vw;
     right: 5vw;
-    top: -30%;
+    top: -80%;
     height: auto;
   }
 }
