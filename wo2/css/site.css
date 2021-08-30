@@ -631,16 +631,17 @@ section .section-header .line {
 @media (max-width: 768px) {
   .steps-cta {
     padding-top: 1vw;
+    padding-bottom: 10vw;
   }
-  padding-bottom:10vw .steps-cta-container {
+  .steps-cta-container {
     width: 80%;
   }
-  padding-bottom:10vw .steps-cta-container h3 {
+  .steps-cta-container h3 {
     font-size: 1.816vw;
     padding-bottom: 5vw;
     padding-right: 0.5rem;
   }
-  padding-bottom:10vw .steps-cta-container .btn-main {
+  .steps-cta-container .btn-main {
     font-size: 2vw;
   }
   .steps-cta .arrow {
@@ -674,7 +675,6 @@ section .section-header .line {
 }
 .price-list {
   position: relative;
-  margin-right: 8.5rem;
 }
 .price-list .price-table {
   padding: 0 8.5rem;
