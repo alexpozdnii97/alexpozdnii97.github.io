@@ -701,10 +701,12 @@ section .section-header .line {
 .price-list .price-table .line .type {
   color: white;
   width: 35%;
+  font-family: 'montserrat_regular';
 }
 .price-list .price-table .line .price {
   color: white;
   width: 25%;
+  font-family: 'montserrat_regular';
 }
 .price-list .price-table .line .time {
   color: white;
@@ -762,6 +764,75 @@ section .section-header .line {
   .price-list .price-table .line p {
     font-size: 1.8rem;
   }
+}
+.success-components-container {
+  padding: 0 8.5rem 0 8.5rem;
+  display: flex;
+  align-items: center;
+}
+.success-components-container .success-image {
+  width: 30%;
+  height: auto;
+}
+.success-components-container .fork {
+  width: 70%;
+  height: auto;
+  margin-left: 1.042vw;
+  display: flex;
+}
+.success-components-container .fork-left {
+  margin: 4vw 0;
+  width: 12vw;
+  position: relative;
+  display: flex;
+  border-right: 1px solid #5ec8b5;
+}
+.success-components-container .fork-left .center-line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-1px);
+  width: 100%;
+  height: 1px;
+  background-color: #5ec8b5;
+}
+.success-components-container .fork-right {
+  width: 5.208vw;
+  margin: 4vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.success-components-container .fork-right .line {
+  width: 100%;
+  height: 1px;
+  background-color: #5ec8b5;
+}
+.success-components-container .fork-content {
+  display: flex ;
+  width: 100%;
+  padding-left: 2.083vw;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.success-components-container .fork-content .line {
+  width: 10%;
+  height: 1px;
+  background-color: #5ec8b5;
+}
+.success-components-container .fork-content .component {
+  width: 90%;
+  margin: 1.3vw 0;
+}
+.success-components-container .fork-content .component h3 {
+  color: white;
+  font-family: 'montserrat_regular';
+  font-size: 1.302vw;
+  margin-bottom: 1.042vw;
+}
+.success-components-container .fork-content .component p {
+  font-size: 0.938vw;
+  font-weight: 300;
+  color: white;
 }
 .stages {
   background-color: #242424;
