@@ -667,8 +667,12 @@ section .section-header .line {
   margin-left: 8.5rem;
   width: 40%;
   color: black;
-  font-size: 1.042vw;
+  font-size: 0.938vw;
+  font-family: 'montserrat_light';
   margin-right: auto;
+}
+.description .description-container p b {
+  font-family: 'montserrat_bold';
 }
 .description .description-container .btn-main,
 .description .description-container .ghost-black {
