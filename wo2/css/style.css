@@ -737,7 +737,7 @@ section .section-header .line {
 }
 .steps-cta {
   position: relative;
-  padding: 9.375vw 0 2.604vw 0;
+  padding: 9.375vw 0 9.375vw 0;
 }
 .steps-cta-container {
   width: 60%;
@@ -756,7 +756,7 @@ section .section-header .line {
   width: 4.427vw;
   height: 13.906vw;
   right: 15vw;
-  top: -30%;
+  top: -20%;
 }
 @media (max-width: 991px) {
   .steps-cta {
@@ -992,6 +992,17 @@ section .section-header .line {
     font-size: 1.816vw;
   }
 }
+@media (max-width: 768px) {
+  .success-components-container {
+    padding: 0 2.083vw;
+  }
+  .success-components-container .fork-content .component h3 {
+    font-size: 2.604vw;
+  }
+  .success-components-container .fork-content .component p {
+    font-size: 1.816vw;
+  }
+}
 .stages {
   background-color: #242424;
 }
@@ -1123,6 +1134,46 @@ section .section-header .line {
   }
   .stages-container .stage-nav a {
     font-size: 4.587vw;
+  }
+}
+.seo-steps-container {
+  padding: 0 8.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.seo-steps-container .step {
+  width: 25%;
+}
+.seo-steps-container .step h3 {
+  font-size: 1.302vw;
+  font-family: 'montserrat_regular';
+  color: white;
+}
+.seo-steps-container .step p {
+  color: white;
+  font-size: 0.833vw;
+  width: 80%;
+  display: none;
+}
+.seo-steps-container .arrow {
+  width: 4.167vw;
+  height: auto;
+}
+.seo-steps .curved-arrow {
+  display: block;
+  width: 16.667vw;
+  height: auto;
+  margin-top: 1.5vw;
+  margin-left: auto;
+  margin-right: 24.083vw;
+}
+@media (max-width: 991px) {
+  .seo-steps-container {
+    padding: 0 2.083vw;
+  }
+  .seo-steps-container .step h3 {
+    font-size: 3.027vw;
   }
 }
 .all-services {
