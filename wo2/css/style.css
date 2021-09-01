@@ -273,9 +273,9 @@ section .section-header .line {
   section .section-header {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    padding: 0 2.083vw;
   }
   section .section-header h2 {
-    padding-left: 0 2.083vw;
     font-size: 4.036vw;
   }
   section .section-header .line {
@@ -980,6 +980,17 @@ section .section-header .line {
   font-size: 0.938vw;
   font-weight: 300;
   color: white;
+}
+@media (max-width: 991px) {
+  .success-components-container {
+    padding: 0 2.083vw;
+  }
+  .success-components-container .fork-content .component h3 {
+    font-size: 2.1vw;
+  }
+  .success-components-container .fork-content .component p {
+    font-size: 1.816vw;
+  }
 }
 .stages {
   background-color: #242424;
