@@ -621,7 +621,8 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 31.771vw;
+  // height: 31.771vw;
+  height: 35vw;
   padding-left: 8.5rem;
   padding-right: 8.5rem;
   position: relative;
@@ -685,14 +686,38 @@ section {
       color: white;
       margin-bottom: 2.083vw;
     }
-
+    .bullets{
+      max-width:60rem;
+      padding: 0;
+      margin-bottom: 1.042vw;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        display: flex;
+        align-items:center;
+        width: 50%;
+        margin-bottom: 1.458vw;
+        p{
+          padding:0;
+          margin: 0;
+          font-size: 1.042vw;
+        }
+        &::before{
+          content:"";
+          width:13px ;
+          height: 2px;
+          background-color: @main-color;
+          margin-right: 1rem;
+        }
+      }
+    }
     button {
       display: inline-block;
     }
     p{
       font-size: 1.042vw;
       color:white;
-      margin-top: 2rem;
+      margin-top: 1.042vw;
       .light();
     }
   }
@@ -720,9 +745,18 @@ section {
         font-size: 2.523vw;
         margin-bottom: 4.036vw;
       }
-
+      p{
+            font-size: 2.018vw;
+      }
       button {
         display: block;
+      }
+      .bullets{
+        li{
+          p{
+            font-size: 2.018vw;
+          }
+        }
       }
     }
   }
@@ -743,6 +777,16 @@ section {
         font-size: 3.255vw; //25px
         margin-bottom: 5.208vw;
       }
+      .bullets{
+        li{
+          p{
+            font-size: 1.816vw;
+          }
+        }
+      }
+      p{
+        font-size: 1.816vw;
+      }
     }
   }
 }
@@ -757,7 +801,7 @@ section {
       text-align: center;
 
       h1 {
-        font-size: 7.339vw;
+        font-size: 7vw;
         margin-bottom: 7.339vw;
       }
 
@@ -766,14 +810,31 @@ section {
         margin-bottom: 7.339vw;
         padding: 0 3rem;
       }
-
+      p{
+        font-size: 4.587vw;
+      }
       button {
         display: inline-block;
       }
-
+      .bullets{
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 4.587vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        li{
+          width: 100%;
+          p{
+            font-size: 4.587vw; 
+          }
+        }
+      }
       .btn-main,
       .btn-ghost-white {
         margin-bottom: 4.587vw;
+        margin-right: 0;
       }
     }
   }
