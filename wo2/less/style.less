@@ -1710,17 +1710,25 @@ section {
   }
 }
 @media(max-width:991px){
-.seo-steps{
-  &-container{
-    padding: 0 2.083vw;
-    .step{
-      h3{
-        font-size: 3.027vw;
+  .seo-steps{
+    &-container{
+      padding: 0 2.083vw;
+      flex-direction: column;
+      align-items: center;
+      .step{
+        width: 80%;
+        h3{
+          font-size: 3.027vw;
+        }
+        p{
+          
+        }
       }
-      p{}
+      .arrow{
+        transform: rotate(90deg);
+      }
     }
   }
-}
 }
 @media(max-width:768px) {
 

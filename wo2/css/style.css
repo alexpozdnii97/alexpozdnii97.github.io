@@ -1171,9 +1171,17 @@ section .section-header .line {
 @media (max-width: 991px) {
   .seo-steps-container {
     padding: 0 2.083vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seo-steps-container .step {
+    width: 80%;
   }
   .seo-steps-container .step h3 {
     font-size: 3.027vw;
+  }
+  .seo-steps-container .arrow {
+    transform: rotate(90deg);
   }
 }
 .all-services {
