@@ -626,41 +626,33 @@ section {
   padding-left: 8.5rem;
   padding-right: 8.5rem;
   position: relative;
-
   .main-header {
     padding-top: 1rem;
-
     p {
       color: white;
     }
-
     padding-right: 4rem;
     display: flex;
     justify-content: space-between;
     align-items:center;
-
     .descriptor {
       display: flex;
       align-items: center;
-
       p {
         margin-bottom: 0;
         margin-left: 1.563vw;
         font-size: 0.833vw;
       }
-
       img {
         width: 5.208vw;
         height: auto;
       }
     }
-
     .phone {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       font-size: 0.938vw;
-
       p {
         margin-bottom: 0;
       }
@@ -687,7 +679,7 @@ section {
       margin-bottom: 2.083vw;
     }
     .bullets{
-      max-width:60rem;
+      max-width:70rem;
       padding: 0;
       margin-bottom: 1.042vw;
       display: flex;
@@ -780,12 +772,12 @@ section {
       .bullets{
         li{
           p{
-            font-size: 1.816vw;
+            font-size: 2.604vw;
           }
         }
       }
       p{
-        font-size: 1.816vw;
+        font-size: 2.604vw;
       }
     }
   }
@@ -880,7 +872,7 @@ section {
       .two,
       .three,
       .five,
-      .six {
+      .six,.eight,.nine {
         border: none;
       }
 
@@ -1046,6 +1038,9 @@ section {
       width: 40%;
       font-size: 1.302vw;
       .reg();
+      b{
+        font-weight: 700;
+      }
     }
 
     .line {
@@ -1062,10 +1057,12 @@ section {
     align-items: center;
 
     p {
+      margin-left: 8.5rem;
       width: 40%;
       color: black;
       font-size: 1.042vw;
       margin-right: auto;
+      
     }
 
     .btn-main,
@@ -1078,6 +1075,7 @@ section {
 @media(max-width:991px) {
   .description {
     .section-header {
+      padding: 0 2.083vw;
       h2 {
         font-size: 2.523vw;
         width: 60%;
@@ -1087,18 +1085,60 @@ section {
     .description-container {
       padding: 0 2.083vw;
       display: block;
-
       p {
-        width: 50%;
-        font-size: 2rem;
+        width: 80%;
+        font-size: 2.018vw;
+        margin-left: 0;
+      }
+      .btn-main{
+        display: inline;
       }
     }
   }
 }
 
-@media(max-width:768px) {}
+@media(max-width:768px) {
+  .description{
+    .section-header{
+      h2{
+        width: 100%;
+        font-size: 5.208vw;
+      }
+      margin-bottom: 6.510vw;
+    }
+    .description-container{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      p{
+        width: 100%;
+        font-size: 3.255vw;
+        margin-bottom: 6.510vw;
+      }
+    }
+  }
+}
 
-@media(max-width:545px) {}
+@media(max-width:545px) {
+.description {
+  .section-header {
+    padding: 0 10.667vw;
+    .line{
+      display: none;
+    }
+    h2{
+      font-size: 6.133vw;
+    }
+  }
+
+  .description-container {
+    padding: 0 10.667vw;
+    p{
+      font-size: 4.533vw;
+    }
+  }
+}
+}
 
 .steps-cta {
   position: relative;

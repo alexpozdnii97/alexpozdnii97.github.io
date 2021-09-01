@@ -370,7 +370,7 @@ section .section-header .line {
   margin-bottom: 2.083vw;
 }
 .secondary-main .main-content .bullets {
-  max-width: 60rem;
+  max-width: 70rem;
   padding: 0;
   margin-bottom: 1.042vw;
   display: flex;
@@ -447,10 +447,10 @@ section .section-header .line {
     margin-bottom: 5.208vw;
   }
   .secondary-main .main-content .bullets li p {
-    font-size: 1.816vw;
+    font-size: 2.604vw;
   }
   .secondary-main .main-content p {
-    font-size: 1.816vw;
+    font-size: 2.604vw;
   }
 }
 @media (max-width: 545px) {
@@ -533,7 +533,9 @@ section .section-header .line {
 .steps-container .step .two,
 .steps-container .step .three,
 .steps-container .step .five,
-.steps-container .step .six {
+.steps-container .step .six,
+.steps-container .step .eight,
+.steps-container .step .nine {
   border: none;
 }
 .steps-container .step-info {
@@ -648,6 +650,9 @@ section .section-header .line {
   font-size: 1.302vw;
   font-family: 'montserrat_regular';
 }
+.description .section-header h2 b {
+  font-weight: 700;
+}
 .description .section-header .line {
   top: 3.646vw;
 }
@@ -659,6 +664,7 @@ section .section-header .line {
   align-items: center;
 }
 .description .description-container p {
+  margin-left: 8.5rem;
   width: 40%;
   color: black;
   font-size: 1.042vw;
@@ -669,6 +675,9 @@ section .section-header .line {
   justify-self: flex-end;
 }
 @media (max-width: 991px) {
+  .description .section-header {
+    padding: 0 2.083vw;
+  }
   .description .section-header h2 {
     font-size: 2.523vw;
     width: 60%;
@@ -678,8 +687,48 @@ section .section-header .line {
     display: block;
   }
   .description .description-container p {
-    width: 50%;
-    font-size: 2rem;
+    width: 80%;
+    font-size: 2.018vw;
+    margin-left: 0;
+  }
+  .description .description-container .btn-main {
+    display: inline;
+  }
+}
+@media (max-width: 768px) {
+  .description .section-header {
+    margin-bottom: 6.510vw;
+  }
+  .description .section-header h2 {
+    width: 100%;
+    font-size: 5.208vw;
+  }
+  .description .description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description .description-container p {
+    width: 100%;
+    font-size: 3.255vw;
+    margin-bottom: 6.510vw;
+  }
+}
+@media (max-width: 545px) {
+  .description .section-header {
+    padding: 0 10.667vw;
+  }
+  .description .section-header .line {
+    display: none;
+  }
+  .description .section-header h2 {
+    font-size: 6.133vw;
+  }
+  .description .description-container {
+    padding: 0 10.667vw;
+  }
+  .description .description-container p {
+    font-size: 4.533vw;
   }
 }
 .steps-cta {
