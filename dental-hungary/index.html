@@ -49,6 +49,7 @@
       
     </div> <!-- container -->
   </header>
+
   <main class="main">
     <img src="img/back_offer.jpg" alt="" class="main-bg">
     <div class="container">
@@ -96,7 +97,7 @@
         <p>Our dental clinic based in Central London and Budapest. We provide treatments in our London clinic or you could fly to our clinic in beautiful Budapest and <b>save up to 70%</b> on typical UK prices without any loss of quality. <br><br>      
           At Dental Centre Hungary, we specialise in seeing to all possible dental needs and requirements of UK patients abroad. We see<b> more than 2,000 satisfied patients</b> every year and providing The Highest Standard more than 15 years ago to UK patients! <br><br>
           <b>Contact our expert to discuss the procedure and prices.</b></p>
-        <button class="btn-main">Contact an expert now</button>
+        <button class="btn-main btn-ghost">Contact an expert now</button>
       </div>
     </div>
   </section>
@@ -183,7 +184,7 @@
   </section>
 
   <section class="contact">
-    <img src="img/back_offer.jpg" alt="" class="bg-image">
+    <img src="img/cta-bg.png" alt="" class="bg-image">
     <div class="container">
       <div class="row">
         <p>Get a free Quotation</p>
@@ -205,25 +206,25 @@
       <div class="row">
         <div class="main-form">
           <h3>Appointment</h3>
-          <form action="">
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Phone">
-          <input type="text" placeholder="Email">
-          <textarea rows="3" placeholder="Message"></textarea>
-          <label for="file-upload" class="custom-file-upload">
-             <img src="img/clip.svg" alt=""> Custom Upload
-          </label>
-          <input id="file-upload" type="file"/>
-          <button class="btn-main btn-ghost">Send form</button>
-        </form>
+            <form action="">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Phone">
+            <input type="text" placeholder="Email">
+            <textarea rows="3" placeholder="Message"></textarea>
+            <label for="file-upload" class="custom-file-upload">
+              <img src="img/clip.svg" alt=""> Custom Upload
+            </label>
+            <input id="file-upload" type="file"/>
+            <button class="btn-main btn-ghost">Send form</button>
+          </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <section class="testemonials">
+  <section class="testemonials">
     <p>Reviews</p>
-    <h2>What our happy clients say </h2>
+    <h2>What our happy clients say?</h2>
     <div class="container">
       <div class="clients-slider">
         <div class="client">
@@ -253,15 +254,15 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <section class="prices">
+  <section class="prices">
     <img src="img/back_pricelist.jpg" alt="" class="bg-image">
     <p>Price List</p>
     <h2>Cost of dental treatments at Dental Centre Hungary have fixed price with all stated services.</h2>
     <div class="container">
       <div class="prices-wrapper">
-        <div class="price">
+        <div class="price active">
           <img class="price-icon" src="img/icons/decay 1.svg" alt="">
           <div class="price-desc">
             <h3>Zirconium Crown</h3>
@@ -270,7 +271,11 @@
           <div class="price-discount">
             <p>£304<span>£380</span></p>
           </div>
-          <img src="img/check.svg" alt="" class="check">
+          <div class="check">
+            <svg  viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.0234C0 24.2713 3.47678 15.8776 9.66548 9.68891C15.8542 3.50021 24.2479 0.0234375 33 0.0234375C41.7521 0.0234375 50.1458 3.50021 56.3345 9.68891C62.5232 15.8776 66 24.2713 66 33.0234C66 41.7756 62.5232 50.1693 56.3345 56.358C50.1458 62.5467 41.7521 66.0234 33 66.0234C24.2479 66.0234 15.8542 62.5467 9.66548 56.358C3.47678 50.1693 0 41.7756 0 33.0234H0ZM31.1168 47.1474L50.116 23.3962L46.684 20.6506L30.4832 40.895L19.008 31.3338L16.192 34.713L31.1168 47.1518V47.1474Z" fill="#1E4388"/>
+            </svg>
+          </div>
         </div>
         <div class="price">
           <img class="price-icon" src="img/icons/decay 2.svg" alt="">
@@ -281,7 +286,11 @@
           <div class="price-discount">
             <p>£4090<span>£380</span></p>
           </div>
-          <img src="img/check.svg" alt="" class="check">
+          <div class="check">
+            <svg  viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.0234C0 24.2713 3.47678 15.8776 9.66548 9.68891C15.8542 3.50021 24.2479 0.0234375 33 0.0234375C41.7521 0.0234375 50.1458 3.50021 56.3345 9.68891C62.5232 15.8776 66 24.2713 66 33.0234C66 41.7756 62.5232 50.1693 56.3345 56.358C50.1458 62.5467 41.7521 66.0234 33 66.0234C24.2479 66.0234 15.8542 62.5467 9.66548 56.358C3.47678 50.1693 0 41.7756 0 33.0234H0ZM31.1168 47.1474L50.116 23.3962L46.684 20.6506L30.4832 40.895L19.008 31.3338L16.192 34.713L31.1168 47.1518V47.1474Z" fill="#1E4388"/>
+            </svg>
+          </div>
         </div>
         <div class="price">
           <img class="price-icon" src="img/icons/decay 3.svg" alt="">
@@ -292,18 +301,26 @@
           <div class="price-discount">
             <p>£3404<span>£380</span></p>
           </div>
-          <img src="img/check.svg" alt="" class="check">
+          <div class="check">
+            <svg  viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.0234C0 24.2713 3.47678 15.8776 9.66548 9.68891C15.8542 3.50021 24.2479 0.0234375 33 0.0234375C41.7521 0.0234375 50.1458 3.50021 56.3345 9.68891C62.5232 15.8776 66 24.2713 66 33.0234C66 41.7756 62.5232 50.1693 56.3345 56.358C50.1458 62.5467 41.7521 66.0234 33 66.0234C24.2479 66.0234 15.8542 62.5467 9.66548 56.358C3.47678 50.1693 0 41.7756 0 33.0234H0ZM31.1168 47.1474L50.116 23.3962L46.684 20.6506L30.4832 40.895L19.008 31.3338L16.192 34.713L31.1168 47.1518V47.1474Z" fill="#1E4388"/>
+            </svg>
+          </div>
         </div>
         <div class="price">
           <img class="price-icon" src="img/icons/decay 3-1.svg" alt="">
           <div class="price-desc">
-            <h3>Zirconium</h3>
+            <h3>Zirconium Crown</h3>
             <p>Replace missing, decayed or ugly teeth with beautiful Zirconium crowns. These crowns won’t decay or break, but are natural looking and metal free for a fantastic smile makeover.</p>
           </div>
           <div class="price-discount">
             <p>£5304<span>£380</span></p>
           </div>
-          <img src="img/check.svg" alt="" class="check">
+          <div class="check">
+            <svg  viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.0234C0 24.2713 3.47678 15.8776 9.66548 9.68891C15.8542 3.50021 24.2479 0.0234375 33 0.0234375C41.7521 0.0234375 50.1458 3.50021 56.3345 9.68891C62.5232 15.8776 66 24.2713 66 33.0234C66 41.7756 62.5232 50.1693 56.3345 56.358C50.1458 62.5467 41.7521 66.0234 33 66.0234C24.2479 66.0234 15.8542 62.5467 9.66548 56.358C3.47678 50.1693 0 41.7756 0 33.0234H0ZM31.1168 47.1474L50.116 23.3962L46.684 20.6506L30.4832 40.895L19.008 31.3338L16.192 34.713L31.1168 47.1518V47.1474Z" fill="#1E4388"/>
+            </svg>
+          </div>
         </div>
         <div class="price">
           <img class="price-icon" src="img/icons/decay 1-1.svg" alt="">
@@ -314,7 +331,11 @@
           <div class="price-discount">
             <p>£1304<span>£380</span></p>
           </div>
-          <img src="img/check.svg" alt="" class="check">
+          <div class="check">
+            <svg  viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.0234C0 24.2713 3.47678 15.8776 9.66548 9.68891C15.8542 3.50021 24.2479 0.0234375 33 0.0234375C41.7521 0.0234375 50.1458 3.50021 56.3345 9.68891C62.5232 15.8776 66 24.2713 66 33.0234C66 41.7756 62.5232 50.1693 56.3345 56.358C50.1458 62.5467 41.7521 66.0234 33 66.0234C24.2479 66.0234 15.8542 62.5467 9.66548 56.358C3.47678 50.1693 0 41.7756 0 33.0234H0ZM31.1168 47.1474L50.116 23.3962L46.684 20.6506L30.4832 40.895L19.008 31.3338L16.192 34.713L31.1168 47.1518V47.1474Z" fill="#1E4388"/>
+            </svg>
+          </div>
         </div>
         <div class="price">
           <img class="price-icon" src="img/icons/decay 2-1.svg" alt="">
@@ -325,7 +346,11 @@
           <div class="price-discount">
             <p>£904<span>£380</span></p>
           </div>
-          <img src="img/check.svg" alt="" class="check">
+          <div class="check">
+            <svg  viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.0234C0 24.2713 3.47678 15.8776 9.66548 9.68891C15.8542 3.50021 24.2479 0.0234375 33 0.0234375C41.7521 0.0234375 50.1458 3.50021 56.3345 9.68891C62.5232 15.8776 66 24.2713 66 33.0234C66 41.7756 62.5232 50.1693 56.3345 56.358C50.1458 62.5467 41.7521 66.0234 33 66.0234C24.2479 66.0234 15.8542 62.5467 9.66548 56.358C3.47678 50.1693 0 41.7756 0 33.0234H0ZM31.1168 47.1474L50.116 23.3962L46.684 20.6506L30.4832 40.895L19.008 31.3338L16.192 34.713L31.1168 47.1518V47.1474Z" fill="#1E4388"/>
+            </svg>
+          </div>
         </div>
         <div class="price">
           <img class="price-icon" src="img/icons/decay 3-2.svg" alt="">
@@ -336,7 +361,11 @@
           <div class="price-discount">
             <p>£3104<span>£380</span></p>
           </div>
-          <img src="img/check.svg" alt="" class="check">
+          <div class="check">
+            <svg  viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.0234C0 24.2713 3.47678 15.8776 9.66548 9.68891C15.8542 3.50021 24.2479 0.0234375 33 0.0234375C41.7521 0.0234375 50.1458 3.50021 56.3345 9.68891C62.5232 15.8776 66 24.2713 66 33.0234C66 41.7756 62.5232 50.1693 56.3345 56.358C50.1458 62.5467 41.7521 66.0234 33 66.0234C24.2479 66.0234 15.8542 62.5467 9.66548 56.358C3.47678 50.1693 0 41.7756 0 33.0234H0ZM31.1168 47.1474L50.116 23.3962L46.684 20.6506L30.4832 40.895L19.008 31.3338L16.192 34.713L31.1168 47.1518V47.1474Z" fill="#1E4388"/>
+            </svg>
+          </div>
         </div>
         <div class="price">
           <img class="price-icon" src="img/icons/decay 3-3.svg" alt="">
@@ -347,16 +376,19 @@
           <div class="price-discount">
             <p>£2304<span>£380</span></p>
           </div>
-          <img src="img/check.svg" alt="" class="check">
+          <div class="check">
+            <svg  viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.0234C0 24.2713 3.47678 15.8776 9.66548 9.68891C15.8542 3.50021 24.2479 0.0234375 33 0.0234375C41.7521 0.0234375 50.1458 3.50021 56.3345 9.68891C62.5232 15.8776 66 24.2713 66 33.0234C66 41.7756 62.5232 50.1693 56.3345 56.358C50.1458 62.5467 41.7521 66.0234 33 66.0234C24.2479 66.0234 15.8542 62.5467 9.66548 56.358C3.47678 50.1693 0 41.7756 0 33.0234H0ZM31.1168 47.1474L50.116 23.3962L46.684 20.6506L30.4832 40.895L19.008 31.3338L16.192 34.713L31.1168 47.1518V47.1474Z" fill="#1E4388"/>
+            </svg>
+          </div>
         </div>
       </div>
       <button class="btn-main">Get your quote</button>
       <button class="btn-main btn-ghost">Full price</button>
     </div>
-  </section> -->
+  </section>
 
-
-  <!-- <section class="partners">
+  <section class="partners">
     <p>Suppliers </p>
     <h2>We use only the best quality materials and implants, In-house Dental Lab and Cutting Edge Technology! </h2>
     <div class="container">
@@ -373,9 +405,10 @@
         <div class="partner"><img src="img/3m.png" alt=""></div>
       </div>
     </div>
-  </section> -->
-  <!-- <section class="contact">
-    
+  </section>
+
+  <section class="contact">
+    <img src="img/cta-bg2.png" alt="" class="bg-image">
     <div class="container">
       <div class="row ">
         <p>Get a free Quotation</p>
@@ -411,16 +444,16 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="menu">
         <div class="logo">
           <img src="img/logo.png" alt="">
         </div>
         <div class="menu-items">
-          <ul>
+          <ul class="desktop-menu">
             <li>Prices</li>
             <li>About Us</li>
             <li>Reviews</li>
@@ -456,7 +489,7 @@
         <p><a href="https://whiteonyxstudio.com/">Design and Development by White Onyx Studio</a></p>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
 
 

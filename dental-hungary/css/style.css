@@ -110,6 +110,13 @@ div h2 {
   }
 }
 @media (max-width: 768px) {
+  section h2,
+  main h2,
+  footer h2,
+  div h2 {
+    font-size: 3.3rem;
+    padding: 0 2rem;
+  }
   section .container,
   main .container,
   footer .container,
@@ -118,6 +125,13 @@ div h2 {
   }
 }
 @media (max-width: 576px) {
+  section h2,
+  main h2,
+  footer h2,
+  div h2 {
+    font-size: 3.3rem;
+    padding: 0 1.5rem;
+  }
   section .container,
   main .container,
   footer .container,
@@ -142,6 +156,7 @@ div h2 {
   border: none;
   outline: none;
   color: white;
+  cursor: pointer;
 }
 .btn-main:hover {
   background: #1E4388;
@@ -150,7 +165,7 @@ div h2 {
 }
 .btn-ghost {
   background: transparent;
-  border: 3px solid #3C93DB;
+  border: 2px solid #3C93DB;
   color: #3C93DB;
   box-shadow: none;
 }
@@ -690,6 +705,9 @@ div h2 {
   }
 }
 @media (max-width: 768px) {
+  .about .container .about-content h2 {
+    font-size: 3.3rem;
+  }
   .about .container .about-content p {
     font-size: 1.7rem;
   }
@@ -899,6 +917,9 @@ div h2 {
   }
 }
 @media (max-width: 768px) {
+  .advantages h2 {
+    font-size: 3.3rem;
+  }
   .advantages .container .advantage {
     margin-top: 0;
   }
@@ -932,16 +953,15 @@ div h2 {
   padding-top: 20rem;
   padding-bottom: 23rem;
   position: relative;
-  background-color: green;
 }
 .contact .bg-image {
   width: 100%;
   height: auto;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
   z-index: -1;
-  transform: translateX(-50%);
+  transform: translateY(-40rem);
 }
 .contact .container {
   display: flex;
@@ -1004,7 +1024,8 @@ div h2 {
   font-weight: bold;
   font-style: normal;
   font-size: 20px;
-  color: #1e4388;
+  color: #1E4388;
+  text-align: left;
 }
 .contact .container .row .contact-info p {
   color: #5C5C5C;
@@ -1086,31 +1107,63 @@ div h2 {
   }
 }
 @media (max-width: 992px) {
-  .contact {
-    background-color: blue;
-  }
   .contact .container .row h2 {
     font-size: 4rem;
     margin-bottom: 6.4rem;
   }
 }
 @media (max-width: 768px) {
-  .contact {
-    background-color: blue;
-  }
   .contact .container {
     max-width: none;
     width: 100%;
+    padding: 0 2.5rem;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
   }
   .contact .container .row {
     width: 100%;
   }
+  .contact .container .row .contact-info {
+    display: none;
+  }
   .contact .container .row h2 {
     font-size: 4rem;
     margin-bottom: 6.4rem;
   }
+}
+@media (max-width: 576px) {
+  .contact .container {
+    max-width: none;
+    width: 100%;
+    padding: 0 1.2rem;
+    box-sizing: border-box;
+  }
+  .contact .container .row {
+    width: 100%;
+  }
+  .contact .container .row .contact-info {
+    display: none;
+  }
+  .contact .container .row h2 {
+    font-size: 3.2rem;
+    margin-bottom: 6.4rem;
+  }
+  .contact .container .row .main-form {
+    padding: 0 1.5rem;
+    padding-top: 3.5rem;
+  }
+  .contact .container .row .main-form input,
+  .contact .container .row .main-form label,
+  .contact .container .row .main-form textarea {
+    box-sizing: border-box;
+  }
+  .contact .container .row .main-form button {
+    margin-bottom: 4rem;
+  }
+}
+.testemonials {
+  background: transparent;
 }
 .testemonials .container .clients-slider {
   position: relative;
@@ -1197,9 +1250,32 @@ div h2 {
 .testemonials .container .clients-slider .slick-dots li.slick-active button:before {
   background-color: #3C93DB;
 }
+@media (max-width: 1400px) {
+  .testemonials .container .clients-slider .slick-arrow {
+    top: 49.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .testemonials .container .clients-slider .slick-arrow {
+    top: 55.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .testemonials h2 {
+    font-size: 3.3rem;
+    padding: 0 1.5rem;
+  }
+  .testemonials .container .clients-slider .client {
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+  }
+  .testemonials .container .clients-slider .slick-arrow {
+    top: 44.5rem;
+  }
+}
 .prices {
   position: relative;
-  padding-top: 40rem;
+  padding-top: 15rem;
   padding-bottom: 15rem;
   text-align: center;
 }
@@ -1212,9 +1288,9 @@ div h2 {
   height: auto;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
   z-index: -1;
-  transform: translateX(-50%);
+  transform: translateY(-50rem);
 }
 .prices .container {
   text-align: center;
@@ -1222,6 +1298,7 @@ div h2 {
 .prices .container .prices-wrapper {
   width: 100%;
   margin-bottom: 4.5rem;
+  margin-top: 7rem;
 }
 .prices .container .prices-wrapper .price {
   width: 100%;
@@ -1237,6 +1314,7 @@ div h2 {
   padding-right: 5rem;
   background-color: white;
   border-radius: 2rem;
+  cursor: pointer;
 }
 .prices .container .prices-wrapper .price .price-icon {
   margin-right: 3rem;
@@ -1284,6 +1362,104 @@ div h2 {
   color: #5C5C5C;
   transform: translateY(-100%);
 }
+.prices .container .prices-wrapper .price .check svg {
+  width: 6rem;
+}
+.prices .container .prices-wrapper .price .check svg path {
+  fill: #C4C4C4;
+}
+.prices .container .prices-wrapper .active {
+  background-color: #D9EEFF;
+  border: 2px solid #1E4388;
+}
+.prices .container .prices-wrapper .active .check svg path {
+  fill: #1E4388;
+}
+@media (max-width: 992px) {
+  .prices .container .prices-wrapper .price {
+    padding: 0 2rem;
+    height: auto;
+  }
+  .prices .container .prices-wrapper .price .price-icon {
+    width: 6.5rem;
+  }
+  .prices .container .prices-wrapper .price .price-desc h3 {
+    font-size: 2.5rem;
+  }
+  .prices .container .prices-wrapper .price .price-desc p {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+  }
+  .prices .container .prices-wrapper .price .price-discount p {
+    font-size: 3rem;
+  }
+  .prices .container .prices-wrapper .price .price-discount p span {
+    font-size: 1.5rem;
+  }
+  .prices .container .prices-wrapper .price .check svg {
+    width: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .prices h2 {
+    padding: 0 2rem;
+  }
+  .prices .container .prices-wrapper .price {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .prices .container .prices-wrapper .price .price-icon {
+    display: none;
+  }
+  .prices .container .prices-wrapper .price .price-desc {
+    order: 3;
+    width: 100%;
+  }
+  .prices .container .prices-wrapper .price .price-desc h3 {
+    margin-top: 0;
+  }
+  .prices .container .prices-wrapper .price .price-discount {
+    order: 1;
+    width: 50%;
+  }
+  .prices .container .prices-wrapper .price .price-discount p {
+    text-align: left;
+  }
+  .prices .container .prices-wrapper .price .check {
+    order: 2;
+    width: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .prices {
+    background-color: green;
+  }
+  .prices h2 {
+    font-size: 3.3rem;
+    padding: 0 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .prices .container .prices-wrapper .price .price-desc h3 {
+    font-family: 'Lato_bold';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .prices .container .prices-wrapper .price .price-desc p {
+    margin-bottom: 1.8rem;
+    display: none;
+  }
+  .prices .container .prices-wrapper .active {
+    background-color: #D9EEFF;
+  }
+  .prices .container .prices-wrapper .active .price-desc p {
+    display: block;
+  }
+  .prices .container .btn-main {
+    margin-bottom: 2rem;
+  }
+}
 .partners {
   text-align: center;
 }
@@ -1306,6 +1482,9 @@ div h2 {
 .partners .container .partners-slider .partner {
   width: 25%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .partners .container .partners-slider .slick-arrow {
   position: absolute;
@@ -1328,6 +1507,28 @@ div h2 {
 }
 .partners .container .partners-slider .slick-prev:before {
   content: url(../img/slick-prev.png);
+}
+@media (max-width: 992px) {
+  .partners .h2 {
+    padding: 0 2rem;
+    font-size: 3.3rem;
+  }
+  .partners .container .partners-slider .partner {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .partners h2 {
+    padding: 0 1.5rem;
+    font-size: 3.3rem;
+  }
+  .partners .container .partners-slider {
+    padding: 2rem 2rem;
+    height: 15rem;
+  }
+  .partners .container .partners-slider .partner img {
+    width: 60%;
+  }
 }
 .footer .container .menu {
   display: flex;

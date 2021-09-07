@@ -6,7 +6,7 @@ $('.partners-slider').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1400,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -15,14 +15,32 @@ $('.partners-slider').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 1200,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -41,23 +59,23 @@ $('.clients-slider').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 992,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -73,4 +91,7 @@ var row = $('#row');
 	} else {
 	 row.removeClass('row-hidden');
 	}
+});
+$('.price').on('click', function () {
+    $(this).toggleClass('active')
 });
