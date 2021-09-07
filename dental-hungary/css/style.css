@@ -560,6 +560,9 @@ div h2 {
   .main {
     overflow-x: hidden;
   }
+  .main .main-bg {
+    display: none;
+  }
   .main .container {
     width: 100%;
     max-width: none;
