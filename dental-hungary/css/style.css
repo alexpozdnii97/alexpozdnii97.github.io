@@ -1429,6 +1429,9 @@ div h2 {
   .prices h2 {
     padding: 0 2rem;
   }
+  .prices .bg-image {
+    display: none;
+  }
   .prices .container .prices-wrapper .price {
     flex-wrap: wrap;
     justify-content: space-between;
