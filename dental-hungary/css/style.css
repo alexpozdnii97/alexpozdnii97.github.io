@@ -281,6 +281,7 @@ div h2 {
 @media (max-width: 768px) {
   .header {
     position: fixed;
+    transition: 0.5s;
   }
   .header .container .menu {
     display: flex;
@@ -351,7 +352,7 @@ div h2 {
   }
   .row-hidden {
     transform: translateY(-7rem);
-    transition: 1s;
+    transition: 0.5s;
   }
 }
 @media (max-width: 576px) {
