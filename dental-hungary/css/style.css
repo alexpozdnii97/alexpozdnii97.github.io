@@ -36,9 +36,6 @@
 html {
   font-size: 10px;
 }
-* {
-  outline: 1px solid #f00 !important;
-}
 body {
   overflow-x: hidden;
   padding: 0;
