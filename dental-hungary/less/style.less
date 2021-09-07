@@ -345,10 +345,9 @@ section,main,header,footer,div{
                     width: 50%;
                     height: 5rem;
                     background-color: #C3E3FD;
-                    
                     justify-content: center;
                     align-items: center;
-
+                    border-radius: 0px 0px 0px 20px;
                     &_desktop {
                         display: none;
                     }
@@ -373,7 +372,7 @@ section,main,header,footer,div{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+                    border-radius: 0px 0px 20px 0px;
                     .desktop-menu {
                         display: none;
                     }
@@ -1243,6 +1242,7 @@ section,main,header,footer,div{
                     .light();
                     font-size: 2.2rem;
                     padding-left: 3rem;
+                    box-sizing:border-box;
                 }
                 .custom-file-upload{
                     text-align: center;
@@ -1334,10 +1334,11 @@ section,main,header,footer,div{
 
 @media(max-width:576px) {
 .contact {
+    padding: 0 1.5rem;
     .container {
         max-width: none;
         width: 100%;
-        padding: 0 1.2rem;
+        padding: 0 1.5rem;
         box-sizing: border-box;
         .row {
             width: 100%;
@@ -1568,7 +1569,7 @@ section,main,header,footer,div{
                     flex-grow: 2;
 
                     h3 {
-                        .light();
+                        .bold();
                         font-size: 20px;
                         color: #3C93DB;
                     }

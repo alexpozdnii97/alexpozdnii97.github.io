@@ -308,6 +308,7 @@ div h2 {
     background-color: #C3E3FD;
     justify-content: center;
     align-items: center;
+    border-radius: 0px 0px 0px 20px;
   }
   .header .container .menu .call_us_desktop {
     display: none;
@@ -332,6 +333,7 @@ div h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0px 0px 20px 0px;
   }
   .header .container .menu .menu-items .desktop-menu {
     display: none;
@@ -1078,6 +1080,7 @@ div h2 {
   font-style: normal;
   font-size: 2.2rem;
   padding-left: 3rem;
+  box-sizing: border-box;
 }
 .contact .container .row .main-form .custom-file-upload {
   text-align: center;
@@ -1149,10 +1152,13 @@ div h2 {
   }
 }
 @media (max-width: 576px) {
+  .contact {
+    padding: 0 1.5rem;
+  }
   .contact .container {
     max-width: none;
     width: 100%;
-    padding: 0 1.2rem;
+    padding: 0 1.5rem;
     box-sizing: border-box;
   }
   .contact .container .row {
@@ -1338,8 +1344,8 @@ div h2 {
   flex-grow: 2;
 }
 .prices .container .prices-wrapper .price .price-desc h3 {
-  font-family: 'Lato_light';
-  font-weight: 300;
+  font-family: 'Lato_bold';
+  font-weight: bold;
   font-style: normal;
   font-size: 20px;
   color: #3C93DB;
