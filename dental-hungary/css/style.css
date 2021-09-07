@@ -1451,9 +1451,6 @@ div h2 {
   }
 }
 @media (max-width: 576px) {
-  .prices {
-    background-color: green;
-  }
   .prices h2 {
     font-size: 3.3rem;
     padding: 0 1.5rem;
