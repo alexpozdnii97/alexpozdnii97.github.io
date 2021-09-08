@@ -867,11 +867,14 @@ div h2 {
   text-align: left;
 }
 .advantages .container .advantage-content h3 {
+  box-sizing: border-box;
   font-family: 'Lato_bold';
   font-weight: bold;
   font-style: normal;
   color: #3C93DB;
   font-size: 3rem;
+  padding-left: 2.5rem;
+  border-left: 3px solid #3C93DB;
 }
 .advantages .container .advantage-content p {
   font-family: 'Lato_light';
@@ -879,6 +882,7 @@ div h2 {
   font-style: normal;
   color: #5C5C5C;
   font-size: 2rem;
+  line-height: 31px;
   margin: 0;
   margin-bottom: 5rem;
 }
@@ -942,6 +946,7 @@ div h2 {
   }
   .advantages .container .advantage-content p {
     font-size: 1.7rem;
+    line-height: 25px;
   }
   .advantages .container .advantage-content button {
     display: block;

@@ -1001,16 +1001,19 @@ section,main,header,footer,div{
                 flex-grow: 2;
                 text-align: left;
                 h3 {
+                    box-sizing:border-box;
                     .bold();
                     color: #3C93DB;
                     font-size: 3rem;
+                    padding-left: 2.5rem;
+                    border-left: 3px solid #3C93DB;
                 }
 
                 p {
                     .light();
                     color: #5C5C5C;
                     font-size: 2rem;
-                    
+                    line-height: 31px;
                     margin: 0;
                     margin-bottom: 5rem;
                     b {
@@ -1108,6 +1111,7 @@ section,main,header,footer,div{
 
                     p {
                         font-size: 1.7rem;
+                        line-height: 25px;
                     }
                     button{
                         display: block;
