@@ -61,8 +61,8 @@ main p,
 header p,
 footer p,
 div p {
-  font-family: 'Lato_light';
-  font-weight: 300;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
   font-size: 20px;
   color: #3C93DB;
@@ -144,12 +144,8 @@ div h2 {
 .btn-main {
   height: 6.5rem;
   min-width: 27.5rem;
-  margin-right: 5rem;
-  font-family: 'Lato_norm';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2.5rem;
-  text-align: center;
+  margin-right: 2rem;
+  padding: 0 5.4rem;
   background: #3C93DB;
   box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.22);
   border-radius: 10px;
@@ -157,6 +153,11 @@ div h2 {
   outline: none;
   color: white;
   cursor: pointer;
+  font-family: 'Lato_norm';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-align: center;
 }
 .btn-main:hover {
   background: #1E4388;
@@ -461,14 +462,17 @@ div h2 {
   font-style: normal;
   font-size: 50px;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .main .container .main-content p {
-  font-family: 'Lato_light';
-  font-weight: 300;
+  width: 58rem;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
   color: #5C5C5C;
   font-size: 2rem;
-  margin-bottom: 6.5rem;
+  line-height: 35px;
+  margin-bottom: 4.5rem;
 }
 .main .container .main-content p b {
   font-family: 'Lato_bold';
@@ -488,6 +492,7 @@ div h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-evenly;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 20px;
 }
@@ -503,6 +508,8 @@ div h2 {
   color: #1E4388;
 }
 .main .container .main-numbers .number-item p {
+  width: 21rem;
+  margin: 0 auto;
   font-family: 'Lato_norm';
   font-weight: normal;
   font-style: normal;
@@ -632,14 +639,14 @@ div h2 {
   flex-wrap: wrap;
 }
 .about .container .about-image {
-  width: 40%;
+  width: 45%;
 }
 .about .container .about-image img {
   width: 100%;
 }
 .about .container .about-content {
   flex-grow: 2;
-  width: 60%;
+  width: 55%;
   padding-left: 15rem;
   box-sizing: border-box;
   text-align: left;
@@ -670,7 +677,8 @@ div h2 {
   font-style: normal;
   color: #5C5C5C;
   font-size: 2rem;
-  margin-bottom: 6.5rem;
+  margin-bottom: 6rem;
+  line-height: 26px;
 }
 .about .container .about-content p b {
   font-family: 'Lato_bold';
@@ -729,13 +737,13 @@ div h2 {
   border-radius: 10px;
 }
 .why-wait .container .why-content p {
-  font-family: 'Lato_light';
-  font-weight: 300;
+  margin: 0;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
   color: #5C5C5C;
   font-size: 2rem;
-  margin-bottom: 6.5rem;
-  margin: 0;
+  line-height: 31px;
 }
 .why-wait .container .why-content p b {
   font-family: 'Lato_bold';
@@ -762,8 +770,9 @@ div h2 {
   font-size: 3rem;
 }
 .why-wait .container .steps .step p {
-  font-family: 'Lato_light';
-  font-weight: 300;
+  line-height: 31px;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
   color: #5C5C5C;
   font-size: 2rem;
@@ -877,8 +886,8 @@ div h2 {
   border-left: 3px solid #3C93DB;
 }
 .advantages .container .advantage-content p {
-  font-family: 'Lato_light';
-  font-weight: 300;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
   color: #5C5C5C;
   font-size: 2rem;
@@ -993,10 +1002,12 @@ div h2 {
   margin: 0 1.5rem;
 }
 .contact .container .row p {
-  font-family: 'Lato_light';
-  font-weight: 300;
+  margin-bottom: 1.6rem;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
   font-size: 20px;
+  line-height: 24px;
   text-align: center;
   color: #3C93DB;
 }
@@ -1050,13 +1061,13 @@ div h2 {
 }
 .contact .container .row .contact-info p {
   color: #5C5C5C;
-  font-family: 'Lato_light';
-  font-weight: 300;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
 }
 .contact .container .row .contact-info p a {
-  font-family: 'Lato_light';
-  font-weight: 300;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
   text-decoration-line: underline;
   color: #1E4388;
@@ -1081,8 +1092,8 @@ div h2 {
   border-radius: 1rem;
   outline: none;
   border: none;
-  font-family: 'Lato_light';
-  font-weight: 300;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
   font-size: 2.2rem;
   padding-left: 3rem;
@@ -1117,6 +1128,9 @@ div h2 {
 .contact .container .row .main-form button {
   margin-right: 0;
   box-shadow: none;
+}
+.second .container .row h2 {
+  margin-bottom: 6.8rem;
 }
 @media (max-width: 1400px) {
   .contact .container .row {
@@ -1216,8 +1230,8 @@ div h2 {
   color: #3C93DB;
 }
 .testemonials .container .clients-slider .client p {
-  font-family: 'Lato_light';
-  font-weight: 300;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
   font-size: 2rem;
   color: #5C5C5C;
@@ -1350,6 +1364,7 @@ div h2 {
   flex-grow: 2;
 }
 .prices .container .prices-wrapper .price .price-desc h3 {
+  margin-top: 0;
   font-family: 'Lato_bold';
   font-weight: bold;
   font-style: normal;
@@ -1357,8 +1372,8 @@ div h2 {
   color: #3C93DB;
 }
 .prices .container .prices-wrapper .price .price-desc p {
-  font-family: 'Lato_light';
-  font-weight: 300;
+  font-family: 'Lato_norm';
+  font-weight: normal;
   font-style: normal;
   color: #5C5C5C;
   font-size: 2rem;
