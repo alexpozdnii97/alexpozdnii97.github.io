@@ -55,6 +55,26 @@ label,
 select {
   font-family: 'Montserrat', sans-serif;
   color: white;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  width: 700px;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 75px;
+}
+h2 {
+  font-weight: 600;
+  font-size: 48px;
+  width: auto;
+}
+span {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 4px;
 }
 .section-header {
   padding-top: 75px;
@@ -64,28 +84,7 @@ select {
 .section-header h2,
 .section-header p,
 .section-header span {
-  margin: 0;
   margin-bottom: 20px;
-}
-.section-header span {
-  display: block;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 200;
-  letter-spacing: 4px;
-}
-.section-header h1,
-.section-header h2 {
-  width: 700px;
-  font-size: 54px;
-  font-weight: 600;
-}
-.section-header h1 {
-  line-height: 75px;
-}
-.section-header h2 {
-  font-size: 48px;
-  width: auto;
 }
 .blue span,
 .blue h2,
@@ -144,9 +143,10 @@ select {
   border: none;
   outline: none;
 }
-.header .container .row .header-nav .menu-btn p {
-  margin: 0;
+.header .container .row .header-nav .menu-btn span {
   font-size: 12px;
+  text-transform: none;
+  font-weight: 600;
 }
 .hero {
   position: relative;
@@ -155,6 +155,9 @@ select {
 }
 .hero .section-header {
   padding-top: 365px;
+}
+.hero .main-btn {
+  background-image: url(../img/Button7.png);
 }
 .hero .hero-img {
   position: absolute;
@@ -196,7 +199,6 @@ select {
   text-transform: uppercase;
 }
 .pricing .prices .price-card .price-numbers {
-  margin: 0;
   margin-bottom: 35px;
   font-weight: 600;
 }
@@ -320,7 +322,6 @@ select {
   background-color: #622fff;
 }
 .advantages .tabs-wrapper .tab-content-block h3 {
-  margin: 0;
   font-size: 36px;
 }
 .advantages .tabs-wrapper .tab-content-block p {
@@ -356,6 +357,8 @@ select {
   height: 40px;
   background-color: white;
   border-radius: 20px;
+}
+.tips .tips-content .tags .tag p {
   color: #0ea3a2;
   font-size: 15px;
   line-height: 40px;
@@ -426,7 +429,7 @@ select {
   color: #490f66;
 }
 .turnarounds-wrapper .turnarounds-card p {
-  margin: 0 0 0  110px;
+  margin-left: 110px;
   font-weight: 700;
   color: #490f66;
 }

@@ -55,6 +55,26 @@ a,p,h1,h2,h3,span,li,label,select{
  font-family: 'Montserrat',
  sans-serif;
  color: white;
+ margin: 0; 
+ padding: 0;
+}
+h1{
+  width: 700px;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 75px;
+}
+h2 {
+  font-weight: 600;
+  font-size: 48px;
+  width: auto;
+}
+span {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 4px;
 }
 
 // Sections header styles with modifications.
@@ -64,30 +84,8 @@ a,p,h1,h2,h3,span,li,label,select{
   h1,h2,
   p,
   span {
-    margin: 0;
     margin-bottom: 20px;
   }
-
-  span {
-    display: block;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 200;
-    letter-spacing: 4px;
-  }
-  h1,h2 {
-    width: 700px;
-    font-size: 54px;
-    font-weight: 600;
-  }
-  h1{
-    line-height: 75px;
-  }
-  h2{
-    font-size: 48px;
-    width: auto;
-  }
-  
 }
 
 // Section-header colors and alignment
@@ -153,13 +151,13 @@ a,p,h1,h2,h3,span,li,label,select{
           margin: 0 40px;
         }
         .menu-btn{
-          
           background-color:transparent;
           border:none;
           outline:none;
-          p{
-            margin: 0;
+          span{
             font-size: 12px;
+            text-transform: none;
+            font-weight: 600;
           }
         }
       }
@@ -172,6 +170,9 @@ a,p,h1,h2,h3,span,li,label,select{
   background-color: #1f227d;
   .section-header{
     padding-top: 365px;
+  }
+  .main-btn{
+    background-image:url(../img/Button7.png)
   }
   .hero-img{
     position: absolute;
@@ -213,7 +214,6 @@ a,p,h1,h2,h3,span,li,label,select{
 
       }
       .price-numbers{
-        margin: 0;
         margin-bottom: 35px;
         font-weight: 600;
         b{
@@ -336,7 +336,6 @@ a,p,h1,h2,h3,span,li,label,select{
         padding-top: 55px;
         background-color:#622fff;
         h3{
-          margin: 0;
           font-size: 36px;
         }
         p{
@@ -347,7 +346,7 @@ a,p,h1,h2,h3,span,li,label,select{
         }
         .main-btn{
           margin-top: 40px;
-          background-image:url(../img/Button7.png)
+          background-image:url(../img/Button7.png);
         }
       }
     }
@@ -378,11 +377,13 @@ a,p,h1,h2,h3,span,li,label,select{
         height: 40px;
         background-color:white;
         border-radius:20px;
-        color: #0ea3a2;
-        font-size: 15px;
-        line-height: 40px;
-        font-weight: 600;
-        text-align: center;
+        p{
+          color:#0ea3a2;
+          font-size: 15px;
+          line-height: 40px;
+          font-weight: 600;
+          text-align: center;
+        }
       }
       .mask{
         position: absolute;
@@ -450,7 +451,7 @@ a,p,h1,h2,h3,span,li,label,select{
         color: #490f66;
       }
       p {
-        margin: 0 0 0  110px;
+        margin-left:110px;
         font-weight: 700;
         color: #490f66;
         b {
