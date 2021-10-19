@@ -1,34 +1,39 @@
 @font-face {
-  font-family: 'Lato_black';
-  src: url('../fonts/') format('woff2'), url('../fonts/Lato-Black.woff') format('woff');
+  font-family: "Lato_black";
+  src: url("../fonts/") format("woff2"),
+    url("../fonts/Lato-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Lato_light';
-  src: url('../fonts/Lato-Light.woff2') format('woff2'), url('../fonts/Lato-Light.woff') format('woff');
+  font-family: "Lato_light";
+  src: url("../fonts/Lato-Light.woff2") format("woff2"),
+    url("../fonts/Lato-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Lato_norm';
-  src: url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff');
+  font-family: "Lato_norm";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Lato_hairline';
-  src: url('../fonts/Lato-Hairline.woff2') format('woff2'), url('../fonts/Lato-Hairline.woff') format('woff');
+  font-family: "Lato_hairline";
+  src: url("../fonts/Lato-Hairline.woff2") format("woff2"),
+    url("../fonts/Lato-Hairline.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Lato_bold';
-  src: url('../fonts/Lato-Bold.woff2') format('woff2'), url('../fonts/Lato-Bold.woff') format('woff');
+  font-family: "Lato_bold";
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"),
+    url("../fonts/Lato-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -61,11 +66,11 @@ main p,
 header p,
 footer p,
 div p {
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
-  color: #3C93DB;
+  color: #3c93db;
 }
 section h2,
 main h2,
@@ -73,8 +78,8 @@ header h2,
 footer h2,
 div h2 {
   margin-top: 2rem;
-  color: #1E4388;
-  font-family: 'Lato_bold';
+  color: #1e4388;
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
   font-size: 50px;
@@ -146,34 +151,34 @@ div h2 {
   min-width: 27.5rem;
   margin-right: 2rem;
   padding: 0 5.4rem;
-  background: #3C93DB;
+  background: #3c93db;
   box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.22);
   border-radius: 10px;
   border: none;
   outline: none;
   color: white;
   cursor: pointer;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   font-size: 2.5rem;
   text-align: center;
 }
 .btn-main:hover {
-  background: #1E4388;
+  background: #1e4388;
   color: white;
-  border-color: #1E4388;
+  border-color: #1e4388;
 }
 .btn-ghost {
   background: transparent;
-  border: 2px solid #3C93DB;
-  color: #3C93DB;
+  border: 2px solid #3c93db;
+  color: #3c93db;
   box-shadow: none;
 }
 .btn-ghost:hover {
-  background: #1E4388;
+  background: #1e4388;
   color: white;
-  border-color: #1E4388;
+  border-color: #1e4388;
 }
 .header {
   position: absolute;
@@ -205,14 +210,14 @@ div h2 {
   text-align: center;
   font-size: 2rem;
   color: black;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   font-weight: 400;
 }
 .header .container .menu .menu-items .desktop-menu li:hover {
-  background: #E6EFF6;
-  border-bottom: 2px solid #3C93DB;
+  background: #e6eff6;
+  border-bottom: 2px solid #3c93db;
 }
 .header .container .menu .menu-items .mobile-toggle {
   display: none;
@@ -225,16 +230,16 @@ div h2 {
 }
 .header .container .menu .call_us .call_us_desktop span {
   font-size: 2.5rem;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
 }
 .header .container .menu .call_us .call_us_desktop p {
   padding: 0;
   margin: 0;
-  color: #1E4388;
+  color: #1e4388;
   font-size: 2rem;
-  font-family: 'Lato_light';
+  font-family: "Lato_light";
   font-weight: 300;
   font-style: normal;
 }
@@ -304,7 +309,7 @@ div h2 {
     order: 2;
     width: 50%;
     height: 5rem;
-    background-color: #C3E3FD;
+    background-color: #c3e3fd;
     justify-content: center;
     align-items: center;
     border-radius: 0px 0px 0px 20px;
@@ -316,19 +321,19 @@ div h2 {
     display: flex;
   }
   .header .container .menu .call_us .call_us_mobile span {
-    font-family: 'Lato_norm';
+    font-family: "Lato_norm";
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #1E4388;
+    color: #1e4388;
   }
   .header .container .menu .menu-items {
     order: 3;
     flex-grow: none;
     width: 50%;
     height: 5rem;
-    background-color: #D9EEFF;
+    background-color: #d9eeff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,12 +346,12 @@ div h2 {
     display: flex;
   }
   .header .container .menu .menu-items .mobile-toggle span {
-    font-family: 'Lato_norm';
+    font-family: "Lato_norm";
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #1E4388;
+    color: #1e4388;
   }
   .row-hidden {
     transform: translateY(-7rem);
@@ -376,7 +381,7 @@ div h2 {
     order: 2;
     width: 50%;
     height: 5rem;
-    background-color: #C3E3FD;
+    background-color: #c3e3fd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,19 +393,19 @@ div h2 {
     display: flex;
   }
   .header .container .menu .call_us_mobile span {
-    font-family: 'Lato_norm';
+    font-family: "Lato_norm";
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #1E4388;
+    color: #1e4388;
   }
   .header .container .menu .menu-items {
     order: 3;
     flex-grow: none;
     width: 50%;
     height: 5rem;
-    background-color: #D9EEFF;
+    background-color: #d9eeff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -412,12 +417,12 @@ div h2 {
     display: flex;
   }
   .header .container .menu .menu-items .mobile-toggle span {
-    font-family: 'Lato_norm';
+    font-family: "Lato_norm";
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #1E4388;
+    color: #1e4388;
   }
   .row-hidden {
     transform: translateY(-7rem);
@@ -449,15 +454,15 @@ div h2 {
 }
 .main .container .main-content span {
   font-size: 20px;
-  color: #3C93DB;
-  font-family: 'Lato_norm';
+  color: #3c93db;
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   margin-bottom: 2rem;
 }
 .main .container .main-content h1 {
-  color: #1E4388;
-  font-family: 'Lato_bold';
+  color: #1e4388;
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
   font-size: 50px;
@@ -466,19 +471,19 @@ div h2 {
 }
 .main .container .main-content p {
   width: 58rem;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-size: 2rem;
   line-height: 35px;
   margin-bottom: 4.5rem;
 }
 .main .container .main-content p b {
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
-  color: #1E4388;
+  color: #1e4388;
 }
 .main .container .main-numbers {
   position: absolute;
@@ -501,20 +506,20 @@ div h2 {
   text-align: center;
 }
 .main .container .main-numbers .number-item span {
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
   font-size: 5rem;
-  color: #1E4388;
+  color: #1e4388;
 }
 .main .container .main-numbers .number-item p {
   width: 21rem;
   margin: 0 auto;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   font-size: 1.8rem;
-  color: #5C5C5C;
+  color: #5c5c5c;
   margin-bottom: 0;
 }
 .main .container .main-woman {
@@ -653,16 +658,16 @@ div h2 {
 }
 .about .container .about-content span {
   font-size: 20px;
-  color: #3C93DB;
-  font-family: 'Lato_norm';
+  color: #3c93db;
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   margin-bottom: 2rem;
 }
 .about .container .about-content h2 {
   margin-top: 2rem;
-  color: #1E4388;
-  font-family: 'Lato_bold';
+  color: #1e4388;
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
   font-size: 50px;
@@ -672,19 +677,19 @@ div h2 {
   display: none;
 }
 .about .container .about-content p {
-  font-family: 'Lato_light';
+  font-family: "Lato_light";
   font-weight: 300;
   font-style: normal;
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-size: 2rem;
   margin-bottom: 6rem;
   line-height: 26px;
 }
 .about .container .about-content p b {
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
-  color: #1E4388;
+  color: #1e4388;
 }
 @media (max-width: 1400px) {
   .about .container .about-content {
@@ -738,18 +743,18 @@ div h2 {
 }
 .why-wait .container .why-content p {
   margin: 0;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-size: 2rem;
   line-height: 31px;
 }
 .why-wait .container .why-content p b {
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
-  color: #1E4388;
+  color: #1e4388;
 }
 .why-wait .container .steps {
   display: flex;
@@ -763,27 +768,27 @@ div h2 {
   text-align: center;
 }
 .why-wait .container .steps .step h3 {
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
-  color: #3C93DB;
+  color: #3c93db;
   font-size: 3rem;
 }
 .why-wait .container .steps .step p {
   line-height: 31px;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-size: 2rem;
   margin-bottom: 6.5rem;
   margin: 0;
 }
 .why-wait .container .steps .step p b {
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
-  color: #1E4388;
+  color: #1e4388;
 }
 @media (max-width: 1200px) {
   .why-wait .container .why-content {
@@ -836,7 +841,7 @@ div h2 {
   }
   .why-wait .container .steps .step {
     width: 90%;
-    padding: 0 ;
+    padding: 0;
   }
   .why-wait .container .steps .step img {
     margin-top: 4rem;
@@ -877,29 +882,29 @@ div h2 {
 }
 .advantages .container .advantage-content h3 {
   box-sizing: border-box;
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
-  color: #3C93DB;
+  color: #3c93db;
   font-size: 3rem;
   padding-left: 2.5rem;
-  border-left: 3px solid #3C93DB;
+  border-left: 3px solid #3c93db;
 }
 .advantages .container .advantage-content p {
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-size: 2rem;
   line-height: 31px;
   margin: 0;
   margin-bottom: 5rem;
 }
 .advantages .container .advantage-content p b {
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
-  color: #1E4388;
+  color: #1e4388;
 }
 .advantages .container .advantage-content .btn-ghost {
   box-shadow: none;
@@ -1003,33 +1008,33 @@ div h2 {
 }
 .contact .container .row p {
   margin-bottom: 1.6rem;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #3C93DB;
+  color: #3c93db;
 }
 .contact .container .row h2 {
   margin-bottom: 10rem;
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
   font-size: 50px;
   /* or 130% */
   text-align: center;
-  color: #1E4388;
+  color: #1e4388;
 }
 .contact .container .row h3 {
   margin-bottom: 10rem;
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
   font-size: 30px;
   /* or 130% */
   text-align: center;
-  color: #1E4388;
+  color: #1e4388;
 }
 .contact .container .row .contact-info {
   padding: 0 9rem;
@@ -1052,25 +1057,25 @@ div h2 {
   margin: 0;
   margin-top: 2rem;
   margin-bottom: 5px;
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
   font-size: 20px;
-  color: #1E4388;
+  color: #1e4388;
   text-align: left;
 }
 .contact .container .row .contact-info p {
-  color: #5C5C5C;
-  font-family: 'Lato_norm';
+  color: #5c5c5c;
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
 }
 .contact .container .row .contact-info p a {
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   text-decoration-line: underline;
-  color: #1E4388;
+  color: #1e4388;
 }
 .contact .container .row .main-form {
   padding: 0 6rem;
@@ -1092,7 +1097,7 @@ div h2 {
   border-radius: 1rem;
   outline: none;
   border: none;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   font-size: 2.2rem;
@@ -1105,11 +1110,11 @@ div h2 {
   margin-top: 4rem;
   margin-bottom: 3.6rem;
   font-size: 20px;
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
   text-decoration-line: underline;
-  color: #1E4388;
+  color: #1e4388;
   text-decoration: none;
   cursor: pointer;
 }
@@ -1222,19 +1227,19 @@ div h2 {
 }
 .testemonials .container .clients-slider .client h3 {
   margin-bottom: 2rem;
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
   font-size: 20px;
   line-height: 24px;
-  color: #3C93DB;
+  color: #3c93db;
 }
 .testemonials .container .clients-slider .client p {
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   font-size: 2rem;
-  color: #5C5C5C;
+  color: #5c5c5c;
 }
 .testemonials .container .clients-slider .slick-arrow {
   position: absolute;
@@ -1286,8 +1291,13 @@ div h2 {
   border-radius: 5px;
   background-color: #000;
 }
-.testemonials .container .clients-slider .slick-dots li.slick-active button:before {
-  background-color: #3C93DB;
+.testemonials
+  .container
+  .clients-slider
+  .slick-dots
+  li.slick-active
+  button:before {
+  background-color: #3c93db;
 }
 @media (max-width: 1400px) {
   .testemonials .container .clients-slider .slick-arrow {
@@ -1365,17 +1375,17 @@ div h2 {
 }
 .prices .container .prices-wrapper .price .price-desc h3 {
   margin-top: 0;
-  font-family: 'Lato_bold';
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
   font-size: 20px;
-  color: #3C93DB;
+  color: #3c93db;
 }
 .prices .container .prices-wrapper .price .price-desc p {
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-size: 2rem;
   margin: 0;
 }
@@ -1386,34 +1396,34 @@ div h2 {
   position: relative;
   font-size: 50px;
   text-align: center;
-  color: #1E4388;
-  font-family: 'Lato_bold';
+  color: #1e4388;
+  font-family: "Lato_bold";
   font-weight: bold;
   font-style: normal;
 }
 .prices .container .prices-wrapper .price .price-discount p span {
   position: absolute;
   font-size: 20px;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   text-align: center;
   text-decoration-line: line-through;
-  color: #5C5C5C;
+  color: #5c5c5c;
   transform: translateY(-100%);
 }
 .prices .container .prices-wrapper .price .check svg {
   width: 6rem;
 }
 .prices .container .prices-wrapper .price .check svg path {
-  fill: #C4C4C4;
+  fill: #c4c4c4;
 }
 .prices .container .prices-wrapper .active {
-  background-color: #D9EEFF;
-  border: 2px solid #1E4388;
+  background-color: #d9eeff;
+  border: 2px solid #1e4388;
 }
 .prices .container .prices-wrapper .active .check svg path {
-  fill: #1E4388;
+  fill: #1e4388;
 }
 @media (max-width: 992px) {
   .prices .container .prices-wrapper .price {
@@ -1485,7 +1495,7 @@ div h2 {
     margin-bottom: 4rem;
   }
   .prices .container .prices-wrapper .price .price-desc h3 {
-    font-family: 'Lato_bold';
+    font-family: "Lato_bold";
     font-weight: bold;
     font-style: normal;
     font-size: 2rem;
@@ -1496,7 +1506,7 @@ div h2 {
     display: none;
   }
   .prices .container .prices-wrapper .active {
-    background-color: #D9EEFF;
+    background-color: #d9eeff;
   }
   .prices .container .prices-wrapper .active .price-desc p {
     display: block;
@@ -1604,14 +1614,14 @@ div h2 {
   text-align: center;
   font-size: 2rem;
   color: black;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
   font-weight: 400;
 }
 .footer .container .menu .menu-items .desktop-menu li:hover {
-  background: #E6EFF6;
-  border-bottom: 2px solid #3C93DB;
+  background: #e6eff6;
+  border-bottom: 2px solid #3c93db;
 }
 .footer .container .menu .menu-items .mobile-toggle {
   display: none;
@@ -1624,16 +1634,16 @@ div h2 {
 }
 .footer .container .menu .call_us .call_us_desktop span {
   font-size: 2.5rem;
-  font-family: 'Lato_norm';
+  font-family: "Lato_norm";
   font-weight: normal;
   font-style: normal;
 }
 .footer .container .menu .call_us .call_us_desktop p {
   padding: 0;
   margin: 0;
-  color: #1E4388;
+  color: #1e4388;
   font-size: 2rem;
-  font-family: 'Lato_light';
+  font-family: "Lato_light";
   font-weight: 300;
   font-style: normal;
 }
@@ -1670,11 +1680,11 @@ div h2 {
 .footer .container .copyright p {
   font-size: 15px;
   line-height: 18px;
-  color: #5C5C5C;
+  color: #5c5c5c;
 }
 .footer .container .copyright p a {
   text-decoration: none;
-  color: #1E4388;
+  color: #1e4388;
 }
 @media (max-width: 1400px) {
   .footer .container .menu .logo img {
@@ -1794,4 +1804,9 @@ div h2 {
   .footer .container .social img {
     margin-left: 1rem;
   }
+}
+.main-form input {
+  border-top: none;
+  border-left: 0;
+  border-right: 0;
 }
