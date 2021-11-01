@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'EuropaNuovaBold';
+    src: local('EuropaNuovaBold'),
+        url('EuropaNuovaBold.woff2') format('woff2'),
+        url('EuropaNuovaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EuropaNuovaRegular';
+    src: local('EuropaNuova'), local('EuropaNuovaRegular'),
+        url('EuropaNuovaRegular.woff2') format('woff2'),
+        url('EuropaNuovaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
