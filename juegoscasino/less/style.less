@@ -209,6 +209,38 @@ p{
   }
 }
 
+// li {
+//   list-style: none;
+//   &:before {
+//     content: '';
+//     display: inline-block;
+//     height: 1em;
+//     width: 1em;
+//     background-image:url(../img/list-arrow.svg);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     margin-right: 0.5em;
+//   }
+// }
+ul{
+  list-style-image: url(../img/list-arrow.svg);
+  padding-left: 12px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  li{
+    margin-bottom: 8px;
+    font-family: 'EuropaBold';
+    font-size: 16px;
+    color: @background_600;
+  }
+}
+
+
+
+
+
 
 .to-top{
   width: 48px;
@@ -255,11 +287,11 @@ p{
             color: black;
           }
           &::after{
-            // position: absolute;
-            // content:'';
-            // width: 100%;
-            // height: 2px;
-            // background: linear-gradient(90deg,#E65535, #FEC227);
+            position: absolute;
+            content:'';
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg,#E65535, #FEC227);
           }
         }
       }
@@ -318,7 +350,6 @@ p{
           .current-item::after{
             position: absolute;
             content:'';
-            
             height: 2px;
             background: linear-gradient(90deg, #E65535, #FEC227);
           }
@@ -396,6 +427,7 @@ p{
 
 @media (max-width: 768px) {
   .hero{
+    margin-top: 56px;
     .token-5 {
       transform: translateX(50px);
     }
@@ -416,6 +448,7 @@ p{
 
 @media (max-width: 576px) {
   .hero{
+    margin-top: 24px;
     .token{
       display: none;
     }
@@ -431,7 +464,7 @@ p{
 
 
 .top_casinos{
-  margin-top: 100px;
+  margin-top: 96px;
   padding-bottom: 40px;
   text-align: center;
   position: relative;
@@ -499,14 +532,16 @@ p{
   }
 }
 
-@media (max-width: 1200px) {}
 
-@media (max-width: 992px) {}
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .top_casinos{
+    margin-top: 56px;
+  }
+}
 
 @media (max-width: 576px) {
-  
+  margin-top: 40px;
 }
 
 
@@ -580,6 +615,11 @@ p{
       display: flex;
       margin: 0 auto;
       margin-bottom: 18px;
+      p{
+        font-size: 12px;
+        margin-bottom: 0;
+        transform: translate(6px,3px);
+      }
     }
 
     .tags {
@@ -689,12 +729,21 @@ p{
       .casino {
         width: 340px;
         margin-bottom: 36px;
+        .tags{
+          .tag{
+            margin-left: 3px;
+            margin-right: 3px;
+          }
+        }
         .buttons{
           .main-btn,.secondary-btn{
             width: 45%;
           }
         }
       }
+    }
+    .main-btn {
+      margin-bottom: 0;
     }
   }
 }
@@ -826,6 +875,7 @@ p{
 
 @media (max-width: 576px) {
   .casinos_wrapper{
+    margin-bottom: 32px;
     .casino{
       width: 343px;
       margin-right: auto;
@@ -862,16 +912,18 @@ p{
       .buttons{
         .main-btn,.secondary-btn{
           width: 150px;
+         
         }
       }
     }
+    
   }
 }
 
 .latest-news{
   text-align: center;
   margin-top: 64px;
-  margin-bottom: 92px;
+  margin-bottom: 80px;
   h5{
     margin-bottom: 32px;
   }
@@ -946,6 +998,8 @@ p{
 
 @media (max-width: 768px) {
   .latest-news {
+    margin-bottom: 56px;
+    margin-top: 56px;
     p{
       width: 100%;
     }
@@ -963,6 +1017,8 @@ p{
 
 @media (max-width: 576px) {
   .latest-news {
+    margin-bottom: 32px;
+    margin-top: 32px;
     p {
       width: 100%;
     }
@@ -976,6 +1032,9 @@ p{
          margin-bottom: 24px;
        }
       }
+    }
+    .main-btn{
+      margin-bottom: 0;
     }
   }
 }
@@ -1013,6 +1072,9 @@ p{
       p{
         font-size: 16px;
         color:@background_600;
+      }
+      ul{
+        margin: 32px 0;
       }
     }
     .image-1,.image-2{
@@ -1137,14 +1199,15 @@ p{
 }
 @media (max-width: 1200px) {
   .about-us{
-    height: 1250px;
+    height: 1340px;
+    background: linear-gradient(#FCF9F5 75%, #FFF 75%);
     .about-us-wrapper{
       .content{
         width: 100%;
       }
       .image-1{
         width: 1200px;
-        top: 464px;
+        top: 560px;
         right: auto;
         left: 50%;
         transform: translateX(-50%);
@@ -1155,7 +1218,7 @@ p{
         }
       }
       .image-2{
-        top: 568px;
+        top: 628px;
         right: 0;
         transform: translateX(150px);
       }
@@ -1175,11 +1238,11 @@ p{
 @media (max-width: 992px) {
   .about-us{
     overflow-x: hidden;
-  
+    height: 1400px;
     .about-us-wrapper {
       
       .image-1 {
-        top: 536px;
+        top: 626px;
         height: 688px;
         right: auto;
         left: 0;
@@ -1187,7 +1250,7 @@ p{
         
       }
       .image-2 {
-        top: 600px;
+        top: 680px;
         right: 0;
       }
       .review-1{
@@ -1204,6 +1267,9 @@ p{
 
 @media (max-width: 768px) {
   .about-us{
+    height: auto;
+    padding-bottom: 100px;
+    overflow-y: hidden;
     .about-us-wrapper{
       .content{
         text-align: center;
@@ -1217,19 +1283,20 @@ p{
         }
       }
       .image-1{
-        top: 536px;
+        position: static;
+        margin-top: 56px;
       }
       .image-2{
-        top: 600px;
+        top: 694px;
         transform: translateX(90px);
       }
       .review-1 {
-        top: 650px;
+        top: 750px;
         right: 0;
         transform: translateX(-145px);
       }
       .review-2 {
-        top: 906px;
+        top: 1006px;
         right: auto;
         left: 0;
         transform: translateX(24px);
@@ -1322,6 +1389,7 @@ p{
   margin: 64px 0;
   p{
     width: 552px;
+    font-size: 16px;
   }
   .info-cards{
     margin-bottom: 48px;
@@ -1377,17 +1445,24 @@ p{
 
 @media (max-width: 992px) {
   .nessesary-info{
+    p{
+      width: 100%;
+    }
     .info-cards{
       .card{
+        a {
+          margin-bottom: 8px;
+        }
         p{
           width: 80%;
+          
         }
       }
     }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nessesary-info {
     .info-cards {
       display: block;
@@ -1396,6 +1471,7 @@ p{
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 16px;
+        
         p {
           width: 80%;
         }
@@ -1406,6 +1482,7 @@ p{
 
 @media (max-width: 576px) {
   .nessesary-info{
+    margin-bottom: 40px;
     p{
       width: 100%;
     }
@@ -1670,16 +1747,13 @@ p{
         display: none;
       }
       .row-2,.row-3{
-        text-align: center;
+        
         p{
           width: 100%;
         }
       }
     }
-    .featured-image {
-      margin-left: auto;
-      margin-right: auto;
-    }
+    
   }
 }
 
@@ -1687,11 +1761,32 @@ p{
   .how-to-find{
     .how-to-find-wrapper{
       .image-1{
+        order: 1;
         width: 160%;
         .rotate-wrapper{
         }
       }
-      
+      .row-1{
+        order: 2;
+
+      }
+      .row-2{
+        text-align: center;
+        order: 3;
+        .featured-image{
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .row-3{
+        text-align: center;
+        order: 4;
+        .featured-image{
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
     }
     
   }
@@ -1701,6 +1796,7 @@ p{
   .how-to-find {
     .how-to-find-wrapper {
       .image-1 {
+        order: 10;
         width: calc(115%);
         height: 180px;
         transform: translateX(-15px);
@@ -1926,26 +2022,23 @@ p{
 .cta{
   position: relative;
   z-index: 5;
-  padding:116px 0;
-  height: 484px;
+  padding-bottom: 110px;
   text-align: center;
   overflow: hidden;
-  
   .bg-image{
     position: absolute;
     width: 100%;
-    height:484px;
-    
+    height: 100%;
     left: 0;
     z-index: -1;
     background-image: url(../img/cta-main.png);
     background-size:cover;
-    background-position: -65% center;
+    background-position: center center;
     filter: brightness(0.25);
   }
   h4{
+    margin-top: 110px;
     color: white;
-    margin-top: 56px;
   }
   p{
     font-family: 'EuropaRegular';
@@ -1984,9 +2077,9 @@ p{
 
 @media (max-width: 576px) {
   .cta{
-    height: 600px;
-    .bg-image{
-      height: 500px;
+    padding-bottom: 40px;
+    h4{
+      margin-top: 40px;
     }
   }
 }
@@ -2049,7 +2142,7 @@ p{
     .accordion-button::after{
       height: 40px;
       width: 40px;
-      border: 1px solid @background_500;
+      border: 1px solid #E3E0DC;
       border-radius: 20px;
       line-height: 40px;
       background-image: url(../img/accordion-arrow.svg);
@@ -2068,6 +2161,11 @@ p{
 
 @media (max-width: 576px) {
   .faq{
+    p{
+      width: 70%;
+      margin-left:auto;
+      margin-right: auto;
+    }
     .accordion{
       &-item{
         .accordion-button{
@@ -2240,6 +2338,7 @@ p{
     }
     .to-top{
       bottom:-16px;
+      right: 16px;
     }
   }
 }
@@ -2251,7 +2350,7 @@ p{
       width: 100%;
       flex-wrap: wrap;
       flex-direction: column;
-      margin-top: 36px;
+      margin-top: 0;
       .logos-wrapper{
         width: 100%;
         justify-content: space-evenly;

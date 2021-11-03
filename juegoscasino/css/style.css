@@ -151,6 +151,20 @@ p {
     text-align: center;
   }
 }
+ul {
+  list-style-image: url(../img/list-arrow.svg);
+  padding-left: 12px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+ul li {
+  margin-bottom: 8px;
+  font-family: 'EuropaBold';
+  font-size: 16px;
+  color: #545351;
+}
 .to-top {
   width: 48px;
   height: 48px;
@@ -191,6 +205,13 @@ p {
 .header .navbar .collapse .navbar-nav .current-item .nav-link {
   font-family: 'EuropaBold';
   color: black;
+}
+.header .navbar .collapse .navbar-nav .current-item::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #e65535, #fec227);
 }
 .header .navbar-brand img {
   width: 150px;
@@ -283,6 +304,9 @@ p {
   }
 }
 @media (max-width: 768px) {
+  .hero {
+    margin-top: 56px;
+  }
   .hero .token-5 {
     transform: translateX(50px);
   }
@@ -297,12 +321,15 @@ p {
   }
 }
 @media (max-width: 576px) {
+  .hero {
+    margin-top: 24px;
+  }
   .hero .token {
     display: none;
   }
 }
 .top_casinos {
-  margin-top: 100px;
+  margin-top: 96px;
   padding-bottom: 40px;
   text-align: center;
   position: relative;
@@ -362,6 +389,14 @@ p {
   .token {
     display: none;
   }
+}
+@media (max-width: 768px) {
+  .top_casinos {
+    margin-top: 56px;
+  }
+}
+@media (max-width: 576px) {
+  margin-top: 40px;
 }
 .top_casinos_wrapper {
   margin-top: 56px;
@@ -427,6 +462,11 @@ p {
   display: flex;
   margin: 0 auto;
   margin-bottom: 18px;
+}
+.top_casinos_wrapper .casino .rating p {
+  font-size: 12px;
+  margin-bottom: 0;
+  transform: translate(6px, 3px);
 }
 .top_casinos_wrapper .casino .tags {
   display: flex;
@@ -510,9 +550,16 @@ p {
     width: 340px;
     margin-bottom: 36px;
   }
+  .top_casinos .top_casinos_wrapper .casino .tags .tag {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
   .top_casinos .top_casinos_wrapper .casino .buttons .main-btn,
   .top_casinos .top_casinos_wrapper .casino .buttons .secondary-btn {
     width: 45%;
+  }
+  .top_casinos .main-btn {
+    margin-bottom: 0;
   }
 }
 .casinos_wrapper {
@@ -615,6 +662,9 @@ p {
   }
 }
 @media (max-width: 576px) {
+  .casinos_wrapper {
+    margin-bottom: 32px;
+  }
   .casinos_wrapper .casino {
     width: 343px;
     margin-right: auto;
@@ -657,7 +707,7 @@ p {
 .latest-news {
   text-align: center;
   margin-top: 64px;
-  margin-bottom: 92px;
+  margin-bottom: 80px;
 }
 .latest-news h5 {
   margin-bottom: 32px;
@@ -713,6 +763,10 @@ p {
   }
 }
 @media (max-width: 768px) {
+  .latest-news {
+    margin-bottom: 56px;
+    margin-top: 56px;
+  }
   .latest-news p {
     width: 100%;
   }
@@ -727,6 +781,10 @@ p {
   }
 }
 @media (max-width: 576px) {
+  .latest-news {
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
   .latest-news p {
     width: 100%;
   }
@@ -739,6 +797,9 @@ p {
   }
   .latest-news .latest-news-wrapper .post h3 {
     margin-bottom: 24px;
+  }
+  .latest-news .main-btn {
+    margin-bottom: 0;
   }
 }
 .about-us {
@@ -767,6 +828,9 @@ p {
 .about-us-wrapper .content p {
   font-size: 16px;
   color: #545351;
+}
+.about-us-wrapper .content ul {
+  margin: 32px 0;
 }
 .about-us-wrapper .image-1,
 .about-us-wrapper .image-2 {
@@ -877,14 +941,15 @@ p {
 }
 @media (max-width: 1200px) {
   .about-us {
-    height: 1250px;
+    height: 1340px;
+    background: linear-gradient(#fcf9f5 75%, #ffffff 75%);
   }
   .about-us .about-us-wrapper .content {
     width: 100%;
   }
   .about-us .about-us-wrapper .image-1 {
     width: 1200px;
-    top: 464px;
+    top: 560px;
     right: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -893,7 +958,7 @@ p {
     border-radius: 0px;
   }
   .about-us .about-us-wrapper .image-2 {
-    top: 568px;
+    top: 628px;
     right: 0;
     transform: translateX(150px);
   }
@@ -910,16 +975,17 @@ p {
 @media (max-width: 992px) {
   .about-us {
     overflow-x: hidden;
+    height: 1400px;
   }
   .about-us .about-us-wrapper .image-1 {
-    top: 536px;
+    top: 626px;
     height: 688px;
     right: auto;
     left: 0;
     transform: translateX(-15%);
   }
   .about-us .about-us-wrapper .image-2 {
-    top: 600px;
+    top: 680px;
     right: 0;
   }
   .about-us .about-us-wrapper .review-1 {
@@ -932,6 +998,11 @@ p {
   }
 }
 @media (max-width: 768px) {
+  .about-us {
+    height: auto;
+    padding-bottom: 100px;
+    overflow-y: hidden;
+  }
   .about-us .about-us-wrapper .content {
     text-align: center;
   }
@@ -944,19 +1015,20 @@ p {
     text-align: left;
   }
   .about-us .about-us-wrapper .image-1 {
-    top: 536px;
+    position: static;
+    margin-top: 56px;
   }
   .about-us .about-us-wrapper .image-2 {
-    top: 600px;
+    top: 694px;
     transform: translateX(90px);
   }
   .about-us .about-us-wrapper .review-1 {
-    top: 650px;
+    top: 750px;
     right: 0;
     transform: translateX(-145px);
   }
   .about-us .about-us-wrapper .review-2 {
-    top: 906px;
+    top: 1006px;
     right: auto;
     left: 0;
     transform: translateX(24px);
@@ -1027,6 +1099,7 @@ p {
 }
 .nessesary-info p {
   width: 552px;
+  font-size: 16px;
 }
 .nessesary-info .info-cards {
   margin-bottom: 48px;
@@ -1078,11 +1151,17 @@ p {
   background-repeat: no-repeat;
 }
 @media (max-width: 992px) {
+  .nessesary-info p {
+    width: 100%;
+  }
+  .nessesary-info .info-cards .card a {
+    margin-bottom: 8px;
+  }
   .nessesary-info .info-cards .card p {
     width: 80%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nessesary-info .info-cards {
     display: block;
   }
@@ -1097,6 +1176,9 @@ p {
   }
 }
 @media (max-width: 576px) {
+  .nessesary-info {
+    margin-bottom: 40px;
+  }
   .nessesary-info p {
     width: 100%;
   }
@@ -1315,26 +1397,39 @@ p {
   .how-to-find .how-to-find-wrapper .image-2 {
     display: none;
   }
-  .how-to-find .how-to-find-wrapper .row-2,
-  .how-to-find .how-to-find-wrapper .row-3 {
-    text-align: center;
-  }
   .how-to-find .how-to-find-wrapper .row-2 p,
   .how-to-find .how-to-find-wrapper .row-3 p {
     width: 100%;
   }
-  .how-to-find .featured-image {
+}
+@media (max-width: 768px) {
+  .how-to-find .how-to-find-wrapper .image-1 {
+    order: 1;
+    width: 160%;
+  }
+  .how-to-find .how-to-find-wrapper .row-1 {
+    order: 2;
+  }
+  .how-to-find .how-to-find-wrapper .row-2 {
+    text-align: center;
+    order: 3;
+  }
+  .how-to-find .how-to-find-wrapper .row-2 .featured-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .how-to-find .how-to-find-wrapper .row-3 {
+    text-align: center;
+    order: 4;
+  }
+  .how-to-find .how-to-find-wrapper .row-3 .featured-image {
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media (max-width: 768px) {
-  .how-to-find .how-to-find-wrapper .image-1 {
-    width: 160%;
-  }
-}
 @media (max-width: 576px) {
   .how-to-find .how-to-find-wrapper .image-1 {
+    order: 10;
     width: calc(115%);
     height: 180px;
     transform: translateX(-15px);
@@ -1520,25 +1615,24 @@ p {
 .cta {
   position: relative;
   z-index: 5;
-  padding: 116px 0;
-  height: 484px;
+  padding-bottom: 110px;
   text-align: center;
   overflow: hidden;
 }
 .cta .bg-image {
   position: absolute;
   width: 100%;
-  height: 484px;
+  height: 100%;
   left: 0;
   z-index: -1;
   background-image: url(../img/cta-main.png);
   background-size: cover;
-  background-position: -65% center;
+  background-position: center center;
   filter: brightness(0.25);
 }
 .cta h4 {
+  margin-top: 110px;
   color: white;
-  margin-top: 56px;
 }
 .cta p {
   font-family: 'EuropaRegular';
@@ -1569,10 +1663,10 @@ p {
 }
 @media (max-width: 576px) {
   .cta {
-    height: 600px;
+    padding-bottom: 40px;
   }
-  .cta .bg-image {
-    height: 500px;
+  .cta h4 {
+    margin-top: 40px;
   }
 }
 .faq {
@@ -1629,11 +1723,18 @@ p {
 .faq .accordion .accordion-button::after {
   height: 40px;
   width: 40px;
-  border: 1px solid #706e6c;
+  border: 1px solid #E3E0DC;
   border-radius: 20px;
   line-height: 40px;
   background-image: url(../img/accordion-arrow.svg);
   background-position: center center;
+}
+@media (max-width: 576px) {
+  .faq p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .straight {
   position: relative;
@@ -1768,6 +1869,7 @@ p {
   }
   .footer .to-top {
     bottom: -16px;
+    right: 16px;
   }
 }
 @media (max-width: 576px) {
@@ -1778,7 +1880,7 @@ p {
     width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 36px;
+    margin-top: 0;
   }
   .footer .logos .logos-wrapper {
     width: 100%;
