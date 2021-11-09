@@ -195,6 +195,7 @@ ul li {
   margin-bottom: 16px;
 }
 .cons ul {
+  margin-bottom: 32px;
   list-style-image: url(../img/list-arrow-green.svg);
 }
 .pros h5 {
@@ -1531,9 +1532,6 @@ ul li {
   margin: 0;
   height: 25px;
   width: 25px;
-}
-.how-to-find .featured-image-green {
-  background: #EBF7F1;
 }
 @media (max-width: 992px) {
   .how-to-find .how-to-find-wrapper {
@@ -3112,6 +3110,16 @@ ul li {
   height: 25px;
   width: 25px;
 }
+.software-category-content .featured-image span {
+  font-family: 'EuropaBold';
+  font-size: 18px;
+}
+.software-category-content .featured-image-green {
+  background: #EBF7F1;
+}
+.software-category-content .featured-image-green span {
+  color: #11663D;
+}
 .software-category-content .featured-content p {
   margin: 0;
   font-size: 14px;
@@ -3428,42 +3436,42 @@ ul li {
   display: initial;
 }
 @media (max-width: 1200px) {
-  .top-casinos-payment .payments_wrapper .payment .payment-logo {
+  .payments_wrapper .payment .payment-logo {
     width: 140px;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-time {
+  .payments_wrapper .payment .payment-time {
     width: 180px;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-description {
+  .payments_wrapper .payment .payment-description {
     width: 300px;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-button {
+  .payments_wrapper .payment .payment-button {
     margin-left: auto;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-button .payment-section-body {
+  .payments_wrapper .payment .payment-button .payment-section-body {
     width: 100%;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-button .payment-section-body .main-btn {
+  .payments_wrapper .payment .payment-button .payment-section-body .main-btn {
     display: none;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-button .payment-section-body .round-btn {
+  .payments_wrapper .payment .payment-button .payment-section-body .round-btn {
     display: inline-block;
     margin-left: auto;
   }
 }
 @media (max-width: 992px) {
-  .top-casinos-payment .payments_wrapper .payment {
+  .payments_wrapper .payment {
     height: 170px;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-logo {
+  .payments_wrapper .payment .payment-logo {
     width: 130px;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-description {
+  .payments_wrapper .payment .payment-description {
     width: 250px;
   }
 }
 @media (max-width: 576px) {
-  .top-casinos-payment .payments_wrapper .payment {
+  .payments_wrapper .payment {
     width: 100%;
     height: auto;
     display: flex;
@@ -3472,73 +3480,271 @@ ul li {
     justify-content: center;
     align-items: initial;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-section {
+  .payments_wrapper .payment .payment-section {
     display: flex;
     flex-direction: row;
     width: 100%;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-section .payment-section-header {
+  .payments_wrapper .payment .payment-section .payment-section-header {
     display: initial;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-section .payment-section-body {
+  .payments_wrapper .payment .payment-section .payment-section-body {
     width: 100%;
     height: auto;
     flex: initial;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-logo {
+  .payments_wrapper .payment .payment-logo {
     width: 100%;
     flex-direction: row;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-logo .payment-section-header {
+  .payments_wrapper .payment .payment-logo .payment-section-header {
     display: none;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-logo .payment-section-body {
+  .payments_wrapper .payment .payment-logo .payment-section-body {
     width: 100%;
     margin: 16px auto;
     text-align: center;
     align-items: center;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-logo .payment-section-body img {
+  .payments_wrapper .payment .payment-logo .payment-section-body img {
     width: 90px;
     height: auto;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-time {
+  .payments_wrapper .payment .payment-time {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-time .payment-section-header {
+  .payments_wrapper .payment .payment-time .payment-section-header {
     width: auto;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-time .payment-section-body {
+  .payments_wrapper .payment .payment-time .payment-section-body {
     width: auto;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-escrow {
+  .payments_wrapper .payment .payment-escrow {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-escrow .payment-section-header {
+  .payments_wrapper .payment .payment-escrow .payment-section-header {
     width: auto;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-escrow .payment-section-body {
+  .payments_wrapper .payment .payment-escrow .payment-section-body {
     width: auto;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-description {
+  .payments_wrapper .payment .payment-description {
     width: 100%;
     flex-direction: row;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-description .payment-section-header {
+  .payments_wrapper .payment .payment-description .payment-section-header {
     display: none;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-description .payment-section-body {
+  .payments_wrapper .payment .payment-description .payment-section-body {
     width: 100%;
     text-align: center;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-button .payment-section-body .round-btn {
+  .payments_wrapper .payment .payment-button .payment-section-body .round-btn {
     display: none;
   }
-  .top-casinos-payment .payments_wrapper .payment .payment-button .payment-section-body .main-btn {
+  .payments_wrapper .payment .payment-button .payment-section-body .main-btn {
+    display: block;
+    margin: 24px auto;
+  }
+}
+.payments_wrapper-extended {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.payments_wrapper-extended p {
+  font-size: 14px;
+}
+.payments_wrapper-extended .payment {
+  display: flex;
+  width: 100%;
+  height: 130px;
+  padding: 0;
+  margin-bottom: 16px;
+  justify-content: space-evenly;
+  align-items: end;
+  background: #FFFFFF;
+  border-bottom: 1px solid #FCF9F5;
+}
+.payments_wrapper-extended .payment .payment-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.payments_wrapper-extended .payment .payment-section .payment-section-header {
+  margin-bottom: 24px;
+  text-align: left;
+}
+.payments_wrapper-extended .payment .payment-section .payment-section-header p {
+  text-align: left;
+  margin: 0;
+}
+.payments_wrapper-extended .payment .payment-section .payment-section-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+.payments_wrapper-extended .payment .payment-section .payment-section-body p {
+  text-align: left;
+}
+.payments_wrapper-extended .payment .payment-section .payment-section-body img {
+  margin-top: 0;
+}
+.payments_wrapper-extended .payment .payment-logo {
+  margin: 0 auto;
+  height: 100%;
+  width: 200px;
+}
+.payments_wrapper-extended .payment .payment-bonus {
+  height: 100%;
+  width: 220px;
+}
+.payments_wrapper-extended .payment .payment-description {
+  height: 100%;
+  width: 520px;
+}
+.payments_wrapper-extended .payment .payment-button {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  flex-grow: 2;
+}
+.payments_wrapper-extended .payment .payment-button .round-btn {
+  display: none;
+}
+.payments_wrapper-extended .payment p {
+  margin: 0;
+  font-family: 'EuropaRegular';
+  font-size: 14px;
+  color: #151110;
+}
+.payments_wrapper-extended .payment .payment-section .payment-section-header {
+  display: none;
+}
+.payments_wrapper-extended .card_1 .payment-section .payment-section-header {
+  display: initial;
+}
+@media (max-width: 1200px) {
+  .payments_wrapper-extended .payment .payment-logo {
+    width: 140px;
+  }
+  .payments_wrapper-extended .payment .payment-time {
+    width: 180px;
+  }
+  .payments_wrapper-extended .payment .payment-description {
+    width: 300px;
+  }
+  .payments_wrapper-extended .payment .payment-button {
+    margin-left: auto;
+  }
+  .payments_wrapper-extended .payment .payment-button .payment-section-body {
+    width: 100%;
+  }
+  .payments_wrapper-extended .payment .payment-button .payment-section-body .main-btn {
+    display: none;
+  }
+  .payments_wrapper-extended .payment .payment-button .payment-section-body .round-btn {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+@media (max-width: 992px) {
+  .payments_wrapper-extended .payment {
+    height: 170px;
+  }
+  .payments_wrapper-extended .payment .payment-logo {
+    width: 130px;
+  }
+  .payments_wrapper-extended .payment .payment-description {
+    width: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .payments_wrapper-extended .payment {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: initial;
+  }
+  .payments_wrapper-extended .payment .payment-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .payments_wrapper-extended .payment .payment-section .payment-section-header {
+    display: initial;
+  }
+  .payments_wrapper-extended .payment .payment-section .payment-section-body {
+    width: 100%;
+    height: auto;
+    flex: initial;
+  }
+  .payments_wrapper-extended .payment .payment-logo {
+    width: 100%;
+    flex-direction: row;
+  }
+  .payments_wrapper-extended .payment .payment-logo .payment-section-header {
+    display: none;
+  }
+  .payments_wrapper-extended .payment .payment-logo .payment-section-body {
+    width: 100%;
+    margin: 16px auto;
+    text-align: center;
+    align-items: center;
+  }
+  .payments_wrapper-extended .payment .payment-logo .payment-section-body img {
+    width: 90px;
+    height: auto;
+  }
+  .payments_wrapper-extended .payment .payment-time {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .payments_wrapper-extended .payment .payment-time .payment-section-header {
+    width: auto;
+  }
+  .payments_wrapper-extended .payment .payment-time .payment-section-body {
+    width: auto;
+  }
+  .payments_wrapper-extended .payment .payment-escrow {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .payments_wrapper-extended .payment .payment-escrow .payment-section-header {
+    width: auto;
+  }
+  .payments_wrapper-extended .payment .payment-escrow .payment-section-body {
+    width: auto;
+  }
+  .payments_wrapper-extended .payment .payment-description {
+    width: 100%;
+    flex-direction: row;
+  }
+  .payments_wrapper-extended .payment .payment-description .payment-section-header {
+    display: none;
+  }
+  .payments_wrapper-extended .payment .payment-description .payment-section-body {
+    width: 100%;
+    text-align: center;
+  }
+  .payments_wrapper-extended .payment .payment-button .payment-section-body .round-btn {
+    display: none;
+  }
+  .payments_wrapper-extended .payment .payment-button .payment-section-body .main-btn {
     display: block;
     margin: 24px auto;
   }
@@ -3617,6 +3823,7 @@ ul li {
 }
 @media (max-width: 576px) {
   .two-lines {
+    margin-top: 32px;
     line-height: 24px;
     height: 72px;
     display: flex;

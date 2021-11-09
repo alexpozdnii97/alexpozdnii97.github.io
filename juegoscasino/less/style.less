@@ -271,6 +271,7 @@ ul{
     margin-bottom: 16px;
   }
   ul{
+    margin-bottom: 32px;
     list-style-image: url(../img/list-arrow-green.svg);
   }
 }
@@ -1918,9 +1919,7 @@ ul{
         width: 25px;
       }
     }
-    .featured-image-green{
-      background: #EBF7F1;
-    }
+    
   
 }
 
@@ -3853,6 +3852,16 @@ ul{
       height: 25px;
       width: 25px;
     }
+    span{
+      font-family: 'EuropaBold';
+      font-size: 18px;
+    }
+  }
+  .featured-image-green {
+    background: #EBF7F1;
+    span{
+      color: #11663D;
+    }
   }
   .featured-content{
     p{
@@ -4224,7 +4233,7 @@ ul{
 }
 
 @media (max-width: 1200px) {
-.top-casinos-payment{
+
   .payments_wrapper{
     .payment{
       .payment-logo{
@@ -4254,10 +4263,10 @@ ul{
     }
   }
 }
-}
+
 
 @media (max-width: 992px) {
-  .top-casinos-payment {
+  
     .payments_wrapper {
       .payment {
         height: 170px;
@@ -4269,7 +4278,7 @@ ul{
         }
       }
     }
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -4277,7 +4286,7 @@ ul{
 }
 
 @media (max-width: 576px) {
-  .top-casinos-payment {
+  
     .payments_wrapper {
       .payment {
         width: 100%;
@@ -4366,8 +4375,299 @@ ul{
         }
       }
     }
+}
+
+
+
+.payments_wrapper-extended {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  p {
+    font-size: 14px;
+  }
+
+  .payment {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    padding: 0;
+    margin-bottom: 16px;
+    justify-content: space-evenly;
+    align-items: end;
+    background: #FFFFFF;
+    border-bottom: 1px solid #FCF9F5;
+
+    .payment-section {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+
+      .payment-section-header {
+        margin-bottom: 24px;
+        text-align: left;
+
+        p {
+          text-align: left;
+          margin: 0;
+        }
+      }
+
+      .payment-section-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+
+        p {
+          text-align: left;
+        }
+        img{
+          margin-top: 0;
+        }
+      }
+    }
+
+    .payment-logo {
+      margin: 0 auto;
+      height: 100%;
+      width: 200px;
+    }
+
+    .payment-bonus {
+      height: 100%;
+      width: 220px;
+    }
+
+    .payment-description {
+      height: 100%;
+      width: 520px;
+    }
+
+    .payment-button {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      flex-grow: 2;
+
+      .round-btn {
+        display: none;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-family: 'EuropaRegular';
+      font-size: 14px;
+      color: @background_900;
+    }
+  }
+
+  .payment {
+    .payment-section {
+      .payment-section-header {
+        display: none;
+      }
+    }
+  }
+
+  .card_1 {
+    .payment-section {
+      .payment-section-header {
+        display: initial;
+      }
+    }
   }
 }
+
+@media (max-width: 1200px) {
+
+  .payments_wrapper-extended {
+    .payment {
+      .payment-logo {
+        width: 140px;
+      }
+
+      .payment-time {
+        width: 180px;
+      }
+
+      .payment-description {
+        width: 300px;
+      }
+
+      .payment-button {
+        margin-left: auto;
+
+        .payment-section-body {
+          width: 100%;
+
+          .main-btn {
+            display: none;
+          }
+
+          .round-btn {
+            display: inline-block;
+            margin-left: auto;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+
+  .payments_wrapper-extended {
+    .payment {
+      height: 170px;
+
+      .payment-logo {
+        width: 130px;
+      }
+
+      .payment-description {
+        width: 250px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+
+  .payments_wrapper-extended {
+    .payment {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: initial;
+
+      .payment-section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .payment-section-header {
+          display: initial;
+        }
+
+        .payment-section-body {
+          width: 100%;
+          height: auto;
+          flex: initial;
+        }
+      }
+
+      .payment-logo {
+        width: 100%;
+        flex-direction: row;
+
+        .payment-section-header {
+          display: none;
+        }
+
+        .payment-section-body {
+          width: 100%;
+          margin: 16px auto;
+          text-align: center;
+          align-items: center;
+
+          img {
+            width: 90px;
+            height: auto;
+
+          }
+        }
+      }
+
+      .payment-time {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .payment-section-header {
+          width: auto;
+        }
+
+        .payment-section-body {
+          width: auto;
+        }
+      }
+
+      .payment-escrow {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .payment-section-header {
+          width: auto;
+        }
+
+        .payment-section-body {
+          width: auto;
+        }
+      }
+
+      .payment-description {
+        width: 100%;
+        flex-direction: row;
+
+        .payment-section-header {
+          display: none;
+        }
+
+        .payment-section-body {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .payment-button {
+        .payment-section-body {
+          .round-btn {
+            display: none;
+          }
+
+          .main-btn {
+            display: block;
+            margin: 24px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .betting-category-content{
@@ -4469,6 +4769,7 @@ ul{
 
 @media (max-width: 576px) {
   .two-lines {
+    margin-top: 32px;
     line-height: 24px;
     height: 72px;
     display: flex;
