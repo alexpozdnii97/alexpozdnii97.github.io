@@ -246,7 +246,7 @@ body {
   height: 100vh;
   width: 100%;
   overflow-y: scroll;
-  background: #242424;
+  background: white;
   line-height: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -275,6 +275,7 @@ body {
   font-weight: 50;
   line-height: 100%;
   transform: translateY(-10%);
+  color: black;
 }
 .popup .popup-content {
   width: 100%;
@@ -289,7 +290,7 @@ body {
   width: 40%;
   margin-bottom: 36px;
   padding-right: 20px;
-  color: white;
+  color: black;
   font-size: 16px;
   font-family: 'montserrat_light';
 }
@@ -307,9 +308,9 @@ body {
 }
 .popup .popup-content .menu-wrapper ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 16px;
-  font-family: 'montserrat_light';
+  font-family: 'montserrat_medium';
 }
 .popup .popup-content .menu-wrapper .social-nav {
   display: flex;
@@ -406,6 +407,7 @@ body {
   overflow: hidden;
 }
 .homepage-hero .homepage-hero-image {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -506,6 +508,7 @@ body {
     padding: 0 85px;
   }
   .homepage-hero .homepage-hero-image {
+    display: block;
     right: 85px;
   }
   .homepage-hero .homepage-hero-content {

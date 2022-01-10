@@ -333,7 +333,7 @@ body {
     height: 100vh;
     width: 100%;
     overflow-y: scroll;
-    background: @main-dark;
+    background: white;
     line-height: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -362,6 +362,7 @@ body {
         font-weight: 50;
         line-height: 100%;
         transform: translateY(-10%);
+        color:black;
       }
     }
   }
@@ -377,7 +378,7 @@ body {
         width: 40%;
         margin-bottom:36px;
         padding-right: 20px;
-        color: white;
+        color: black;
         font-size: 16px;
         .light();
       }
@@ -395,9 +396,9 @@ body {
           a{
             
             text-decoration: none;
-            color: white;
+            color: black;
             font-size: 16px;
-            .light();
+            .med();
           }
         }
       }
@@ -553,7 +554,7 @@ body {
   z-index: -11;
   overflow:hidden;
   .homepage-hero-image{
-    
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -675,6 +676,7 @@ body {
   .homepage-hero {
     padding: 0 85px;
     .homepage-hero-image {
+      display: block;
       right: 85px;
     }
 
