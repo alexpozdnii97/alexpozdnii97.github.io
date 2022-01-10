@@ -446,7 +446,59 @@ body {
   margin: 0 0 20px;
 }
 @media (min-width: 576px) {
+  .homepage-hero {
+    padding-top: 70px;
+    height: auto;
+  }
+  .homepage-hero .homepage-hero-image {
+    height: 120%;
+    transform: rotate(90deg);
+  }
+  .homepage-hero .homepage-hero-content {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    align-items: center;
+  }
   .homepage-hero .homepage-hero-content span {
     align-self: center;
+  }
+  .homepage-hero .homepage-hero-content h1 {
+    width: 85%;
+    text-align: center;
+  }
+  .homepage-hero .homepage-hero-content p {
+    text-align: center;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .homepage-hero {
+    height: 100vh;
+    padding: 0;
+    padding-left: 85px;
+  }
+  .homepage-hero .homepage-hero-image {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    height: 100%;
+    width: auto;
+    transform: none;
+    filter: blur(0);
+  }
+  .homepage-hero .homepage-hero-content {
+    padding: 0;
+    width: 50%;
+    align-items: flex-start;
+  }
+  .homepage-hero .homepage-hero-content span {
+    align-self: flex-start;
+  }
+  .homepage-hero .homepage-hero-content h1,
+  .homepage-hero .homepage-hero-content p {
+    text-align: left;
   }
 }
