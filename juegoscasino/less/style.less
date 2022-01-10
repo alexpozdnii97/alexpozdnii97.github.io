@@ -315,29 +315,32 @@ ul{
       justify-content: end;
       flex-grow: initial;
       margin-left: auto;
-      .navbar-nav{
-        .nav-item{
+      .my-navigation{
+        li {
           position: relative;
           margin-left: 40px;
-          .nav-link{
-            font-family: 'EuropaBold';
-            font-size: 16px;
-            color: @background_600;
+          font-family: 'EuropaBold';
+          font-size: 16px;
+          color: @background_600;
+          a {
+            text-decoration: none;
+            color: #545351;
           }
         }
-        .current-item{
+        .current-item {
           position: relative;
-          .nav-link
-          {
+
+          a {
             font-family: 'EuropaBold';
             color: black;
           }
-          &::after{
+
+          &::after {
             position: absolute;
-            content:'';
+            content: '';
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg,#E65535, #FEC227);
+            background: linear-gradient(90deg, #E65535, #FEC227);
           }
         }
       }
@@ -1746,20 +1749,31 @@ ul{
   .row{
     margin-bottom: 72px;
   }
-  &-reviews{
-    width: 1200px;
-   
-    margin-bottom: 48px;
-    display: flex;
-    justify-content: space-between;
+  .ratings-reviews{
+     max-width: 1200px;
+     padding-bottom: 64px;
+     margin-left: auto;
+     margin-right: auto;
+     overflow-y: hidden;
+     overflow-x: scroll;
+     white-space: nowrap;
+     -webkit-overflow-scrolling: touch;
+     &::-webkit-scrollbar {
+       display: none;
+     }
+     text-align: left;
     .review-card{
-      display: inline-block; 
+      display: inline-block;
+      width: 258px;
+      height: 224px;
+       padding: 32px 24px 32px 24px;
+       margin-right: 50px;
+      vertical-align: top;
       background-color: #fff;
       box-shadow: 0px 23px 36px rgba(26, 15, 13, 0.08);
       border-radius: 24px 24px 24px 0px;
-      padding: 32px 24px 32px 24px;
-      width: 258px;
-      height: 224px;
+     
+      
       box-sizing: border-box;
       text-align: center;
       .rating{
@@ -1781,6 +1795,7 @@ ul{
         line-height: 21px;
         margin-top: 16px;
         color: @background_600;
+        white-space: normal;
       }
     }
   }
@@ -1835,6 +1850,9 @@ ul{
 
 @media (max-width: 576px) {
   .ratings {
+    .ratings-reviews{
+      margin-left: 12px;
+    }
     .ratings-bg {
       height: 730px;
     }
@@ -2452,7 +2470,14 @@ ul{
   }
 }
 
-
+.law-betting-category{
+  height: 467px;
+  .container{
+    .bg-image-1 {
+      border-radius: 180px 0px 0px 0px;
+    }
+  }
+}
 
 
 .cta{
@@ -2540,6 +2565,7 @@ ul{
     
   }
 }
+
 .cta-breadcrumbs{
   .breadcrumbs {
     margin-top: 64px;
@@ -2601,6 +2627,7 @@ ul{
     padding-bottom: 40px;
     h4{
       margin-top: 40px;
+      font-size: 24px;
     }
   }
   .sm-left{
@@ -2624,6 +2651,33 @@ ul{
   }
 }
 
+.cta-betting-extended{
+  height: 700px;
+  .bg-image{
+    background-image: url(../img/betting-stadium.jpg)
+  }
+  h4{
+    width: 850px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cta-betting-extended {
+    height: 700px;
+    h4 {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .cta-betting-extended {
+    height: 600px;
+
+    h4 {
+      width: 100%;
+    }
+  }
+}
 
 
 
@@ -3083,7 +3137,6 @@ ul{
     }
     .live-casino{
       display: inline-block;
-      
       margin-right: 36px;
       box-shadow: 0px 2px 6px rgba(21, 17, 16, 0.08);
       border-radius: 24px 0px 24px 0px;
@@ -3164,6 +3217,8 @@ ul{
         justify-content: center;
         align-items: center;
         height: 100px;
+        background-color: white;
+        border-bottom-right-radius:24px;
         .main-btn,.secondary-btn{
           width: auto ;
           padding: 0 16px 0 16px;
@@ -3181,9 +3236,7 @@ ul{
   }
 }
 @media (max-width: 768px) {
-.live-casinos{
-  
-}
+
 }
 @media (max-width: 576px) {
   .live-casinos{
@@ -3191,6 +3244,24 @@ ul{
       padding-bottom: 40px;
       margin-left: 16px;
      
+    }
+  }
+}
+
+.live-casinos-betting {
+  margin-top: -400px;
+  .live-casinos-wrapper{
+    padding-bottom: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .live-casinos-betting {
+    margin-top: -430px;
+    padding-bottom: 45px;
+    .live-casinos-wrapper {
+      padding-bottom: 0;
+      text-align: center;
     }
   }
 }
@@ -3736,6 +3807,29 @@ ul{
     
   }
 }
+
+@media (max-width: 992px) {
+  .tutorial-casinos{
+    &-wrapper{
+      margin-left: 97px;
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .tutorial-casinos {
+    &-wrapper {
+      margin-left: 36px;
+    }
+  }
+}
+
+
+
+
+
 .cta-tutorial-casino{
   h4{
     width: 900px;
@@ -3859,9 +3953,8 @@ ul{
   }
   .featured-image-green {
     background: #EBF7F1;
-    span{
-      color: #11663D;
-    }
+    color: #11663D;
+    font-family: 'EuropaBold';
   }
   .featured-content{
     p{
@@ -3942,6 +4035,9 @@ ul{
   p{
     font-size: 16px;
   }
+}
+.top_casinos_betting-single{
+  margin-top: 0px;
 }
 
 @media (max-width: 576px) {
@@ -4391,7 +4487,7 @@ ul{
   .payment {
     display: flex;
     width: 100%;
-    height: 130px;
+    height: 150px;
     padding: 0;
     margin-bottom: 16px;
     justify-content: space-evenly;
@@ -4407,6 +4503,7 @@ ul{
       justify-content: space-between;
 
       .payment-section-header {
+        display: none;
         margin-bottom: 24px;
         text-align: left;
 
@@ -4420,13 +4517,13 @@ ul{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex: 1;
+        flex: 2;
 
         p {
           text-align: left;
         }
         img{
-          margin-top: 0;
+          margin-top: 48px;
         }
       }
     }
@@ -4434,26 +4531,64 @@ ul{
     .payment-logo {
       margin: 0 auto;
       height: 100%;
-      width: 200px;
+      width: 130px;
+      text-align: center;
+      img{
+        width: 90px;
+        height: auto;
+      }
+      .payment-section-body{
+        flex: 2;
+        justify-content: space-evenly;
+        .tag {
+          width: 130px;
+          height: 23px;
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 6px 8px 4px;
+          background: #FFFFFF;
+          border: 1px solid #EBF7F1;
+          box-sizing: border-box;
+          border-radius: 100px;
+
+          p {
+            font-size: 12px;
+            margin-bottom: 0;
+          }
+        }
+      }
     }
 
     .payment-bonus {
+      width: 260px;
+      margin: 0 auto;
       height: 100%;
-      width: 220px;
+      .payment-section-body{
+        p{
+          font-family: 'EuropaBold';
+          font-size: 18px;
+        }
+      }
     }
 
     .payment-description {
+      margin: 0 auto;
       height: 100%;
       width: 520px;
     }
 
     .payment-button {
+      margin: 0;
+      margin-left:40px;
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: start;
       justify-content: space-between;
-      flex-grow: 2;
+      
 
       .round-btn {
         display: none;
@@ -4481,6 +4616,11 @@ ul{
       .payment-section-header {
         display: initial;
       }
+      .payment-section-body{
+        img{
+          margin-top: 0px;
+        }
+      }
     }
   }
 }
@@ -4489,16 +4629,17 @@ ul{
 
   .payments_wrapper-extended {
     .payment {
+      height: 170px;
       .payment-logo {
-        width: 140px;
+        width: 120px;
       }
 
-      .payment-time {
-        width: 180px;
+      .payment-bonus{
+        width: 200px;
       }
 
       .payment-description {
-        width: 300px;
+        width: 450px;
       }
 
       .payment-button {
@@ -4541,9 +4682,11 @@ ul{
 
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  
+}
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
 
   .payments_wrapper-extended {
     .payment {
@@ -4570,7 +4713,22 @@ ul{
           flex: initial;
         }
       }
-
+      .payment-bonus{
+        width: 100%;
+        
+        .payment-section-header{
+          display: none;
+          
+        }
+        .payment-section-body{
+          text-align: center;
+          margin-top: 32px;
+          margin-bottom: 16px;
+          p{
+            text-align: center;
+          }
+        }
+      }
       .payment-logo {
         width: 100%;
         flex-direction: row;
@@ -4586,38 +4744,12 @@ ul{
           align-items: center;
 
           img {
-            width: 90px;
+            width: 120px;
             height: auto;
+            margin-top: 16px;
+            margin-bottom: 12px;
 
           }
-        }
-      }
-
-      .payment-time {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .payment-section-header {
-          width: auto;
-        }
-
-        .payment-section-body {
-          width: auto;
-        }
-      }
-
-      .payment-escrow {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .payment-section-header {
-          width: auto;
-        }
-
-        .payment-section-body {
-          width: auto;
         }
       }
 
@@ -4632,6 +4764,9 @@ ul{
         .payment-section-body {
           width: 100%;
           text-align: center;
+          p{
+            text-align: center;
+          }
         }
       }
 
@@ -4761,13 +4896,22 @@ ul{
       .betting-card {
         margin: 36 0;
         width: 342px;
-        
       }
     }
   }
 }
 
 @media (max-width: 576px) {
+  .betting-category-content{
+    .bettings{
+      .betting-card{
+        .main-btn{
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
   .two-lines {
     margin-top: 32px;
     line-height: 24px;
@@ -4779,8 +4923,100 @@ ul{
   }
 }
 
+.blog-hero{
+  text-align: center;
+  margin-bottom: 64px;
+  p{
+    font-size: 16px;
+  }
+  .posts-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-auto-rows: 300px;
+    grid-column-gap:36px ;
+    grid-row-gap: 36px;
+    .post{
+      text-align: left;
+      img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 24px;
+      }
+      a{
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+      }
+      h5 {
+        width: 100%;
+        font-size: 18px;
+      }
+      p{
+        font-size: 40px;
+        line-height: 60px;
+      }
+      .post-excerpt{
+        display: none;
+        p{
+          font-size: 16px;
+          font-family: 'EUropaRegular';
+          line-height: 24px;
+        }
+      }
+    }
+    .post-1{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      .post-excerpt {
+        display: initial;
+      }
+      h4{
+        font-size: 36px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .blog-hero{
+    margin-bottom: 48px;
+    .posts-wrapper{
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 300px;
+      grid-column-gap:36px;
+      grid-row-gap: 36px;
+    }
+  }
+}
 
+@media (max-width: 768px) {
 
+}
+
+@media (max-width: 576px) {
+  .blog-hero {
+    margin-bottom: 32px;
+    h4{
+      font-size: 24px;
+    }
+    .posts-wrapper {
+      grid-template-columns:100%;
+      grid-auto-rows: 300px;
+      .post-1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        
+        .post-excerpt {
+          display: initial;
+        }
+      }
+    }
+  }
+}
 
 
 //media queries templates

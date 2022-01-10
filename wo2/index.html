@@ -10,76 +10,103 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
-<body>
-  <header class="main-nav">
-    <div class="nav-logo">
-      <img src="img/logo-notitle.png" alt="">
+<body class="main-body">
+  <header class="main-header">
+    <img src="img/logo.png" alt="" class="header-logo">
+    <div class="header-desc">Студія створення сайтів під ключ у Львові</div>
+    <div class="header-contacts">
+      WHITEONYXSTUDIO@GMAIL.COM
+      (067)-123-23-23
     </div>
-    <div id="nav-button" class="nav-button">
-      <p>Меню</p>
-      <div class="nav-button-dots">
-        <div class="button-dot"></div>
-        <div class="button-dot"></div>
-        <div class="button-dot"></div>
+    <div class="menu-icon btn">
+      <div class="wrapper open-btn">
+        <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="25" height="1" fill="white"/>
+        <rect y="7" width="25" height="1" fill="white"/>
+        <rect y="14" width="25" height="1" fill="white"/>
+      </svg>
       </div>
     </div>
-    <div class="social-links">
-      <a target="_blank" href="https://www.instagram.com/whiteonyx.studio/">
-        <div class="social-links-item"><i class="fa fa-instagram"></i></div>
-      </a>
-      <a target="_blank" href="">
-        <div class="social-links-item"><i class="fa fa-facebook"></i></div>
-      </a>
-      <a target="_blank" href="mailto:whiteonyx.studio@gmail.com">
-        <div class="social-links-item"><i class="fas fa-envelope"></i></div>
-      </a>
-      <a target="_blank" href="https://www.behance.net/whiteonyxstudio/">
-        <div class="social-links-item"><i class="fa fa-behance"></i></div>
-      </a>
-    </div>
-    <div class="localization-links">
-      <a href="">Ua</a>
-      <a href="">En</a>
-      <a href="">Ru</a>
-    </div>
-    <div id="button" class="to-top">
-      <i class="fa fa-caret-up"></i>
-    </div>
-    <div class="toggle-content">
-      <ul class="navigation-links">
-        <li><span>01 </span><a href="index.html"> Головна</a></li>
-        <li><span>02 </span><a href="services.html"> Послуги</a></li>
-        <li><span>03 </span><a href="portfolio.html"> Портфоліо</a></li>
-        <li><span>04 </span><a href="blog.html"> Блог</a></li>
-        <!-- <li><span>05 </span><a href=""> Пройти квіз</a></li> -->
-        <li><span>06 </span><a href="about.html"> Про Нас</a></li>
-        <li><span>07 </span><a href="contacts.html"> Контакти</a></li>
-      </ul>
-      <button class="contact-btn">Звязатись з нами</button>
-      <div class="social-links">
-        <a target="_blank" href="https://www.instagram.com/whiteonyx.studio/">
-          <div class="social-links-item"><i class="fa fa-instagram"></i></div>
-        </a>
-        <a target="_blank" href="">
-          <div class="social-links-item"><i class="fa fa-facebook"></i></div>
-        </a>
-        <a target="_blank" href="mailto:whiteonyx.studio@gmail.com">
-          <div class="social-links-item"><i class="fas fa-envelope"></i></div>
-        </a>
-        <a target="_blank" href="https://www.behance.net/whiteonyxstudio/">
-          <div class="social-links-item"><i class="fa fa-behance"></i></div>
-        </a>
-      </div><!-- social-links -->
-      <div class="phone"><p>+38 (066) 02 66 845</p></div>
-      <div class="mail"><p>whiteonyx.studio@gmail.com</p></div>
-    </div><!-- toggle content -->
-  </header><!-- header -->
+  </header>
 
+  <div class="social-links">
+    <a target="_blank" href="https://www.instagram.com/whiteonyx.studio/">
+      <i class="fa fa-instagram"></i>
+    </a>
+    <a target="_blank" href="">
+      <i class="fa fa-facebook"></i>
+    </a>
+    <a target="_blank" href="">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a target="_blank" href="https://www.behance.net/whiteonyxstudio/">
+      <i class="fa fa-behance"></i>
+    </a>
+  </div>
+
+
+  <main class="main-page">
+    <section class="homepage-hero">
+      <div class="homepage-hero-content">
+        <span>Ми</span>
+        <h1>Створюємо круті сайти що продають в Google</h1>
+        <p>White Onyx - це команда з ентузіазмом, яка має великий досвід у дизайні та розробці веб-сайтів. </p>
+        <a class="main-btn" href="">Розпочати проект</a>
+        <a class="main-btn" href="">ЗВЯЗАТИСЯ З НАМИ</a>
+      </div>
+      <img class="homepage-hero-image" src="img/hero-image.jpg" alt="">
+    </section>
+  </main>
+  
+  <div class="popup">
+    <div class="popup-overlay"></div>
+    <div class="main-popup">
+      <div class="popup-header"><div class="close-btn"><span >&times;</span></div></div>
+      <div class="popup-content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xxl-12 menu-wrapper">
+              <span>Головне меню</span>
+              <ul>
+                <li><a href="">Головна</a></li>
+                <li><a href="">Послуги</a></li>
+                <li><a href="">Про нас</a></li>
+                <li><a href="">Контакти</a></li>
+              </ul>
+              <span>Послуги</span>
+              <ul>
+                <li><a href="">Розробка сайтів</a></li>
+                <li><a href="">Веб-дизайн</a></li>
+                <li><a href="">SE0</a></li>
+                <li><a href="">Брендинг</a></li>
+              </ul>
+              <span>Корисні посилання</span>
+              <ul>
+                <li><a href="">Блог</a></li>
+                <li><a href="">Веб-дизайн</a></li>
+                <li><a href="">SE0</a></li>
+                <li><a href="">Брендинг</a></li>
+              </ul>
+              <span>Соц. мережі</span>
+              <ul class="social-nav">
+                <li><a target="_blank" href="https://www.instagram.com/whiteonyx.studio/"><i class="fa fa-instagram"></i></a></li>
+                <li><a target="_blank" href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href=""><i class="fa fa-linkedin"></i></a></li>
+                <li><a target="_blank" href="https://www.behance.net/whiteonyxstudio/"><i class="fa fa-behance"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script src="https://kit.fontawesome.com/8d258d854c.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  
 </body>
 </html>
 
