@@ -91,7 +91,7 @@ body {
   direction: ltr;
 }
 ::-webkit-scrollbar-track {
-  background: #242424;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: #5EC8B5;
@@ -101,7 +101,6 @@ body {
   width: 280px;
   min-width: 210px;
   height: 50px;
-  margin: 0px 20px 20px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,16 +112,28 @@ body {
   text-decoration: none;
   border: 1px solid #11967f;
   background-color: #11967f;
+  cursor: pointer;
+}
+.main-btn:hover {
+  color: white;
 }
 .secondary-btn {
   border-color: black;
   background-color: transparent;
   color: black;
 }
+.secondary-btn:hover {
+  color: black;
+}
 .tetriary-btn {
   background-color: #0e2924;
   border-color: #0e2924;
   color: white;
+}
+.main-link {
+  color: white;
+  font-family: 'montserrat_medium';
+  font-size: 18px;
 }
 @media (min-width: 1200px) {
   section {
@@ -137,6 +148,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 5;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -157,7 +169,7 @@ body {
   margin-right: auto;
   margin-left: 30px;
   font-size: 16px;
-  color: #c4c4c4;
+  color: black;
 }
 .main-header .header-contacts {
   display: none;
@@ -167,7 +179,7 @@ body {
   font-size: 15px;
   line-height: 25px;
   text-transform: uppercase;
-  color: #c4c4c4;
+  color: black;
 }
 .main-header .menu-icon {
   width: 85px;
@@ -397,142 +409,5 @@ body {
   }
   .social-links a:hover i {
     color: #5ec8b5;
-  }
-}
-.homepage-hero {
-  position: relative;
-  text-align: right;
-  height: 100vh;
-  z-index: -11;
-  overflow: hidden;
-}
-.homepage-hero .homepage-hero-image {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 100%;
-  width: auto;
-  filter: blur(3px);
-}
-.homepage-hero .homepage-hero-content {
-  width: 100%;
-  height: 100%;
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.homepage-hero .homepage-hero-content span {
-  align-self: flex-start;
-  color: #5ec8b5;
-  text-align: left;
-  font-size: 24px;
-  font-family: 'montserrat_medium';
-}
-.homepage-hero .homepage-hero-content h1 {
-  margin: 0px 0 16px;
-  font-family: 'montserrat_medium';
-  color: #242424;
-  font-size: 30px;
-  text-align: left;
-}
-.homepage-hero .homepage-hero-content p {
-  font-size: 16px;
-  line-height: 160%;
-  margin-bottom: 20px;
-}
-.homepage-hero .homepage-hero-content .main-btn {
-  margin: 0 0 20px;
-}
-@media (min-width: 576px) {
-  .homepage-hero {
-    padding-top: 70px;
-    height: auto;
-  }
-  .homepage-hero .homepage-hero-image {
-    height: 120%;
-    transform: rotate(90deg);
-  }
-  .homepage-hero .homepage-hero-content {
-    padding-top: 70px;
-    padding-bottom: 40px;
-    align-items: center;
-  }
-  .homepage-hero .homepage-hero-content span {
-    align-self: center;
-  }
-  .homepage-hero .homepage-hero-content h1 {
-    width: 85%;
-    text-align: center;
-  }
-  .homepage-hero .homepage-hero-content p {
-    text-align: center;
-    width: 80%;
-    margin-top: 0;
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 992px) {
-  .homepage-hero {
-    height: 100vh;
-    padding: 0 ;
-  }
-  .homepage-hero .homepage-hero-image {
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: 0px;
-    height: 100%;
-    width: auto;
-    transform: none;
-    filter: blur(0);
-  }
-  .homepage-hero .homepage-hero-content {
-    padding: 0;
-    align-items: flex-start;
-  }
-  .homepage-hero .homepage-hero-content span {
-    align-self: flex-start;
-  }
-  .homepage-hero .homepage-hero-content h1,
-  .homepage-hero .homepage-hero-content p {
-    text-align: left;
-  }
-}
-@media (min-width: 1200px) {
-  .homepage-hero {
-    padding: 0 85px;
-  }
-  .homepage-hero .homepage-hero-image {
-    display: block;
-    right: 85px;
-  }
-  .homepage-hero .homepage-hero-content {
-    width: 55%;
-  }
-  .homepage-hero .homepage-hero-content span {
-    font-size: 48px;
-  }
-  .homepage-hero .homepage-hero-content h1 {
-    font-size: 70px;
-  }
-  .homepage-hero .homepage-hero-content p {
-    font-size: 20px;
-    width: 580px;
-    align-self: flex-end;
-  }
-  .homepage-hero .homepage-hero-content .buttons {
-    align-self: flex-end;
-    width: 580px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .homepage-hero .homepage-hero-content .buttons .tetriary-btn {
-    display: none;
   }
 }
