@@ -177,7 +177,6 @@ h6 {
 }
 .services {
   padding-top: 150px;
-  background-color: #ecf3f2;
 }
 .services h2 {
   margin-bottom: 30px;
@@ -196,6 +195,9 @@ h6 {
 .services .services-wrapper .service img {
   margin-bottom: 30px;
 }
+.services .services-wrapper .service svg {
+  margin-bottom: 30px;
+}
 .services .services-wrapper .service h3 {
   font-size: 30px;
   font-family: 'montserrat_medium';
@@ -205,4 +207,248 @@ h6 {
 .services .services-wrapper .service p {
   width: 70%;
   font-size: 18px;
+}
+.services .services-wrapper .service-cta .sub-header-wrapper {
+  width: 300px;
+}
+.services .services-wrapper .service-cta .sub-header-wrapper span {
+  font-size: 20px;
+}
+.services .services-wrapper .service-cta h3 {
+  font-size: 30px ;
+}
+.portfolio {
+  margin-top: 150px;
+}
+.portfolio h2 {
+  margin-bottom: 30px;
+  font-size: 70px;
+  font-family: 'montserrat_regular';
+}
+.portfolio .portfolio-slider {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio .portfolio-slider-item {
+  width: 32%;
+}
+.portfolio .portfolio-slider-item img {
+  width: 100%;
+  height: auto;
+}
+.portfolio .portfolio-slider-item .project-details {
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.portfolio .portfolio-slider-item .project-details span {
+  margin-right: 20px;
+  font-size: 30px;
+  font-family: 'montserrat_regular';
+}
+.portfolio .portfolio-slider-item .project-details .line {
+  width: 75px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: #5ec8b5;
+}
+.portfolio .portfolio-slider-item .project-details .project-link {
+  font-size: 30px;
+  font-family: 'montserrat_regular';
+  text-decoration: none;
+  color: black;
+}
+.principles {
+  margin-top: 150px;
+}
+.principles h2 {
+  margin-bottom: 80px;
+  font-size: 70px;
+  font-family: 'montserrat_regular';
+}
+.principles .principles-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.principles .principles-wrapper-item {
+  width: 50%;
+  margin-bottom: 50px;
+}
+.principles .principles-wrapper-item h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'montserrat_regular';
+}
+.principles .principles-wrapper-item h3 b {
+  font-weight: inherit;
+  font-family: 'montserrat_regular';
+  color: #5ec8b5;
+}
+.principles .principles-wrapper-item p {
+  max-width: 400px;
+  font-size: 20px;
+}
+.contact-us {
+  margin-top: 150px;
+}
+.contact-us h2 {
+  margin-bottom: 30px;
+  font-size: 70px;
+  font-family: 'montserrat_regular';
+}
+.contact-us p {
+  width: 700px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.contact-us .main-form {
+  width: 550px;
+  height: auto;
+  max-width: 550px;
+  padding: 85px 25px;
+  border: 1px solid #11967f;
+}
+.contact-us .main-form .main-btn {
+  margin: 0 auto;
+}
+.contact-us .main-form-input,
+.contact-us .main-form-textarea {
+  width: 100%;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  border: 1px solid #11967f;
+  font-size: 18px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+.testemonials {
+  margin-top: 150px;
+}
+.testemonials h2 {
+  margin-bottom: 30px;
+  font-size: 70px;
+  font-family: 'montserrat_regular';
+}
+.testemonials .testemonials-slider {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.testemonials .testemonials-slider .testemonial {
+  width: 32%;
+  padding: 30px 20px 20px;
+}
+.testemonials .testemonials-slider .testemonial svg {
+  margin-bottom: 20px;
+}
+.testemonials .testemonials-slider .testemonial p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.testemonials .testemonials-slider .testemonial .testemonial-wrapper {
+  display: flex;
+}
+.testemonials .testemonials-slider .testemonial .testemonial-wrapper .line {
+  width: 50px;
+  height: 2px;
+  margin-top: 12px;
+  margin-right: 20px;
+  background-color: #11967f;
+}
+.testemonials .testemonials-slider .testemonial .testemonial-wrapper .client-details h3 {
+  font-size: 20px;
+  font-family: 'montserrat_regular';
+  font-style: italic;
+}
+.testemonials .testemonials-slider .testemonial .testemonial-wrapper .client-details p {
+  width: 200px;
+  font-size: 16px;
+}
+.latest-posts {
+  margin-top: 150px;
+}
+.latest-posts h2 {
+  margin-bottom: 80px;
+  font-size: 70px;
+  font-family: 'montserrat_regular';
+}
+.latest-posts .latest-posts-wrapper {
+  border-top: 1px solid #11967f;
+}
+.latest-posts .latest-posts-wrapper .post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 45px 0;
+  border-bottom: 1px solid #11967f;
+}
+.latest-posts .latest-posts-wrapper .post .post-head {
+  width: 45%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.latest-posts .latest-posts-wrapper .post .post-head h1 {
+  font-size: 30px;
+  font-family: 'montserrat_medium';
+}
+.latest-posts .latest-posts-wrapper .post .post-excerpt {
+  width: 50%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.latest-posts .latest-posts-wrapper .post .post-excerpt p {
+  font-size: 20px;
+}
+.latest-posts .latest-posts-wrapper .post .post-excerpt span {
+  font-family: 'montserrat_medium';
+  font-size: 20px;
+}
+.message-us {
+  margin-top: 100px;
+  background-color: #5ec8b5;
+  transition: 1s;
+}
+.message-us a {
+  text-decoration: none;
+  color: white;
+  font-family: 'montserrat_medium';
+}
+.message-us a .container-fluid {
+  padding: 80px 0;
+}
+.message-us a .container-fluid .message {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  min-width: 100px;
+  transform: translateX(0);
+  transition: 1s;
+}
+.message-us a .container-fluid .message h2 {
+  font-size: 120px;
+}
+.message-us a .container-fluid .message svg {
+  fill: white;
+}
+.message-us:hover {
+  background-color: #11967f;
+  transition: 1s;
+}
+.message-us:hover a {
+  color: white;
+}
+.message-us:hover a .container-fluid .message {
+  transform: translateX(calc((25vw - 42px)));
+  transition: 1s;
 }
