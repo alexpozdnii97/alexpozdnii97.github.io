@@ -452,3 +452,18 @@ h6 {
   transform: translateX(calc((25vw - 42px)));
   transition: 1s;
 }
+.main-footer {
+  margin-left: 85px;
+  margin-right: 85px;
+}
+.main-footer .footer-row-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer .footer-row-1 img {
+  height: 40px;
+  width: auto;
+}
+.main-footer .footer-row-1 .main-btn {
+  margin-left: auto;
+}
