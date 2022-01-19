@@ -138,7 +138,15 @@ body {
 .main-link:hover {
   color: #0e2924;
 }
-@media (min-width: 1200px) {
+section {
+  padding: 0 10px;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 991px) {
   section {
     padding-right: 85px;
     padding-left: 85px;
