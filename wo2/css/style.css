@@ -210,13 +210,13 @@ section h2 {
     display: none;
   }
 }
-.welcome {
-  margin-top: 150px;
-  padding-bottom: 50px;
+.welcome h2 {
+  margin-bottom: 10px;
 }
 .welcome p {
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.7;
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
@@ -587,21 +587,24 @@ section h2 {
   font-family: 'montserrat_medium';
 }
 .message-us a .container-fluid {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 .message-us a .container-fluid .message {
   display: flex;
   align-items: center;
-  width: 1200px;
+  justify-content: center;
+  width: 100%;
   min-width: 100px;
   transform: translateX(0);
   transition: 1s;
 }
 .message-us a .container-fluid .message h2 {
-  font-size: 120px;
+  font-size: 35px;
   margin: 0;
 }
 .message-us a .container-fluid .message svg {
+  width: 50px;
+  height: 50px;
   fill: white;
 }
 .message-us:hover {
@@ -614,6 +617,74 @@ section h2 {
 .message-us:hover a .container-fluid .message {
   transform: translateX(calc((25vw - 42px)));
   transition: 1s;
+}
+@media (min-width: 576px) {
+  .message-us a .container-fluid {
+    padding: 40px 0;
+  }
+  .message-us a .container-fluid .message h2 {
+    font-size: 50px;
+  }
+  .message-us a .container-fluid .message svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .message-us a .container-fluid {
+    padding: 50px 0;
+  }
+  .message-us a .container-fluid .message h2 {
+    font-size: 60px;
+  }
+  .message-us a .container-fluid .message svg {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (min-width: 992px) {
+  .message-us a .container-fluid {
+    padding: 50px 0;
+  }
+  .message-us a .container-fluid .message h2 {
+    font-size: 80px;
+  }
+  .message-us a .container-fluid .message svg {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .message-us a .container-fluid {
+    padding: 50px 0;
+  }
+  .message-us a .container-fluid .message {
+    width: 1000px;
+    justify-content: start;
+  }
+  .message-us a .container-fluid .message h2 {
+    font-size: 60px;
+  }
+  .message-us a .container-fluid .message svg {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (min-width: 1400px) {
+  .message-us a .container-fluid {
+    padding: 60px 0;
+  }
+  .message-us a .container-fluid .message {
+    width: 1000px;
+    justify-content: start;
+  }
+  .message-us a .container-fluid .message h2 {
+    font-size: 100px;
+  }
+  .message-us a .container-fluid .message svg {
+    width: 140px;
+    height: 140px;
+  }
 }
 .main-footer {
   margin: 100px 85px 50px;
