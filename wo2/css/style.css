@@ -13,7 +13,7 @@ h6 {
 .sub-header-wrapper {
   display: flex;
   width: 175px;
-  height: 72px;
+  height: 36px;
   justify-content: start;
   align-items: center;
 }
@@ -32,7 +32,7 @@ section {
   margin-bottom: 25px;
 }
 section h2 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 30px;
   font-family: 'montserrat_medium';
 }
@@ -497,8 +497,12 @@ section h2 {
     width: 75%;
   }
 }
+.latest-posts .main-link {
+  font-size: 16px;
+}
 .latest-posts .latest-posts-wrapper {
   max-width: 1000px;
+  margin-top: 50px;
 }
 .latest-posts .latest-posts-wrapper .post {
   display: flex;
