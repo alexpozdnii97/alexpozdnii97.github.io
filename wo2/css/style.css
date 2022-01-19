@@ -32,7 +32,7 @@ section {
   margin-bottom: 25px;
 }
 section h2 {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 30px;
   font-family: 'montserrat_medium';
 }
@@ -308,7 +308,11 @@ section h2 {
     width: 75%;
   }
 }
+.portfolio h2 {
+  margin-bottom: 10px;
+}
 .portfolio .portfolio-slider {
+  margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -464,6 +468,7 @@ section h2 {
   padding: 0px 15px 0px 15px;
 }
 .testemonials .testemonials-slider .testemonial svg {
+  margin-top: 20px;
   margin-bottom: 20px;
   width: 67px;
   height: 54px;
@@ -496,6 +501,9 @@ section h2 {
   .testemonials .testemonials-slider .testemonial p {
     width: 75%;
   }
+}
+.latest-posts h2 {
+  margin-bottom: 10px;
 }
 .latest-posts .main-link {
   font-size: 16px;
@@ -544,6 +552,31 @@ section h2 {
   font-family: 'montserrat_medium';
   font-size: 16px;
 }
+@media (min-width: 576px) {
+  .latest-posts .latest-posts-wrapper .post .post-head {
+    width: 45%;
+  }
+  .latest-posts .latest-posts-wrapper .post .post-excerpt {
+    width: 50%;
+  }
+  .latest-posts .latest-posts-wrapper .post .post-excerpt p {
+    margin-top: 0;
+  }
+  .latest-posts .latest-posts-wrapper .post .post-excerpt span {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1400px) {
+  .latest-posts .latest-posts-wrapper .post .post-head h1 {
+    font-size: 30px;
+  }
+  .latest-posts .latest-posts-wrapper .post .post-excerpt p {
+    font-size: 18px;
+  }
+  .latest-posts .latest-posts-wrapper .post .post-excerpt span {
+    font-size: 18px;
+  }
+}
 .message-us {
   background-color: #5ec8b5;
   transition: 1s;
@@ -566,6 +599,7 @@ section h2 {
 }
 .message-us a .container-fluid .message h2 {
   font-size: 120px;
+  margin: 0;
 }
 .message-us a .container-fluid .message svg {
   fill: white;
