@@ -73,16 +73,23 @@
             $('.header_section').removeClass("sticky")
         }
     });
-    //  var prevScrollpos = window.pageYOffset;
-    //  window.onscroll = function() {
-    //    var currentScrollPos = window.pageYOffset;
-    //    if (prevScrollpos > currentScrollPos) {
-    //      document.getElementById("myHeader").style.top = "0";
-    //    } else {
-    //      document.getElementById("myHeader").style.top = "-100px";
-    //    }
-    //    prevScrollpos = currentScrollPos;
-    //  }
+
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 300) {
+            
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("myHeader").style.top = "0";
+              } else {
+                document.getElementById("myHeader").style.top = "-100px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+        } 
+    });
+    
     /*------------------------------------------
         = pointer cursor
     -------------------------------------------*/
