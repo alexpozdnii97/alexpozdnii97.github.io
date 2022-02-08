@@ -73,7 +73,6 @@
             $('.header_section').removeClass("sticky")
         }
     });
-
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 300) {
             
