@@ -209,6 +209,22 @@
 		}
 	}
 }
+.faq_accordion{
+	.accordion-item{
+		.accordion-header{
+			.accordion-button{
+				.blog_simple_layout{
+					padding-bottom: 30px;
+					padding-top: 35px;
+					.item_title {
+						margin-bottom: 0;
+						line-height: 1;
+					}
+				}
+			}
+		}
+	}
+}
 
 
 .service-list{

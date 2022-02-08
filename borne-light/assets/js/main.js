@@ -89,12 +89,12 @@
     /*------------------------------------------
         = pointer cursor
     -------------------------------------------*/
-    if ($('.pointer-wrap').length) {
-        const cursor = cursorDot({})
-        cursor.over("a, button", {
-            scale: '1.4'
-        });
-    }
+    // if ($('.pointer-wrap').length) {
+    //     const cursor = cursorDot({})
+    //     cursor.over("a, button", {
+    //         scale: '1.4'
+    //     });
+    // }
 
 
     

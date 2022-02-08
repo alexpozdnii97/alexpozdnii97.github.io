@@ -1525,7 +1525,7 @@ section {
     .header_section.sticky .header_container {
       padding: 38px 100px; }
   .header_section + main {
-    margin-top: 111px; }
+    margin-top: 100px; }
 
 /* header section - end */
 /* header style 2 - start */
@@ -4677,6 +4677,13 @@ section {
   .large-accordion .accordion-item .accordion-body .blog_simple_layout {
     border-top: 1px solid grey;
     padding-top: 50px; }
+
+.faq_accordion .accordion-item .accordion-header .accordion-button .blog_simple_layout {
+  padding-bottom: 30px;
+  padding-top: 35px; }
+  .faq_accordion .accordion-item .accordion-header .accordion-button .blog_simple_layout .item_title {
+    margin-bottom: 0;
+    line-height: 1; }
 
 .service-list {
   list-style: none;
