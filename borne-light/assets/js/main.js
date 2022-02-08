@@ -67,16 +67,18 @@
         = sticky header
     -------------------------------------------*/
     $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 120) {
-            $('.header_section').addClass("sticky")
+        if ($(this).scrollTop() > 60) {
+            $('.header_section').addClass("sticky");
         } else {
             $('.header_section').removeClass("sticky")
         }
     });
+
     var prevScrollpos = window.pageYOffset;
+
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
+      if ( prevScrollpos > currentScrollPos) {
         document.getElementById("myHeader").style.top = "0";
       } else {
         document.getElementById("myHeader").style.top = "-100px";
@@ -93,7 +95,6 @@
             scale: '1.4'
         });
     }
-
 
 
     
