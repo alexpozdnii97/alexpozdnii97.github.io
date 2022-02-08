@@ -30,14 +30,45 @@
 }
 .main_contact_form {
 	.form_item {
+		display: block;
+		width: 500px;
+		max-width: 500px;
+		
+		font-size: 25px;
+		line-height: 2;
+		border: 1px solid black;
 		input,textarea {
-			border: none;
-			padding: 0px;
+			padding: 6px 24px;
 			height: auto;
-			border-bottom: 1px solid #545454;
+			border:none;
+			font-size: 20px;
 		}
-		input {
-			padding-bottom: 15px;
+		
+	}
+	.form_textarea{
+		border:none;
+		outline: none;
+	}
+	.checkbox_wrap {
+		margin-bottom: 15px;
+		width: 100%;
+		input[type=checkbox] {
+			/* Double-sized Checkboxes */
+			-ms-transform: scale(1);
+			/* IE */
+			-moz-transform: scale(1.2);
+			/* FF */
+			-webkit-transform: scale(1.3);
+			/* Safari and Chrome */
+			-o-transform: scale(1.4);
+			/* Opera */
+			transform: scale(1.5);
+			padding: 10px;
+			margin-right: 10px;
+		}
+		label{
+			font-size: 25px;
+			line-height: 1;
 		}
 	}
 }
