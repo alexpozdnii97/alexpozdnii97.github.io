@@ -14,16 +14,20 @@
     const close_btn = document.querySelector('.close-btn');
     const popup = document.querySelector('.popup');
     const main_popup = document.querySelector('.main-popup');
+    const body_wrap = document.querySelector('.body_entity');
     
     open_btn.addEventListener('click', () => {
+        
     	popup.style.display = 'flex';
     	main_popup.style.cssText = 'animation:slide-in .5s ease; animation-fill-mode: forwards;';
+        body_wrap.style.cssText ="height: 100vh; overflow-y:hidden;"
     });
     
     close_btn.addEventListener('click', () => {
     	main_popup.style.cssText = 'animation:slide-out .5s ease; animation-fill-mode: forwards;';
     	setTimeout(() => {
     		popup.style.display = 'none';
+            body_wrap.style.cssText ="height: auto; overflow-y:default;"
     	}, 500);
     });
     window.addEventListener('click', (e) => {
@@ -31,6 +35,7 @@
     		main_popup.style.cssText = 'animation:slide-out .5s ease; animation-fill-mode: forwards;';
     		setTimeout(() => {
     			popup.style.display = 'none';
+                body_wrap.style.cssText ="height: auto; overflow-y:default;"
     		}, 500);
     	}
     });

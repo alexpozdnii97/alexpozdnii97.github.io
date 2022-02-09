@@ -145,7 +145,13 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5EC8B5;
+  // background: #5EC8B5;
+  background:black;
+}
+
+.modal-open {
+  overflow: hidden;
+  position: fixed;
 }
 
 //Custom buttons
@@ -271,7 +277,7 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid $main-green;
+      border: 1px solid black;
 
       svg {
         rect {
@@ -390,7 +396,7 @@ section {
 
     .close-btn {
       display: inline-block ;
-      border: 1px solid $main-green;
+      border: 1px solid black;
       width: 40px;
       height: 40px;
       display: flex;
@@ -420,7 +426,7 @@ section {
       justify-content: center;
 
       span {
-        width: 40%;
+        width: 30%;
         margin-bottom: 36px;
         padding-right: 20px;
         color: black;
@@ -437,7 +443,7 @@ section {
         margin-bottom: 36px;
         list-style: none;
         // border-left: 1px solid $main-green;
-        border-left: 1px solid black;
+        // border-left: 1px solid black;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -570,7 +576,18 @@ section {
           ul {
             li {
               a {
-                font-size: 22px;
+                line-height: 1;
+                color: #000;
+                font-size: 90px;
+                font-weight: 500;
+                padding: 20px 20px;
+                margin-bottom: -30px;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #000;
+                -webkit-text-fill-color: #000;
+                &:hover{
+                  -webkit-text-fill-color: transparent;
+                }
               }
             }
           }
