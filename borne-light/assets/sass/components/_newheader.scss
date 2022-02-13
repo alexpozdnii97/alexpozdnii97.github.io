@@ -380,6 +380,7 @@ section {
     right: 0;
     height: 100vh;
     width: 100%;
+    margin-bottom: 40px;
     overflow-y: scroll;
     background: white;
     line-height: 1rem;
@@ -389,6 +390,10 @@ section {
     ::-webkit-scrollbar-thumb {
       // background: #5EC8B5;
       background: transparent;
+    }
+    ::-webkit-scrollbar {
+      width: 0px;
+      direction: ltr;
     }
   }
 
