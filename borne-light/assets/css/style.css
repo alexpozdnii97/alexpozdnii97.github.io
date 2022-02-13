@@ -1389,7 +1389,7 @@ section {
                 justify-content: space-between; }
         .popup .popup-content .menu-wrapper ul li {
           margin-bottom: 10px;
-          margin-top: 10px; }
+          margin-top: 5px; }
           .popup .popup-content .menu-wrapper ul li a {
             text-decoration: none;
             color: black;
