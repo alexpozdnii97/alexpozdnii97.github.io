@@ -401,6 +401,7 @@ section {
     padding: 10px 15px;
     display: flex;
     justify-content: end;
+    -webkit-justify-content: end;
     text-align: right;
 
     .close-btn {
@@ -463,7 +464,7 @@ section {
           a {
             text-decoration: none;
             color: black;
-            font-size: 20px;
+            font-size: 25px;
             line-height: 1;
             // @include med();
           }

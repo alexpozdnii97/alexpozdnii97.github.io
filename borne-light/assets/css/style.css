@@ -1325,6 +1325,7 @@ section {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    -webkit-justify-content: end;
     text-align: right; }
     .popup .popup-header .close-btn {
       display: inline-block;
@@ -1393,7 +1394,7 @@ section {
           .popup .popup-content .menu-wrapper ul li a {
             text-decoration: none;
             color: black;
-            font-size: 20px;
+            font-size: 25px;
             line-height: 1; }
       .popup .popup-content .menu-wrapper .social-nav {
         display: -webkit-box;
