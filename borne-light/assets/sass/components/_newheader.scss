@@ -439,11 +439,11 @@ section {
       }
 
       ul {
-        width: 50%;
+        width: 60%;
         margin-bottom: 36px;
         list-style: none;
         // border-left: 1px solid $main-green;
-        // border-left: 1px solid black;
+        border-left: 1px solid black;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -454,7 +454,8 @@ section {
           a {
             text-decoration: none;
             color: black;
-            font-size: 16px;
+            font-size: 30px;
+            line-height: 1;
             // @include med();
           }
         }

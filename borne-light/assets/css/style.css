@@ -1367,9 +1367,10 @@ section {
         font-family: "Calibre",sans-serif;
         font-weight: 300; }
       .popup .popup-content .menu-wrapper ul {
-        width: 50%;
+        width: 60%;
         margin-bottom: 36px;
         list-style: none;
+        border-left: 1px solid black;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1385,7 +1386,8 @@ section {
           .popup .popup-content .menu-wrapper ul li a {
             text-decoration: none;
             color: black;
-            font-size: 16px; }
+            font-size: 30px;
+            line-height: 1; }
       .popup .popup-content .menu-wrapper .social-nav {
         display: -webkit-box;
         display: -ms-flexbox;
