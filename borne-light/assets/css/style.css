@@ -1319,7 +1319,8 @@ section {
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end; }
+            justify-content: end;
+    text-align: right; }
     .popup .popup-header .close-btn {
       display: inline-block;
       border: 1px solid black;
