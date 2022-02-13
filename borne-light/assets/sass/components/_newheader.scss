@@ -385,6 +385,8 @@ section {
     line-height: 1rem;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
     transform: translateX(-100%);
     ::-webkit-scrollbar-thumb {
       // background: #5EC8B5;
@@ -402,10 +404,11 @@ section {
     display: flex;
     justify-content: end;
     -webkit-justify-content: end;
+    justify-content: flex-end;
     text-align: right;
 
     .close-btn {
-      display: inline-block ;
+      
       border: 1px solid black;
       width: 40px;
       height: 40px;
@@ -428,13 +431,13 @@ section {
 
   .popup-content {
     width: 100%;
-
+    height: auto;
     .menu-wrapper {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-
+      
       span {
         width: 35%;
         margin-bottom: 36px;
@@ -574,7 +577,7 @@ section {
 
     .main-popup {
       width: 50%;
-
+      flex-direction: row;
       .popup-header {
         padding-top: 25px
       }
@@ -590,7 +593,7 @@ section {
               a {
                 line-height: 1;
                 color: #000;
-                font-size: 90px;
+                font-size: 40px;
                 font-weight: 500;
                 padding: 20px 20px;
                 margin-bottom: -30px;
