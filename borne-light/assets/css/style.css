@@ -1211,6 +1211,8 @@ section {
     margin-left: 30px;
     font-size: 16px;
     color: black; }
+    .main-header .header-desc:hover {
+      color: black; }
   .main-header .header-contacts {
     display: none;
     width: 230px;
@@ -1220,6 +1222,8 @@ section {
     line-height: 25px;
     text-transform: uppercase;
     color: black; }
+    .main-header .header-contacts:hover {
+      color: black; }
   .main-header .menu-icon {
     width: 85px;
     cursor: pointer; }
@@ -1250,6 +1254,8 @@ section {
     font-size: 24px;
     font-family: 'montserrat_regular';
     margin-bottom: 30px; }
+  .header-logo:hover {
+    color: black; }
 
 @media (min-width: 576px) {
   .main-header .header-contacts {
@@ -1485,13 +1491,13 @@ section {
       color: #000;
       font-size: 40px;
       font-weight: 500;
-      padding: 20px 20px;
-      margin-bottom: -30px;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: #000;
       -webkit-text-fill-color: #000; }
       .popup .main-popup .popup-content .menu-wrapper ul li a:hover {
-        -webkit-text-fill-color: transparent; } }
+        -webkit-text-fill-color: transparent; }
+    .popup .main-popup .popup-content .menu-wrapper .social-nav .li a {
+      font-size: 30px; } }
 .social-links {
   display: none; }
 
@@ -4814,9 +4820,12 @@ section {
     font-size: 34px;
     font-weight: 400; }
   .development-steps .development-steps-item {
-    width: 45%;
+    width: 48%;
     margin-top: 35px; }
 
+@media screen and (max-width: 575px) {
+  .development-steps .development-steps-item {
+    width: 100%; } }
 @media screen and (max-width: 991px) {
   .services-accordion .accordion-item .accordion-header .accordion-button .blog_simple_layout {
     padding-top: 0; }

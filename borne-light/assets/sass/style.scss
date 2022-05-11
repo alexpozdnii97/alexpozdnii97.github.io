@@ -288,6 +288,8 @@
 .blog_section_content{
 	margin-top: 50px;
 }
+
+
 .development-steps{
 	display: flex;
 	flex-wrap: wrap;
@@ -298,9 +300,19 @@
 		font-weight: 400;
 	}
 	.development-steps-item{
-		width: 45%;
+		width: 48%;
 		margin-top: 35px;
 	}
+
+
+}
+@media screen and (max-width: 575px){
+	.development-steps{
+		.development-steps-item{
+			width: 100%;
+		}
+	}
+
 }
 
 @media screen and (max-width: 991px){
