@@ -2,7 +2,8 @@
 ================================================== */
 .slider_section {
 	position: relative;
-	padding-left: 300px;
+	// padding-left: 300px;
+	padding-left: 100px;
 	padding-right: 100px;
 
 	.social_primary {
@@ -25,10 +26,12 @@
 
 .main_slider {
 	.slider_item {
-		min-height: 860px;
+		min-height: 840px;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: left 125px center;
+		// background-position: left 125px center;
+		background-position: left 0px center ;
+		padding-left: 125px;
 	}
 	.slider_content {
 		max-width: 560px;
@@ -55,7 +58,8 @@
 
 	.slick-dots {
 		top: 50%;
-		left: -199px;
+		// left: -199px;
+		left: 50px;
 		z-index: 1;
 		width: auto;
 		height: 396px;
