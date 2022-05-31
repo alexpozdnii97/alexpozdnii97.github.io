@@ -5090,6 +5090,14 @@ section {
 .participation_content {
   width: 50%; }
 
+@media screen and (max-width: 576px) {
+  .participation_number {
+    width: 100%; }
+    .participation_number h3, .participation_number h2, .participation_number span {
+      font-size: 30px; }
+
+  .participation_content {
+    width: 100%; } }
 .case_hero_section {
   height: 100vh;
   display: -webkit-box;

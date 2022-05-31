@@ -444,9 +444,7 @@
 		}
 	}
 }
-.extra_section{
 
-}
 
 .extra_seo{
 	margin-top: 50px;
@@ -583,6 +581,9 @@
 	
 }
 
+
+
+
 .participation{
 	border-top:1px solid black;
 	border-bottom:1px solid black;
@@ -607,6 +608,22 @@
 .participation_content{
 	width: 50%;
 }
+
+@media screen and (max-width: 576px){
+	.participation_number{
+		width: 100%;
+		h3,h2,span{
+			font-size: 30px;
+		}
+	}
+	.participation_content{
+		width: 100%;
+	}
+}
+
+
+
+
 
 
 .case_hero_section{
