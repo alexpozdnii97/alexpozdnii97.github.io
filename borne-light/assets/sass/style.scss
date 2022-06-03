@@ -286,9 +286,8 @@
 		color: #5EC8B5;
 	}
 }
-.blog_section_content{
-	margin-top: 50px;
-}
+
+
 
 
 .development-steps{
@@ -490,6 +489,12 @@
 .lime_bg{
 	background-color:#afed10;
 }
+.lime{
+	color: #afed10;
+	a,h1,h2{
+		color: #afed10;
+	}
+}
 .purple_bg{
 	background-color:#5F258C;
 }
@@ -531,7 +536,7 @@
 }
 
 .black-bg{
-	margin-top: 100px;
+	// margin-top: 100px;
 	background-color:black;
 	p,a,li,h1,h2,h3,h4{
 		color: white!important;
@@ -631,10 +636,46 @@
 	display: flex;
 	align-items: center;
 	.section_title{
-		
 		margin-bottom: 200px;
 	}
 }
+
+@media screen and (max-width: 1200px){
+	.case_hero_section{
+		height: auto;
+		.section_title{
+			margin-bottom: 100px;
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	.case_hero_section{
+		.section_title{
+			margin-bottom: 100px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px){
+	.case_gallery_section{
+		padding: 0;
+	}
+	.case_hero_section{
+		.case-image{
+			margin-bottom: 50px;
+		}
+		.section_title{
+			margin-bottom: 50px;
+		}
+	}
+}
+
+
+
+
+
+
+
 .sb_banner{
 	padding: 30px 15px;
 	h3{
@@ -687,6 +728,16 @@
 }
 .breadcrumb_section{
 	.tagandshare_links{
-		margin-top: px;
+		margin-top: 0px;
 	}
+}
+
+@media screen and (max-width: 576px){
+	.blog_section{
+		padding-top: 30px;
+	}
+}
+
+.blog_section_content{
+	margin-top: 50px;
 }

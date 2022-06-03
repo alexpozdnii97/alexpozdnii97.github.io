@@ -446,6 +446,9 @@ button {
       -webkit-transform: translate(5px, 3px);
               transform: translate(5px, 3px); }
 
+.btn_text_white svg path {
+  fill: white; }
+
 .btn-small {
   font-size: 14px; }
 
@@ -4834,9 +4837,6 @@ section {
   .cta_section a:hover {
     color: #5EC8B5; }
 
-.blog_section_content {
-  margin-top: 50px; }
-
 .development-steps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4979,6 +4979,11 @@ section {
 .lime_bg {
   background-color: #afed10; }
 
+.lime {
+  color: #afed10; }
+  .lime a, .lime h1, .lime h2 {
+    color: #afed10; }
+
 .purple_bg {
   background-color: #5F258C; }
 
@@ -5013,7 +5018,6 @@ section {
     background-color: white; }
 
 .black-bg {
-  margin-top: 100px;
   background-color: black; }
   .black-bg p, .black-bg a, .black-bg li, .black-bg h1, .black-bg h2, .black-bg h3, .black-bg h4 {
     color: white !important; }
@@ -5109,6 +5113,22 @@ section {
   .case_hero_section .section_title {
     margin-bottom: 200px; }
 
+@media screen and (max-width: 1200px) {
+  .case_hero_section {
+    height: auto; }
+    .case_hero_section .section_title {
+      margin-bottom: 100px; } }
+@media screen and (max-width: 768px) {
+  .case_hero_section .section_title {
+    margin-bottom: 100px; } }
+@media screen and (max-width: 576px) {
+  .case_gallery_section {
+    padding: 0; }
+
+  .case_hero_section .case-image {
+    margin-bottom: 50px; }
+  .case_hero_section .section_title {
+    margin-bottom: 50px; } }
 .sb_banner {
   padding: 30px 15px; }
   .sb_banner h3 {
@@ -5149,4 +5169,10 @@ section {
     font-size: 24px; }
 
 .breadcrumb_section .tagandshare_links {
-  margin-top: px; }
+  margin-top: 0px; }
+
+@media screen and (max-width: 576px) {
+  .blog_section {
+    padding-top: 30px; } }
+.blog_section_content {
+  margin-top: 50px; }
