@@ -4770,7 +4770,7 @@ section {
         font-size: 18px; }
 
 .large-accordion .accordion-item .accordion-header .accordion-button .blog_simple_layout {
-  padding-bottom: 50px; }
+  padding-bottom: 35px; }
   .large-accordion .accordion-item .accordion-header .accordion-button .blog_simple_layout .item_title {
     margin-bottom: 0;
     font-size: 48px;
@@ -5171,8 +5171,19 @@ section {
 .breadcrumb_section .tagandshare_links {
   margin-top: 0px; }
 
+.breadcrumbs_blog {
+  min-height: auto; }
+
 @media screen and (max-width: 576px) {
   .blog_section {
     padding-top: 30px; } }
 .blog_section_content {
   margin-top: 50px; }
+
+.text_editor h2, .text_editor h3 {
+  margin-top: 40px; }
+.text_editor ul, .text_editor ol li {
+  font-weight: 500;
+  color: black; }
+.text_editor a {
+  color: black; }

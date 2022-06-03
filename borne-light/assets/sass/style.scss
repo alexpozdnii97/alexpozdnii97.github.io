@@ -189,7 +189,7 @@
 		.accordion-header {
 			.accordion-button {
 				.blog_simple_layout {
-					padding-bottom: 50px;
+					padding-bottom: 35px;
 					
 					.item_title{
 						margin-bottom: 0;
@@ -731,13 +731,28 @@
 		margin-top: 0px;
 	}
 }
-
+.breadcrumbs_blog{
+	min-height: auto;		
+}
 @media screen and (max-width: 576px){
 	.blog_section{
 		padding-top: 30px;
 	}
+	
 }
 
 .blog_section_content{
 	margin-top: 50px;
+}
+.text_editor{
+	h2,h3{
+		margin-top: 40px;
+	}
+	ul,ol li{
+		font-weight: 500;
+		color: black;
+	}
+	a{
+		color: black;
+	}
 }
