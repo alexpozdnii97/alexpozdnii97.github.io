@@ -4857,7 +4857,8 @@ section {
 
 @media screen and (max-width: 575px) {
   .development-steps .development-steps-item {
-    width: 100%; } }
+    width: 100%;
+    padding-right: 0; } }
 @media screen and (max-width: 991px) {
   .services-accordion .accordion-item .accordion-header .accordion-button .blog_simple_layout {
     padding-top: 0; }
