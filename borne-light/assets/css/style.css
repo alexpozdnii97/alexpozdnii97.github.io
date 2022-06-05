@@ -4791,6 +4791,9 @@ section {
 
   .services .more_btn {
     margin-bottom: 30px; } }
+.team_section .more_btn, .blog_section .more_btn {
+  margin-bottom: 20px; }
+
 .faq_accordion .accordion-item .accordion-header .accordion-button .blog_simple_layout {
   padding-bottom: 30px;
   padding-top: 35px; }
@@ -5224,9 +5227,6 @@ section {
 @media screen and (max-width: 576px) {
   .blog_section {
     padding-top: 30px; } }
-.blog_section_content {
-  margin-top: 50px; }
-
 .text_editor h2, .text_editor h3 {
   margin-top: 40px; }
 .text_editor ul, .text_editor ol li {

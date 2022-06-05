@@ -228,6 +228,11 @@
 		}
 	}
 }
+.team_section,.blog_section{
+	.more_btn{
+		margin-bottom: 20px;
+	}
+}
 
 .faq_accordion{
 	.accordion-item{
@@ -841,9 +846,7 @@
 	
 }
 
-.blog_section_content{
-	margin-top: 50px;
-}
+
 .text_editor{
 	h2,h3{
 		margin-top: 40px;
