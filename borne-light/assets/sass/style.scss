@@ -359,7 +359,8 @@
 
 .process{
 	margin-top: 50px;
-	margin-bottom: 50px;
+	
+	
 	.process_row{
 		width: 100%;
 		display: flex;
@@ -368,6 +369,9 @@
 		&:not(:first-child){
 			border-top:1px solid black;
 		}
+		&:last-child{
+		padding-bottom: 0;
+	}
 		span{
 			display: inline-block;
 			width: 100px;
@@ -386,6 +390,10 @@
 
 		width: 30%;
 		padding-right: 50px;
+		span{
+			font-weight: 500;
+			color: black;
+		}
 		p{
 			font-weight: 500;
 			font-size: 24px;
@@ -422,20 +430,26 @@
 			.process_stage{
 				display: none;
 			}
+			.process_works{
+
+				
+			}
 		}
 		.process_row{
 			padding: 25px 0;
 		}
 		.process_stage{
-			width: 100%;
+			width: 50%;
 			margin-bottom: 25px;
 			display: none;
+			
 		}
 		.process_results{
 			width: 50%;
 		}
 		.process_works{
 			width: 50%;
+			
 		}
 	}
 }
@@ -503,6 +517,28 @@
     }
 	}
 }
+@media screen and (max-width: 768px){
+	.extra_seo{
+		.extra_seo_banner{
+			height: auto;
+			margin-bottom: 30px;
+			.btn{
+				margin-top: 30px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 576px){
+	.extra_seo{
+		
+	}
+}
+
+
+
+
+
+
 .service-main{
 	padding-top: 200px;
 	padding-bottom: 50px;
@@ -586,6 +622,8 @@
 	padding-top: 40px;
 }
 
+
+
 .advantages{
 	display: flex;
 	flex-wrap: wrap;
@@ -607,7 +645,6 @@
 }
 .advantage_content{
 	width: 70%;
-
 }
 .adv_icon{
 	display: inline-block;
@@ -618,10 +655,27 @@
 .adv_header{
 	font-size: 36px;
 	font-weight: 500;
-	
 }
 
-
+@media screen and (max-width: 576px){
+	.advantages_step{
+		padding-right: 0;
+		align-items: start;
+	}
+	.advantage_number{
+		width: 100%;
+		margin-top: 0;
+		font-size: 80px;
+	}
+	.advantage_content{
+		width: 100%;
+		text-align: center;
+		h3,p{
+			text-align: start;
+			width: 100%;
+		}
+	}
+}
 
 
 .participation{
