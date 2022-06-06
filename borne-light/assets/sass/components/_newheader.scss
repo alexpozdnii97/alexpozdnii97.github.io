@@ -388,23 +388,23 @@ section {
     right: 0;
     height: 100vh;
     width: 100%;
-    // overflow-y: hidden;
+    overflow-y: scroll;
     background: white;
     line-height: 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     transform: translateX(-100%);
-    // ::-webkit-scrollbar-thumb {
-    //   background: transparent;
-    // }
-    // ::-webkit-scrollbar {
-    //   width: 0px;
-    //   direction: ltr;
-    // }
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .popup-header {
+    position: fixed;
+    top: 0;
     width: 100%;
     padding: 10px 15px;
     display: flex;
@@ -438,6 +438,7 @@ section {
   .popup-content {
     width: 100%;
     height: auto;
+    margin-top: 50px;
     .menu-wrapper {
       width: 100%;
       display: flex;
@@ -468,8 +469,8 @@ section {
         justify-content: space-between;
 
         li {
-          margin-bottom: 10px;
-          margin-top: 5px;
+          margin-bottom: 0px;
+          margin-top: 0px;
           a {
             text-decoration: none;
             color: black;
