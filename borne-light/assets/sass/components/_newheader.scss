@@ -388,22 +388,20 @@ section {
     right: 0;
     height: 100vh;
     width: 100%;
-    overflow-y: hidden;
+    // overflow-y: hidden;
     background: white;
     line-height: 1rem;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: flex-start;
     transform: translateX(-100%);
-    ::-webkit-scrollbar-thumb {
-      // background: #5EC8B5;
-      background: transparent;
-    }
-    ::-webkit-scrollbar {
-      width: 0px;
-      direction: ltr;
-    }
+    // ::-webkit-scrollbar-thumb {
+    //   background: transparent;
+    // }
+    // ::-webkit-scrollbar {
+    //   width: 0px;
+    //   direction: ltr;
+    // }
   }
 
   .popup-header {

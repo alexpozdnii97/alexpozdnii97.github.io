@@ -1317,7 +1317,6 @@ section {
     right: 0;
     height: 100vh;
     width: 100%;
-    overflow-y: hidden;
     background: white;
     line-height: 1rem;
     display: -webkit-box;
@@ -1325,20 +1324,11 @@ section {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%); }
-    .popup .main-popup ::-webkit-scrollbar-thumb {
-      background: transparent; }
-    .popup .main-popup ::-webkit-scrollbar {
-      width: 0px;
-      direction: ltr; }
   .popup .popup-header {
     width: 100%;
     padding: 10px 15px;
