@@ -186,8 +186,6 @@
 }
 
 
-
-
 .large-accordion{
 	.accordion-item{
 		.accordion-header {
@@ -625,6 +623,13 @@
 
 .category-navigation{
 	padding-top: 40px;
+	.black-link{
+		color: #404040;
+		&.active{
+			color: black;
+			font-family: 500;
+		}
+	}
 }
 
 
@@ -836,14 +841,19 @@
 		margin-top: 0px;
 	}
 }
+
 .breadcrumbs_blog{
 	min-height: auto;		
 }
+
+
+
+
+
 @media screen and (max-width: 576px){
-	.blog_section{
+	.blog_archive_section{
 		padding-top: 30px;
 	}
-	
 }
 
 

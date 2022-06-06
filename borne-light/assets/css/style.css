@@ -5055,6 +5055,11 @@ section {
 
 .category-navigation {
   padding-top: 40px; }
+  .category-navigation .black-link {
+    color: #404040; }
+    .category-navigation .black-link.active {
+      color: black;
+      font-family: 500; }
 
 .advantages {
   display: -webkit-box;
@@ -5225,7 +5230,7 @@ section {
   min-height: auto; }
 
 @media screen and (max-width: 576px) {
-  .blog_section {
+  .blog_archive_section {
     padding-top: 30px; } }
 .text_editor h2, .text_editor h3 {
   margin-top: 40px; }
