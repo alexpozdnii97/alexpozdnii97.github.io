@@ -4732,7 +4732,9 @@ section {
     text-align: left;
     background-color: transparent; }
     .main_slider .slider_content p {
-      padding: 0; } }
+      padding: 0; }
+    .main_slider .slider_content .btn {
+      width: 100%; } }
 /* media screen and (max-width: 380px) - end
 ================================================== */
 .services-accordion {
