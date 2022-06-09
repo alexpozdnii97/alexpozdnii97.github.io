@@ -716,7 +716,7 @@
 	}
 	.main_slider p {
 		padding: 25px 30px 20px;
-		background-color: rgba(0, 0, 0, 0.2);
+		
 	}
 
 	.about_title {
@@ -1395,6 +1395,40 @@
 	}
 	/* home 3 - end */
 
+
+	
+
+}
+
+
+@media screen and (max-width: 576px){
+	.main_slider{
+		
+		.slider_item{	
+		padding: 0;
+		margin: 0 20px;
+		text-align: left;
+		background-size: contain;
+		background-position:top 0px left 0px;
+		p{
+			padding: 0;
+			margin-bottom: 20px;
+		}
+		h3{
+			margin-top: 220px;
+		}
+		}
+		.slider_content{
+			padding-top:40px;
+			text-align: left;
+			background-color:transparent;
+		
+			p{
+				padding: 0;
+			}
+		}
+	}
+	
 }
 /* media screen and (max-width: 380px) - end
 ================================================== */

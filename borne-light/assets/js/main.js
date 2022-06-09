@@ -17,7 +17,6 @@
     const body_wrap = document.querySelector('.body_entity');
     
     open_btn.addEventListener('click', () => {
-        
     	popup.style.display = 'flex';
     	main_popup.style.cssText = 'animation:slide-in .5s ease; animation-fill-mode: forwards;';
         body_wrap.style.cssText ="height: 100vh; overflow-y:hidden;"
