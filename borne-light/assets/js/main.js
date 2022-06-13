@@ -168,7 +168,19 @@
         slidesToShow: 1,
         autoplaySpeed: 4000,
         prevArrow: ".main_left_arrow",
-        nextArrow: ".main_right_arrow"
+        nextArrow: ".main_right_arrow",
+        responsive: [
+
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              
+              dots: false,
+            }
+          }
+        ]
+        
     });
 
     $('.main_slider').on('init', function (e, slick) {

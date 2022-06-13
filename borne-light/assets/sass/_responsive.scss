@@ -1419,10 +1419,14 @@
 		}
 		}
 		.slider_content{
+			
 			padding-top:40px;
 			text-align: left;
 			background-color:transparent;
-		
+			.banner_title{
+				padding-right: 20%;
+				font-size: 60px;
+			}
 			p{
 				padding: 0;
 			}

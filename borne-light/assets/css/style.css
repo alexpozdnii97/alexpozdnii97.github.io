@@ -4728,6 +4728,9 @@ section {
     padding-top: 40px;
     text-align: left;
     background-color: transparent; }
+    .main_slider .slider_content .banner_title {
+      padding-right: 20%;
+      font-size: 60px; }
     .main_slider .slider_content p {
       padding: 0; }
     .main_slider .slider_content .btn {
