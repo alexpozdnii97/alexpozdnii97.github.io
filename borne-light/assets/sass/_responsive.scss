@@ -687,7 +687,7 @@
 	}
 	.main_slider .slider_item {
 		padding: 0px 60px;
-		background-position: right 60px center;
+		background-position: right -180px center;
 	}
 	.main_slider .slick-dots {
 		left: 0;
@@ -1427,7 +1427,7 @@
 		}
 		}
 		.slider_content{
-			
+			width: 100%;
 			padding-top:40px;
 			text-align: left;
 			background-color:transparent;

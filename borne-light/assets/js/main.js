@@ -170,7 +170,6 @@
         prevArrow: ".main_left_arrow",
         nextArrow: ".main_right_arrow",
         responsive: [
-
           {
             breakpoint: 480,
             settings: {
