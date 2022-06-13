@@ -1235,7 +1235,8 @@ section {
     .main-header .header-contacts:hover {
       color: black; }
   .main-header .menu-icon {
-    width: 85px;
+    width: auto;
+    margin-left: 10px;
     cursor: pointer; }
     .main-header .menu-icon .wrapper {
       width: 40px;
@@ -1273,13 +1274,15 @@ section {
     margin-left: auto;
     margin-right: 0; } }
 @media (min-width: 992px) {
-  .main-header .header-logo {
-    height: 50px; }
-  .main-header .header-desc {
-    display: block; }
-  .main-header .menu-icon .wrapper {
-    height: 50px;
-    width: 50px; } }
+  .main-header {
+    padding: 10px 60px; }
+    .main-header .header-logo {
+      height: 50px; }
+    .main-header .header-desc {
+      display: block; }
+    .main-header .menu-icon .wrapper {
+      height: 50px;
+      width: 50px; } }
 @media (min-width: 1200px) {
   .main-header {
     padding-left: 100px;
@@ -3525,7 +3528,7 @@ section {
   /* header - end */
   /* home 1 - start */
   .slider_section {
-    padding-left: 100px;
+    padding-left: 60px;
     padding-right: 60px; }
 
   .main_slider .slick-dots {
@@ -3655,6 +3658,9 @@ section {
 /* media screen and (max-width: 1199px) - start
 ================================================== */
 @media screen and (max-width: 1199px) {
+  .main_slider .slider_item {
+    padding-left: 60px; }
+
   /* global reset - start */
   .section_title .big_title {
     font-size: 60px;
@@ -3689,7 +3695,7 @@ section {
     padding: 35px 20px; }
 
   .header_section + main {
-    margin-top: 100px; }
+    margin-top: 80px; }
 
   .main_menu_list > li:not(:last-child) {
     margin-right: 40px; }
@@ -3786,7 +3792,9 @@ section {
     left: -95px; }
 
   .banner_section .banner_title {
-    margin-bottom: 45px; }
+    width: 500px;
+    margin-bottom: 45px;
+    font-size: 100px; }
 
   .portfolio_split_layout .item_title {
     font-size: 60px;
@@ -3807,7 +3815,7 @@ section {
     min-width: 50px;
     font-size: 18px; }
 
-  pointer {
+  .pointer {
     display: none; }
 
   /* global reset - end */

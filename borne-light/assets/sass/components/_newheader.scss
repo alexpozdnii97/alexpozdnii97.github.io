@@ -272,7 +272,8 @@ section {
   }
 
   .menu-icon {
-    width: 85px;
+    width: auto;
+    margin-left: 10px;
     cursor: pointer;
 
     .wrapper {
@@ -325,6 +326,7 @@ section {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .main-header {
+    padding: 10px 60px;
     .header-logo {
       height: 50px;
     }

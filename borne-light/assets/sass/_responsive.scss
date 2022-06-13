@@ -51,7 +51,7 @@
 
 	/* home 1 - start */
 	.slider_section {
-		padding-left: 100px;
+		padding-left: 60px;
 		padding-right: 60px;
 	}
 	.main_slider .slick-dots {
@@ -211,7 +211,11 @@
 /* media screen and (max-width: 1199px) - start
 ================================================== */
 @media screen and (max-width: 1199px) {
+	
+	.main_slider .slider_item{
+		padding-left: 60px;
 
+	}
 	/* global reset - start */
 	.section_title .big_title {
 		font-size: 60px;
@@ -251,7 +255,7 @@
 		padding: 35px 20px;
 	}
 	.header_section + main {
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 	.main_menu_list > li:not(:last-child) {
 		margin-right: 40px;
@@ -360,7 +364,9 @@
 		left: -95px;
 	}
 	.banner_section .banner_title {
+		width: 500px;
 		margin-bottom: 45px;
+		font-size: 100px;
 	}
 
 	.portfolio_split_layout .item_title {
@@ -387,7 +393,7 @@
 		font-size: 18px;
 	}
 
-	pointer {
+	.pointer {
 		display: none;
 	}
 	/* global reset - end */
@@ -406,6 +412,8 @@
 		font-size: 22px;
 	}
 	/* breadcrumb - end */
+
+	
 
 	/* blog - start */
 	.blog_standard_layout .item_title a {
