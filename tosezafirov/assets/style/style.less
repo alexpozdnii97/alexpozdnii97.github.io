@@ -1,0 +1,146 @@
+@color-blue: #00A3FF;
+@color-dark-blue:#005686;
+@color-black: #161616;
+@color-light-gray:#F9F9F9;
+@color-white: #FFFFFF;
+@color-gray: #505050;
+@color-dark-gray: #212121;
+
+@import "fonts.less";
+@import "buttons.less";
+@import "header.less";
+
+@import "homepage.less";
+@import "contact.less";
+@import "footer.less";
+//colors
+
+
+@media screen and (min-width: 1200px){
+ .container-small{
+    max-width: 1200px;
+ }
+
+}
+
+html, body {
+    overflow-x: hidden;
+}
+section{
+    overflow: hidden;
+}
+
+
+a,p,span, h1,h2,h3,h4,h5,h6{
+    color: @color-black;
+    font-family: 'archivo';
+    font-style: normal;
+}
+.page-header{
+    color: @color-black;
+    font-family: 'archivo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 88%;
+}
+
+.section-header{
+    color: @color-black;
+    font-family: 'archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    /* or 124% */
+    
+    letter-spacing: -0.01em;
+    
+    color: #000000;
+}
+.text{
+    color: @color-black;
+    font-family: 'archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+.cta-text{
+    color: @color-black;
+    font-family: 'archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+.inportant-text{
+    color: @color-black;
+    font-family: 'archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    /* or 120% */
+}
+
+.highlight-text{
+    color: @color-black;
+    font-family: 'archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 138%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.white{
+    color: @color-white;
+}
+
+
+section p{
+    color: @color-black;
+    font-family: 'archivo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 150% */
+}
+a{
+    color:@color-blue;
+    text-decoration: underline;
+}
+
+.line-double{
+  width: 100%;
+  height: 2px;
+  background-color: @color-blue;
+}
+.text-editor{
+    p{
+    color: @color-black;
+    font-family: 'archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 7px;
+    }
+    &-white{
+        p,h1,h2,h3,h4{
+            color:@color-white;
+        }
+    }
+}
+
+.br-5{
+    border-radius: 5px;
+}
+
+.br-10{
+    border-radius: 10px;
+}
+

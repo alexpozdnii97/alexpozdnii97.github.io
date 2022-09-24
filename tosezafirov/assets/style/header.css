@@ -1,0 +1,123 @@
+.black-strip {
+  background-color: #161616;
+}
+.testemonial-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  padding-bottom: 14px;
+}
+.testemonial-strip p {
+  margin-left: 100px;
+  font-family: 'archivo';
+  font-style: light;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+.testemonial-strip .btn-ghost {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 7px 12px;
+  gap: 10px;
+  margin-right: 30px;
+  background: #212121;
+  /* Main Blue */
+  border: 1px solid #00A3FF;
+  border-radius: 5px;
+  font-family: 'archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  /* identical to box height, or 12px */
+  text-transform: uppercase;
+  text-decoration: none;
+  /* Main Blue */
+  color: #00A3FF;
+}
+.testemonial-strip .testemonial-link {
+  font-family: 'archivo';
+  margin-left: auto;
+  margin-right: 53px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}
+.testemonial-strip-nav-logo {
+  width: 192px;
+  height: auto;
+}
+.header {
+  padding: 34px 0;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  transform: translateX(-25px);
+}
+.header-nav-logo {
+  width: 192px;
+  height: auto;
+  margin-right: 35px;
+}
+.header-nav-menu {
+  display: flex;
+  list-style: none;
+}
+.header-nav-menu li a {
+  color: #161616;
+  text-decoration: none;
+  font-family: 'archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 25px;
+}
+.header-nav-menu-blue {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+.header-nav-menu-blue li a {
+  color: #00a3ff;
+  text-decoration: none;
+  font-family: 'archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.header-nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.header-nav-buttons .languages {
+  width: 87px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav-buttons .languages img {
+  width: 36px;
+  height: auto;
+}
+.header-nav-buttons .search {
+  margin-left: 30px;
+}
