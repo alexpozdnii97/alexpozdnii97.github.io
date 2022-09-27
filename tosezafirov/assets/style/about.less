@@ -19,6 +19,42 @@
   }
 }
 
+.bottom{
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    .content{
+      position: relative;
+      max-width: 510px;
+      margin-bottom: 95px;
+      
+      .hero-header{
+        width: 100%;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 52px;
+        letter-spacing: -0.01em;    
+        color: #FFFFFF;
+      }
+      p{
+        width: 95%;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        color: #F9F9F9;
+      }
+      .btn{
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
 .extra-large{
   &-content{
     
@@ -148,3 +184,122 @@
   }
 }
 
+
+.trophies{
+  background-color: #161616;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-image: url(../img/trophies-bg.png) ;
+  background-repeat: no-repeat;
+  background-size: height 100% width auto;
+  background-position:top left;
+  .section-header{
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #F9F9F9;
+  }
+  p{
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F9F9F9;
+  }
+}
+.trophies-slider{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  * {
+  box-sizing: border-box;
+  }
+  &-item{
+    width: 290px;
+    position: relative;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .slick-slide {
+    transition: margin-top 0.3s;
+  
+    img {
+      border: 2px solid;
+    }
+  }
+
+  .slick-arrow{
+      top: 75px;
+      width: 42px;
+      height: 42px;
+      z-index: 10;
+    }
+    .slick-next{
+      transform: translateX(5px);
+    }
+    .slick-prev{
+      transform: translateX(-5px);
+    }
+  
+  .slick-center{
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+    padding-left: -30px;
+    transform: translate(-25%, 30px);
+    transition: 0.5s;
+    img{
+      width: 150%;
+    }
+  }
+}
+
+
+.homepage_about_tose{
+  &.about-page-1{
+    background: #F9F9F9;
+    padding-top:90px;
+    img{
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &.about-page-2{
+    .content{
+      padding-left: 60px;
+    }
+  }
+  .no-margin{
+    .section-header{
+      margin-bottom: 45px;
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+    p{
+      margin-top: 30px;
+      color: #505050;
+    }
+  }
+  
+  &.no-bg{
+    background: none;
+  }
+}
+
+
+.homepage_slider{
+  &.about-page-1{
+    padding-top: 20px;
+    padding-bottom: 0px;
+    background: linear-gradient(
+    to bottom,
+    #F9F9F9 120px,
+    transparent 120px  100%,
+  );
+  }
+}
