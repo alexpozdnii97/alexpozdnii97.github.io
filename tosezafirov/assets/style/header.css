@@ -58,6 +58,7 @@
 }
 .header {
   padding: 34px 0;
+  background-color: #FFFFFF;
 }
 .header-nav {
   display: flex;
