@@ -1,0 +1,72 @@
+.best-by-single{
+  .interviews-single-sidebar{
+    margin-top: 0;
+  }
+}
+
+.best-by-slider{
+  max-width: 920px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 120px;
+  
+  &-item{
+    position: relative;
+    width: 270px;
+    margin: 20px 20px;
+    padding: 36px 0;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+    background: #ffffff;
+    text-align: center;
+   border-radius: 10px;
+    
+    a{
+      text-align: center;
+      img{
+      height: 142px;
+      width: auto;
+      margin: 0 auto;
+    }
+    }
+    
+  }
+  .slick-dots{
+    width: auto;
+    top: auto;
+    bottom: 45px;
+    left: 50%;
+    transform: translate(-50%,0px);
+    .slick-active{
+      button{
+        background: #00A3FF;
+      }
+    }
+    li{
+      margin: 0 7px;
+    }
+    li button{
+      content: "";
+      width: 18px;
+      height: 18px;
+      background: white;
+      border-radius: 9px;
+      border: 1px solid @color-blue;
+      &:before{
+        display: none;
+      }
+    }
+  }
+  .slick-arrow{
+    z-index: 10;
+    width: 43px;
+    height: 43px;
+    top: 50%;
+  }
+  .slick-next{
+   transform: translate(-20px,-175%); 
+  }
+  .slick-prev{
+    transform: translate(20px,-175%); 
+  }
+}

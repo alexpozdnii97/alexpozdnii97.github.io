@@ -20,6 +20,11 @@
 @import "about.less";
 @import "testemonial.less";
 @import "academy.less";
+
+@import "best-by-main.less";
+@import "best-by-category.less";
+@import "best-by-single.less";
+
 @import "error.less";
 @import "footer.less";
 //colors
@@ -29,7 +34,6 @@
  .container-small{
     max-width: 1200px;
  }
-
 }
 
 html, body {
@@ -39,6 +43,9 @@ section{
     overflow: hidden;
 }
 
+.blue{
+    color: @color-blue;
+}
 
 a,p,span, h1,h2,h3,h4,h5,h6{
     color: @color-black;
@@ -141,6 +148,7 @@ a{
     line-height: 150%;
     margin-bottom: 7px;
     }
+    
     &-white{
         p,h1,h2,h3,h4{
             color:@color-white;
