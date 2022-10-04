@@ -140,3 +140,31 @@
 .footer-contact {
   margin-top: 50px;
 }
+@media (max-width: 991.98px) {
+  .footer .subscription-form-submit {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #00A3FF;
+    border-radius: 10px;
+    font-size: 0px;
+    line-height: 0;
+    background-image: url(../img/white-arrow.svg);
+    background-size: cover;
+    background-size: 80% 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .footer .subscription-form-submit:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 3;
+    background-image: url(../img/white-arrow.svg);
+    background-size: cover;
+  }
+}
