@@ -1,3 +1,14 @@
+$('.burger-button').click( function(){
+  $('.mobile-menu').toggleClass('active');
+}); 
+
+$('.mobile-menu-close').click( function(){
+  $('.mobile-menu').toggleClass('active');
+}); 
+
+
+
+
 $('.supporters-slider').on('init afterChange', function(e, slick){
   let currentSlick = $('.slick-current.slick-active', slick.$slideTrack);
   let prevName = currentSlick.prev().data('slide-name');
@@ -8,25 +19,21 @@ $('.supporters-slider').on('init afterChange', function(e, slick){
 });
 
 
+
+
+
+ $('.supporters-slider') .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  console.log(currentSlide);
+  console.log(nextSlide); 
+  $('#video'+currentSlide)[0].pause();
+   $('#video'+nextSlide)[0].play();
+});
+
 $('.supporters-slider').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
-  
-});
-
-
- $('.supporters-slider') .on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  console.log(currentSlide);
-  console.log(nextSlide);
-    //alert(nextSlide);
-   
-    $('#video'+currentSlide)[0].pause();
-   //pause current
-   
-   $('#video'+nextSlide)[0].play();
-   //pause current
 });
 
 $('.slider-wrapper').slick({
@@ -200,6 +207,9 @@ $('.testemonials-slider').slick({
 $('open-btn').on('click', function(){
     $(this).addClass('active').siblings().removeClass('active');
 });
+
+
+
 
 
 
