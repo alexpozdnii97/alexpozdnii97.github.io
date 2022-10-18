@@ -6,60 +6,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interview Single</title>
 
-  <link rel="stylesheet" href="../assets/style/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="../assets/style/bootstrap.min.css"> -->
   <link rel="stylesheet" href="../assets/style/style.css">
   <link rel="stylesheet" href="../assets/slick/slick.css">
   <link rel="stylesheet" href="../assets/slick/slick-theme.css">
 </head>
 <body>
 
-<div class="black-strip">
-  <div class="container">
-      <div class="row">
-        <div class="col-xxl-12">
+  <div class="black-strip">
+    <div class="container">
+        <div class="testemonial-strip">
+          <p class="d-none d-md-inline-block" >Are you willing to make a positive change? Join the thousands of individuals on the same fitness journey!</p>
+          <a class="testemonial-link" href="">TESTMONIALS</a>
+          <a class="btn-ghost" href="#">Start Your Transformation</a>
+        </div>
+      </div>
+  </div>
+
+<div id="mobile-menu" class="mobile-menu ">
+    <div class="container">
+
+      <div class="mobile-menu-header">
+        <img class="header-nav-logo" src="../assets/img/logo.png" alt="">
+        <div class="mobile-menu-close">
+
+        </div>
+      </div>
+
+      <div class="mobile-menu-body">
+        
+        <ul class="header-nav-menu ">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Interviews</a></li>
+          <li><a href="">Mr. Olymimpia Academy</a></li>
+          <li><a href="">Gladiator Gym</a></li>
+          <li><a href="">Best By</a></li>
+        </ul>
+
+        <div class="header-nav-buttons ">
+          <div class="languages">
+            <img src="../assets/img/flag.jpg" alt="">
+            <img src="../assets/img/flag.jpg" alt="">
+          </div>
+        </div>
+
+        <ul class="header-nav-menu-blue ">
+          <li><a href="">Log In</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="black-strip">
+      <div class="container">
           <div class="testemonial-strip">
-            <p >Are you willing to make a positive change? Join the thousands of individuals on the same fitness journey!</p>
+            <p  >Are you willing to make a positive change? Join the thousands of individuals on the same fitness journey!</p>
             <a class="testemonial-link" href="">TESTMONIALS</a>
             <a class="btn-ghost" href="">Start Your Transformation</a>
           </div>
         </div>
-        
-      </div>
     </div>
-</div>
+  </div>
 
   <header class="header">
       <div class="container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <div class="header-nav">
-              <img class="header-nav-logo" src="../assets/img/logo.png" alt="">
-              <ul class="header-nav-menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Interviews</a></li>
-                <li><a href="">Mr. Olymimpia Academy</a></li>
-                <li><a href="">Gladiator Gym</a></li>
-                <li><a href="">Best By</a></li>
-              </ul>
-              <div class="header-nav-buttons">
-                <div class="languages">
-                  <img src="../assets/img/flag.jpg" alt="">
-                  <img src="../assets/img/flag.jpg" alt="">
-                </div>
-                <a href="" class="search">
-                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z" stroke="#161616" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-                </a>
-              </div>
-              <ul class="header-nav-menu-blue">
-                <li><a href="">Log In</a></li>
-              </ul>
+        <div class="header-nav">
+          <img class="header-nav-logo" src="../assets/img/logo.png" alt="">
+          <ul class="header-nav-menu d-none d-lg-flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Interviews</a></li>
+            <li><a href="">Mr. Olymimpia Academy</a></li>
+            <li><a href="">Gladiator Gym</a></li>
+            <li><a href="">Best By</a></li>
+          </ul>
+          <div class="header-nav-buttons d-none d-lg-block">
+            <div class="languages">
+              <img src="../assets/img/flag.jpg" alt="">
+              <img src="../assets/img/flag.jpg" alt="">
             </div>
           </div>
+          <a href="" class="search">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z" stroke="#161616" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <ul class="header-nav-menu-blue d-none d-lg-flex">
+            <li><a href="">Log In</a></li>
+          </ul>
+          <div id="burger-button" class="burger-button d-block d-lg-none"></div>
         </div>
       </div>
   </header>
@@ -68,10 +110,9 @@
     
     <section class="interviews-single">
       <div class="container container-small">
-        <div class="row">
-          <div class="col-xxl-4">
+        <div class="row align-items-md-center">
+          <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6">
             <aside class="interviews-single-sidebar">
-              
               <div class="interviewer-card">
                 <img src="../assets/img/client-avatar.png" alt="">
                 
@@ -111,7 +152,7 @@
             
           </div>
 
-          <div class="col-xxl-7 offset-xxl-1">
+          <div class="col-xxl-7 offset-xxl-1 col-xl-7 offset-xl-1 col-lg-7 offset-lg-0 col-md-6">
             <div class="interviews-single-body">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -134,7 +175,7 @@
               </div>
               <h1 class="section-header">An Interview with Thomas Torre, CEO of Bend Financial</h1>
               
-              <div class="post-text-editor">
+              <div class="post-text-editor d-none d-lg-block">
                 <p>Great leadership paves the road to results, growth, and success.</p>
                 <p>However, it’s an enormous responsibility that not everyone can handle. It takes a special someone to lead and inspire others to reach a mutual goal.</p>
                 <p>Thomas Torre is the CEO of Bend Financial. He is a devoted leader with years of experience in health savings accounts (HSAs), driven by the right motive — helping people manage the rising cost of healthcare.</p>
@@ -151,8 +192,8 @@
       <div class="container container-small">
         <div class="row">
 
-          <div class="col-xxl-4">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <div class="col-xxl-4 col-xl-4 col-lg-5 offset-lg-0 col-md-8 offset-md-2">
+            <ul class="nav nav-pills mb-3 d-none d-lg-block" id="pills-tab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Who is Thomas Torre?</button>
               </li>
@@ -181,7 +222,45 @@
                 <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Future Plans And Visions</button>
               </li>
             </ul>
-            <div class="author-card mini">
+
+            <div class="dropdown d-block d-lg-none">
+              <button class="btn btn-dropdown btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Table of content
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="nav nav-pills mb-3 d-block d-lg-none" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Who is Thomas Torre?</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">The Idea Behind Bend Financial</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">Bend In Three Words</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false">Choosing This Career Path</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Best And Worst Parts of Being a Leader</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Habits That Contributed to Thomas Torre’s Success</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Five Important Traits of Successful Leaders</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Things To Enjoy In Life</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Future Plans And Visions</button>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+
+            <div class="author-card mini d-none d-lg-flex">
               <div class="author-card-image">
                 <img src="../assets/img/author-image.jpg" alt="">
                 <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,10 +272,18 @@
                 <h2>Tose Zafirov</h2>
                 <p>Mr. Olympia Representative</p>
               </div>
-              
             </div>
+
+            <div class="post-text-editor d-block d-lg-none">
+              <p>Great leadership paves the road to results, growth, and success.</p>
+              <p>However, it’s an enormous responsibility that not everyone can handle. It takes a special someone to lead and inspire others to reach a mutual goal.</p>
+              <p>Thomas Torre is the CEO of Bend Financial. He is a devoted leader with years of experience in health savings accounts (HSAs), driven by the right motive — helping people manage the rising cost of healthcare.</p>
+              <p>Thomas’s company Bend is revolutionizing the industry by employing the latest technologies and innovations on the market, including Artificial Intelligence and Machine Learning, to offer a unique approach to HSA funding, saving, and payment.</p>
+              <p>If you want to learn more about the creation of Bend, Tom’s leadership advice, and gain valuable insight on how to successfully run a business, I recommend taking the time to read the interview I made with him.</p>
+            </div><!-- .post-text-editor -->
+
           </div>
-          <div class=" col-xxl-8 ">
+          <div class="col-xxl-8 col-xl-8 col-lg-7 offset-lg-0 col-md-10 offset-md-0">
 
             <div class="tab-content" id="pills-tabContent">
               <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
@@ -208,8 +295,10 @@
                     <path d="M60.0735 32.2562L53.9654 25.3574L54.8165 16.2332L45.7794 14.2056L41.0481 6.29297L32.5368 9.9031L24.0254 6.29297L19.2941 14.1808L10.257 16.1837L11.1082 25.3327L5 32.2562L11.1082 39.155L10.257 48.304L19.2941 50.3316L24.0254 58.2194L32.5368 54.5846L41.0481 58.1947L45.7794 50.3068L54.8165 48.2792L53.9654 39.155L60.0735 32.2562ZM27.7554 43.9273L18.2427 34.5064L21.9476 30.8468L27.7554 36.6081L42.3999 22.0935L46.1049 25.753L27.7554 43.9273V43.9273Z" fill="#00A3FF"/>
                     </svg>
                   </div>
+                  <div class="interview-post-tab-header">
+                     <h3>Tose Zafirov:</h3>
+                  </div>
                   <div class="interview-post-tab-content">
-                    <h3>Tose Zafirov:</h3>
                     <p>Hi Thomas, and welcome to this interview! Before we start, I would say a massive thank you for taking the time to be a part of this journey! Do you mind telling us more about yourself? Who is Thomas Torre? What was the reason for choosing the career that you have today?</p>
                   </div>
                 </div>
@@ -217,8 +306,11 @@
                   <div class="image">
                     <img src="../assets/img/client-avatar.png" alt="">
                   </div>
+                  <div class="interview-post-tab-header">
+                     <h3>Tose Zafirov:</h3>
+                  </div>
                   <div class="interview-post-tab-content">
-                    <h3>Tose Zafirov:</h3>
+                    
                     <p>The first half of my career was spent in fintech and payments. Around 2000, a big shift in healthcare financial responsibility to consumers took place.</p>
                     <p>This shift launched a convergence of healthcare and financial services, and it created opportunities for individuals with fintech experience to move into healthcare.</p>
                     <p>So with this as a backdrop in 2003, I joined a late-stage start-up called MBI Benefits that was one of the early innovators building out healthcare payment technologies and related tax-advantaged benefits administration technologies. I have been in the healthcare technology industry since then.</p>
@@ -232,8 +324,10 @@
                     <path d="M60.0735 32.2562L53.9654 25.3574L54.8165 16.2332L45.7794 14.2056L41.0481 6.29297L32.5368 9.9031L24.0254 6.29297L19.2941 14.1808L10.257 16.1837L11.1082 25.3327L5 32.2562L11.1082 39.155L10.257 48.304L19.2941 50.3316L24.0254 58.2194L32.5368 54.5846L41.0481 58.1947L45.7794 50.3068L54.8165 48.2792L53.9654 39.155L60.0735 32.2562ZM27.7554 43.9273L18.2427 34.5064L21.9476 30.8468L27.7554 36.6081L42.3999 22.0935L46.1049 25.753L27.7554 43.9273V43.9273Z" fill="#00A3FF"/>
                     </svg>
                   </div>
+                  <div class="interview-post-tab-header">
+                     <h3>Tose Zafirov:</h3>
+                  </div>
                   <div class="interview-post-tab-content">
-                    <h3>Tose Zafirov:</h3>
                     <p>Hi Thomas, and welcome to this interview! Before we start, I would say a massive thank you for taking the time to be a part of this journey! Do you mind telling us more about yourself? Who is Thomas Torre? What was the reason for choosing the career that you have today?</p>
                   </div>
                 </div>
@@ -241,8 +335,10 @@
                   <div class="image">
                     <img src="../assets/img/client-avatar.png" alt="">
                   </div>
+                  <div class="interview-post-tab-header">
+                     <h3>Tose Zafirov:</h3>
+                  </div>
                   <div class="interview-post-tab-content">
-                    <h3>Tose Zafirov:</h3>
                     <p>The first half of my career was spent in fintech and payments. Around 2000, a big shift in healthcare financial responsibility to consumers took place.</p>
                     <p>This shift launched a convergence of healthcare and financial services, and it created opportunities for individuals with fintech experience to move into healthcare.</p>
                     <p>So with this as a backdrop in 2003, I joined a late-stage start-up called MBI Benefits that was one of the early innovators building out healthcare payment technologies and related tax-advantaged benefits administration technologies. I have been in the healthcare technology industry since then.</p>
@@ -255,7 +351,6 @@
               <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">...5</div>
             </div>
             
-
           </div>
         </div>
       </div>
@@ -266,7 +361,7 @@
 
 
 
-    <section class="recently-posted ">
+    <section class="recently-posted d-block d-md-none d-lg-block">
       <h2 class="section-header text-center">Recent Articles</h2>
       <div class="recently-posted-slider-no-pagination">
         <div class="recently-posted-slider-no-pagination-item">
@@ -342,7 +437,7 @@
       </div>
     </section>
 
-    <section class="blog-single-banner full-width-bg">
+    <section class="blog-single-banner full-width-bg interview-single-banner">
       <div class="container">
         <div class="row">
           <div class="col-xxl-12 ">
@@ -351,12 +446,14 @@
                 Become A Part Of The Most Powerful Fitness Group Worldwide
               </h2>
               <p class="white">If you are willing to read more aspiring stories from both professionals and beginners, you can do so by joining the most powerful fitness transformation group. Famous or not, we all walk the same difficult path to success. Feel free to share your story, and get never-seen-before support and motivation!</p>
-              <a href="" class="btn btn-ghost capitalize">Learn More</a>
+              <a href="" class="btn  capitalize">Learn More</a>
             </div>
           </div>
         </div>
       </div>
+      <img class="bg-img d-inline-block d-lg-none" src="../assets/img/single-interview-banner-bg-tablet.png" alt="" >
     </section>
+
   </main>
 
   <footer class="footer">
@@ -364,12 +461,14 @@
     <div class="subscription">
       <div class="container">
         <div class="subscription-wrapper">
-          <p class="white"> Subscribe to my newsletter to remain up-to-date with the most powerful fitness
+          <p class="white d-none d-lg-inline-block"> Subscribe to my newsletter to remain up-to-date with the most powerful fitness
             transformation group and get my autobiography book free of charge!</p>
+            <p class="white d-inline-block d-lg-none"> Subscribe to my newsletter to remain up-to-date with the most powerful fitness
+            transformation group!</p>
           <form class="subscription-form" action="submit">
 
             <input class="subscription-form-input" type="text" placeholder="Enter your email adress">
-            <input class="btn subscription-form-submit " type="submit" value="SUBSCRIBE">
+            <input class="btn subscription-form-submit btn-mini " type="submit" value="SUBSCRIBE">
           </form>
 
           <a href="#" class="plus">
@@ -384,10 +483,10 @@
 
     <div class="container container-small">
       <div class="row">
-        <div class="col-xxl-3">
+        <div class="col-xxl-3 col-xl-3  col-lg-4 col-md-5 col-sm-12 col-12 text-center text-sm-start">
           <img src="../assets/img/logo-black.png" alt="" class="footer-logo">
-          <div class="footer-s">
-            <a class="footer-s-link" href="#">
+          <div class="footer-socials">
+            <a class="footer-socials-link" href="#">
               <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_816_11406)">
                   <path
@@ -401,7 +500,7 @@
                 </defs>
               </svg>
             </a>
-            <a class="footer-s-link" href="#">
+            <a class="footer-socials-link" href="#">
               <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_816_11410)">
                   <path
@@ -421,14 +520,14 @@
                 </defs>
               </svg>
             </a>
-            <a class="footer-s-link" href="#">
+            <a class="footer-socials-link" href="#">
               <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M14.359 2.04717C13.825 2.2814 13.256 2.43666 12.6628 2.51204C13.2731 2.14768 13.7388 1.57512 13.9578 0.88499C13.3888 1.22422 12.7606 1.46384 12.0912 1.59755C11.5509 1.0223 10.7809 0.666016 9.9409 0.666016C8.31115 0.666016 6.9991 1.98884 6.9991 3.6105C6.9991 3.84384 7.01885 4.06819 7.06731 4.28178C4.62 4.16243 2.45449 2.98948 0.999744 1.20268C0.745769 1.64332 0.596795 2.14768 0.596795 2.69063C0.596795 3.71012 1.12179 4.61384 1.90436 5.13704C1.43141 5.12807 0.967436 4.99076 0.574359 4.77448C0.574359 4.78345 0.574359 4.79512 0.574359 4.80678C0.574359 6.2373 1.59474 7.4255 2.93282 7.69922C2.69321 7.76473 2.43205 7.79614 2.16103 7.79614C1.97256 7.79614 1.78231 7.78537 1.60372 7.74589C1.98513 8.91166 3.06744 9.76871 4.35436 9.79653C3.35282 10.58 2.08115 11.052 0.704487 11.052C0.463077 11.052 0.231538 11.0413 0 11.0117C1.30397 11.8526 2.84936 12.3327 4.5159 12.3327C9.93282 12.3327 12.8944 7.8455 12.8944 3.95602C12.8944 3.82589 12.8899 3.70025 12.8836 3.5755C13.4678 3.16089 13.9587 2.64307 14.359 2.04717Z"
                   fill="white" />
               </svg>
             </a>
-            <a class="footer-s-link" href="#">
+            <a class="footer-socials-link" href="#">
               <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_816_11419)">
                   <path
@@ -446,14 +545,14 @@
                 </defs>
               </svg>
             </a>
-            <a class="footer-s-link" href="#">
+            <a class="footer-socials-link" href="#">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.36726 10.9165C6.88251 9.96187 6.31377 8.99763 5.20339 8.99763C4.99164 8.99763 4.77989 9.03263 4.58477 9.12187L4.20852 8.36675C4.66789 7.973 5.40989 7.65975 6.36452 7.65975C7.84939 7.65975 8.61152 8.3755 9.21702 9.28725C9.57576 8.5085 9.74639 7.45588 9.74639 6.15125C9.74639 2.89275 8.72702 1.21975 6.34702 1.21975C4.00202 1.21975 2.98789 2.89275 2.98789 6.15125C2.98789 9.39225 4.00202 11.0478 6.34789 11.0478C6.71977 11.0478 7.05752 11.0075 7.36814 10.9165H7.36726ZM7.94914 12.054C7.4269 12.1943 6.88864 12.2661 6.34789 12.2675C3.22327 12.2675 0.166016 9.7755 0.166016 6.15125C0.166016 2.49288 3.22414 0 6.34702 0C9.52326 0 12.5508 2.4745 12.5508 6.15125C12.5508 8.19613 11.597 9.85775 10.2101 10.9323C10.6581 11.6034 11.1201 12.0496 11.7615 12.0496C12.4633 12.0496 12.7459 11.5071 12.7931 11.0828H13.7058C13.7591 11.6489 13.4765 14 10.925 14C9.37889 14 8.56252 13.104 7.95002 12.054H7.94914Z"
                   fill="white" />
               </svg>
             </a>
-            <a class="footer-s-link" href="#">
+            <a class="footer-socials-link" href="#">
               <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_816_11424)">
                   <path
@@ -469,14 +568,14 @@
             </a>
           </div>
         </div>
-        <div class="col-xxl-2 offset-xxl-2">
+        <div class="col-xxl-2 offset-xxl-2 col-xl-2 offset-xl-2 col-lg-2 offset-lg-1 col-md-3 offset-md-0 col-sm-12 col-12 ">
           <ul class="footer-nav-menu">
             <li><a href="">Privacy Policy</a></li>
             <li><a href="">Terms of Service</a></li>
           </ul>
         </div>
-        <div class="col-xxl-4 offset-xxl-1 text-end">
-          <p class="text white">Feel free to contact me for any questions or collaboration opportunities.</p>
+        <div class="col-xxl-4 offset-xxl-1 text-end col-xl-4 offset-xl-1 col-lg-4 offset-lg-1 col-md-4 offset-md-0 col-sm-12 col-12 text-center text-sm-end">
+          <p class="text white secondary">Feel free to contact me for any questions or collaboration opportunities.</p>
           <a href="" class="btn btn-ghost">Contact me now</a>
         </div>
       </div>
@@ -505,7 +604,7 @@
               </clipPath>
             </defs>
           </svg>
-          <p class="white">Powered by HE Group</p>
+          <p class="white powered">Powered by HE Group</p>
         </div>
         <p class="white">© Tose Zafirov 2022. All rights reserved.</p>
       </div>
@@ -515,9 +614,12 @@
   
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../assets/script/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../assets/script/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="../assets/script/script.js"></script>
     
 </body>
 </html>

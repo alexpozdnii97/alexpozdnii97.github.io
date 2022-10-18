@@ -1,3 +1,8 @@
+/*
+404 PAGE ///////////////////////////
+*/
+
+
 .height-wrapper{
   position: relative;
   height: 100vh;
@@ -38,6 +43,71 @@
       line-height: 24px;
       text-align: center;
       color: #696969;
+    }
+  }
+}
+
+
+@media (max-width: 1199.98px) { 
+.height-wrapper{
+  .error-content{
+    justify-content: start;
+    margin-top: 200px;
+    .btn{
+      text-transform: none;
+    }
+  }
+  .bg-img{
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 75%;
+    width: auto;
+  }
+  
+}
+}
+@media (max-width: 991.98px) { 
+  .height-wrapper{
+    .error-content{
+      margin-top: 80px;
+      
+      .page-header{
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 52px;    
+        text-align: center;
+        letter-spacing: -0.01em;
+      }
+    }
+    .bg-img{
+      top: 138px;
+      bottom: auto;
+      width: 635px;
+      height: auto;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .height-wrapper{
+    .error-content{
+      .page-header{
+        max-width: 200px;
+      }
+      p{
+        max-width: 255px;
+      }
+      .btn{
+        margin-top: 28px;
+      }
+    }
+    .bg-img{
+      top: 450px;
+      width: 100%;
+      height: auto;
     }
   }
 }

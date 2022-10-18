@@ -1,3 +1,6 @@
+/*
+CONTACTS PAGE ///////////////////////////
+*/
 .contact-us {
   margin-top: 78px;
 }
@@ -48,6 +51,27 @@
 .contact-us-form .btn {
   margin-top: 40px;
 }
+@media (max-width: 991.98px) {
+  .contact-us {
+    margin-top: 0;
+  }
+  .contact-us p {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 575.98px) {
+  .contact-us {
+    margin-top: 0;
+  }
+  .contact-us .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contact-us-form {
+    padding: 35px 20px 25px 20px;
+    border-radius: 0;
+  }
+}
 .main-black-banner {
   margin-top: 50px;
 }
@@ -56,6 +80,7 @@
   padding: 40px 0 40px 0;
   background-color: #161616;
   overflow: hidden;
+  border-radius: 10px;
 }
 .main-black-banner-wrapper .content {
   position: relative;
@@ -86,4 +111,56 @@
   left: 0;
   height: 100%;
   width: auto;
+}
+@media (max-width: 991.98px) {
+  .main-black-banner {
+    border-radius: 0;
+  }
+  .main-black-banner .container {
+    position: relative;
+    z-index: 5;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .main-black-banner-wrapper {
+    border-radius: 0;
+  }
+  .main-black-banner-wrapper .bg-img {
+    z-index: 4;
+  }
+  .main-black-banner-wrapper .content {
+    position: relative;
+    z-index: 5;
+    margin-left: 50%;
+    padding-right: 28px;
+  }
+  .main-black-banner-wrapper .content .section-header {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main-black-banner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .main-black-banner-wrapper .bg-img {
+    order: 2;
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .main-black-banner-wrapper .content {
+    width: 100%;
+    order: 1;
+    margin-left: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .main-black-banner-wrapper .btn-round {
+    margin-bottom: 20px;
+  }
 }

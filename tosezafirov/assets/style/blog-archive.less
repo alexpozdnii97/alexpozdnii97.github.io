@@ -1,3 +1,15 @@
+/*
+BLOG ARCHIVE PAGE ///////////////////////////
+*/
+
+@color-blue: #00A3FF;
+@color-dark-blue:#005686;
+@color-black: #161616;
+@color-light-gray:#F9F9F9;
+@color-white: #FFFFFF;
+@color-gray: #505050;
+@color-dark-gray: #212121;
+
 .blog-featured{
   margin-top: 45px;
   &-meta{
@@ -75,6 +87,84 @@
     }
   }
 }
+
+@media (max-width: 1399.98px) { 
+  .blog-featured-meta p{
+    width: 100%;
+  }
+  .blog-card .post-thumbnail{
+    width: 240px;
+  }
+}
+
+@media (max-width: 1199.98px) { 
+  .blog-featured-article {
+    .blog-card{
+      flex-wrap: wrap;
+      .post-thumbnail{
+        width: 100%;
+      }
+    }
+  }
+  .blog-featured-meta{
+    margin-left: 0;
+  }
+  
+}
+@media (max-width: 991.98px) { 
+  .blog-featured-article{
+    margin-left: 0;
+    padding: 20px 50px 40px;
+    .section-header{
+      font-size: 30px;
+      line-height: 36px;
+    }
+    .blog-card{
+      padding: 0;
+      background: transparent;
+    }
+  }
+  .blog-featured{
+    &-meta{
+      .page-header{
+        font-size: 42px;
+        line-height: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .blog-featured{
+    .container{
+      padding: 0; 
+      margin: 0;
+    }
+    &-meta {
+      padding-left: 20px;
+      .page-header{
+        margin-top: 22px;
+      }
+      p{
+        margin-bottom: 35px;
+      }
+    }
+    &-article{
+      padding: 43px 20px 60px;
+      border-radius: 0;
+      .blog-card{
+        padding:  34px 22px;
+        background: #FFFFFF;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+
+
+
+
 .popular-content{
    padding-bottom: 0;
   .section-header{
@@ -85,15 +175,93 @@
     letter-spacing: -0.03em;
     color: #161616;
   }
-  .row{
+  &-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    .blog-card{
+      width: 50%;
+      margin-top: 35px;
+      .post-thumbnail{
+        margin-right: 20px;
+      }
+    }
   }
-  .blog-card{
-    margin-top: 35px;
-    .post-thumbnail{
-      margin-right: 20px;
+  
+}
+
+
+@media (max-width: 1399.98px) { 
+
+}
+@media (max-width: 1199.98px) { 
+  .popular-content{
+
+    .blog-card{
+      width: 100%;
     }
   }
 }
+@media (max-width: 991.98px) { 
+  .popular-content{
+    .section-header{
+      text-align: center;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+    }
+    .container{
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
+      padding-left: 36px;
+    }
+    &-wrapper{
+      display: block;
+      overflow: auto;
+      white-space: nowrap;
+      &::-webkit-scrollbar { 
+          display: none;  /* Safari and Chrome */
+      }
+      .blog-card{
+        display: inline-block;
+        width: 270px;
+        margin-right: 45px;
+        h3{
+          white-space: normal;
+        }
+        p{
+          white-space: normal;
+        }
+      }
+    } 
+    
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .popular-content{
+    .section-header{
+      margin-top: 35px;
+    }
+    .container{
+      padding: 0 20px;
+    }
+    &-wrapper{
+      overflow: hidden;
+      white-space: normal;
+      .blog-card{
+        width: 100%;
+        display: block;
+        .post-thumbnail{
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
 
 .recently-posted{
   margin-top: 55px;
@@ -150,6 +318,19 @@
   }
 }
 
+@media (max-width: 991.98px) { 
+  .recently-posted{
+    .section-header{
+      text-align: center;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+}
+
+
+
 // recently posted section without background
 .no-bg{
   margin-top: 0;
@@ -157,6 +338,8 @@
 }
 
 // main banner with bg at top
+
+
 
 .top-bg{
   margin-top: 0;
@@ -167,6 +350,7 @@
     transparent 220px  100%,
   );
 }
+
 .right{
   padding-top: 70px;
   padding-bottom: 70px;
@@ -176,6 +360,31 @@
   }
   .content{
     margin-left: 94px;
+  }
+}
+
+
+
+@media (max-width: 991.98px) { 
+  .right{
+    .content{
+      max-width: 395px;
+      margin-left: 40px;
+    }
+  }
+}
+@media (max-width: 767.98px) { 
+
+}
+@media (max-width: 575.98px) { 
+  .right{
+    text-align: center;
+    padding-bottom: 0;
+    .content{
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0;
+    }
   }
 }
 

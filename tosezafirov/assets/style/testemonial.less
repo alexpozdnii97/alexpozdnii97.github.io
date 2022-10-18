@@ -1,3 +1,8 @@
+/*
+TESTEMONIALS PAGE ///////////////////////////
+*/
+
+
 .testemonials-hero{
   background: #F9F9F9;
   .team-hero-content{
@@ -7,6 +12,31 @@
     }
   }
 }
+
+
+
+
+
+@media (max-width: 575.98px) { 
+  .testemonials-hero{
+    .page-header{
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 52px;
+      text-align: center;
+      letter-spacing: -0.01em;
+    }
+    .team-hero-content{
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+}
+
+
+
+
+
 
 .testemonials{
   padding-top: 75px;
@@ -35,6 +65,7 @@
           max-width: 320px;
           width: 320px;
           height: auto;
+          border-radius: 10px;
         }
         .testemonial-description{
           margin-left: 55px;
@@ -98,6 +129,139 @@
 }
 
 
+
+
+@media (max-width: 1199.98px) { 
+  .testemonials{
+    .testemonials-slider{
+      .slick-next{
+        transform: translate(-50px,20%);
+      }
+      .slick-prev{
+        transform: translate(50px,20%);
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) { 
+  .testemonials{
+    padding-top: 60px;
+    .testemonials-slider{
+      
+      
+      &-item{
+        position: relative;
+        padding: 0;
+        width: 320px;
+        background: #f9f9f9;
+        background-image: url(../img/quotes.svg);
+        background-position: top 35px right 35px;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        opacity: 0.4;
+        &-header{
+          flex-wrap: wrap;
+          
+          .testemonial-image{
+            width: 100%;
+            max-width: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+        }
+        .line{
+          display: none;
+        }
+
+        
+        .testemonial-description{
+          padding: 35px 17px;
+          margin-left: 0;
+          background-image: url(../img/quotes.svg);
+          background-position: top 35px right 5px;
+          background-repeat: no-repeat;
+          .testemonial-text{
+            display: none;
+          }
+          h3{
+            
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 52px;   
+            letter-spacing: -0.01em;
+          }
+        }
+        &-transformation{
+          position: absolute;
+          left: 50%;
+          bottom: -26px; 
+          transform: translate(-50%,200px);
+          width: 100vw;
+          height: 200px;
+          margin: 0;
+          transition: 0.5s;
+          z-index: 10;
+          opacity: 0;
+          border-radius: 0;
+          .image-wrapper{
+            border-radius: 0;
+            img{
+              border-radius: 0;
+            }
+          }
+        }
+      }
+      .slick-track{
+        padding-bottom: 200px;
+      }
+      .slick-current{
+        opacity: 1;
+        .testemonials-slider-item-transformation{
+          z-index: 20;
+          transition: 0.5s;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 767.98px) { 
+
+}
+@media (max-width: 575.98px) { 
+  .testemonials{
+    .testemonials-slider{
+      .slick-track{
+        padding-bottom: 430px;
+        
+      }
+      .slick-slider{
+       
+      }
+      &-item{
+        margin: 0 12px;
+        width: 320px;
+        &-transformation{
+
+          height: auto;
+          flex-wrap: wrap;
+          transform: translate(-50%,450px);
+          .image-wrapper{
+
+            flex: 1 0 33%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 .trustpilot-banner{
   margin-top: 68px;
   padding-bottom: 60px;
@@ -113,22 +277,80 @@
     padding: 25px 44px 23px;
     border: 2px solid #00A3FF;
     background-color: #FFFFFF;
-    .content{
-      flex-grow: 1;
-      margin: 0 44px;
-      p{
-        max-width: 443px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 27px;
-        color: #161616;
+    .content-wrapper{
+      display: flex;
+      align-items: center;
+      .content{
+        flex-grow: 1;
+        margin: 0 44px;
+        p{
+          max-width: 443px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 27px;
+          color: #161616;
+        }
+      }
+      .author-card-mini{
+        margin-left: auto;
+      }
+      .btn{
+        margin-top:10px;
       }
     }
-    .author-card-mini{
-      margin-left: auto;
+  }
+}
+
+
+
+@media (max-width: 991.98px) { 
+  .trustpilot-banner{
+    margin: 26px;
+    padding-bottom: 0;
+    &-wrapper{
+      gap: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+      .content-wrapper{
+        display: block;
+        
+        .content{
+          margin: 0;
+          p{
+            max-width: 343px;
+          }
+        }
+      }
+      .rating{
+        img{
+          width: 220px;
+          height: auto;
+        }
+      }
+      .author-card{
+        .author-card-image{
+          margin-left: 0;
+        }
+      }
     }
-    .btn{
-      margin-top:10px;
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .trustpilot-banner{
+    margin: 62px 32px ;
+    .container{
+      margin: 0;
+      padding: 0;
+    }
+    &-wrapper{
+      display: block;
+      padding: 28px 13px 38px 32px ;
+      .content-wrapper{
+        .content p{
+          margin-top: 35px;
+        }
+      }
     }
   }
 }

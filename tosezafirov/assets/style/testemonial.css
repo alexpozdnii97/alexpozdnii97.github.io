@@ -1,0 +1,282 @@
+/*
+TESTEMONIALS PAGE ///////////////////////////
+*/
+.testemonials-hero {
+  background: #F9F9F9;
+}
+.testemonials-hero .team-hero-content {
+  margin-top: 20px;
+}
+.testemonials-hero .team-hero-content p {
+  max-width: 490px;
+}
+@media (max-width: 575.98px) {
+  .testemonials-hero .page-header {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+  .testemonials-hero .team-hero-content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+.testemonials {
+  padding-top: 75px;
+  background: linear-gradient(to bottom, #f9f9f9 238px, transparent 238px 100%);
+}
+.testemonials .testemonials-slider {
+  max-width: 1236px;
+  margin: 0 auto;
+}
+.testemonials .testemonials-slider-item {
+  margin: 0 30px;
+  padding: 35px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  background-image: url(../img/quotes.svg);
+  background-position: top 35px right 35px;
+  background-repeat: no-repeat;
+}
+.testemonials .testemonials-slider-item-header {
+  display: flex;
+}
+.testemonials .testemonials-slider-item-header .testemonial-image {
+  max-width: 320px;
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+}
+.testemonials .testemonials-slider-item-header .testemonial-description {
+  margin-left: 55px;
+}
+.testemonials .testemonials-slider-item-header .testemonial-description h3 {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.01em;
+  color: #161616;
+}
+.testemonials .testemonials-slider-item-header .testemonial-description p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #505050;
+}
+.testemonials .testemonials-slider-item-header .testemonial-description .testemonial-position {
+  margin-bottom: 28px;
+}
+.testemonials .testemonials-slider-item .line {
+  margin: 64px 0;
+  width: 100%;
+  height: 3px;
+  background: #D9D9D9;
+}
+.testemonials .testemonials-slider-item-transformation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 70px;
+  margin-bottom: 44px;
+}
+.testemonials .testemonials-slider-item-transformation .image-wrapper {
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 237px;
+  position: relative;
+  overflow: hidden;
+}
+.testemonials .testemonials-slider-item-transformation .image-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+.testemonials .testemonials-slider .slick-arrow {
+  z-index: 10;
+  width: 90px;
+  height: 90px;
+  transform: translate(0, -25%);
+}
+@media (max-width: 1199.98px) {
+  .testemonials .testemonials-slider .slick-next {
+    transform: translate(-50px, 20%);
+  }
+  .testemonials .testemonials-slider .slick-prev {
+    transform: translate(50px, 20%);
+  }
+}
+@media (max-width: 991.98px) {
+  .testemonials {
+    padding-top: 60px;
+  }
+  .testemonials .testemonials-slider-item {
+    position: relative;
+    padding: 0;
+    width: 320px;
+    background: #f9f9f9;
+    background-image: url(../img/quotes.svg);
+    background-position: top 35px right 35px;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    opacity: 0.4;
+  }
+  .testemonials .testemonials-slider-item-header {
+    flex-wrap: wrap;
+  }
+  .testemonials .testemonials-slider-item-header .testemonial-image {
+    width: 100%;
+    max-width: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .testemonials .testemonials-slider-item .line {
+    display: none;
+  }
+  .testemonials .testemonials-slider-item .testemonial-description {
+    padding: 35px 17px;
+    margin-left: 0;
+    background-image: url(../img/quotes.svg);
+    background-position: top 35px right 5px;
+    background-repeat: no-repeat;
+  }
+  .testemonials .testemonials-slider-item .testemonial-description .testemonial-text {
+    display: none;
+  }
+  .testemonials .testemonials-slider-item .testemonial-description h3 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.01em;
+  }
+  .testemonials .testemonials-slider-item-transformation {
+    position: absolute;
+    left: 50%;
+    bottom: -26px;
+    transform: translate(-50%, 200px);
+    width: 100vw;
+    height: 200px;
+    margin: 0;
+    transition: 0.5s;
+    z-index: 10;
+    opacity: 0;
+    border-radius: 0;
+  }
+  .testemonials .testemonials-slider-item-transformation .image-wrapper {
+    border-radius: 0;
+  }
+  .testemonials .testemonials-slider-item-transformation .image-wrapper img {
+    border-radius: 0;
+  }
+  .testemonials .testemonials-slider .slick-track {
+    padding-bottom: 200px;
+  }
+  .testemonials .testemonials-slider .slick-current {
+    opacity: 1;
+  }
+  .testemonials .testemonials-slider .slick-current .testemonials-slider-item-transformation {
+    z-index: 20;
+    transition: 0.5s;
+    opacity: 1;
+  }
+}
+@media (max-width: 575.98px) {
+  .testemonials .testemonials-slider .slick-track {
+    padding-bottom: 430px;
+  }
+  .testemonials .testemonials-slider-item {
+    margin: 0 12px;
+    width: 320px;
+  }
+  .testemonials .testemonials-slider-item-transformation {
+    height: auto;
+    flex-wrap: wrap;
+    transform: translate(-50%, 450px);
+  }
+  .testemonials .testemonials-slider-item-transformation .image-wrapper {
+    flex: 1 0 33%;
+  }
+}
+.trustpilot-banner {
+  margin-top: 68px;
+  padding-bottom: 60px;
+  background: linear-gradient(to top, #f9f9f9 140px, transparent 140px 100%);
+}
+.trustpilot-banner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  padding: 25px 44px 23px;
+  border: 2px solid #00A3FF;
+  background-color: #FFFFFF;
+}
+.trustpilot-banner-wrapper .content-wrapper {
+  display: flex;
+  align-items: center;
+}
+.trustpilot-banner-wrapper .content-wrapper .content {
+  flex-grow: 1;
+  margin: 0 44px;
+}
+.trustpilot-banner-wrapper .content-wrapper .content p {
+  max-width: 443px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #161616;
+}
+.trustpilot-banner-wrapper .content-wrapper .author-card-mini {
+  margin-left: auto;
+}
+.trustpilot-banner-wrapper .content-wrapper .btn {
+  margin-top: 10px;
+}
+@media (max-width: 991.98px) {
+  .trustpilot-banner {
+    margin: 26px;
+    padding-bottom: 0;
+  }
+  .trustpilot-banner-wrapper {
+    gap: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .trustpilot-banner-wrapper .content-wrapper {
+    display: block;
+  }
+  .trustpilot-banner-wrapper .content-wrapper .content {
+    margin: 0;
+  }
+  .trustpilot-banner-wrapper .content-wrapper .content p {
+    max-width: 343px;
+  }
+  .trustpilot-banner-wrapper .rating img {
+    width: 220px;
+    height: auto;
+  }
+  .trustpilot-banner-wrapper .author-card .author-card-image {
+    margin-left: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .trustpilot-banner {
+    margin: 62px 32px ;
+  }
+  .trustpilot-banner .container {
+    margin: 0;
+    padding: 0;
+  }
+  .trustpilot-banner-wrapper {
+    display: block;
+    padding: 28px 13px 38px 32px ;
+  }
+  .trustpilot-banner-wrapper .content-wrapper .content p {
+    margin-top: 35px;
+  }
+}

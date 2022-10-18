@@ -13,65 +13,105 @@
 </head>
 <body>
 
-<div class="black-strip">
+ <div class="black-strip">
   <div class="container">
-      <div class="row">
-        <div class="col-xxl-12">
-          <div class="testemonial-strip">
-            <p >Are you willing to make a positive change? Join the thousands of individuals on the same fitness journey!</p>
-            <a class="testemonial-link" href="">TESTMONIALS</a>
-            <a class="btn-ghost" href="">Start Your Transformation</a>
-          </div>
-        </div>
-        
+      <div class="testemonial-strip">
+        <p class="d-none d-md-inline-block" >Are you willing to make a positive change? Join the thousands of individuals on the same fitness journey!</p>
+        <a class="testemonial-link" href="">TESTMONIALS</a>
+        <a class="btn-ghost" href="">Start Your Transformation</a>
       </div>
     </div>
 </div>
 
   <header class="header">
       <div class="container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <div class="header-nav">
-              <img class="header-nav-logo" src="../assets/img/logo.png" alt="">
-              <ul class="header-nav-menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Interviews</a></li>
-                <li><a href="">Mr. Olymimpia Academy</a></li>
-                <li><a href="">Gladiator Gym</a></li>
-                <li><a href="">Best By</a></li>
-              </ul>
-              <div class="header-nav-buttons">
-                <div class="languages">
-                  <img src="../assets/img/flag.jpg" alt="">
-                  <img src="../assets/img/flag.jpg" alt="">
-                </div>
-                <a href="" class="search">
-                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z" stroke="#161616" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-                </a>
-              </div>
-              <ul class="header-nav-menu-blue">
-                <li><a href="">Log In</a></li>
-              </ul>
+        <div class="header-nav">
+          <img class="header-nav-logo" src="../assets/img/logo.png" alt="">
+          <ul class="header-nav-menu d-none d-lg-flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Interviews</a></li>
+            <li><a href="">Mr. Olymimpia Academy</a></li>
+            <li><a href="">Gladiator Gym</a></li>
+            <li><a href="">Best By</a></li>
+          </ul>
+          <div class="header-nav-buttons d-none d-lg-block">
+            <div class="languages">
+              <img src="../assets/img/flag.jpg" alt="">
+              <img src="../assets/img/flag.jpg" alt="">
             </div>
           </div>
+          <a href="" class="search">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z" stroke="#161616" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <ul class="header-nav-menu-blue d-none d-lg-flex">
+            <li><a href="">Log In</a></li>
+          </ul>
+          <div id="burger-button" class="burger-button d-block d-lg-none"></div>
         </div>
       </div>
   </header>
 
+
+  <div id="mobile-menu" class="mobile-menu ">
+    <div class="container">
+
+      <div class="mobile-menu-header">
+        <img class="header-nav-logo" src="../assets/img/logo.png" alt="">
+        <div class="mobile-menu-close">
+
+        </div>
+      </div>
+
+      <div class="mobile-menu-body">
+        
+        <ul class="header-nav-menu ">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Interviews</a></li>
+          <li><a href="">Mr. Olymimpia Academy</a></li>
+          <li><a href="">Gladiator Gym</a></li>
+          <li><a href="">Best By</a></li>
+        </ul>
+
+        <div class="header-nav-buttons ">
+          <div class="languages">
+            <img src="../assets/img/flag.jpg" alt="">
+            <img src="../assets/img/flag.jpg" alt="">
+          </div>
+        </div>
+
+        <ul class="header-nav-menu-blue ">
+          <li><a href="">Log In</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="black-strip">
+      <div class="container">
+          <div class="testemonial-strip">
+            <p  >Are you willing to make a positive change? Join the thousands of individuals on the same fitness journey!</p>
+            <a class="testemonial-link" href="">TESTMONIALS</a>
+            <a class="btn-ghost" href="">Start Your Transformation</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+
   <main >
     
-
-
     <section class="blog-featured">
       <div class="container">
         <div class="row">
-          <div class="col-xxl-4">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
             <div class="blog-featured-meta">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -84,7 +124,7 @@
               <p>Welcome to the number #1 place to keep up-to-date with the fitness world. The primary function of my blog is to teach you about proper workout and nutrition, empower, inspire and motivate you to improve your health, learn about fitness, and fulfill your goals.</p>
             </div>
           </div>
-          <div class="col-xxl-8">
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-7">
             <div class="blog-featured-article">
               <h2 class="section-header">Featured Article</h2>
               <div class="blog-card">
@@ -120,9 +160,29 @@
         <h2 class="section-header">
           Popular Content
         </h2>
-        <div class="row">
+        <div class=" popular-content-wrapper">
 
-          <div class="col-xxl-6">
+          <div class="blog-card">
+              <img class="post-thumbnail" src="../assets/img/interview-thumbnail.png" alt="">
+              <div class="post-meta">
+                <h3>Interview with Chris Dolphfings, Founder of Mega Motors Australia</h3>
+                <div class="post-details">
+                  <div class="post-meta-details">
+                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.4 5.58967H3.6V6.79015H2.4V5.58967ZM10.8 2.58846V10.9918C10.8 11.6521 10.26 12.1923 9.6 12.1923H1.2C0.88174 12.1923 0.576515 12.0658 0.351472 11.8407C0.126428 11.6156 0 11.3102 0 10.9918L0.00599999 2.58846C0.00599999 1.9282 0.534 1.38798 1.2 1.38798H1.8V0.1875H3V1.38798H7.8V0.1875H9V1.38798H9.6C10.26 1.38798 10.8 1.9282 10.8 2.58846ZM1.2 3.78895H9.6V2.58846H1.2V3.78895ZM9.6 10.9918V4.98943H1.2V10.9918H9.6ZM7.2 6.79015H8.4V5.58967H7.2V6.79015ZM4.8 6.79015H6V5.58967H4.8V6.79015Z" fill="#696969"/>
+                    </svg>
+                    <p>02 december 2022</p>
+                    <div class="divider"></div>
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0.1875C2.6916 0.1875 0 2.88018 0 6.18991C0 9.49964 2.6916 12.1923 6 12.1923C9.3084 12.1923 12 9.49964 12 6.18991C12 2.88018 9.3084 0.1875 6 0.1875ZM6 10.9918C3.3534 10.9918 1.2 8.83757 1.2 6.18991C1.2 3.54225 3.3534 1.38798 6 1.38798C8.6466 1.38798 10.8 3.54225 10.8 6.18991C10.8 8.83757 8.6466 10.9918 6 10.9918Z" fill="#696969"/>
+                    <path d="M6.60039 3.1875H5.40039V6.4372L7.37619 8.4138L8.22459 7.56506L6.60039 5.9402V3.1875Z" fill="#696969"/>
+                    </svg>
+                    <p>3 min. to read</p>
+                  </div>
+                  <p>I intend to share it all; what I use daily, what products I intend to share it all...</p>
+                </div>
+              </div>
+            </div><!-- blog card -->
             <div class="blog-card">
               <img class="post-thumbnail" src="../assets/img/interview-thumbnail.png" alt="">
               <div class="post-meta">
@@ -144,79 +204,49 @@
                 </div>
               </div>
             </div><!-- blog card -->
-          </div><!-- col -->
+            <div class="blog-card">
+              <img class="post-thumbnail" src="../assets/img/interview-thumbnail.png" alt="">
+              <div class="post-meta">
+                <h3>Interview with Chris Dolphfings, Founder of Mega Motors Australia</h3>
+                <div class="post-details">
+                  <div class="post-meta-details">
+                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.4 5.58967H3.6V6.79015H2.4V5.58967ZM10.8 2.58846V10.9918C10.8 11.6521 10.26 12.1923 9.6 12.1923H1.2C0.88174 12.1923 0.576515 12.0658 0.351472 11.8407C0.126428 11.6156 0 11.3102 0 10.9918L0.00599999 2.58846C0.00599999 1.9282 0.534 1.38798 1.2 1.38798H1.8V0.1875H3V1.38798H7.8V0.1875H9V1.38798H9.6C10.26 1.38798 10.8 1.9282 10.8 2.58846ZM1.2 3.78895H9.6V2.58846H1.2V3.78895ZM9.6 10.9918V4.98943H1.2V10.9918H9.6ZM7.2 6.79015H8.4V5.58967H7.2V6.79015ZM4.8 6.79015H6V5.58967H4.8V6.79015Z" fill="#696969"/>
+                    </svg>
+                    <p>02 december 2022</p>
+                    <div class="divider"></div>
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0.1875C2.6916 0.1875 0 2.88018 0 6.18991C0 9.49964 2.6916 12.1923 6 12.1923C9.3084 12.1923 12 9.49964 12 6.18991C12 2.88018 9.3084 0.1875 6 0.1875ZM6 10.9918C3.3534 10.9918 1.2 8.83757 1.2 6.18991C1.2 3.54225 3.3534 1.38798 6 1.38798C8.6466 1.38798 10.8 3.54225 10.8 6.18991C10.8 8.83757 8.6466 10.9918 6 10.9918Z" fill="#696969"/>
+                    <path d="M6.60039 3.1875H5.40039V6.4372L7.37619 8.4138L8.22459 7.56506L6.60039 5.9402V3.1875Z" fill="#696969"/>
+                    </svg>
+                    <p>3 min. to read</p>
+                  </div>
+                  <p>I intend to share it all; what I use daily, what products I intend to share it all...</p>
+                </div>
+              </div>
+            </div><!-- blog card -->
+            <div class="blog-card">
+              <img class="post-thumbnail" src="../assets/img/interview-thumbnail.png" alt="">
+              <div class="post-meta">
+                <h3>Interview with Chris Dolphfings, Founder of Mega Motors Australia</h3>
+                <div class="post-details">
+                  <div class="post-meta-details">
+                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.4 5.58967H3.6V6.79015H2.4V5.58967ZM10.8 2.58846V10.9918C10.8 11.6521 10.26 12.1923 9.6 12.1923H1.2C0.88174 12.1923 0.576515 12.0658 0.351472 11.8407C0.126428 11.6156 0 11.3102 0 10.9918L0.00599999 2.58846C0.00599999 1.9282 0.534 1.38798 1.2 1.38798H1.8V0.1875H3V1.38798H7.8V0.1875H9V1.38798H9.6C10.26 1.38798 10.8 1.9282 10.8 2.58846ZM1.2 3.78895H9.6V2.58846H1.2V3.78895ZM9.6 10.9918V4.98943H1.2V10.9918H9.6ZM7.2 6.79015H8.4V5.58967H7.2V6.79015ZM4.8 6.79015H6V5.58967H4.8V6.79015Z" fill="#696969"/>
+                    </svg>
+                    <p>02 december 2022</p>
+                    <div class="divider"></div>
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0.1875C2.6916 0.1875 0 2.88018 0 6.18991C0 9.49964 2.6916 12.1923 6 12.1923C9.3084 12.1923 12 9.49964 12 6.18991C12 2.88018 9.3084 0.1875 6 0.1875ZM6 10.9918C3.3534 10.9918 1.2 8.83757 1.2 6.18991C1.2 3.54225 3.3534 1.38798 6 1.38798C8.6466 1.38798 10.8 3.54225 10.8 6.18991C10.8 8.83757 8.6466 10.9918 6 10.9918Z" fill="#696969"/>
+                    <path d="M6.60039 3.1875H5.40039V6.4372L7.37619 8.4138L8.22459 7.56506L6.60039 5.9402V3.1875Z" fill="#696969"/>
+                    </svg>
+                    <p>3 min. to read</p>
+                  </div>
+                  <p>I intend to share it all; what I use daily, what products I intend to share it all...</p>
+                </div>
+              </div>
+            </div><!-- blog card -->
 
-          <div class="col-xxl-6">
-            <div class="blog-card">
-              <img class="post-thumbnail" src="../assets/img/interview-thumbnail.png" alt="">
-              <div class="post-meta">
-                <h3>Interview with Chris Dolphfings, Founder of Mega Motors Australia</h3>
-                <div class="post-details">
-                  <div class="post-meta-details">
-                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.4 5.58967H3.6V6.79015H2.4V5.58967ZM10.8 2.58846V10.9918C10.8 11.6521 10.26 12.1923 9.6 12.1923H1.2C0.88174 12.1923 0.576515 12.0658 0.351472 11.8407C0.126428 11.6156 0 11.3102 0 10.9918L0.00599999 2.58846C0.00599999 1.9282 0.534 1.38798 1.2 1.38798H1.8V0.1875H3V1.38798H7.8V0.1875H9V1.38798H9.6C10.26 1.38798 10.8 1.9282 10.8 2.58846ZM1.2 3.78895H9.6V2.58846H1.2V3.78895ZM9.6 10.9918V4.98943H1.2V10.9918H9.6ZM7.2 6.79015H8.4V5.58967H7.2V6.79015ZM4.8 6.79015H6V5.58967H4.8V6.79015Z" fill="#696969"/>
-                    </svg>
-                    <p>02 december 2022</p>
-                    <div class="divider"></div>
-                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 0.1875C2.6916 0.1875 0 2.88018 0 6.18991C0 9.49964 2.6916 12.1923 6 12.1923C9.3084 12.1923 12 9.49964 12 6.18991C12 2.88018 9.3084 0.1875 6 0.1875ZM6 10.9918C3.3534 10.9918 1.2 8.83757 1.2 6.18991C1.2 3.54225 3.3534 1.38798 6 1.38798C8.6466 1.38798 10.8 3.54225 10.8 6.18991C10.8 8.83757 8.6466 10.9918 6 10.9918Z" fill="#696969"/>
-                    <path d="M6.60039 3.1875H5.40039V6.4372L7.37619 8.4138L8.22459 7.56506L6.60039 5.9402V3.1875Z" fill="#696969"/>
-                    </svg>
-                    <p>3 min. to read</p>
-                  </div>
-                  <p>I intend to share it all; what I use daily, what products I intend to share it all...</p>
-                </div>
-              </div>
-            </div><!-- blog card -->
-          </div><!-- col -->
-          
-          <div class="col-xxl-6">
-            <div class="blog-card">
-              <img class="post-thumbnail" src="../assets/img/interview-thumbnail.png" alt="">
-              <div class="post-meta">
-                <h3>Interview with Chris Dolphfings, Founder of Mega Motors Australia</h3>
-                <div class="post-details">
-                  <div class="post-meta-details">
-                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.4 5.58967H3.6V6.79015H2.4V5.58967ZM10.8 2.58846V10.9918C10.8 11.6521 10.26 12.1923 9.6 12.1923H1.2C0.88174 12.1923 0.576515 12.0658 0.351472 11.8407C0.126428 11.6156 0 11.3102 0 10.9918L0.00599999 2.58846C0.00599999 1.9282 0.534 1.38798 1.2 1.38798H1.8V0.1875H3V1.38798H7.8V0.1875H9V1.38798H9.6C10.26 1.38798 10.8 1.9282 10.8 2.58846ZM1.2 3.78895H9.6V2.58846H1.2V3.78895ZM9.6 10.9918V4.98943H1.2V10.9918H9.6ZM7.2 6.79015H8.4V5.58967H7.2V6.79015ZM4.8 6.79015H6V5.58967H4.8V6.79015Z" fill="#696969"/>
-                    </svg>
-                    <p>02 december 2022</p>
-                    <div class="divider"></div>
-                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 0.1875C2.6916 0.1875 0 2.88018 0 6.18991C0 9.49964 2.6916 12.1923 6 12.1923C9.3084 12.1923 12 9.49964 12 6.18991C12 2.88018 9.3084 0.1875 6 0.1875ZM6 10.9918C3.3534 10.9918 1.2 8.83757 1.2 6.18991C1.2 3.54225 3.3534 1.38798 6 1.38798C8.6466 1.38798 10.8 3.54225 10.8 6.18991C10.8 8.83757 8.6466 10.9918 6 10.9918Z" fill="#696969"/>
-                    <path d="M6.60039 3.1875H5.40039V6.4372L7.37619 8.4138L8.22459 7.56506L6.60039 5.9402V3.1875Z" fill="#696969"/>
-                    </svg>
-                    <p>3 min. to read</p>
-                  </div>
-                  <p>I intend to share it all; what I use daily, what products I intend to share it all...</p>
-                </div>
-              </div>
-            </div><!-- blog card -->
-          </div><!-- col -->
-
-          <div class="col-xxl-6">
-            <div class="blog-card">
-              <img class="post-thumbnail" src="../assets/img/interview-thumbnail.png" alt="">
-              <div class="post-meta">
-                <h3>Interview with Chris Dolphfings, Founder of Mega Motors Australia</h3>
-                <div class="post-details">
-                  <div class="post-meta-details">
-                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.4 5.58967H3.6V6.79015H2.4V5.58967ZM10.8 2.58846V10.9918C10.8 11.6521 10.26 12.1923 9.6 12.1923H1.2C0.88174 12.1923 0.576515 12.0658 0.351472 11.8407C0.126428 11.6156 0 11.3102 0 10.9918L0.00599999 2.58846C0.00599999 1.9282 0.534 1.38798 1.2 1.38798H1.8V0.1875H3V1.38798H7.8V0.1875H9V1.38798H9.6C10.26 1.38798 10.8 1.9282 10.8 2.58846ZM1.2 3.78895H9.6V2.58846H1.2V3.78895ZM9.6 10.9918V4.98943H1.2V10.9918H9.6ZM7.2 6.79015H8.4V5.58967H7.2V6.79015ZM4.8 6.79015H6V5.58967H4.8V6.79015Z" fill="#696969"/>
-                    </svg>
-                    <p>02 december 2022</p>
-                    <div class="divider"></div>
-                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 0.1875C2.6916 0.1875 0 2.88018 0 6.18991C0 9.49964 2.6916 12.1923 6 12.1923C9.3084 12.1923 12 9.49964 12 6.18991C12 2.88018 9.3084 0.1875 6 0.1875ZM6 10.9918C3.3534 10.9918 1.2 8.83757 1.2 6.18991C1.2 3.54225 3.3534 1.38798 6 1.38798C8.6466 1.38798 10.8 3.54225 10.8 6.18991C10.8 8.83757 8.6466 10.9918 6 10.9918Z" fill="#696969"/>
-                    <path d="M6.60039 3.1875H5.40039V6.4372L7.37619 8.4138L8.22459 7.56506L6.60039 5.9402V3.1875Z" fill="#696969"/>
-                    </svg>
-                    <p>3 min. to read</p>
-                  </div>
-                  <p>I intend to share it all; what I use daily, what products I intend to share it all...</p>
-                </div>
-              </div>
-            </div><!-- blog card -->
-          </div><!-- col -->
         </div>
       </div>
     </section>
@@ -304,8 +334,9 @@
       <div class="container container-small ">
         <div class="row">
           <div class="col-xxl-12">
-            <div class="main-black-banner-wrapper br-10 right">
-              <img src="../assets/img/banner-right-image.png" alt="" class="bg-img">
+            <div class="main-black-banner-wrapper  right">
+              <img src="../assets/img/banner-right-image.png" alt="" class="bg-img d-none d-sm-inline-block">
+              <img src="../assets/img/banner-right-image-mob.png" alt="" class="bg-img d-inline-block d-sm-none">
               <div class="content">
                 <h2 class="section-header white">Best By Tose Zafirov</h2>
                 <p class="white">Our fitness transformation group is open to anyone willing to change their life and health for the better, regardless of gender and age. You’ll easily find daily motivation in an environment full of like-minded individuals on the same journey as yourself.</p>
@@ -317,19 +348,21 @@
       </div>  
     </section>
 
-
+  </main>
 
   <footer class="footer footer-contact">
     <div class="line"></div>
     <div class="subscription">
       <div class="container">
         <div class="subscription-wrapper">
-          <p class="white"> Subscribe to my newsletter to remain up-to-date with the most powerful fitness
+          <p class="white d-none d-lg-inline-block"> Subscribe to my newsletter to remain up-to-date with the most powerful fitness
             transformation group and get my autobiography book free of charge!</p>
+            <p class="white d-inline-block d-lg-none"> Subscribe to my newsletter to remain up-to-date with the most powerful fitness
+            transformation group!</p>
           <form class="subscription-form" action="submit">
 
             <input class="subscription-form-input" type="text" placeholder="Enter your email adress">
-            <input class="btn subscription-form-submit " type="submit" value="SUBSCRIBE">
+            <input class="btn subscription-form-submit btn-mini " type="submit" value="SUBSCRIBE">
           </form>
 
           <a href="#" class="plus">
@@ -344,7 +377,7 @@
 
     <div class="container container-small">
       <div class="row">
-        <div class="col-xxl-3">
+        <div class="col-xxl-3 col-xl-3  col-lg-4 col-md-5 col-sm-12 col-12 text-center text-sm-start">
           <img src="../assets/img/logo-black.png" alt="" class="footer-logo">
           <div class="footer-socials">
             <a class="footer-socials-link" href="#">
@@ -429,14 +462,14 @@
             </a>
           </div>
         </div>
-        <div class="col-xxl-2 offset-xxl-2">
+        <div class="col-xxl-2 offset-xxl-2 col-xl-2 offset-xl-2 col-lg-2 offset-lg-1 col-md-3 offset-md-0 col-sm-12 col-12 ">
           <ul class="footer-nav-menu">
             <li><a href="">Privacy Policy</a></li>
             <li><a href="">Terms of Service</a></li>
           </ul>
         </div>
-        <div class="col-xxl-4 offset-xxl-1 text-end">
-          <p class="text white">Feel free to contact me for any questions or collaboration opportunities.</p>
+        <div class="col-xxl-4 offset-xxl-1 text-end col-xl-4 offset-xl-1 col-lg-4 offset-lg-1 col-md-4 offset-md-0 col-sm-12 col-12 text-center text-sm-end">
+          <p class="text white secondary">Feel free to contact me for any questions or collaboration opportunities.</p>
           <a href="" class="btn btn-ghost">Contact me now</a>
         </div>
       </div>
@@ -465,19 +498,13 @@
               </clipPath>
             </defs>
           </svg>
-          <p class="white">Powered by HE Group</p>
+          <p class="white powered">Powered by HE Group</p>
         </div>
         <p class="white">© Tose Zafirov 2022. All rights reserved.</p>
       </div>
     </div>
 
   </footer>
-
-
-
-
-
-  </main>
   
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

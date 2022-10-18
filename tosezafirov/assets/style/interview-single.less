@@ -1,3 +1,9 @@
+/*
+INTERVIEW SINGLE PAGE ///////////////////////////
+*/
+
+
+
 .interviews-single{
   background: #F9F9F9;
   margin-top: 0;
@@ -64,6 +70,7 @@
     }
   }
 }
+
 .interview-post{
   margin-top: 65px;
   padding-bottom: 85px;
@@ -98,6 +105,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
+    align-items: center;
    
     &:first-child{
       margin-top: 5px;
@@ -113,14 +121,23 @@
         border-radius: 20px;
       }
       svg{
+        position: absolute;
         width: 27px;
         height: 27px;
-        transform: translateY(-50%);
+        bottom: 0;
+        left: 0;
+        transform: translate(65%,50%) ;
+      }
+    }
+    &-header{
+      h3{
+        margin-top: 0;
+        margin-left: 22px;
       }
     }
     &-content{
-      margin-left: 20px;
-      flex: 1;
+      margin-left: 108px;
+      width: 100%;
       h3{
         margin-top: 15px;
         font-weight: 600;
@@ -129,7 +146,7 @@
         color: #161616;
       }
       p{
-        margin-top: 24px;
+        margin-top: 14px;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -145,4 +162,169 @@
     }
   }
 }
+
+@media (max-width: 991.98px) { 
+  .interviews-single{
+    padding-top: 10px;
+    padding-bottom: 0;
+    background: none;
+  }
+  .interviews-single-sidebar {
+    margin-top: 0;
+    .interviewer-card{
+      
+    }
+  }
+  .interview-post{
+    margin-top: 56px;
+    padding-bottom: 53px;
+    .dropdown{
+      margin-bottom: 37px;
+      .nav{
+        .nav-item{
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 15px;    
+          color: #161616;
+          .nav-link{
+            font-family: 'archivo';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 15px;    
+            color: #161616;
+          }
+        }
+      }
+    }
+    .btn-dropdown{
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 17px 24px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 15px;  
+      color: #161616;
+      text-align: start;
+      outline: none;
+      border: none;
+      &:after{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+      }
+    }
+    .dropdown-menu{
+      display: none;
+      height: 0;
+      transition: 0.1s;
+      transform: none;
+      &.show{
+        display: block;
+        height: auto;
+        position: static;
+        transition: 0.1s;
+        transform: none;
+      }
+    }
+    .tab-content{
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .interview-post {
+    .interview-post-tab{
+      &-content{
+        margin-left: 0;
+      }
+      .image{
+        margin-left: 0;
+      }
+      .question{
+        width: 100%;
+      }
+      .answer{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+.blog-single-banner{
+  &.interview-single-banner{
+    background-image: url(../img/single-interview-banner-bg.png);
+    background-size:cover;
+    background-position:center center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    .content{
+      max-width: 700px;
+      p{
+        margin-top: 15px;
+      }
+      .btn{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 991.98px) { 
+  .blog-single-banner{
+    &.interview-single-banner{
+      padding-left: 0;
+      padding-bottom: 0;
+      background-image: none;
+      .banner-header{
+        max-width: 496px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+      }
+      .btn{
+        margin-bottom: 30px;
+      }
+      .bg-img{
+        position: static;
+        transform: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 575.98px) { 
+  .blog-single-banner{
+    &.interview-single-banner{
+      margin-top: 0;
+      .content{
+        padding-left: 30px;
+        padding-right: 30px;
+        p{
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 27px;
+        }
+        .btn{
+          margin-top: 20px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+
+
 

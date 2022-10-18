@@ -1,3 +1,9 @@
+/*
+ACADEMY PAGE ///////////////////////////
+*/
+
+
+
 @color-blue: #00A3FF;
 @color-dark-blue:#005686;
 @color-black: #161616;
@@ -51,6 +57,50 @@
   }
 }
 
+
+
+
+
+@media (max-width: 991.98px) { 
+  .homepage_hero_section{
+    &.academy-hero{
+      padding-top: 53px;
+      padding-bottom: 42px;
+      background: #161616;
+      .opacity-overlay{
+        display: none;
+      }
+      .hero-bg{
+        z-index: 2;
+      }
+      .content{
+        z-index: 3;
+      }
+      .page-header{
+        max-width: 348px;
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 52px;  
+        letter-spacing: -0.01em;
+      }
+      p{
+        max-width: 325px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .homepage_hero_section{
+    &.academy-hero{
+      padding-top: 27px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+
+
 .line-double.line-eight{
   height: 8px;
 }
@@ -81,6 +131,38 @@
     align-items:center
   }
 }
+
+
+@media (max-width: 991.98px) { 
+  .academy-about{
+    padding-bottom: 70px;
+    .section-header{
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 18px;
+    }
+    img{
+      max-width: 100%;
+      padding-left:  35px;
+      padding-right: 35px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .academy-about{
+    padding-top: 45px;
+    padding-bottom: 37px;
+    .section-header{
+      margin-top: 45px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+
 
 .academy-about-2{
   background-color:transparent;
