@@ -2,12 +2,42 @@
 BEST BY SINGLE ///////////////////////////
 */
 
+@color-blue: #00A3FF;
+@color-dark-blue:#005686;
+@color-black: #161616;
+@color-light-gray:#F9F9F9;
+@color-white: #FFFFFF;
+@color-gray: #505050;
+@color-dark-gray: #212121;
 
 .best-by-single{
   .interviews-single-sidebar{
     margin-top: 0;
   }
 }
+
+@media (max-width: 991.98px) { 
+  .best-by-single{
+    .breadcrumb{
+      
+      .breadcrumb-item{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .best-by-single{
+    .breadcrumb{
+      margin: 38px 0 26px;
+      .breadcrumb-item{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
 
 .best-by-slider{
   max-width: 920px;
@@ -75,3 +105,59 @@ BEST BY SINGLE ///////////////////////////
     transform: translate(20px,-175%); 
   }
 }
+
+@media (max-width: 1399.98px) { 
+
+}
+@media (max-width: 1199.98px) { 
+
+}
+@media (max-width: 991.98px) { 
+  .best-by-slider{
+    padding-left: 36px;
+    padding-right: 36px;
+    .slick-next{
+      transform: translate(-56px,-175%); 
+    }
+    .slick-prev{
+      transform: translate(56px,-175%); 
+    }
+  }
+}
+@media (max-width: 767.98px) { 
+
+}
+@media (max-width: 575.98px) { 
+  .best-by-recently-posted{
+    .section-header{
+      margin-top: 48px;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  .best-by-slider{
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    
+    .slick-slide{
+      width: 254px;
+      margin: 0 12px;
+    }
+    .slick-dots{
+      width: 100%;
+    }
+    .slick-next{
+      transform: translate(-56px,-175%); 
+    }
+    .slick-prev{
+      transform: translate(56px,-175%); 
+    }
+  }
+}
+
+
+
+
+

@@ -2,6 +2,14 @@
 BEST BY CATEGORY PAGE ///////////////////////////
 */
 
+@color-blue: #00A3FF;
+@color-dark-blue:#005686;
+@color-black: #161616;
+@color-light-gray:#F9F9F9;
+@color-white: #FFFFFF;
+@color-gray: #505050;
+@color-dark-gray: #212121;
+
 .best-by-category-hero{
   margin-top: 28px;
   .page-header{
@@ -53,11 +61,38 @@ BEST BY CATEGORY PAGE ///////////////////////////
       border: 1px solid #00A3FF;
       padding: 18px 60px 0px;
       background: @color-white;
-      span{
+      .best-label{
         position: absolute;
         top: 13px;
         left: 22px;
-        display: inline-block;
+        display: flex;
+        width: 200px;
+        align-items: center;
+         span{
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          border-radius: 15px;
+          border: 1px solid #000;
+          text-align: center;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+          letter-spacing: -0.03em;
+        }
+        p{
+          display: none;
+          margin-left: 14px;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 20px;
+          color: #00A3FF;
+        }
+      }
+      .table-number{
+        position: absolute;
+        top: 13px;
+        left: 22px;
         width: 30px;
         height: 30px;
         border-radius: 15px;
@@ -70,26 +105,13 @@ BEST BY CATEGORY PAGE ///////////////////////////
       }
       &-content{
         width: 100%;
-        
         margin-bottom: 18px;
-        
         position: relative;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        span{    
-          display: inline-block;
-          width: 30px;
-          height: 30px;
-          border-radius: 15px;
-          border: 1px solid #000;
-          text-align: center;
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 28px;
-          letter-spacing: -0.03em;
-        }
+        
         &-details{
         margin-right: auto;
           h2{
@@ -159,24 +181,17 @@ BEST BY CATEGORY PAGE ///////////////////////////
     }
     .table-item.item-2{
     
-      span{
+      .table-number{
         background: #20E200;
         color:white;
         border: none;
       }
     }
-    .table-item.item-3{
-
-      span{
-        background: #20E200;
-        color:white;
-        border: none;
-      }
-    }
+    
 
     .table-item.item-3{
       
-      span{
+      .table-number{
         background: #505050;
         color:white;
         border: none;
@@ -197,7 +212,7 @@ BEST BY CATEGORY PAGE ///////////////////////////
           color: #000000;
         }
         p{
-          
+          margin-top: 22px;
           font-weight: 400;
           font-size: 16px;
           line-height: 26px;
@@ -206,9 +221,124 @@ BEST BY CATEGORY PAGE ///////////////////////////
         }
       }
     }
+    .expand-grid{
+      display: none;
+    }
   }
 }
 
+
+@media (max-width: 991.98px) { 
+  .best-by-table{
+    padding-bottom: 0;
+    &-wrapper{
+      height: auto;
+      transform: 0.5s;
+      .table-item{
+        padding-top: 40px;
+        &-content{
+          margin-bottom: 40px;
+          .open-btn{
+            transform: translate(-50%,180%);
+          }
+        }
+      }
+      .table-item.item-1{
+        .best-label{
+          p{
+            display: inline;
+          }
+        }
+      }
+      &.collapsed{
+        .table-item:nth-child(n+4){
+          display: none;
+        }
+        height: auto;
+        transition: 0.5s;
+        .expand-grid{
+          display: flex;
+          border: none;
+          outline: none;
+          width: 100%;
+          
+          align-items: center;
+          justify-content: space-between;
+          background: transparent;
+          gap: 10px;
+          margin-top: 65px;
+          .line{
+            height: 1px;
+            background: #000000;
+            flex-grow: 2;
+          }
+        }
+      }
+      .expand-grid{
+        display: none;
+      } 
+    }
+  }
+  .best-by-table-wrapper.collapsed .expand-grid{
+    transform: translateY(50%);
+  }
+}
+
+
+@media (max-width: 575.98px) { 
+  .best-by-table{
+    &-wrapper{
+      padding-left: 30px;
+      padding-right: 30px;
+      
+      .table-item{
+        padding-left: 20px;
+        padding-right: 20px;
+        &-content{
+          justify-content: center;
+          img{
+            margin-right: 0;
+            margin-bottom: 28px;
+            justify-self: center;
+          }
+          &-buttons{
+            width: 100%;
+            margin: 0;
+            .btn{
+              width: 100%;
+            }
+          }
+          &-details{
+            .expanded-header{
+              margin-bottom: 30px;
+              text-align: center;
+              font-weight: 600;
+              font-size: 25px;
+              line-height: 32px;
+              letter-spacing: -0.03em;          
+              color: #000000;
+            }
+          }
+        }
+        .card-body{
+          padding-left: 0;
+          padding-right: 0;
+        }
+        
+      }
+      .table-item.item-1{
+        .table-item-content{
+          &-details{
+            .expanded-header{
+              text-align: start;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
 
 
 
@@ -217,7 +347,7 @@ BEST BY CATEGORY PAGE ///////////////////////////
 .best-by-category-post{
   padding-top: 40px;
   .post-text-editor{
-    padding-left: 100px;
+    
     h1{
       font-weight: 700;
       font-size: 39px;
@@ -231,6 +361,27 @@ BEST BY CATEGORY PAGE ///////////////////////////
     }
   }
 }
+
+
+@media (max-width: 991.98px) { 
+ .best-by-category-post{
+  padding-top: 0;
+  .post-text-editor{
+    margin-top: 43px;
+  }
+ } 
+}
+
+
+@media (max-width: 575.98px) { 
+  .best-by-category-post{
+    margin-top: 42px;
+    .post-text-editor{
+
+    }
+  }
+}
+
 
 
 
@@ -273,6 +424,56 @@ BEST BY CATEGORY PAGE ///////////////////////////
   .collaborator-card h3{
     font-size: 39px;
     max-width: 440px;
+  }
+}
+
+
+
+@media (max-width: 991.98px) { 
+  .faq.category-bg{
+    padding-bottom: 0;
+    .bg-img{
+      display: none;
+    }
+    .collaborator-container{
+       background: #fff;
+       padding-bottom: 34px;
+       .collaborator{
+        margin-top: 34px;
+       }
+    }
+  }
+}
+@media (max-width: 767.98px) { 
+
+}
+@media (max-width: 575.98px) { 
+  .faq.category-bg{
+    background: #FFFFFF;
+    .section-header{
+      max-width: 327px;
+      font-weight: 800;
+      font-size: 42px;
+      line-height: 60px;
+      letter-spacing: -0.03em;
+
+    }
+    .bg-img{
+      display: inline-block;
+      height: 1000px;
+      width: auto;
+      bottom: auto;
+      top: 250px;
+      left: 50%;
+      transform: translate(-50%,0);
+    }
+    .collaborator{
+      .collaborator-card{
+        h3{
+          font-size: 30px;
+        }
+      }
+    }
   }
 }
 

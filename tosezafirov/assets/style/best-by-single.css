@@ -1,7 +1,118 @@
+/*
+BEST BY SINGLE ///////////////////////////
+*/
 .best-by-single .interviews-single-sidebar {
   margin-top: 0;
 }
+@media (max-width: 991.98px) {
+  .best-by-single .breadcrumb .breadcrumb-item {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .best-by-single .breadcrumb {
+    margin: 38px 0 26px;
+  }
+  .best-by-single .breadcrumb .breadcrumb-item {
+    margin-top: 10px;
+  }
+}
 .best-by-slider {
   max-width: 920px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 120px;
+}
+.best-by-slider-item {
+  position: relative;
+  width: 270px;
+  margin: 20px 20px;
+  padding: 36px 0;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+  background: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+}
+.best-by-slider-item a {
+  text-align: center;
+}
+.best-by-slider-item a img {
+  height: 142px;
+  width: auto;
   margin: 0 auto;
+}
+.best-by-slider .slick-dots {
+  width: auto;
+  top: auto;
+  bottom: 45px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+.best-by-slider .slick-dots .slick-active button {
+  background: #00A3FF;
+}
+.best-by-slider .slick-dots li {
+  margin: 0 7px;
+}
+.best-by-slider .slick-dots li button {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 9px;
+  border: 1px solid #00a3ff;
+}
+.best-by-slider .slick-dots li button:before {
+  display: none;
+}
+.best-by-slider .slick-arrow {
+  z-index: 10;
+  width: 43px;
+  height: 43px;
+  top: 50%;
+}
+.best-by-slider .slick-next {
+  transform: translate(-20px, -175%);
+}
+.best-by-slider .slick-prev {
+  transform: translate(20px, -175%);
+}
+@media (max-width: 991.98px) {
+  .best-by-slider {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .best-by-slider .slick-next {
+    transform: translate(-56px, -175%);
+  }
+  .best-by-slider .slick-prev {
+    transform: translate(56px, -175%);
+  }
+}
+@media (max-width: 575.98px) {
+  .best-by-recently-posted .section-header {
+    margin-top: 48px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .best-by-slider {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+  .best-by-slider .slick-slide {
+    width: 254px;
+    margin: 0 12px;
+  }
+  .best-by-slider .slick-dots {
+    width: 100%;
+  }
+  .best-by-slider .slick-next {
+    transform: translate(-56px, -175%);
+  }
+  .best-by-slider .slick-prev {
+    transform: translate(56px, -175%);
+  }
 }
