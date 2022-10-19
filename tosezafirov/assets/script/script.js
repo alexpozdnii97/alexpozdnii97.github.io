@@ -56,7 +56,7 @@ $('.slider-wrapper').slick({
 });
 
 
-$('.supporters-slider').on('init afterChange', function(e, slick){
+$('#supporters-slider').on('init afterChange', function(e, slick){
   let currentSlick = $('.slick-current.slick-active', slick.$slideTrack);
   let prevName = currentSlick.prev().data('slide-name');
   let nextName = currentSlick.next().data('slide-name');
@@ -69,19 +69,32 @@ $('.supporters-slider').on('init afterChange', function(e, slick){
 
 
 
- $('.supporters-slider') .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+ $('#supporters-slider') .on('beforeChange', function(event, slick, currentSlide, nextSlide){
   console.log(currentSlide);
   console.log(nextSlide); 
   $('#video'+currentSlide)[0].pause();
    $('#video'+nextSlide)[0].play();
 });
 
-$('.supporters-slider').slick({
+$('#supporters-slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+
+});
+
+
+
+$('.academy-schedule-slider').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
 });
+
+
+
 
 
 

@@ -4356,9 +4356,48 @@ ACADEMY PAGE ///////////////////////////
 .academy-about-2 .content {
   padding: 0 45px;
 }
+@media (max-width: 991.98px) {
+  .academy-about-2 {
+    padding-top: 42px ;
+    padding-bottom: 42px;
+  }
+  .academy-about-2 .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .academy-about-2 .content p {
+    margin-top: 0;
+    width: 45%;
+  }
+}
+@media (max-width: 575.98px) {
+  .academy-about.academy-about-2 {
+    padding-top: 6px;
+    padding-bottom: 42px;
+  }
+  .academy-about.academy-about-2 .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 0 5px ;
+  }
+  .academy-about.academy-about-2 .content p {
+    margin-top: 26px;
+    width: 100%;
+  }
+  .academy-about.academy-about-2 img {
+    padding: 0 15px;
+  }
+}
 .olympia-gear-banner.about-page {
   padding-top: 35px;
   padding-bottom: 20px;
+}
+.shop-wrapper.academy-page .olympia-gear-banner {
+  margin-top: 0;
 }
 .benefits {
   margin-top: 95px;
@@ -4384,6 +4423,63 @@ ACADEMY PAGE ///////////////////////////
 .benefits-wrapper .large-media-content {
   margin-left: 0;
   padding-left: 60px;
+}
+@media (max-width: 991.98px) {
+  .benefits {
+    margin-top: 42px;
+    margin-bottom: 63px;
+  }
+  .benefits .section-header {
+    margin-bottom: 45px;
+  }
+  .benefits-wrapper .large-media {
+    margin-bottom: 23px;
+    justify-content: center;
+  }
+  .benefits-wrapper .large-media h3 {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+    min-height: auto;
+  }
+  .benefits-wrapper .large-media .large-media-content {
+    padding-left: 0;
+  }
+  .benefits-wrapper .large-media .large-media-content p {
+    margin-top: 17px;
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .benefits .section-header {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #161616;
+  }
+  .benefits-wrapper .large-media {
+    padding: 0;
+    justify-content: start;
+  }
+  .benefits-wrapper .large-media .large-media-icon {
+    width: 25%;
+  }
+  .benefits-wrapper .large-media h3 {
+    max-width: 150px;
+    margin-left: 30px;
+    text-align: start;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #161616;
+  }
+  .benefits-wrapper .large-media .large-media-content {
+    margin-top: 0;
+  }
+  .benefits-wrapper .large-media .large-media-content p {
+    text-align: start;
+  }
 }
 .banner-with-bg {
   padding: 190px 0 155px;
@@ -4417,12 +4513,87 @@ ACADEMY PAGE ///////////////////////////
   margin-top: 20px;
   text-transform: none;
 }
+@media (max-width: 991.98px) {
+  .banner-with-bg {
+    padding: 0;
+    background: #161616;
+    background-image: none;
+  }
+  .banner-with-bg .section-header {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .banner-with-bg .bg-img {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .banner-with-bg {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .banner-with-bg .section-header {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: start;
+  }
+  .banner-with-bg .container {
+    order: 2;
+  }
+  .banner-with-bg .bg-img {
+    order: 1;
+  }
+  .banner-with-bg p {
+    text-align: start;
+  }
+}
 .recognition-steps {
   margin-top: 83px;
 }
 .recognition-steps .section-header {
   max-width: 634px;
   margin-bottom: 25px;
+}
+.recognition-steps .large-media-header h3 {
+  margin-top: 10px;
+}
+@media (max-width: 991.98px) {
+  .recognition-steps .large-media {
+    justify-content: center;
+  }
+  .recognition-steps .large-media .large-media-icon {
+    text-align: center;
+  }
+  .recognition-steps .large-media .large-media-header {
+    text-align: center;
+  }
+  .recognition-steps .large-media .large-media-content {
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .recognition-steps .large-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .recognition-steps .large-media .large-media-icon {
+    width: 25%;
+  }
+  .recognition-steps .large-media .large-media-header {
+    margin-left: 20px;
+    max-width: 175px;
+    text-align: start;
+  }
+  .recognition-steps .large-media .large-media-content {
+    width: 100%;
+    padding-right: 0;
+  }
+  .recognition-steps .large-media .large-media-content p {
+    text-align: start;
+  }
 }
 .application-banner {
   margin-top: 125px;
@@ -4451,9 +4622,53 @@ ACADEMY PAGE ///////////////////////////
 .application-banner .content .btn {
   margin-top: 28px;
 }
+@media (max-width: 991.98px) {
+  .application-banner {
+    margin-top: 62px;
+  }
+  .application-banner .content {
+    padding: 36px 0 67px 40px;
+  }
+  .application-banner .content p,
+  .application-banner .content a {
+    position: relative;
+    z-index: 5;
+  }
+  .application-banner .content p {
+    max-width: 335px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 575.98px) {
+  .application-banner .container {
+    padding: 0;
+  }
+  .application-banner .content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    padding: 26px 0 0;
+    align-items: center;
+  }
+  .application-banner .content p {
+    text-align: center;
+    margin: 0 13px;
+  }
+  .application-banner .content .bg-img {
+    position: static;
+    order: 3;
+  }
+}
 .academy-schedule {
   padding-top: 100px;
   background: #F9F9F9;
+}
+@media (max-width: 991.98px) {
+  .academy-schedule {
+    padding-top: 55px;
+  }
 }
 .supporters-slider.academy {
   max-width: 524px;
@@ -4507,6 +4722,49 @@ ACADEMY PAGE ///////////////////////////
   font-size: 18px;
   line-height: 27px;
   color: #505050;
+}
+@media (max-width: 991.98px) {
+  .supporters-slider.academy {
+    margin-bottom: 40px;
+  }
+  .supporters-slider.academy .slick-arrow {
+    top: 100px;
+    z-index: 10;
+  }
+  .supporters-slider.academy .slick-next {
+    transform: translate(50px, 0);
+    z-index: 10;
+  }
+  .supporters-slider.academy .slick-prev {
+    transform: translate(-50px, 0);
+    z-index: 10;
+  }
+}
+@media (max-width: 575.98px) {
+  .supporters-slider.academy .supporters-slider-item {
+    margin: 0;
+  }
+  .supporters-slider.academy .supporters-slider-item img {
+    padding: 0 20px;
+  }
+  .supporters-slider.academy .supporters-slider-item .expert-details {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .supporters-slider.academy .supporters-slider-item .expert-schedule {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .supporters-slider.academy .supporters-slider-item .expert-schedule h3 {
+    text-align: center;
+    margin-bottom: 27px;
+  }
+  .supporters-slider.academy .supporters-slider-item .expert-schedule ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    padding-left: 20px;
+  }
 }
 .academy-request {
   margin-top: 140px;
@@ -4594,6 +4852,36 @@ ACADEMY PAGE ///////////////////////////
   margin-right: auto;
   margin-left: 16px;
 }
+@media (max-width: 991.98px) {
+  .academy-request {
+    margin-top: 60px;
+    padding: 0 44px;
+  }
+  .academy-request-wrapper {
+    padding: 40px 50px;
+  }
+  .academy-request-wrapper .section-header {
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    /* or 120% */
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .academy-request {
+    padding: 0;
+  }
+  .academy-request-wrapper {
+    padding: 20px 20px 30px;
+  }
+  .academy-request-wrapper .contact-us-form .column {
+    width: 100%;
+  }
+}
 .faq.no-bg {
   background: transparent;
 }
@@ -4605,6 +4893,17 @@ ACADEMY PAGE ///////////////////////////
 }
 .faq.no-bg .accordion .accordion-item .accordion-body {
   background: transparent;
+}
+@media (max-width: 575.98px) {
+  .faq.academy .section-header {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 60px;
+    /* or 143% */
+    letter-spacing: -0.03em;
+    /* Text/txt-primary */
+    color: #000000;
+  }
 }
 /*
 GYM PAGE ///////////////////////////
