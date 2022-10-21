@@ -235,6 +235,8 @@ ABOUT PAGE ///////////////////////////
 }
 @media (max-width: 991.98px) { 
   .roadmap{
+    margin-top: 0;
+    padding-top: 53px;
     background: #F9F9F9;
     &-content{
       .wrapper{
@@ -416,12 +418,9 @@ ABOUT PAGE ///////////////////////////
 }
 
 
-
-
-
 .homepage_about_tose{
   &.about-page-1{
-    background: #F9F9F9;
+    background: transparent;
     padding-top:90px;
     img{
       max-width: 100%;
@@ -472,6 +471,11 @@ ABOUT PAGE ///////////////////////////
   }
   &.about-page-3{
     padding-bottom: 125px;
+    background: linear-gradient(
+      to bottom,
+      transparent 120px,
+    #F9F9F9 120px  100%,
+    );
   }
 }
 
@@ -516,6 +520,9 @@ ABOUT PAGE ///////////////////////////
       margin-top: 53px;
     }
   }
+  .homepage_slider.about-page-1{
+    background: transparent;
+  }
   .homepage_slider.about-page-2{
     padding-bottom: 60px;
     background: linear-gradient(
@@ -526,6 +533,14 @@ ABOUT PAGE ///////////////////////////
   }
   .homepage_about_tose.about-page-3{
     margin-bottom: 45px;
+  }
+  .homepage_slider.about-page-3{
+    padding-bottom: 50px;
+    background: linear-gradient(
+      to top,
+      #F9F9F9 155px,
+      transparent 155px  100%,
+    );
   }
 }
 
