@@ -62,7 +62,7 @@ BEST BY MAIN PAGE ///////////////////////////
   width: 100%;
   gap: 22px;
 }
-.best-by-global .top-nav d .nav-item .nav-link {
+.best-by-global .top-nav .nav-item .nav-link {
   max-width: 200px;
   width: 200px;
   padding: 0;
@@ -80,7 +80,7 @@ BEST BY MAIN PAGE ///////////////////////////
   letter-spacing: -0.03em;
   color: #161616;
 }
-.best-by-global .top-nav d .nav-item .nav-link.active {
+.best-by-global .top-nav .nav-item .nav-link.active {
   background: #00a3ff;
   color: #FFFFFF;
 }
@@ -260,7 +260,7 @@ BEST BY MAIN PAGE ///////////////////////////
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 .best-by-grid .best-by-grid-item.item-1 .best-overall p {
   margin-left: 14px;
