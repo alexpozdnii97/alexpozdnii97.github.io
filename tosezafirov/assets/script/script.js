@@ -314,11 +314,6 @@ $(".headers-in-here").html(
 );
 
 
-
-
-
-
-
 let slider = $(".trophies-slider");
 
 // slider.on("init", function() {
@@ -424,7 +419,8 @@ $('.team-slider').slick({
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-        dots: false
+        dots: false,
+        arrows: false,
       }
     },
     {

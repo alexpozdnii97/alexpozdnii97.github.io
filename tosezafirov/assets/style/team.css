@@ -140,6 +140,9 @@ TEAM PAGE ///////////////////////////
     margin: 0;
     padding: 0;
   }
+  .team-slider {
+    margin-top: 24px;
+  }
   .team-slider .slick-slide {
     width: 210px;
     margin: 0 6px;
@@ -174,6 +177,9 @@ TEAM PAGE ///////////////////////////
   }
 }
 @media (max-width: 991.98px) {
+  .banner-transparent.team-banner {
+    margin-top: 43px;
+  }
   .banner-transparent.team-banner .banner-transparent-wrapper {
     padding: 30px 40px;
     flex-wrap: wrap;
@@ -221,13 +227,18 @@ TEAM PAGE ///////////////////////////
   background: #F9F9F9;
   padding-bottom: 55px;
 }
-@media (max-width: 991.98px) {
-  .what-you-get {
-    padding-top: 61px;
-  }
-}
 .what-you-get-content {
   margin-top: 82px;
+}
+@media (max-width: 991.98px) {
+  .what-you-get {
+    padding-top: 34px;
+  }
+}
+@media (max-width: 575.98px) {
+  .what-you-get {
+    padding-bottom: 0;
+  }
 }
 .large-media {
   display: flex;
@@ -352,6 +363,9 @@ TEAM PAGE ///////////////////////////
   margin-top: 10px;
 }
 @media (max-width: 991.98px) {
+  .steps {
+    margin-bottom: 30px;
+  }
   .steps .large-media h3 {
     margin-top: 10px;
     max-width: none;
