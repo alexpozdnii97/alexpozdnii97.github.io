@@ -1941,7 +1941,8 @@ BLOG ARCHIVE PAGE ///////////////////////////
 }
 .blog-featured-meta p {
   margin-top: 30px;
-  width: 340px;
+  width: 100%;
+  padding-right: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1949,6 +1950,10 @@ BLOG ARCHIVE PAGE ///////////////////////////
 }
 .blog-featured-meta .breadcrumb {
   margin-top: 20px;
+}
+.blog-featured-meta .breadcrumb-item a {
+  text-decoration: none;
+  color: #696969;
 }
 .blog-featured-article {
   margin-left: 55px;
@@ -2039,6 +2044,9 @@ BLOG ARCHIVE PAGE ///////////////////////////
   }
 }
 @media (max-width: 575.98px) {
+  .blog-featured {
+    margin-top: 15px;
+  }
   .blog-featured .container {
     padding: 0;
     margin: 0;
@@ -2050,6 +2058,7 @@ BLOG ARCHIVE PAGE ///////////////////////////
     margin-top: 22px;
   }
   .blog-featured-meta p {
+    margin-top: 0;
     margin-bottom: 35px;
   }
   .blog-featured-article {
@@ -2200,6 +2209,7 @@ BLOG ARCHIVE PAGE ///////////////////////////
 }
 @media (max-width: 991.98px) {
   .recently-posted .section-header {
+    margin-top: 26px;
     text-align: center;
     font-weight: 500;
     font-size: 30px;
@@ -2596,11 +2606,11 @@ BLOG SINGLE PAGE ///////////////////////////
     padding-bottom: 50px;
   }
 }
-.recently-posted {
+.recently-posted.recently-posted-single {
   margin-top: 55px;
   background-color: #F9F9F9;
 }
-.recently-posted .section-header {
+.recently-posted.recently-posted-single .section-header {
   margin-top: 70px;
   font-weight: 700;
   font-size: 42px;
@@ -2609,7 +2619,7 @@ BLOG SINGLE PAGE ///////////////////////////
   letter-spacing: -0.03em;
   color: #161616;
 }
-.recently-posted-slider-no-pagination {
+.recently-posted.recently-posted-single-slider-no-pagination {
   max-width: 1200px;
   margin: 35px auto 0;
   padding-bottom: 120px;
@@ -2617,40 +2627,40 @@ BLOG SINGLE PAGE ///////////////////////////
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.recently-posted-slider-no-pagination-item {
+.recently-posted.recently-posted-single-slider-no-pagination-item {
   width: 270px;
   margin: 0 15px;
 }
-.recently-posted-slider-no-pagination-item a {
+.recently-posted.recently-posted-single-slider-no-pagination-item a {
   text-decoration: none;
 }
-.recently-posted-slider-no-pagination-item img {
+.recently-posted.recently-posted-single-slider-no-pagination-item img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   border: 2px solid #00a3ff;
 }
-.recently-posted-slider-no-pagination-item h3 {
+.recently-posted.recently-posted-single-slider-no-pagination-item h3 {
   margin-top: 18px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #161616;
 }
-.recently-posted-slider-no-pagination .slick-dots {
+.recently-posted.recently-posted-single-slider-no-pagination .slick-dots {
   width: auto;
   top: auto;
   bottom: 45px;
   left: 50%;
   transform: translate(-50%, 0px);
 }
-.recently-posted-slider-no-pagination .slick-dots .slick-active button {
+.recently-posted.recently-posted-single-slider-no-pagination .slick-dots .slick-active button {
   background: #00A3FF;
 }
-.recently-posted-slider-no-pagination .slick-dots li {
+.recently-posted.recently-posted-single-slider-no-pagination .slick-dots li {
   margin: 0 7px;
 }
-.recently-posted-slider-no-pagination .slick-dots li button {
+.recently-posted.recently-posted-single-slider-no-pagination .slick-dots li button {
   content: "";
   width: 18px;
   height: 18px;
@@ -2658,7 +2668,7 @@ BLOG SINGLE PAGE ///////////////////////////
   border-radius: 9px;
   border: 1px solid #00a3ff;
 }
-.recently-posted-slider-no-pagination .slick-dots li button:before {
+.recently-posted.recently-posted-single-slider-no-pagination .slick-dots li button:before {
   display: none;
 }
 .recently-posted.no-bg {

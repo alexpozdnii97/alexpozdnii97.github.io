@@ -16,7 +16,8 @@ BLOG ARCHIVE PAGE ///////////////////////////
 }
 .blog-featured-meta p {
   margin-top: 30px;
-  width: 340px;
+  width: 100%;
+  padding-right: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -24,6 +25,10 @@ BLOG ARCHIVE PAGE ///////////////////////////
 }
 .blog-featured-meta .breadcrumb {
   margin-top: 20px;
+}
+.blog-featured-meta .breadcrumb-item a {
+  text-decoration: none;
+  color: #696969;
 }
 .blog-featured-article {
   margin-left: 55px;
@@ -114,6 +119,9 @@ BLOG ARCHIVE PAGE ///////////////////////////
   }
 }
 @media (max-width: 575.98px) {
+  .blog-featured {
+    margin-top: 15px;
+  }
   .blog-featured .container {
     padding: 0;
     margin: 0;
@@ -125,6 +133,7 @@ BLOG ARCHIVE PAGE ///////////////////////////
     margin-top: 22px;
   }
   .blog-featured-meta p {
+    margin-top: 0;
     margin-bottom: 35px;
   }
   .blog-featured-article {
@@ -275,6 +284,7 @@ BLOG ARCHIVE PAGE ///////////////////////////
 }
 @media (max-width: 991.98px) {
   .recently-posted .section-header {
+    margin-top: 26px;
     text-align: center;
     font-weight: 500;
     font-size: 30px;
