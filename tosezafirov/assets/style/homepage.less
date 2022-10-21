@@ -484,8 +484,18 @@ justify-content: flex-end;
 
 @media (max-width: 575.98px) { 
   .homepage_slider{
-    padding-bottom: 42px;
+    padding-bottom: 12px;
     background: #F9F9F9;
+    .slider-wrapper{
+      transform: none;
+      .slider-item{
+        padding-right: 0;
+      }
+      .slick-slide{
+        width: 282px;
+        margin: 0 11px;
+      }
+    }
   }
 }
 
@@ -577,6 +587,14 @@ justify-content: flex-end;
 @media (max-width: 575.98px) { 
 
   .homepage-fitness-revolution{
+    padding-top: 22px;
+    padding-bottom: 0;
+    margin-bottom: -2px;
+    background: linear-gradient(
+      to top, 
+      #161616 75px,
+      transparent 75px 100%,
+    );
     .section-header{
       width: 100%;
       text-align: start;
@@ -715,8 +733,6 @@ justify-content: flex-end;
     margin-top: 50px;
   }
 }
-
-
 
 
 
@@ -877,6 +893,10 @@ justify-content: flex-end;
   }
 }
 @media (max-width: 991.98px) { 
+  .homepage-latest-interviews{
+    margin-top: 42px;
+    padding-bottom: 20px;
+  }
   .interviews-slider{
     &-item{
      margin-left: 5px;
@@ -919,6 +939,7 @@ justify-content: flex-end;
 
 @media (max-width: 575.98px) { 
   .homepage-latest-interviews{
+    margin-top: 60px;
     padding-bottom: 50px;
     .recent-header{
       margin-top: 100px;
@@ -985,6 +1006,11 @@ justify-content: flex-end;
   }
 }
 
+
+
+
+
+
 .olympia-gear-banner{
   position: relative;
   z-index: 10;
@@ -1039,9 +1065,10 @@ justify-content: flex-end;
 
 @media (max-width: 991.98px) { 
   .homepage-olympia-limited {
+    padding-bottom: 60px;
     .padding{
+      padding-top: 40px;
       padding-left: 0;
-      
     }
     .featured-image{
       margin-top: 40px;
@@ -1057,6 +1084,7 @@ justify-content: flex-end;
     margin-top: 0;
     padding-left: 38px;
     padding-right: 38px;
+    
     align-items: center;
     &-content{
       width: 447px;
@@ -1293,6 +1321,7 @@ justify-content: flex-end;
 
 @media (max-width: 991.98px) { 
   .supporters-slider{
+    margin-top: 60px;
     max-width: 548px;
   }
   .supporter-details{
@@ -1372,6 +1401,9 @@ justify-content: flex-end;
 
 
 @media (max-width: 991.98px) { 
+  .banner-transparent{
+    margin-top: 73px;
+  }
   .banner-transparent-wrapper{
     padding: 15px 25px;
     align-items: center;

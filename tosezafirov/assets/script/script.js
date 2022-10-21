@@ -46,7 +46,10 @@ $('.slider-wrapper').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: false
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        variableWidth: true,
       }
     }
     // You can unslick at a given breakpoint now by adding:
