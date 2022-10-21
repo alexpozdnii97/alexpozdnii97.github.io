@@ -347,6 +347,12 @@ ACADEMY PAGE ///////////////////////////
   margin-top: 10px;
 }
 @media (max-width: 991.98px) {
+  .recognition-steps .section-header {
+    max-width: 645px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
   .recognition-steps .large-media {
     justify-content: center;
   }
@@ -413,8 +419,18 @@ ACADEMY PAGE ///////////////////////////
   .application-banner {
     margin-top: 62px;
   }
+  .application-banner .container {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    border-radius: 0;
+    width: 100%;
+  }
   .application-banner .content {
+    width: 100%;
+    max-width: none;
     padding: 36px 0 67px 40px;
+    border-radius: 0;
   }
   .application-banner .content p,
   .application-banner .content a {
