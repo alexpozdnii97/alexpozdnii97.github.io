@@ -2301,9 +2301,17 @@ BLOG SINGLE PAGE ///////////////////////////
   text-decoration: none;
   color: #505050;
 }
-.blog-single-body .post-meta-details,
-.interviews-single-body .post-meta-details {
+.blog-single-body .post-meta-details p,
+.interviews-single-body .post-meta-details p {
   color: #00a3ff;
+}
+.blog-single-body .post-meta-details svg,
+.interviews-single-body .post-meta-details svg {
+  fill: #00a3ff;
+}
+.blog-single-body .post-meta-details svg path,
+.interviews-single-body .post-meta-details svg path {
+  fill: #00A3FF;
 }
 .blog-single-body .section-header,
 .interviews-single-body .section-header {
@@ -2606,11 +2614,11 @@ BLOG SINGLE PAGE ///////////////////////////
     padding-bottom: 50px;
   }
 }
-.recently-posted.recently-posted-single {
+.recently-posted.recent-posted-single {
   margin-top: 55px;
   background-color: #F9F9F9;
 }
-.recently-posted.recently-posted-single .section-header {
+.recently-posted.recent-posted-single .section-header {
   margin-top: 70px;
   font-weight: 700;
   font-size: 42px;
@@ -2619,7 +2627,7 @@ BLOG SINGLE PAGE ///////////////////////////
   letter-spacing: -0.03em;
   color: #161616;
 }
-.recently-posted.recently-posted-single-slider-no-pagination {
+.recently-posted.recent-posted-single .recently-posted-slider-no-pagination {
   max-width: 1200px;
   margin: 35px auto 0;
   padding-bottom: 120px;
@@ -2627,40 +2635,40 @@ BLOG SINGLE PAGE ///////////////////////////
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.recently-posted.recently-posted-single-slider-no-pagination-item {
+.recently-posted.recent-posted-single .recently-posted-slider-no-pagination-item {
   width: 270px;
   margin: 0 15px;
 }
-.recently-posted.recently-posted-single-slider-no-pagination-item a {
+.recently-posted.recent-posted-single .recently-posted-slider-no-pagination-item a {
   text-decoration: none;
 }
-.recently-posted.recently-posted-single-slider-no-pagination-item img {
+.recently-posted.recent-posted-single .recently-posted-slider-no-pagination-item img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   border: 2px solid #00a3ff;
 }
-.recently-posted.recently-posted-single-slider-no-pagination-item h3 {
+.recently-posted.recent-posted-single .recently-posted-slider-no-pagination-item h3 {
   margin-top: 18px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #161616;
 }
-.recently-posted.recently-posted-single-slider-no-pagination .slick-dots {
+.recently-posted.recent-posted-single .recently-posted-slider-no-pagination .slick-dots {
   width: auto;
   top: auto;
   bottom: 45px;
   left: 50%;
   transform: translate(-50%, 0px);
 }
-.recently-posted.recently-posted-single-slider-no-pagination .slick-dots .slick-active button {
+.recently-posted.recent-posted-single .recently-posted-slider-no-pagination .slick-dots .slick-active button {
   background: #00A3FF;
 }
-.recently-posted.recently-posted-single-slider-no-pagination .slick-dots li {
+.recently-posted.recent-posted-single .recently-posted-slider-no-pagination .slick-dots li {
   margin: 0 7px;
 }
-.recently-posted.recently-posted-single-slider-no-pagination .slick-dots li button {
+.recently-posted.recent-posted-single .recently-posted-slider-no-pagination .slick-dots li button {
   content: "";
   width: 18px;
   height: 18px;
@@ -2668,19 +2676,32 @@ BLOG SINGLE PAGE ///////////////////////////
   border-radius: 9px;
   border: 1px solid #00a3ff;
 }
-.recently-posted.recently-posted-single-slider-no-pagination .slick-dots li button:before {
+.recently-posted.recent-posted-single .recently-posted-slider-no-pagination .slick-dots li button:before {
   display: none;
 }
-.recently-posted.no-bg {
+.recently-posted.recent-posted-single.no-bg {
   margin-top: 0;
   background-color: #ffffff;
 }
 @media (max-width: 575.98px) {
-  .recently-posted-slider-no-pagination {
+  .recent-posted-single.recent-posted-single .section-header {
+    margin-top: 32px;
+  }
+  .recent-posted-single.recent-posted-single .recently-posted-slider-no-pagination {
     margin-top: 40px;
     padding-bottom: 40px;
   }
-  .recently-posted-slider-no-pagination .slick-dots {
+  .recent-posted-single.recent-posted-single .recently-posted-slider-no-pagination .slick-slide {
+    width: 270px;
+    margin: 0 10px;
+  }
+  .recent-posted-single.recent-posted-single .recently-posted-slider-no-pagination .recently-posted-slider-no-pagination-item {
+    width: 270px;
+  }
+  .recent-posted-single.recent-posted-single .recently-posted-slider-no-pagination .recently-posted-slider-no-pagination-item h3 {
+    width: 70%;
+  }
+  .recent-posted-single.recent-posted-single .recently-posted-slider-no-pagination .slick-dots {
     width: 100%;
   }
 }
@@ -2980,6 +3001,9 @@ INTERVIEW SINGLE PAGE ///////////////////////////
   }
 }
 @media (max-width: 575.98px) {
+  .interview-post {
+    padding-bottom: 0;
+  }
   .interview-post .interview-post-tab-content {
     margin-left: 0;
   }

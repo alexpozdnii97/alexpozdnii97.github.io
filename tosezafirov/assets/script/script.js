@@ -88,18 +88,12 @@ $('#supporters-slider').slick({
 });
 
 
-
 $('.academy-schedule-slider').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
 });
-
-
-
-
-
 
 
 $('.interviews-slider').slick({
@@ -217,7 +211,9 @@ $('.recently-posted-slider-no-pagination').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: false
+        dots: false,
+        centerMode: true,
+        variableWidth: true,
       }
     },
   ]
