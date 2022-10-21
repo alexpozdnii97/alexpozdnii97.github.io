@@ -142,6 +142,9 @@ CONTACTS PAGE ///////////////////////////
   }
 }
 @media (max-width: 575.98px) {
+  .main-black-banner.contact {
+    margin-top: 0;
+  }
   .main-black-banner-wrapper {
     display: flex;
     flex-wrap: wrap;
