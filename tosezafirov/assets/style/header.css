@@ -266,3 +266,28 @@
     text-align: start;
   }
 }
+.black-strip.blue {
+  background: #00A3FF;
+}
+.black-strip.blue .testemonial-strip .btn-ghost.small {
+  width: 86px;
+  margin-right: 150px;
+  background: #00A3FF;
+  color: white;
+  border-color: #FFFFFF;
+}
+.black-strip.blue .testemonial-strip .btn-ghost {
+  background: #00A3FF;
+  color: white;
+  border-color: #FFFFFF;
+}
+@media (max-width: 1199.98px) {
+  .black-strip.blue .testemonial-strip .btn-ghost {
+    margin-right: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .black-strip.blue .testemonial-strip .testemonial-link {
+    margin-right: 16px;
+  }
+}
