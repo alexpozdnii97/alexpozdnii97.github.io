@@ -2,9 +2,15 @@
 GYM PAGE ///////////////////////////
 */
 
-.gym-hero{
+.homepage_hero_section.gym-hero{
   .content{
-    max-width: 575px;
+    max-width: 600px;
+    .hero-header{
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 70px;
+      color: #FFFFFF;
+    }
     p{
       max-width: 490px;
     }
@@ -13,7 +19,7 @@ GYM PAGE ///////////////////////////
 
 
 @media (max-width: 991.98px) { 
-  .gym-hero{
+  .homepage_hero_section.gym-hero{
     .content{
       p{
         max-width: 553px;
@@ -24,8 +30,11 @@ GYM PAGE ///////////////////////////
 
 
 @media (max-width: 575.98px) { 
-  .gym-hero{
+  .homepage_hero_section.gym-hero{
     .content{
+      .hero-header{
+        color: #161616;
+      }
       p{
         text-align: center;
         display: block;
@@ -40,17 +49,17 @@ GYM PAGE ///////////////////////////
 }
 
 
-.homepage_about_tose{
-  &.gym-page{
-    .section-header{
-      max-width: 388px;
-      margin: 0 auto 30px;
-      font-weight: 500;
-      font-size: 30px;
-      line-height: 36px;
-      text-align: center;
-    }
+.homepage_about_tose.gym-page{
+  padding-top: 0;
+  .section-header{
+    max-width: 388px;
+    margin: 34px auto 30px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #161616;
   }
+  
 }
 
 
@@ -58,17 +67,17 @@ GYM PAGE ///////////////////////////
 @media (max-width: 575.98px) { 
   .homepage_about_tose{
     
-  &.gym-page{
-    .section-header{
-      margin-top:34px;
-      text-align: start;
-      margin-bottom: 20px;
-    }
-    p{
-      
+    .gym-page{
+      .section-header{
+        margin-top:34px;
+        text-align: start;
+        margin-bottom: 20px;
+      }
+      p{
+
+      }
     }
   }
-}
 }
 
 

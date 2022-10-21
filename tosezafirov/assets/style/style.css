@@ -5046,19 +5046,28 @@ ACADEMY PAGE ///////////////////////////
 /*
 GYM PAGE ///////////////////////////
 */
-.gym-hero .content {
-  max-width: 575px;
+.homepage_hero_section.gym-hero .content {
+  max-width: 600px;
 }
-.gym-hero .content p {
+.homepage_hero_section.gym-hero .content .hero-header {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  color: #FFFFFF;
+}
+.homepage_hero_section.gym-hero .content p {
   max-width: 490px;
 }
 @media (max-width: 991.98px) {
-  .gym-hero .content p {
+  .homepage_hero_section.gym-hero .content p {
     max-width: 553px;
   }
 }
 @media (max-width: 575.98px) {
-  .gym-hero .content p {
+  .homepage_hero_section.gym-hero .content .hero-header {
+    color: #161616;
+  }
+  .homepage_hero_section.gym-hero .content p {
     display: block;
     font-weight: 300;
     font-size: 18px;
@@ -5067,16 +5076,19 @@ GYM PAGE ///////////////////////////
     color: #505050;
   }
 }
+.homepage_about_tose.gym-page {
+  padding-top: 0;
+}
 .homepage_about_tose.gym-page .section-header {
   max-width: 388px;
-  margin: 0 auto 30px;
+  margin: 34px auto 30px;
   font-weight: 500;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
+  color: #161616;
 }
 @media (max-width: 575.98px) {
-  .homepage_about_tose.gym-page .section-header {
+  .homepage_about_tose .gym-page .section-header {
     margin-top: 34px;
     text-align: start;
     margin-bottom: 20px;
