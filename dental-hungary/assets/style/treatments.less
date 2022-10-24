@@ -1,0 +1,83 @@
+.home-hero{
+  &.small{
+    height: 720px;
+  }
+  &.treatments{
+    background-image: url(../img/treatments-bg.png);
+  }
+}
+
+.stats{
+  margin-top: 150px;
+  &-wrapper{
+    padding: 38px 124px;
+    background: #CCA06F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-item{
+      width: 30%;
+      text-align: center;
+      p{
+        margin: 14px auto 0;
+        max-width: 310px;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 121.75%;
+        text-align: center;     
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+.implants{
+  margin-top: 38px;
+  .section-header{
+    color: #1A3E58;
+  }
+  .implants-grid{
+    margin-top: 46px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 120px;
+    &-item{
+      position: relative;
+      .post-thumbnail{
+        width: 100%;
+      }
+      .post-meta{
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 100%;
+
+        padding: 40px 28px 28px 28px;
+        background: linear-gradient(0deg, #1E3E55 82.2%, rgba(30, 62, 85, 0) 117.2%);
+        a{
+          text-decoration: none;
+        }
+        .post-title{
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 48px;    
+          color: #CCA06F;
+        }
+        .post-excerpt{
+          min-height: 115px;
+          margin-top: 20px;
+          margin-bottom: 0;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 143.5%;
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+}
+.implants-2{
+  margin-top: 300px;
+  margin-bottom: 245px;
+}

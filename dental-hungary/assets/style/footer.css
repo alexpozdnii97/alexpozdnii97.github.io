@@ -1,0 +1,42 @@
+.footer {
+  padding: 100px 0 50px;
+  background: #1A3E58;
+}
+.footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-wrapper .info-strip .logo {
+  margin-bottom: 18px;
+}
+.footer .footer-wrapper .info-strip-item {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.footer .footer-wrapper .info-strip-item svg path {
+  fill: #CCA06F;
+}
+.footer .footer-wrapper .info-strip-item span,
+.footer .footer-wrapper .info-strip-item a {
+  max-width: 172px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 143.5%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer .footer-wrapper .navigation li a {
+  color: #FFFFFF;
+}
+.footer .copywright {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.11em;
+  color: #FFFFFF;
+}

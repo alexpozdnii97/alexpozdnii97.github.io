@@ -1,0 +1,120 @@
+.home-hero.about-us {
+  background-image: url(../img/about-us-bg.png);
+}
+.know-us-better {
+  margin-top: 150px;
+}
+.know-us-better .section-header {
+  margin-bottom: 80px;
+}
+.know-us-better .content-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.know-us-better .content-1 .small {
+  display: block;
+  width: 100%;
+  margin: 0 0 40px;
+  color: #1A3E58;
+}
+.know-us-better .content-1 p {
+  max-width: 660px;
+  margin-bottom: 0;
+}
+.know-us-better .content-1 p b {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #CCA06F;
+}
+.know-us-better .content-1 p + p {
+  margin-top: 20px;
+}
+.icons-banner {
+  margin-top: 163px;
+  background: #CCA06F;
+  padding: 110px 0 130px;
+}
+.icons-banner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons-banner-wrapper-item {
+  width: calc(33.33333333%);
+}
+.icons-banner-wrapper-item .image-wrapper {
+  text-align: center;
+  min-height: 90px;
+}
+.icons-banner-wrapper-item .image-wrapper img {
+  width: 90px;
+  height: auto;
+}
+.icons-banner-wrapper-item h3 {
+  max-width: 400px;
+  margin: 20px auto 0;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  color: #1E3E55;
+}
+.icons-banner-wrapper-item p {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #1E3E55;
+}
+.team {
+  margin-top: 225px;
+}
+.team .small {
+  font-weight: 700;
+  color: #1A3E58;
+}
+.team-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 70px;
+}
+.team-wrapper-item {
+  position: relative;
+  max-width: 338px;
+}
+.team-wrapper-item .details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 73px 10px 47px;
+  background: linear-gradient(180deg, rgba(26, 62, 88, 0.08) 0%, #1a3e58 24.79%);
+  text-align: center;
+}
+.team-wrapper-item .details h3 {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.team-wrapper-item .details p {
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.get-consultation.about {
+  margin-top: 255px;
+}

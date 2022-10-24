@@ -1,0 +1,117 @@
+.contact-info{
+  margin-top: 150px;
+  .section-header{
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 143.5%; 
+    color: #CCA06F;
+  }
+  .form-header{
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 121.75%;  
+    color: #1A3E58;
+  }
+  &-wrapper{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    .main-form{
+      width: 50%;
+      margin: 0;
+      max-width: none;
+      text-align: end;
+    }
+    .map{
+      position: relative;
+      width: 50%;
+      padding-left: 20px;
+      iframe{
+        width: 100%;
+        height: 365px;
+      }
+    }
+  }
+}
+
+.main-banner.contacts{
+  margin-top: 290px;
+}
+
+
+.schedule{
+  margin-top: 225px;
+  margin-bottom: 144px;
+  .schedule-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    .schedule-title{
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 137%;
+      color: #CCA06F;
+    }
+    &-contacts{
+      width: 50%;
+      &-item{
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        svg{
+          path{
+            fill: #CCA06F;
+          }
+        }
+        
+        span,a{
+          max-width: 350px;
+          font-weight:300;
+          font-size: 30.75px;
+          line-height: 143.5%;
+          color: #1A3E58;
+          text-decoration: none;
+          b{
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    &-hours{
+      width: 50%;
+      &-item{
+        width: 100%;
+        display: flex;
+        align-items:center;
+        gap: 10px;
+        p{
+          margin-bottom: 0;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 143.5%;      
+          color: #1A3E58;
+        }
+        span{
+          display: inline-block;
+          font-size: 30px;
+          line-height: 143.5%;  
+          border-bottom:  1px solid #CCA06F;
+          flex: 1;
+          transform: translateY(10px);
+          
+        }
+        .hours{
+          font-family: 'Cormorant Garamond';
+          font-weight: 500;
+          font-size: 35px;
+          line-height: 143.5%;
+          color: #1A3E58;
+        }
+      }
+    }
+  }
+}
