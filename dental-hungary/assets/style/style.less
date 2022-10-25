@@ -21,12 +21,46 @@ p,span,a,li{
 }
 
 
-// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 575.98px) {  
+  .container-fluid{
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {  
+  .container-fluid{
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) { 
+  .container-fluid{
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) { 
+  .container-fluid{
+    max-width: 960px;
+  }
+}
+
+
+@media (min-width: 1200px) { 
+  .container-fluid{
+    max-width: 1140px;
+  }
+}
+
 @media (min-width: 1400px) { 
   .container-fluid{
     max-width: 1700px;
   }
 }
+
+
+
+
 .section-header{
   font-family: 'Cormorant Garamond';
   font-style: normal;

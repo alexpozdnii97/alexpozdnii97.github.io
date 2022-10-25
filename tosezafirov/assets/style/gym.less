@@ -2,6 +2,14 @@
 GYM PAGE ///////////////////////////
 */
 
+@color-blue: #00A3FF;
+@color-dark-blue:#005686;
+@color-black: #161616;
+@color-light-gray:#F9F9F9;
+@color-white: #FFFFFF;
+@color-gray: #505050;
+@color-dark-gray: #212121;
+
 .homepage_hero_section.gym-hero{
   .content{
     max-width: 600px;
@@ -16,6 +24,7 @@ GYM PAGE ///////////////////////////
     }
   }
 }
+
 
 
 @media (max-width: 991.98px) { 
@@ -53,14 +62,39 @@ GYM PAGE ///////////////////////////
   padding-top: 0;
   .section-header{
     max-width: 388px;
-    margin: 34px auto 30px;
+    margin: 34px 0 30px;
     font-weight: 500;
     font-size: 30px;
     line-height: 36px;
     color: #161616;
+    text-align: start;
   }
   
 }
+
+.homepage_about_tose{
+  &.gym-page-1{
+    padding-top: 110px;
+  }
+}
+
+
+@media (max-width: 991.98px) { 
+  .homepage_about_tose{
+    &.gym-page{
+      .section-header{
+        margin: 34px auto 30px;
+      }
+    }
+  }
+  .homepage_about_tose{
+    
+    &.gym-page-1{
+      padding-top: 28px;
+    }
+  }
+}
+
 
 
 
@@ -170,7 +204,13 @@ GYM PAGE ///////////////////////////
 
 
 .olympia-gear-banner{
-  &.gym{margin-top: 70px;}
+  &.gym{
+    margin-top: 70px;
+    .olympia-gear-banner-logo{
+      width: 170px;
+      height: auto;
+    }
+  }
 }
 
 @media (max-width: 991.98px) { 

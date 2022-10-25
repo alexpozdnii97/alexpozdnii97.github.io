@@ -5,3 +5,11 @@ $('.reviews-slider').slick({
   dots:true,
   arrows:true,
 });
+
+$('.toggle-btn').click( function(){
+  $('.mobile-menu').toggleClass('active');
+}); 
+
+$('.close-btn').click( function(){
+  $('.mobile-menu').toggleClass('active');
+}); 

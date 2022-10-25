@@ -1,0 +1,414 @@
+/*
+GYM PAGE ///////////////////////////
+*/
+.homepage_hero_section.gym-hero .content {
+  max-width: 600px;
+}
+.homepage_hero_section.gym-hero .content .hero-header {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  color: #FFFFFF;
+}
+.homepage_hero_section.gym-hero .content p {
+  max-width: 490px;
+}
+@media (max-width: 991.98px) {
+  .homepage_hero_section.gym-hero .content p {
+    max-width: 553px;
+  }
+}
+@media (max-width: 575.98px) {
+  .homepage_hero_section.gym-hero .content .hero-header {
+    color: #161616;
+  }
+  .homepage_hero_section.gym-hero .content p {
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #505050;
+  }
+}
+.homepage_about_tose.gym-page {
+  padding-top: 0;
+}
+.homepage_about_tose.gym-page .section-header {
+  max-width: 388px;
+  margin: 34px 0 30px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #161616;
+  text-align: start;
+}
+.homepage_about_tose.gym-page-1 {
+  padding-top: 110px;
+}
+@media (max-width: 991.98px) {
+  .homepage_about_tose.gym-page .section-header {
+    margin: 34px auto 30px;
+  }
+  .homepage_about_tose.gym-page-1 {
+    padding-top: 28px;
+  }
+}
+@media (max-width: 575.98px) {
+  .homepage_about_tose .gym-page .section-header {
+    margin-top: 34px;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+}
+.homepage_slider.gym-page {
+  padding-bottom: 92px;
+}
+.homepage_slider.gym-page.gym-page {
+  background: linear-gradient(to top, #f9f9f9 234px, transparent 243px 100%);
+}
+@media (max-width: 991.98px) {
+  .homepage_slider.gym-page.gym-page {
+    padding-bottom: 20px;
+  }
+}
+.gym-info {
+  background-color: #161616;
+  padding: 60px;
+}
+.gym-info p {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #F9F9F9;
+}
+.gym-info .small {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #00A3FF;
+}
+.gym-info .large {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  color: #F9F9F9;
+}
+.gym-info iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.gym-info .gym-socials {
+  margin-top: 30px;
+  display: flex;
+  width: 110px;
+  justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+  .gym-info .large {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 575.98px) {
+  .gym-info {
+    padding: 30px 20px 40px;
+  }
+  .gym-info iframe {
+    margin-top: 30px;
+  }
+}
+.olympia-gear-banner.gym {
+  margin-top: 70px;
+}
+.olympia-gear-banner.gym .olympia-gear-banner-logo {
+  width: 170px;
+  height: auto;
+}
+@media (max-width: 991.98px) {
+  .olympia-gear-banner.gym {
+    margin-top: 70px;
+    max-width: 690px;
+    margin: 28px auto 0;
+  }
+  .olympia-gear-banner.gym .olympia-gear-banner-content {
+    max-width: 390px;
+  }
+  .olympia-gear-banner.gym .olympia-gear-banner-content p {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .olympia-gear-banner.gym .olympia-gear-banner-content p a {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 575.98px) {
+  .olympia-gear-banner.gym {
+    padding-bottom: 20px;
+    padding-right: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .olympia-gear-banner.gym .olympia-gear-banner-content p {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .olympia-gear-banner.gym .olympia-gear-banner-content p a {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .olympia-gear-banner.gym .olympia-gear-banner-logo {
+    width: 100%;
+    height: auto;
+    margin-right: 15px;
+  }
+}
+.memebership-cards {
+  text-align: center;
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.1));
+}
+.memebership-cards .section-header {
+  margin-top: 72px;
+}
+.memebership-cards p {
+  max-width: 490px;
+  margin: 28px auto 48px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #505050;
+}
+.memebership-cards .card-slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.memebership-cards .card-slider-item {
+  flex: 1;
+}
+.memebership-cards .card-slider-item img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 991.98px) {
+  .memebership-cards .card-slider {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .memebership-cards .card-slider .slick-arrow {
+    width: 26px;
+    height: 26px;
+  }
+}
+@media (max-width: 575.98px) {
+  .memebership-cards .container {
+    margin: 0;
+    padding: 0;
+  }
+  .memebership-cards .section-header {
+    margin: 34px 26px 0px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .memebership-cards p {
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+  .memebership-cards .card-slider {
+    width: 100%;
+  }
+  .memebership-cards .card-slider .slick-slide {
+    width: 233px;
+    margin: 0 13px;
+  }
+}
+.gym-advantages {
+  margin-top: 60px;
+}
+.gym-advantages .section-header {
+  text-align: center;
+}
+.gym-advantages .large-media-icon h3 {
+  margin-top: 23px;
+  margin-bottom: 24px;
+}
+@media (max-width: 991.98px) {
+  .gym-advantages .section-header {
+    max-width: 495px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .gym-advantages .large-media.center .large-media-icon h3 {
+    max-width: 373px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gym-advantages .large-media.center .large-media-content p {
+    max-width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .gym-advantages .large-media.center .large-media-icon h3 {
+    max-width: 226px;
+    margin-left: 25px;
+    text-align: start;
+  }
+  .gym-advantages .large-media.center .large-media-content p {
+    text-align: start;
+  }
+}
+.gym-grey {
+  margin-top: 38px;
+}
+.gym-grey .gym-grey-banner {
+  position: relative;
+  background: #F9F9F9;
+  border-radius: 10px;
+  padding: 40px 50px;
+  overflow: hidden;
+}
+.gym-grey .gym-grey-banner .bg-img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.gym-grey .gym-grey-banner p {
+  position: relative;
+  z-index: 3;
+  max-width: 768px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #505050;
+}
+@media (max-width: 1199.98px) {
+  .gym-grey .gym-grey-banner p {
+    max-width: 600px;
+  }
+}
+@media (max-width: 991.98px) {
+  .gym-grey .gym-grey-banner .bg-img {
+    top: auto;
+    bottom: 0;
+    height: 65%;
+    right: -70px;
+  }
+  .gym-grey .gym-grey-banner p {
+    max-width: 500px;
+  }
+}
+@media (max-width: 575.98px) {
+  .gym-grey .gym-grey-banner {
+    padding: 20px 35px;
+  }
+  .gym-grey .gym-grey-banner .bg-img {
+    top: auto;
+    bottom: 0;
+    width: 335px;
+    height: auto;
+  }
+  .gym-grey .gym-grey-banner p {
+    margin-bottom: 60px;
+  }
+}
+.gym-tall-banner {
+  position: relative;
+  margin-top: 58px;
+  padding-top: 124px;
+  padding-bottom: 192px;
+  background: #161616;
+}
+.gym-tall-banner .bg-img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+}
+.gym-tall-banner .content {
+  position: relative;
+  z-index: 3;
+}
+.gym-tall-banner .content .section-header {
+  color: #FFFFFF;
+  max-width: 409px;
+}
+.gym-tall-banner .content p {
+  margin-top: 26px;
+  color: #FFFFFF;
+  max-width: 550px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+.gym-tall-banner .content .btn-round {
+  margin-top: 62px;
+}
+@media (max-width: 991.98px) {
+  .gym-tall-banner {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+  .gym-tall-banner .content {
+    text-align: center;
+  }
+  .gym-tall-banner .content .section-header {
+    max-width: 350px;
+    text-align: start;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .gym-tall-banner .content p {
+    text-align: start;
+    max-width: 340px;
+  }
+  .gym-tall-banner .bg-img {
+    height: 90%;
+  }
+  .gym-tall-banner .btn-round {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .gym-tall-banner {
+    margin-top: 30px;
+    padding-top: 33px;
+    padding-bottom: 0;
+  }
+  .gym-tall-banner .btn-round {
+    display: inline-block;
+    height: auto;
+    max-width: 255px;
+    margin-top: 28px;
+  }
+  .gym-tall-banner .bg-img {
+    position: static;
+  }
+}
