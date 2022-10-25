@@ -18,8 +18,12 @@ BEST BY MAIN PAGE ///////////////////////////
   line-height: 24px;
   letter-spacing: -0.03em;
 }
+.best-by-hero .breadcrumb-item {
+  color: #505050;
+}
 .best-by-hero .breadcrumb-item a {
   text-decoration: none;
+  color: #505050;
 }
 @media (max-width: 991.98px) {
   .best-by-hero .breadcrumb {
