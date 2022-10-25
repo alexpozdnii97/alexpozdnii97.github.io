@@ -428,6 +428,10 @@ li {
   }
   .search {
     margin-left: auto;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: none;
   }
   .mobile-menu.active {
     position: fixed;

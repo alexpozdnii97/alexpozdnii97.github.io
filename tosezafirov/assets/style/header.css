@@ -128,7 +128,7 @@
   background: url(../img/toggle-burger.svg);
 }
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 20;
@@ -246,8 +246,13 @@
   }
   .search {
     margin-left: auto;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: none;
   }
   .mobile-menu.active {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
