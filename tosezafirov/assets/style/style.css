@@ -1208,7 +1208,13 @@ HOMEPAGE ///////////////////////////
   font-size: 20px;
   line-height: 24px;
 }
-.recent-articles-item:nth-child(4) {
+.recent-articles-item .post-meta-details p {
+  color: #00A3FF;
+}
+.recent-articles-item .post-meta-details svg path {
+  fill: #00A3FF;
+}
+.recent-articles-item:nth-child(5) {
   display: none;
 }
 @media (max-width: 1199.98px) {
@@ -1217,6 +1223,9 @@ HOMEPAGE ///////////////////////////
   }
   .interviews-slider .slick-prev {
     transform: translate(130px, 325px);
+  }
+  .recent-articles-item:nth-child(4) {
+    display: none;
   }
 }
 @media (max-width: 991.98px) {
@@ -1285,6 +1294,7 @@ HOMEPAGE ///////////////////////////
   }
 }
 .homepage-olympia-limited {
+  margin-top: 60px;
   padding: 0px 0 100px 0;
   position: relative;
   background: linear-gradient(to bottom, #f9f9f9 632px, transparent 632px 100%);

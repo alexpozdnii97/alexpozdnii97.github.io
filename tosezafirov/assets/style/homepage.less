@@ -869,8 +869,18 @@ justify-content: flex-end;
         font-size: 20px;
         line-height: 24px;
       }
+      &-details{
+        p{
+          color: #00A3FF;
+        }
+        svg{
+          path{
+            fill: #00A3FF;
+          }
+        }
+      }
     }
-    &:nth-child(4) {
+    &:nth-child(5) {
       display: none;
     }
   }
@@ -890,7 +900,13 @@ justify-content: flex-end;
       transform: translate(130px,325px);
     }
   }
+  .recent-articles-item{
+    &:nth-child(4) {
+      display: none;
+    }
+  }
 }
+
 @media (max-width: 991.98px) { 
   .homepage-latest-interviews{
     margin-top: 42px;
@@ -967,7 +983,7 @@ justify-content: flex-end;
 
 
 .homepage-olympia-limited{
-  
+  margin-top: 60px;
   padding: 0px 0 100px 0;
   position: relative;
   background: linear-gradient(
