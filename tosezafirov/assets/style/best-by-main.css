@@ -18,6 +18,9 @@ BEST BY MAIN PAGE ///////////////////////////
   line-height: 24px;
   letter-spacing: -0.03em;
 }
+.best-by-hero .breadcrumb-item a {
+  text-decoration: none;
+}
 @media (max-width: 991.98px) {
   .best-by-hero .breadcrumb {
     display: none;
