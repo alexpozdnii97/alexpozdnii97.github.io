@@ -7263,6 +7263,35 @@ FOOTER ///////////////////////////
     height: auto;
   }
 }
+.search-modal .modal-dialog {
+  max-width: 1300px;
+  height: 500px;
+  margin: auto;
+}
+.search-modal .modal-dialog .modal-content {
+  width: 1300px;
+  height: 700px;
+  position: relative;
+}
+.search-modal .modal-dialog .modal-content .btn-close {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 30px;
+  right: 20px;
+  background: none;
+  outline: none;
+}
+.search-modal .modal-dialog .modal-content .btn-close:focus {
+  border: none;
+  outline: none;
+}
+body.modal-open {
+  overflow-y: auto;
+}
+body {
+  padding: 0!important;
+}
 @media screen and (min-width: 1200px) {
   .container-small {
     max-width: 1200px;
