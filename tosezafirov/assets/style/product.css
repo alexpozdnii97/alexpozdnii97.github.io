@@ -188,6 +188,9 @@ PRODUCT PAGE ///////////////////////////
   }
 }
 @media (max-width: 575.98px) {
+  .register-for-group p {
+    text-align: start;
+  }
   .register-for-group .group-member-cards {
     row-gap: 22px;
   }
@@ -197,6 +200,7 @@ PRODUCT PAGE ///////////////////////////
   .register-for-group .group-member-cards-item p {
     width: 246px;
     flex: none;
+    text-align: start;
   }
 }
 .black-text {
