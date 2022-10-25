@@ -310,7 +310,7 @@ li {
   background: url(../img/toggle-burger.svg);
 }
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 20;
@@ -430,6 +430,7 @@ li {
     margin-left: auto;
   }
   .mobile-menu.active {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7291,6 +7292,12 @@ body.modal-open {
 }
 body {
   padding: 0!important;
+}
+body.active {
+  overflow: hidden;
+}
+body.active {
+  overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   .container-small {

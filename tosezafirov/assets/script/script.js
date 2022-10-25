@@ -1,9 +1,11 @@
 $('.burger-button').click( function(){
   $('.mobile-menu').toggleClass('active');
+  $('body').toggleClass('active');
 }); 
 
 $('.mobile-menu-close').click( function(){
   $('.mobile-menu').toggleClass('active');
+  $('body').toggleClass('active');
 }); 
 
 
