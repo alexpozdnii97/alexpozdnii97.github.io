@@ -3021,7 +3021,12 @@ INTERVIEW SINGLE PAGE ///////////////////////////
   }
 }
 @media (max-width: 575.98px) {
+  .interviews-single-sidebar .interviewer-card {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
   .interview-post {
+    margin-top: 30px;
     padding-bottom: 0;
   }
   .interview-post .interview-post-tab-content {
@@ -3035,6 +3040,12 @@ INTERVIEW SINGLE PAGE ///////////////////////////
   }
   .interview-post .interview-post-tab .answer {
     width: 100%;
+  }
+  .interviews-single-body .breadcrumb-item {
+    margin-bottom: 5px;
+  }
+  .interviews-single-body .section-header {
+    max-width: 318px;
   }
 }
 .blog-single-banner.interview-single-banner {

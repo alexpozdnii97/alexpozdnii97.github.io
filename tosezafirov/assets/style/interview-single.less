@@ -2,7 +2,13 @@
 INTERVIEW SINGLE PAGE ///////////////////////////
 */
 
-
+@color-blue: #00A3FF;
+@color-dark-blue:#005686;
+@color-black: #161616;
+@color-light-gray:#F9F9F9;
+@color-white: #FFFFFF;
+@color-gray: #505050;
+@color-dark-gray: #212121;
 
 .interviews-single{
   background: #F9F9F9;
@@ -238,7 +244,12 @@ INTERVIEW SINGLE PAGE ///////////////////////////
 }
 
 @media (max-width: 575.98px) { 
+  .interviews-single-sidebar .interviewer-card{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
   .interview-post {
+    margin-top: 30px;
     padding-bottom: 0;
     .interview-post-tab{
       &-content{
@@ -252,6 +263,20 @@ INTERVIEW SINGLE PAGE ///////////////////////////
       }
       .answer{
         width: 100%;
+      }
+    }
+  }
+  .interviews-single{
+    &-body{
+      .breadcrumb{
+        
+        &-item{
+          margin-bottom: 5px;
+         
+        }
+      }
+      .section-header{
+        max-width: 318px;
       }
     }
   }
