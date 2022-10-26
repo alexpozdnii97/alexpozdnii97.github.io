@@ -8,8 +8,10 @@ $('.reviews-slider').slick({
 
 $('.toggle-btn').click( function(){
   $('.mobile-menu').toggleClass('active');
+  $('body').toggleClass('active');
 }); 
 
 $('.close-btn').click( function(){
   $('.mobile-menu').toggleClass('active');
+  $('body').toggleClass('active');
 }); 

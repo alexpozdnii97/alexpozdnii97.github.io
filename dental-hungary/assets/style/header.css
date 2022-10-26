@@ -87,7 +87,7 @@
     display: none;
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
@@ -95,6 +95,7 @@
     height: 100vh;
     background: #9FAEB9;
     display: none;
+    overflow: hidden;
   }
   .mobile-menu.active {
     display: block;
@@ -156,6 +157,9 @@
     position: absolute;
     top: 35px;
     right: 35px;
+  }
+  body.active {
+    overflow: hidden;
   }
 }
 @media (max-width: 575.98px) {
