@@ -4,6 +4,27 @@ $('.reviews-slider').slick({
   slidesToScroll: 1,
   dots:true,
   arrows:true,
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        arrows: true,
+        dots:true,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 
 $('.toggle-btn').click( function(){

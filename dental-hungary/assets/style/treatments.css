@@ -1,0 +1,201 @@
+.home-hero.small {
+  height: 720px;
+}
+.home-hero.treatments {
+  background-image: url(../img/treatments-bg.png);
+}
+@media (max-width: 575.98px) {
+  .home-hero.small .page-header {
+    font-size: 55px;
+    line-height: 136.5%;
+  }
+}
+.stats {
+  margin-top: 150px;
+}
+.stats-wrapper {
+  padding: 38px 124px;
+  background: #CCA06F;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.stats-wrapper-item {
+  width: 30%;
+  text-align: center;
+}
+.stats-wrapper-item p {
+  margin: 14px auto 0;
+  max-width: 310px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 121.75%;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (max-width: 1399.98px) {
+  .stats-wrapper {
+    padding: 38px 50px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .stats-wrapper {
+    padding: 38px 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .stats-wrapper {
+    padding: 38px 20px;
+  }
+  .stats-wrapper-item p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 575.98px) {
+  .stats-wrapper {
+    margin: 0 40px 0;
+    padding: 40px;
+    row-gap: 60px;
+  }
+  .stats-wrapper-item {
+    width: 100%;
+  }
+  .stats-wrapper-item p {
+    font-size: 16px;
+    line-height: 143.5%;
+  }
+}
+.implants {
+  margin-top: 38px;
+}
+.implants .section-header {
+  color: #1A3E58;
+}
+.implants .implants-grid {
+  margin-top: 46px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 120px;
+}
+.implants .implants-grid-item {
+  position: relative;
+}
+.implants .implants-grid-item .post-thumbnail {
+  width: 100%;
+}
+.implants .implants-grid-item .post-meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 28px 28px 28px;
+  background: linear-gradient(0deg, #1e3e55 82.2%, rgba(30, 62, 85, 0) 117.2%);
+}
+.implants .implants-grid-item .post-meta a {
+  text-decoration: none;
+}
+.implants .implants-grid-item .post-meta .post-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #CCA06F;
+}
+.implants .implants-grid-item .post-meta .post-excerpt {
+  min-height: 115px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 143.5%;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 1199.98px) {
+  .implants .implants-grid-item .post-meta {
+    padding: 20px 10px 20px 20px;
+  }
+  .implants .implants-grid-item .post-meta .post-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .implants .implants-grid-item .post-meta .post-excerpt {
+    margin-top: 0;
+    font-size: 14px;
+    min-height: 121px;
+  }
+}
+@media (max-width: 991.98px) {
+  .implants .implants-grid {
+    grid-template-columns: 1fr 1fr ;
+  }
+  .implants .implants-grid-item .post-meta {
+    padding: 20px 10px 20px 20px;
+  }
+  .implants .implants-grid-item .post-meta .post-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .implants .implants-grid-item .post-meta .post-excerpt {
+    margin-top: 0;
+    font-size: 14px;
+    min-height: 121px;
+  }
+  .implants-2 {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 575.98px) {
+  .implants .implants-grid {
+    grid-template-columns: 1fr 1fr ;
+    row-gap: 20px;
+  }
+  .implants .implants-grid-item img {
+    height: 180px;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .implants .implants-grid-item .post-meta {
+    padding: 25px 10px 20px 10px;
+    position: static;
+  }
+  .implants .implants-grid-item .post-meta .post-title {
+    font-size: 17px;
+    line-height: 21px;
+    min-height: 42px;
+  }
+  .implants .implants-grid-item .post-meta .post-excerpt {
+    margin-top: 0;
+    font-size: 11px;
+    line-height: 143.5%;
+    min-height: 121px;
+  }
+}
+.implants-2 {
+  margin-top: 300px;
+  margin-bottom: 245px;
+}
+@media (max-width: 991.98px) {
+  .implants-2 {
+    margin-top: 150px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 575.98px) {
+  .implants-2 {
+    margin-top: 100px;
+  }
+  .implants-2 .section-header.small {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 137%;
+  }
+  .implants-2 .implants-grid {
+    margin-top: 10px;
+  }
+}
+.get-consultation.treatments .section-header {
+  font-size: 35px;
+  line-height: 137%;
+}
