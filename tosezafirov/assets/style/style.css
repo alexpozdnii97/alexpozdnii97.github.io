@@ -6654,6 +6654,73 @@ PRODUCT PAGE ///////////////////////////
   height: 100%;
   position: relative;
 }
+@media (max-width: 991.98px) {
+  .product-features .diet-grid {
+    max-width: 550px;
+    margin: 43px auto;
+  }
+  .product-features .workout-gallery {
+    margin-top: 43px;
+  }
+  .product-features .cards-image {
+    width: 100%;
+    height: auto;
+  }
+  .product-features .diet-grid {
+    margin-top: 43px;
+  }
+}
+@media (max-width: 575.98px) {
+  .product-features {
+    margin-bottom: 50px;
+  }
+  .product-features .section-header {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .product-features h3 {
+    margin-left: 20px;
+  }
+  .product-features p {
+    margin-left: 20px;
+  }
+  .product-features .container {
+    margin: 0;
+    padding: 0;
+  }
+  .product-features .diet-grid {
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .product-features .diet-grid .diet-thumbnail {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .product-features .diet-grid:-webkit-scrollbar {
+    display: none;
+  }
+  .product-features .workout-gallery {
+    display: block;
+    padding: 0;
+    overflow: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .product-features .workout-gallery .workout-gallery-image {
+    width: 80%;
+    display: inline-block;
+    text-decoration: none;
+  }
+}
 .blue-banner.product-page .section-header {
   max-width: 885px;
 }
