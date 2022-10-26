@@ -6670,6 +6670,42 @@ PRODUCT PAGE ///////////////////////////
     margin-top: 43px;
   }
 }
+@media (max-width: 767.98px) {
+  .product-features .dropdown {
+    margin-top: 32px;
+  }
+  .product-features .dropdown .btn-dropdown {
+    display: block;
+    width: 335px;
+    margin: 0 auto;
+    color: black;
+    background: white;
+    border: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+  .product-features .dropdown-menu {
+    width: 335px;
+    margin: 0 auto;
+    border: none;
+  }
+  .product-features .dropdown-menu .nav {
+    font-family: 'archivo';
+    margin-top: 20px;
+  }
+  .product-features .dropdown-menu .nav-item {
+    background: white;
+  }
+  .product-features .dropdown-menu .nav-item .nav-link {
+    width: 100%;
+    font-family: 'archivo';
+    font-style: normal;
+  }
+  .product-features .dropdown-menu .nav-item .nav-link.active {
+    background: white;
+    color: black;
+  }
+}
 @media (max-width: 575.98px) {
   .product-features {
     margin-bottom: 50px;

@@ -180,6 +180,7 @@ PRODUCT PAGE ///////////////////////////
       width: 100%;
       height: auto;
     }
+    
   }
   .product-features .diet-grid{
     margin-top: 43px;
@@ -187,7 +188,43 @@ PRODUCT PAGE ///////////////////////////
 }
 
 @media (max-width: 767.98px) { 
-
+  .product-features{
+    .dropdown{
+      margin-top: 32px;
+      .btn-dropdown{
+        display: block;
+        width: 335px;
+        margin: 0 auto;
+        color: black;
+        background: white;
+        border: none;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+      &-menu{
+        width: 335px;
+        margin: 0 auto;
+        border: none;
+        .nav{
+          font-family: 'archivo';
+          margin-top: 20px;
+          &-item{
+            background: white;
+            .nav-link{
+              width: 100%;
+              font-family: 'archivo';
+              font-style: normal;
+              &.active{
+                background: white;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+  }
 }
 @media (max-width: 575.98px) { 
   .product-features{
