@@ -41,6 +41,67 @@
   margin-top: 290px;
 }
 
+@media (max-width: 1199.98px) { 
+  .contact-info{
+    .form-header{
+      margin-top: 60px;
+      width: 60%;
+    }
+  }
+  .main-banner.contacts{
+    margin-top: 140px;
+  }
+
+}
+
+@media (max-width: 991.98px) { 
+  .contact-info{
+    .form-header{
+      width: 75%;
+    }
+  }
+}
+
+
+
+@media (max-width: 575.98px) { 
+  .contact-info{
+    .section-header{
+      font-size: 40px;
+      line-height: 137%;
+      text-align: start;
+    }
+    .form-header{
+      width: 100%;
+      font-size: 35px;
+      line-height: 121.75%;
+    }
+    &-wrapper{
+      .main-form{
+        width: 100%;
+        text-align: center;
+      }
+      .map{
+        width: 100%;
+        margin-top: 58px;
+        padding-left: 0;
+      }
+    }
+  }
+  .main-banner.contacts{
+    margin-top: 80px;
+    .banner-header{
+      max-width: none;
+      margin: 0 auto;
+      font-size: 35px;
+      line-height: 42px;
+    }
+  }
+}
+
+
+
+
 
 .schedule{
   margin-top: 225px;
@@ -110,6 +171,77 @@
           font-size: 35px;
           line-height: 143.5%;
           color: #1A3E58;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 991.98px) { 
+  .schedule{
+    margin-top: 125px;
+  }
+}
+
+@media (max-width: 767.98px) { 
+
+}
+
+@media (max-width: 575.98px) { 
+  .schedule{
+    margin-top: 67px;
+    .container{
+      padding: 0 40px;
+    }
+    .schedule-wrapper{
+      
+      flex-wrap: wrap;
+      &-contacts{
+        width: 100%;
+        .schedule-title{
+          margin-bottom: 54px;
+          font-size: 35px;
+          line-height: 137%;
+        }
+        &-item{
+          svg{
+            width: 25px;
+            height: 25px;
+          }
+          span{
+            font-size: 18px;
+            line-height: 143.5%;
+            
+          }
+          &.item-1{
+            span{
+              br{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      &-hours{
+        width: 100%;
+        .schedule-title{
+          margin-bottom: 46px;
+          font-size: 35px;
+          line-height: 137%;
+        }
+        &-item{
+          p{
+            margin-right: 30px;
+            font-size: 18px;
+            line-height: 143.5%;
+          }
+          .hours{
+            margin-right: 0;
+            font-size: 22px;
+            line-height: 143.5%;
+            flex-basis: 98px;
+          }
         }
       }
     }

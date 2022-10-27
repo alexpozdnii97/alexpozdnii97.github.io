@@ -1,0 +1,209 @@
+.contact-info {
+  margin-top: 150px;
+}
+.contact-info .section-header {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 143.5%;
+  color: #CCA06F;
+}
+.contact-info .form-header {
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 121.75%;
+  color: #1A3E58;
+}
+.contact-info-wrapper {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.contact-info-wrapper .main-form {
+  width: 50%;
+  margin: 0;
+  max-width: none;
+  text-align: end;
+}
+.contact-info-wrapper .map {
+  position: relative;
+  width: 50%;
+  padding-left: 20px;
+}
+.contact-info-wrapper .map iframe {
+  width: 100%;
+  height: 365px;
+}
+.main-banner.contacts {
+  margin-top: 290px;
+}
+@media (max-width: 1199.98px) {
+  .contact-info .form-header {
+    margin-top: 60px;
+    width: 60%;
+  }
+  .main-banner.contacts {
+    margin-top: 140px;
+  }
+}
+@media (max-width: 991.98px) {
+  .contact-info .form-header {
+    width: 75%;
+  }
+}
+@media (max-width: 575.98px) {
+  .contact-info .section-header {
+    font-size: 40px;
+    line-height: 137%;
+    text-align: start;
+  }
+  .contact-info .form-header {
+    width: 100%;
+    font-size: 35px;
+    line-height: 121.75%;
+  }
+  .contact-info-wrapper .main-form {
+    width: 100%;
+    text-align: center;
+  }
+  .contact-info-wrapper .map {
+    width: 100%;
+    margin-top: 58px;
+    padding-left: 0;
+  }
+  .main-banner.contacts {
+    margin-top: 80px;
+  }
+  .main-banner.contacts .banner-header {
+    max-width: none;
+    margin: 0 auto;
+    font-size: 35px;
+    line-height: 42px;
+  }
+}
+.schedule {
+  margin-top: 225px;
+  margin-bottom: 144px;
+}
+.schedule .schedule-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.schedule .schedule-wrapper .schedule-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 137%;
+  color: #CCA06F;
+}
+.schedule .schedule-wrapper-contacts {
+  width: 50%;
+}
+.schedule .schedule-wrapper-contacts-item {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.schedule .schedule-wrapper-contacts-item svg path {
+  fill: #CCA06F;
+}
+.schedule .schedule-wrapper-contacts-item span,
+.schedule .schedule-wrapper-contacts-item a {
+  max-width: 350px;
+  font-weight: 300;
+  font-size: 30.75px;
+  line-height: 143.5%;
+  color: #1A3E58;
+  text-decoration: none;
+}
+.schedule .schedule-wrapper-contacts-item span b,
+.schedule .schedule-wrapper-contacts-item a b {
+  font-weight: 500;
+}
+.schedule .schedule-wrapper-hours {
+  width: 50%;
+}
+.schedule .schedule-wrapper-hours-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.schedule .schedule-wrapper-hours-item p {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 143.5%;
+  color: #1A3E58;
+}
+.schedule .schedule-wrapper-hours-item span {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 143.5%;
+  border-bottom: 1px solid #CCA06F;
+  flex: 1;
+  transform: translateY(10px);
+}
+.schedule .schedule-wrapper-hours-item .hours {
+  font-family: 'Cormorant Garamond';
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 143.5%;
+  color: #1A3E58;
+}
+@media (max-width: 991.98px) {
+  .schedule {
+    margin-top: 125px;
+  }
+}
+@media (max-width: 575.98px) {
+  .schedule {
+    margin-top: 67px;
+  }
+  .schedule .container {
+    padding: 0 40px;
+  }
+  .schedule .schedule-wrapper {
+    flex-wrap: wrap;
+  }
+  .schedule .schedule-wrapper-contacts {
+    width: 100%;
+  }
+  .schedule .schedule-wrapper-contacts .schedule-title {
+    margin-bottom: 54px;
+    font-size: 35px;
+    line-height: 137%;
+  }
+  .schedule .schedule-wrapper-contacts-item svg {
+    width: 25px;
+    height: 25px;
+  }
+  .schedule .schedule-wrapper-contacts-item span {
+    font-size: 18px;
+    line-height: 143.5%;
+  }
+  .schedule .schedule-wrapper-contacts-item.item-1 span br {
+    display: none;
+  }
+  .schedule .schedule-wrapper-hours {
+    width: 100%;
+  }
+  .schedule .schedule-wrapper-hours .schedule-title {
+    margin-bottom: 46px;
+    font-size: 35px;
+    line-height: 137%;
+  }
+  .schedule .schedule-wrapper-hours-item p {
+    margin-right: 30px;
+    font-size: 18px;
+    line-height: 143.5%;
+  }
+  .schedule .schedule-wrapper-hours-item .hours {
+    margin-right: 0;
+    font-size: 22px;
+    line-height: 143.5%;
+    flex-basis: 98px;
+  }
+}
