@@ -31,6 +31,9 @@
 .know-us-better .content-1 p + p {
   margin-top: 20px;
 }
+.know-us-better .content-1 .btn {
+  margin-top: 20px;
+}
 @media (max-width: 1399.98px) {
   .know-us-better .section-header {
     margin-bottom: 60px;

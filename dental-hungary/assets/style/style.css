@@ -385,6 +385,7 @@
 }
 .clinics-wrapper .clinic-card img {
   height: 100%;
+  object-fit: cover;
 }
 .clinics-wrapper .clinic-card-content {
   position: absolute;
@@ -408,6 +409,10 @@
   line-height: 143.5%;
   color: rgba(255, 255, 255, 0.8);
   min-height: 70px;
+}
+.clinics.single-clinic .clinics-wrapper .clinic-card img {
+  width: 100%;
+  height: 574px;
 }
 @media (max-width: 1399.98px) {
   .clinics .clinics-wrapper .clinic-card-content {
@@ -1642,6 +1647,9 @@
   color: #CCA06F;
 }
 .know-us-better .content-1 p + p {
+  margin-top: 20px;
+}
+.know-us-better .content-1 .btn {
   margin-top: 20px;
 }
 @media (max-width: 1399.98px) {
