@@ -1944,6 +1944,7 @@
   position: absolute;
   bottom: 7px;
   right: 103px;
+  z-index: 2;
   font-family: 'Cormorant Garamond';
   font-style: normal;
   font-weight: 700;
@@ -1952,7 +1953,13 @@
   color: #CCA06F;
   font-variant-numeric: normal;
 }
+.review .content-1 {
+  position: relative;
+  z-index: 3;
+}
 .review .content-2 {
+  position: relative;
+  z-index: 3;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -2008,6 +2015,65 @@
 .review .star-wrapper {
   display: flex;
   gap: 10px;
+}
+.footer.reviews {
+  margin-top: 195px;
+}
+@media (max-width: 991.98px) {
+  .footer.reviews {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .review .number {
+    bottom: 0;
+    right: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .review .content-2 {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 575.98px) {
+  .review .number {
+    font-family: 'Times New Roman', Times, serif;
+    top: 0;
+    bottom: auto;
+    right: -30px;
+    font-size: 250px;
+    line-height: 250px;
+    text-align: start;
+  }
+  .review .section-header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 137%;
+  }
+  .review .container-fluid {
+    padding: 0 40px;
+  }
+  .review .section-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    color: #FFFFFF;
+  }
+  .review .related-treatments-item p {
+    margin-top: 5px;
+  }
+  .review .quote {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 112.11%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .review .stars-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 }
 .home-hero.blog {
   height: 300px;
