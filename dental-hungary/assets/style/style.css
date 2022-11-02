@@ -1977,6 +1977,9 @@
     line-height: 137%;
     color: #CCA06F;
   }
+  .reviews-header .section-description {
+    margin-top: 36px;
+  }
 }
 .review {
   margin-top: 70px;
@@ -2118,6 +2121,7 @@
   .review .stars-wrapper {
     display: flex;
     justify-content: center;
+    gap: 10px;
   }
 }
 .home-hero.blog {
