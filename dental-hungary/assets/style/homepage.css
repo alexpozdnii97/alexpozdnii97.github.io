@@ -52,6 +52,11 @@
     max-width: 272px;
     margin: 33px auto 33px;
   }
+  .home-hero .btn {
+    margin: 10px auto;
+    display: inline-block;
+    width: 80%;
+  }
 }
 .clinics {
   padding-top: 166px;
@@ -522,7 +527,9 @@
     line-height: 137%;
   }
   .advantages-wrapper .advantages-item img {
+    width: 100%;
     height: auto;
+    object-fit: none;
   }
   .advantages-wrapper .advantages-item .content {
     padding: 36px;

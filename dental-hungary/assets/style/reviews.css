@@ -1,3 +1,6 @@
+.home-hero.reviews-hero {
+  background-image: url(../img/reviews-bg.png);
+}
 .reviews-header {
   margin-top: 150px;
 }
@@ -10,8 +13,18 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 121.75%;
-  /* or 49px */
   color: #1A3E58;
+}
+@media (max-width: 575.98px) {
+  .reviews-header {
+    margin-top: 61px;
+  }
+  .reviews-header .section-header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 137%;
+    color: #CCA06F;
+  }
 }
 .review {
   margin-top: 70px;

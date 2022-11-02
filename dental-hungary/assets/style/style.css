@@ -259,7 +259,11 @@
   }
 }
 @media (max-width: 575.98px) {
+  .header-body .logo {
+    width: 200px;
+  }
   .mobile-menu-wrapper .navigation {
+    padding-left: 0;
     margin-top: 166px;
   }
   .mobile-menu-wrapper .navigation li {
@@ -273,7 +277,7 @@
     font-weight: 700;
   }
   .mobile-menu-wrapper .info-strip {
-    padding-top: 35px;
+    padding-top: 0px;
     border-top: 1px solid #1A3E58;
     gap: none;
     justify-content: space-evenly;
@@ -282,6 +286,10 @@
     width: 50%;
     margin: 23px 0 0;
     justify-content: center;
+  }
+  .mobile-menu-wrapper .info-strip .copyright {
+    margin-top: 32px;
+    margin-bottom: 0;
   }
 }
 .home-hero {
@@ -337,6 +345,11 @@
   .home-hero .page-description {
     max-width: 272px;
     margin: 33px auto 33px;
+  }
+  .home-hero .btn {
+    margin: 10px auto;
+    display: inline-block;
+    width: 80%;
   }
 }
 .clinics {
@@ -808,7 +821,9 @@
     line-height: 137%;
   }
   .advantages-wrapper .advantages-item img {
+    width: 100%;
     height: auto;
+    object-fit: none;
   }
   .advantages-wrapper .advantages-item .content {
     padding: 36px;
@@ -1117,6 +1132,9 @@
   background-image: url(../img/treatments-bg.png);
 }
 @media (max-width: 575.98px) {
+  .home-hero.small {
+    height: 360px;
+  }
   .home-hero.small .page-header {
     font-size: 55px;
     line-height: 136.5%;
@@ -1311,6 +1329,9 @@
     line-height: 137%;
   }
 }
+.home-hero.prices {
+  background-image: url(../img/prices-bg.png);
+}
 .pricelist {
   margin-top: 150px;
 }
@@ -1406,6 +1427,9 @@
 }
 .get-consultation.prices {
   margin-top: 200px;
+}
+.home-hero.contacts {
+  background-image: url(../img/contact-us-bg.png);
 }
 .contact-info {
   margin-top: 150px;
@@ -1926,6 +1950,9 @@
 .get-consultation.about {
   margin-top: 255px;
 }
+.home-hero.reviews-hero {
+  background-image: url(../img/reviews-bg.png);
+}
 .reviews-header {
   margin-top: 150px;
 }
@@ -1938,8 +1965,18 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 121.75%;
-  /* or 49px */
   color: #1A3E58;
+}
+@media (max-width: 575.98px) {
+  .reviews-header {
+    margin-top: 61px;
+  }
+  .reviews-header .section-header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 137%;
+    color: #CCA06F;
+  }
 }
 .review {
   margin-top: 70px;
