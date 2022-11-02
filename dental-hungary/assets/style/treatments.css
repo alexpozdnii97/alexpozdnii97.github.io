@@ -5,6 +5,9 @@
   background-image: url(../img/treatments-bg.png);
 }
 @media (max-width: 575.98px) {
+  .home-hero.small {
+    height: 360px;
+  }
   .home-hero.small .page-header {
     font-size: 55px;
     line-height: 136.5%;
