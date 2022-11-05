@@ -1,0 +1,133 @@
+.home-hero.blog {
+  height: 380px;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1199.98px) {
+  .home-hero.blog {
+    height: 300px;
+  }
+}
+@media (max-width: 991.98px) {
+  .home-hero.blog {
+    padding-bottom: 40px;
+    height: 250px;
+  }
+}
+@media (max-width: 575.98px) {
+  .home-hero.blog {
+    padding-bottom: 40px;
+    height: 300px;
+    background-position: center;
+  }
+}
+.blog-layout {
+  margin-top: 60px;
+  margin-bottom: 140px;
+}
+.blog-archive {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.blog-archive .blog-post {
+  position: relative;
+  z-index: 2;
+}
+.blog-archive .blog-post .post-thumbnail {
+  width: 100%;
+  aspect-ratio: 1.33333333;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-archive .blog-post .post-meta {
+  position: relative;
+  z-index: 3;
+  margin-top: -50px;
+  width: 100%;
+  padding: 40px 28px 20px 40px;
+  background: linear-gradient(0deg, #1e3e55 82.2%, rgba(30, 62, 85, 0) 117.2%);
+}
+.blog-archive .blog-post .post-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  color: #CCA06F;
+  min-height: 144px;
+}
+.blog-archive .blog-post .post-excerpt {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 143.5%;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 1199.98px) {
+  .blog-archive {
+    grid-template-columns: 1fr 1fr;
+  }
+  .blog-archive .blog-post .post-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 991.98px) {
+  .blog-layout {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 575.98px) {
+  .blog-archive {
+    grid-template-columns: 1fr;
+  }
+  .blog-archive .blog-post .post-title {
+    font-size: 24px;
+    height: auto;
+    min-height: auto;
+  }
+}
+.sidebar {
+  padding-left: 40px;
+}
+.sidebar-header {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 121.75%;
+  color: #1A3E58;
+}
+.sidebar-header:first-child {
+  margin-top: 0;
+}
+.sidebar .categories ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar .categories ul li {
+  margin-top: 10px;
+}
+.sidebar .categories ul li a {
+  font-family: 'Cormorant Garamond';
+  text-decoration: none;
+  color: #1A3E58;
+  font-size: 25px;
+}
+.sidebar .popular-posts a {
+  display: block;
+  margin-top: 10px;
+  font-family: 'Cormorant Garamond';
+  text-decoration: none;
+  color: #1A3E58;
+  font-size: 25px;
+}
+@media (max-width: 991.98px) {
+  .sidebar {
+    margin-top: 50px;
+    padding-left: 0;
+  }
+}
+.special-offers.blog {
+  margin-bottom: 100px;
+}
