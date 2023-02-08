@@ -1,0 +1,95 @@
+.btn-green{
+    display: inline-block;
+    padding: 16px 24px;
+    border-radius: 80px;
+    
+    background: linear-gradient(90deg, #29A37A 0%, rgba(41, 163, 122, 0.7) 100%);  
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;    
+    color: #FFFFFF;
+    text-decoration: none;
+    &.small{
+        font-size: 16px;
+        padding: 11px 30px;
+    }
+    &.fixed{
+        max-width: 232px;
+    }
+}
+
+.btn-purple{
+    display: inline-block;
+    padding: 16px 24px;
+    border-radius: 80px;
+    background: linear-gradient(90deg, #B744B8 0%, rgba(183, 68, 184, 0.59) 100%);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;    
+    color: #FFFFFF;
+    text-decoration: none;
+    &.small{
+        font-size: 16px;
+        padding: 11px 30px;
+    }
+    &.fixed{
+      max-width: 232px;
+    }
+}
+
+.btn-white{
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 80px;
+  background: linear-gradient(90deg, #F3F3F7 50.52%, rgba(243, 243, 247, 0.75) 100%);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;    
+  color: black;
+  text-decoration: none;
+  &.small{
+    font-size: 16px;
+    padding: 11px 30px;
+  }
+  
+}
+
+.social-link{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #29A37A 0%, rgba(41, 163, 122, 0.78) 100%);
+  position: relative;
+  svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.arrow-link{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #0E110F;
+  text-decoration: none;
+  &::after{
+    content: '';
+    display: inline-block;
+    margin-left: 3px;
+    width: 17px;
+    height: 10px;
+    background-image: url(../img/link-arrow.svg);
+    background-repeat: no-repeat;
+  }
+}

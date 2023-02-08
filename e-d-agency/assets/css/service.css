@@ -1,0 +1,55 @@
+.services-hero .homepage-hero-wrapper {
+  position: relative;
+}
+.services-hero .homepage-hero-wrapper .img-bg {
+  position: absolute;
+  max-width: 900px;
+  height: auto;
+  top: 50%;
+  right: -100px;
+  transform: translate(0, -50%);
+}
+.services-hero .content .page-header {
+  max-width: 890px;
+}
+.services-hero .content .page-description {
+  margin-top: 15px;
+  max-width: 512px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+.services-hero .content .btn-purple {
+  margin-top: 30px;
+}
+.about-service-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 135px;
+  align-items: center;
+}
+.about-service-wrapper img {
+  max-width: 416px;
+  height: auto;
+}
+.about-service-wrapper .content {
+  max-width: 637px;
+}
+.about-service-wrapper .content .btn-purple {
+  margin-top: 30px;
+}
+.start-project {
+  background: #29A37A;
+  padding: 64px 0;
+  overflow: hidden;
+}
+.start-project-wrapper {
+  position: relative;
+}
+.start-project-wrapper img {
+  position: absolute;
+  right: -160px;
+  top: -120px;
+  max-width: 920px;
+  height: auto;
+}
