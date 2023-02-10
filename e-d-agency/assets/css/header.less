@@ -32,6 +32,7 @@
         display: flex;
         position: relative;
         a{
+          order: 1;
           font-family: 'Poppins';
           font-style: normal;
           font-weight: 500;
@@ -39,6 +40,9 @@
           line-height: 60px;  
           color: #0E110F;
           text-decoration: none;
+        }
+        img{
+          order: 2;
         }
         .sub-menu{
           display: none;
@@ -102,3 +106,81 @@
       
     }
   }
+
+
+
+.mobile-menu{
+  position: absolute;
+  width: 90%;
+  top: 0;
+  z-index: 20;
+  height: 100vh;
+  right: -100%;
+  background: #F3F3F7;
+  padding: 30px;
+
+  transition: 0.5s;
+
+  &-header{
+    display: flex;
+    justify-content: end;
+    button{
+      border: none;
+      outline: none;
+    }
+  }
+  .main-nav{
+    margin: 0;
+    max-width: 350px;
+    .menu{
+      display: block;
+      .menu-item{
+        display: block;
+        margin-bottom: 15px;
+        a{
+          font-size: 25px;
+          line-height: 150%;
+        }
+      }
+      .menu-item-has-children{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+          order: 1;
+        }
+        img{
+          order: 2;
+        }
+        .sub-menu{
+          display: none;
+          order: 3;
+          width: 100%;
+          transition: 0.5s;
+        }
+        &.active{
+          .sub-menu{
+            display: block;
+            position: static;
+            transform: none;
+            width: auto;
+            height: auto;
+            background: none;
+            border: none;
+            box-shadow: none;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+  .social-links{
+    margin: 0;
+    margin-top: 10px;
+    max-width: 150px;
+  }
+
+  &.active{
+    right: 0;
+    transition: 0.5s;
+  }
+}

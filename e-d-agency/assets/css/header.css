@@ -32,6 +32,7 @@
   position: relative;
 }
 .main-nav .menu-item a {
+  order: 1;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -39,6 +40,9 @@
   line-height: 60px;
   color: #0E110F;
   text-decoration: none;
+}
+.main-nav .menu-item img {
+  order: 2;
 }
 .main-nav .menu-item .sub-menu {
   display: none;
@@ -88,4 +92,74 @@
     height: 30px;
     width: auto;
   }
+}
+.mobile-menu {
+  position: absolute;
+  width: 90%;
+  top: 0;
+  z-index: 20;
+  height: 100vh;
+  right: -100%;
+  background: #F3F3F7;
+  padding: 30px;
+  transition: 0.5s;
+}
+.mobile-menu-header {
+  display: flex;
+  justify-content: end;
+}
+.mobile-menu-header button {
+  border: none;
+  outline: none;
+}
+.mobile-menu .main-nav {
+  margin: 0;
+  max-width: 350px;
+}
+.mobile-menu .main-nav .menu {
+  display: block;
+}
+.mobile-menu .main-nav .menu .menu-item {
+  display: block;
+  margin-bottom: 15px;
+}
+.mobile-menu .main-nav .menu .menu-item a {
+  font-size: 25px;
+  line-height: 150%;
+}
+.mobile-menu .main-nav .menu .menu-item-has-children {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mobile-menu .main-nav .menu .menu-item-has-children a {
+  order: 1;
+}
+.mobile-menu .main-nav .menu .menu-item-has-children img {
+  order: 2;
+}
+.mobile-menu .main-nav .menu .menu-item-has-children .sub-menu {
+  display: none;
+  order: 3;
+  width: 100%;
+  transition: 0.5s;
+}
+.mobile-menu .main-nav .menu .menu-item-has-children.active .sub-menu {
+  display: block;
+  position: static;
+  transform: none;
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  box-shadow: none;
+  transition: 0.5s;
+}
+.mobile-menu .social-links {
+  margin: 0;
+  margin-top: 10px;
+  max-width: 150px;
+}
+.mobile-menu.active {
+  right: 0;
+  transition: 0.5s;
 }

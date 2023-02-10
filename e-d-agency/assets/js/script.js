@@ -35,3 +35,19 @@ $('.team-slider').slick({
     // instead of a settings object
   ]
 });
+
+
+ $(".menu-item-has-children").prepend('<img class="down-arrow" src="../assets/img/chevron-down.svg" alt="">');
+ $('.menu-item-has-children  .down-arrow').click(function() {
+    $('.menu-item-has-children').toggleClass('active');
+  });
+
+
+
+  $('#menu-open').click(function() {
+    $('.mobile-menu').toggleClass('active');
+  });
+
+   $('#menu-close').click(function() {
+    $('.mobile-menu').toggleClass('active');
+  });
